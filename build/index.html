@@ -67,7 +67,7 @@
       <div class="panel-body">
         <h2><i class="mdi-social-poll"></i> User Info</h2>
         <p>Something cool here?</p>
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="POST">
           <fieldset>
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
@@ -286,13 +286,13 @@
   function infoUser() {
     username = document.getElementById('infoUser').value;
     /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
-    location.href = 'users/' + username;
+    location.href = '' + username;
   };
 
   function libraryUser() {
     username = document.getElementById('libraryUser').value;
     /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
-    location.href = 'users/' + username + '/library';
+    location.href = '' + username + '/library';
   };
   </script>
 
