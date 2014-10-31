@@ -390,10 +390,9 @@ flush();
   <script>
     $(document).ready(function start(){
       $.get('/dist/templates/users.php',null,function(result) {
-        //$("#test>.loading-indicator").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        $("#test"), function(){
+        $("#test").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
           $("#test").hide();
-        };
+        });
         setTimeout(function(){
           $("#test").html(result);
         }, 1000);
