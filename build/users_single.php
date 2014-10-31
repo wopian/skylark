@@ -375,8 +375,6 @@ flush();
         <div id="plan" class="col-lg-12" style="height: 400px"></div>
       </div>
 
-      <div id="test">Test</div>
-
     </div>
 
   </div>
@@ -386,20 +384,6 @@ flush();
 
   <script src="/dist/js/ripples.min.js"></script>
   <script src="/dist/js/material.min.js"></script>
-
-  <script>
-    $(document).ready(function start(){
-      $.get('/dist/templates/users.php',null,function(result) {
-        //$("#test>.loading-indicator").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        $("#test"), function(){
-          $("#test").hide();
-        });
-        setTimeout(function(){
-          $("#test").html(result);
-        }, 1000);
-      },'html');
-    };
-  </script>
 
   <script>
     $(document).ready(function() {
