@@ -393,7 +393,7 @@ flush();
         //$("#test>.loading-indicator").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
         $("#test"), function(){
           $("#test").hide();
-        });
+        };
         setTimeout(function(){
           $("#test").html(result);
         }, 1000);
