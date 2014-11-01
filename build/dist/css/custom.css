@@ -54,12 +54,13 @@
   left: 50%;
   margin-top: -75px;
   margin-left: -75px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 #cover > div > img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
 }
 
 #avatar {
