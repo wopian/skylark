@@ -24,6 +24,7 @@
 #cover {
   position: relative;
   height: 500px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -58,16 +59,16 @@
   overflow: hidden;
 }
 
-#cover #loading {
-  background-color: #009688;
-}
-
 #cover > div > img {
   width: 100%;
   height: 100%;
 }
 
-#cover #loading > div {
+#cover-loading {
+  background-color: #009688;
+}
+
+#cover-loading > div {
   background: #eee;
   border-radius: 50%;
 }
