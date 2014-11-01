@@ -141,7 +141,10 @@ flush();
 
     </div>
 
-    <div id="preloader5"></div>
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
 
       <div class="row" id="recent">
 
