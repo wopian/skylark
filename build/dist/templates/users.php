@@ -302,9 +302,6 @@
   </div>
 </div>
 
-<script src="/dist/js/highcharts.js"></script>
-<script src="/dist/js/exporting.js"></script>
-
 <script type="text/javascript">
 $(function () {
 $('#overview').highcharts({
