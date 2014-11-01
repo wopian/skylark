@@ -121,7 +121,7 @@
 
           echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
                   <div class="thumbnail card-image">
-                    <a href="'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
+                    <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
                     <div class="caption">
                       <h4>'.$title.'</h4>
                       <p>'.$status.'</p>
