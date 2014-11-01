@@ -123,8 +123,6 @@ flush();
               </div>';
       }?>
 
-      <!--</div>-->
-
       <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
       <div class="col-lg-6 col-md-6 col-sm-6">
@@ -143,7 +141,8 @@ flush();
 
     </div>
 
-      <div class="row">
+      <div class="row" id="recent">
+        <div class"loading"></div>
 
         <?
           ob_end_flush();
