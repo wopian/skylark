@@ -17,6 +17,14 @@
     $dtT = new DateTime("@$seconds");
     return $dtF->diff($dtT)->format($format);
   }
+
+  $waifu = $data['waifu'];
+  $waifuOrhusbando = $data['waifu_or_husbando'];
+
+  if($user == 'doramu'){
+    $waifu = 'Wopian';
+    $waifuOrhusbando = 'Waifu';
+  }
 ?>
 
 <div class="cover" style="background-image: url('<?=$data['cover_image']?>')">
@@ -33,10 +41,10 @@
       <p class="lead"><?=$data['bio']?></p>
     </div>
 
-    <?if(strlen($data['waifu']) > 0) {
+    <?if(strlen($waifu) > 0) {
       echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-              <p class="h1">'.$data['waifu'].'</p>
-              <p class="lead">'.$data['waifu_or_husbando'].'<p>
+              <p class="h1">'.$waifu.'</p>
+              <p class="lead">'.$waifuOrhusbando.'<p>
             </div>';
     }?>
 
