@@ -48,7 +48,7 @@
 
 #cover > div {
   width: 150px;
-  height: auto;
+  height: 150px;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -58,7 +58,7 @@
 
 #cover > div > img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 5px;
 }
 
