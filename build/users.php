@@ -104,9 +104,9 @@
   <script>
     $(document).ready(function start(){
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
-        $(".cover-loading>.spinner>.double-bounce1").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-          $("#cover-loading").fadeOut();
-        });
+        setTimeout(function(){
+          $(".cover-loading").fadeOut().remove();
+        }, 1000);
         setTimeout(function(){
           $("#container").hide().html(result).fadeIn();
         }, 1000);
