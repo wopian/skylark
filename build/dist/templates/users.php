@@ -1,4 +1,5 @@
 <?
+  $user = $_GET['user'];
   $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
   $json = file_get_contents($url);
   $recent = json_decode($json, true);
@@ -56,5 +57,4 @@
             </div>
           </div>';
   }
-
 ?>
