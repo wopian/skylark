@@ -301,3 +301,167 @@
 
   </div>
 </div>
+
+<script src="/dist/js/highcharts.js"></script>
+<script src="/dist/js/exporting.js"></script>
+
+<script type="text/javascript">
+$(function () {
+$('#overview').highcharts({
+    colors: [ <?=pieColour()?> ],
+    credits: {
+        enabled: false
+    },
+    chart: {
+        backgroundColor: 'transparent',
+        plotBackgroundColor: null,
+        plotBorderWidth: 0,//null,
+        plotShadow: false
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: {point.y:.0f}',
+                style: {
+                      //color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                      color: 'black'
+                }
+            },
+        }
+    },
+    series: [{
+        type: 'pie',
+        name: 'Amount',
+        data: [
+            <?=$overview?>
+        ],
+    }]
+  });
+  $('#completed').highcharts({
+      colors: [ <?=pieColour()?> ],
+      credits: {
+          enabled: false
+      },
+      chart: {
+          backgroundColor: 'transparent',
+          plotBackgroundColor: null,
+          plotBorderWidth: 0,//null,
+          plotShadow: false
+      },
+      title: {
+          text: ''
+      },
+      tooltip: {
+          pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: true,
+                  format: '{point.name}: {point.y:.0f}',
+                  style: {
+                        //color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        color: 'black'
+                  }
+              }
+          }
+      },
+      series: [{
+          type: 'pie',
+          name: 'Amount',
+          data: [
+              <?=$completed?>
+          ],
+      }]
+  });
+  $('#currently').highcharts({
+      colors: [ <?=pieColour()?> ],
+      credits: {
+          enabled: false
+      },
+      chart: {
+          backgroundColor: 'transparent',
+          plotBackgroundColor: null,
+          plotBorderWidth: 0,//null,
+          plotShadow: false
+      },
+      title: {
+          text: ''
+      },
+      tooltip: {
+          pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: true,
+                  format: '{point.name}: {point.y:.0f}',
+                  style: {
+                        //color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        color: 'black'
+                  }
+              }
+          }
+      },
+      series: [{
+          type: 'pie',
+          name: 'Amount',
+          data: [
+              <?=$currently?>
+          ],
+      }]
+  });
+  $('#plan').highcharts({
+      colors: [ <?=pieColour()?> ],
+      credits: {
+          enabled: false
+      },
+      chart: {
+          backgroundColor: 'transparent',
+          plotBackgroundColor: null,
+          plotBorderWidth: 0,//null,
+          plotShadow: false
+      },
+      title: {
+          text: ''
+      },
+      tooltip: {
+          pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: true,
+                  format: '{point.name}: {point.y:.0f}',
+                  style: {
+                        //color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        color: 'black'
+                  }
+              }
+          }
+      },
+      series: [{
+          type: 'pie',
+          name: 'Amount',
+          data: [
+              <?=$plan?>
+          ],
+      }]
+  });
+});
+</script>
