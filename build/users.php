@@ -389,7 +389,7 @@ flush();
 
   <script>
     $(document).ready(function start(){
-      $.get('/dist/templates/users.php',null,function(result) {
+      $.get('/dist/users.php',null,function(result) {
         $("#test").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
           $("#test").hide();
         });
@@ -397,7 +397,7 @@ flush();
           $("#test").html(result);
         }, 1000);
       },'html');
-    };
+    });
   </script>
 
   <script>
