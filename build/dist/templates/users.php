@@ -1,5 +1,6 @@
 <?
   $user = $_GET['user'];
+  $userh = ucfirst($user);
 
   $url = "http://hummingbird.me/api/v1/users/".$user;
   $json = file_get_contents($url);
