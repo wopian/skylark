@@ -81,6 +81,7 @@
     border-radius:50px;
     animation: loading 1.5s infinite linear;
 }
+
 .loading:after{
     position:absolute;
     width:50px;
@@ -93,14 +94,16 @@
     content:'';
     top:-20px;
     left:-20px;
-    animation: loading-after 1.5s infinite linear;
+    animation: loading_after 1.5s infinite linear;
 }
+
 @keyframes loading {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(180deg);background:#2ecc71;}
     100% {transform: rotate(360deg);}
 }
-@keyframes loading-after {
+
+@keyframes loading_after {
     0% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
     50% {border-top:10px solid #3498db;border-bottom:10px solid #3498db;}
     100% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
