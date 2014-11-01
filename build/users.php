@@ -13,6 +13,10 @@
   }
   $header = $userh.$plural;
 
+  $url = "http://hummingbird.me/api/v1/users/".$user;
+  $json = file_get_contents($url);
+  $data = json_decode($json, true);
+
   ob_start();
   flush();
 
