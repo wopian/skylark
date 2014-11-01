@@ -106,10 +106,10 @@
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         setTimeout(function(){
           $(".cover-loading").fadeOut().remove();
-        }, 1000);
+        }, 100);
         setTimeout(function(){
           $("#container").hide().html(result).fadeIn();
-        }, 1000);
+        }, 100);
       },'html');
     });
   </script>
