@@ -18,7 +18,7 @@
   }
 ?>
 
-<div id="cover" style="background-image: url('<?=$data['cover_image']?>')">
+<div class="cover" style="background-image: url('<?=$data['cover_image']?>')">
   <div>
     <img src="<?=$data['avatar']?>">
   </div>
