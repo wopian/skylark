@@ -103,7 +103,7 @@
     $(document).ready(function start(){
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         $("#container").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-          $("#container").hide();
+          //$("#container").hide();
         });
         setTimeout(function(){
           $("#container").html(result);
