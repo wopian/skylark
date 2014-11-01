@@ -79,10 +79,10 @@ flush();
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
           <li><a rel="prerender" href="/">Home</a></li>
-          <li class="active"><a href="/users/<?=$user?>">Info</a></li>
-          <li><a rel="prerender" href="/users/<?=$user?>/library">Library</a></li>
-          <li><a rel="prerender" href="/users/<?=$user?>/">Cover Images</a></li>
-          <li><a rel="prerender" href="https://hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
+          <li class="active"><a href="/<?=$user?>">Info</a></li>
+          <li><a rel="prerender" href="/<?=$user?>/library">Library</a></li>
+          <li><a rel="prerender" href="/<?=$user?>/">Cover Images</a></li>
+          <li><a rel="prerender" href="//hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
