@@ -55,7 +55,7 @@
   left: 50%;
   margin-top: -75px;
   margin-left: -75px;
-  border-radius: 50%;
+  border-radius: 50% 50% 0 0;
   overflow: hidden;
 }
 
