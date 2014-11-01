@@ -22,8 +22,8 @@
   $waifuOrhusbando = $data['waifu_or_husbando'];
 
   if($user == 'doramu'){
-    $waifu = 'Wopian';
-    $waifuOrhusbando = 'Waifu';
+    $waifu = '<a href="//hummingbird.me/users/kusoneko">Kusoneko</a>';
+    $waifuOrhusbando = 'Husbando';
   }
 ?>
 
