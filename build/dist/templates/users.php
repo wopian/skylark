@@ -273,28 +273,28 @@
       <div class="col-lg-12">
         <p class="h1">Genre Overview</p>
       </div>
-      <div id="overview" class="col-lg-12" style="height: 400px; max-width: 570px"></div>
+      <div id="overview" class="col-md-6 col-lg-12" style="height: auto; max-width: 570px"></div>
     </div>
 
     <div class="col-lg-6 no-gutter">
-      <div class="col-lg-12">
+      <div class="col-md-6 col-lg-12">
         <p class="h1">Completed Anime</p>
       </div>
-      <div id="completed" class="col-lg-12" style="height: 400px; max-width: 570px"></div>
+      <div id="completed" class="col-md-6 col-lg-12" style="height: auto; max-width: 570px"></div>
     </div>
 
     <div class="col-lg-6 no-gutter">
       <div class="col-lg-12">
         <p class="h1">Currently Watching Anime</p>
       </div>
-      <div id="currently" class="col-lg-12" style="height: 400px; max-width: 570px"></div>
+      <div id="currently" class="col-md-6 col-lg-12" style="height: auto; max-width: 570px"></div>
     </div>
 
     <div class="col-lg-6 no-gutter">
       <div class="col-lg-12">
         <p class="h1">Plan to Watch Anime</p>
       </div>
-      <div id="plan" class="col-lg-12" style="height: 400px; max-width: 570px"></div>
+      <div id="plan" class="col-md-6 col-lg-12" style="height: auto; max-width: 570px"></div>
     </div>
 
   </div>
