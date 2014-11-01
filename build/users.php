@@ -391,7 +391,7 @@ flush();
 
   <script>
     $(document).ready(function start(){
-      $.get('/dist/users.php',null,function(result) {
+      $.get('/dist/templates/users.php',null,function(result) {
         $("#test").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
           $("#test").hide();
         });
