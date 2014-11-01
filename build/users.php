@@ -106,7 +106,7 @@
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         setTimeout(function(){
           $(".cover-loading").fadeOut('slow').remove();
-        }, 500);
+        }, 400);
         setTimeout(function(){
           $("#container").hide().html(result).fadeIn('slow');
         }, 500);
