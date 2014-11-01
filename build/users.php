@@ -81,7 +81,7 @@
     </div>
   </div>
 
-  <div id="containers">
+  <div id="container">
     <!--<div id="cover loading" style="background-image: url('https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png')">-->
     <div id="cover" class="cover-loading">
       <div class="spinner">
