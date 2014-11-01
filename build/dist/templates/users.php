@@ -27,7 +27,6 @@
   } elseif($user == 'kusoneko'){
     $waifu = '<a class="btn btn-link" href="//hummingbird.me/users/doramu">Doramu</a>';
     $waifuOrhusbando = 'Waifu';
-  })
   }
 ?>
 
