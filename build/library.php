@@ -122,11 +122,11 @@
   $status_selector = '<a class="btn btn-default col-xs-9 disabled">'.$active.'</a>
                       <a class="btn btn-default col-xs-3 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="/users/'.$user.'/library/'.$status1[0].'">'.$status1[1].'</a></li>
-                        <li><a href="/users/'.$user.'/library/'.$status2[0].'">'.$status2[1].'</a></li>
-                        <li><a href="/users/'.$user.'/library/'.$status3[0].'">'.$status3[1].'</a></li>
-                        <li><a href="/users/'.$user.'/library/'.$status4[0].'">'.$status4[1].'</a></li>
-                        <li><a href="/users/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
+                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status1[0].'">'.$status1[1].'</a></li>
+                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status2[0].'">'.$status2[1].'</a></li>
+                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status3[0].'">'.$status3[1].'</a></li>
+                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status4[0].'">'.$status4[1].'</a></li>
+                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
                       </ul>';
 
 ob_start();
@@ -165,21 +165,21 @@ flush();
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/users/<?=$user?>">Info</a></li>
+          <li><a rel="prerender" href="/">Home</a></li>
+          <li><a rel="prerender" href="/users/<?=$user?>">Info</a></li>
           <li class="active"><a href="/users/<?=$user?>/library">Library</a></li>
-          <li><a href="/users/<?=$user?>/cover">Cover Images</a></li>
-          <li><a href="https://hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
+          <li><a rel="prerender" href="/users/<?=$user?>/cover">Cover Images</a></li>
+          <li><a rel="prerender" href="https://hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Other Sites <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="//manga.jamesharris.net">Manga</a></li>
+              <li><a rel="prerender" href="//manga.jamesharris.net">Manga</a></li>
               <li class="divider"></li>
-              <li><a href="//jamesharris.net">Portfolio</a></li>
-              <li><a href="//whatpulse.jamesharris.net">WhatPulse Stats</a></li>
-              <li><a href="//lastfm.jamesharris.net">Lastistics</a></li>
+              <li><a rel="prerender" href="//jamesharris.net">Portfolio</a></li>
+              <li><a rel="prerender" href="//whatpulse.jamesharris.net">WhatPulse Stats</a></li>
+              <li><a rel="prerender" href="//lastfm.jamesharris.net">Lastistics</a></li>
             </ul>
           </li>
         </ul>
