@@ -73,16 +73,15 @@
   padding-right:0;
 }
 
-.loading {
+#preloader5{
     position:relative;
     width:30px;
     height:30px;
     background:#3498db;
     border-radius:50px;
-    animation: loading 1.5s infinite linear;
+    animation: preloader_5 1.5s infinite linear;
 }
-
-.loading:after{
+#preloader5:after{
     position:absolute;
     width:50px;
     height:50px;
@@ -94,16 +93,14 @@
     content:'';
     top:-20px;
     left:-20px;
-    animation: loading_after 1.5s infinite linear;
+    animation: preloader_5_after 1.5s infinite linear;
 }
-
-@keyframes loading {
+@keyframes preloader_5 {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(180deg);background:#2ecc71;}
     100% {transform: rotate(360deg);}
 }
-
-@keyframes loading_after {
+@keyframes preloader_5_after {
     0% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
     50% {border-top:10px solid #3498db;border-bottom:10px solid #3498db;}
     100% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}

@@ -141,8 +141,9 @@ flush();
 
     </div>
 
+    <div id="preloader5"></div>
+
       <div class="row" id="recent">
-        <div class"loading"></div>
 
         <?
           ob_end_flush();
