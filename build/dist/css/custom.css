@@ -131,6 +131,12 @@
 .waifu {
   color: #333;
   text-decoration: none;
+  transition: color .2s easeInOut;
+}
+
+.waifu:hover {
+  color: #009688;
+  text-decoration: none;
 }
 
 #dploy {
