@@ -77,7 +77,7 @@
     </div>
   </div>
 
-  <div id="container">
+  <div id="containers">
     <div id="cover" style="background-image: url('https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png')">
       <div id="avatar">
       </div>
