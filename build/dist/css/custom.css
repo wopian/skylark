@@ -131,7 +131,7 @@
 .waifu {
   color: #333;
   text-decoration: none;
-  transition: color .2s easeInOut;
+  transition: color .2s ease-in-out;
 }
 
 .waifu:hover {
