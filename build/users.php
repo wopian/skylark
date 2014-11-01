@@ -109,7 +109,7 @@
         }, 100);
         setTimeout(function(){
           $("#container").hide().html(result).fadeIn();
-        }, 100);
+        }, 500);
       },'html');
     });
   </script>
