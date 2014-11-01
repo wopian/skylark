@@ -58,12 +58,16 @@
   overflow: hidden;
 }
 
+#cover #loading {
+  background-color: #009688;
+}
+
 #cover > div > img {
   width: 100%;
   height: 100%;
 }
 
-#avatar {
+#cover #loading > div {
   background: #eee;
   border-radius: 50%;
 }
