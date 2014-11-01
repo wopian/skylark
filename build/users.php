@@ -105,10 +105,10 @@
     $(document).ready(function start(){
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         setTimeout(function(){
-          $(".cover-loading").fadeOut().remove();
+          $(".cover-loading").fadeOut('slow').remove();
         }, 100);
         setTimeout(function(){
-          $("#container").hide().html(result).fadeIn();
+          $("#container").hide().html(result).fadeIn('slow');
         }, 500);
       },'html');
     });
