@@ -79,6 +79,9 @@
     height:30px;
     background:#3498db;
     border-radius:50px;
+    -webkit-animation: preloader_5 1.5s infinite linear;
+    -moz-animation: preloader_5 1.5s infinite linear;
+    -ms-animation: preloader_5 1.5s infinite linear;
     animation: preloader_5 1.5s infinite linear;
 }
 #preloader5:after{
@@ -93,6 +96,9 @@
     content:'';
     top:-20px;
     left:-20px;
+    -webkit-animation: preloader_5_after 1.5s infinite linear;
+    -moz-animation: preloader_5_after 1.5s infinite linear;
+    -ms-animation: preloader_5_after 1.5s infinite linear;
     animation: preloader_5_after 1.5s infinite linear;
 }
 @keyframes preloader_5 {
