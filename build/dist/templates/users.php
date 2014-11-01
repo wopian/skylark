@@ -22,10 +22,10 @@
   $waifuOrhusbando = $data['waifu_or_husbando'];
 
   if($user == 'doramu'){
-    $waifu = '<a class="btn btn-link" href="//hummingbird.me/users/kusoneko">Kusoneko</a>';
+    $waifu = '<a class="waifu" href="//hummingbird.me/users/kusoneko">Kusoneko</a>';
     $waifuOrhusbando = 'Husbando';
   } elseif($user == 'kusoneko'){
-    $waifu = '<a class="btn btn-link" href="//hummingbird.me/users/doramu">Doramu</a>';
+    $waifu = '<a class="waifu" href="//hummingbird.me/users/doramu">Doramu</a>';
     $waifuOrhusbando = 'Waifu';
   }
 ?>

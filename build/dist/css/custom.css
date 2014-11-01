@@ -128,6 +128,11 @@
   }
 }
 
+.waifu {
+  color: #333;
+  text-decoration: none;
+}
+
 #dploy {
   position: fixed;
   bottom: 10px;
