@@ -64,11 +64,11 @@
   height: 100%;
 }
 
-#cover-loading {
+.cover-loading {
   background-color: #009688;
 }
 
-#cover-loading > div {
+.cover-loading > div {
   background: #eee;
   border-radius: 50%;
 }
