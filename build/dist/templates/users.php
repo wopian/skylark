@@ -297,8 +297,6 @@
       <div id="plan" class="col-lg-12" style="height: 400px"></div>
     </div>
 
-    <div id="test">Test</div>
-
   </div>
 </div>
 
