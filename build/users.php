@@ -81,14 +81,15 @@
     </div>
   </div>
 
+  <div class="cover cover-loading">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <!--<div class="double-bounce2"></div>-->
+    </div>
+  </div>
+
   <div id="container">
     <!--<div id="cover loading" style="background-image: url('https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png')">-->
-    <div id="cover" class="cover-loading">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
-    </div>
   </div>
 
 
@@ -103,11 +104,11 @@
   <script>
     $(document).ready(function start(){
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
-        $("#container").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-          //$("#container").hide();
+        $(".cover-loading>.spinner>.double-bounce1").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+          $("#cover-loading").fadeOut();
         });
         setTimeout(function(){
-          $("#container").html(result);
+          $("#container").hide().html(result).fadeIn();
         }, 1000);
       },'html');
     });
