@@ -1,6 +1,4 @@
 <?
-  ob_end_flush();
-
   $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
   $json = file_get_contents($url);
   $recent = json_decode($json, true);
@@ -59,6 +57,4 @@
           </div>';
   }
 
-  ob_start();
-  flush();
 ?>

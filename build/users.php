@@ -329,7 +329,7 @@ flush();
 
   <script>
     $(document).ready(function start(){
-      $.get('/dist/templates/users.php',null,function(result) {
+      $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         $("#recent").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
           $("#recent").hide();
         });
