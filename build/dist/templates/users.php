@@ -1,4 +1,4 @@
-<?
+<?php
   $user = $_GET['user'];
   $userh = ucfirst($user);
 
