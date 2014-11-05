@@ -34,7 +34,7 @@
       }
 
       if (!$full) $string = array_slice($string, 0, 1);
-      return $string ? implode(', ', $string) . ' of anime';
+      return $string . ' of anime';
   }
   
   function secondsToTime($seconds) {
