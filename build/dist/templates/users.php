@@ -6,37 +6,13 @@
   $json = file_get_contents($url);
   $data = json_decode($json, true);
 
-  function time_elapsed_string($datetime, $full = false) {
-      $now = new DateTime;
-      # Get minutes
-      $time = "-".$datetime." minutes";
-      $datetime = strtotime($time);
-      $ago = new DateTime(@$datetime);
-      # $ago = new DateTime($datetime);
-      $diff = $now->diff($ago);
-
-      $diff->w = floor($diff->d / 7);
-      $diff->d -= $diff->w * 7;
-
-      $string = array(
-          'y' => 'year',
-          'm' => 'month',
-          'w' => 'week',
-          'd' => 'day',
-          'h' => 'hour',
-          'i' => 'minute',
-          's' => 'second',
-      );
-      foreach ($string as $k => &$v) {
-          if ($diff->$k) {
-              $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
-          } else {
-              unset($string[$k]);
-          }
-      }
-
-      if (!$full) $string = array_slice($string, 0, 1);
-      return $string . ' of anime';
+  function seconds2human($ss) {
+      $s = $ss % 60;
+      $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).’ minutes':”;
+      $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).’ hours':”;
+      $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).’ days':”;
+      $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).’ months':”;
+      return "$M $d $h $m $s seconds of anime";
   }
   
   function secondsToTime($seconds) {
@@ -94,7 +70,7 @@
     <div class="col-lg-6 col-md-6 col-sm-6 text-right">
       <p class="h1">Watched</p>
       <!--<p class="lead"><?=secondsToTime($data['life_spent_on_anime'])?> of anime</p>-->
-      <p class="lead"><?=time_elapsed_string($data['life_spent_on_anime'])?></p>"
+      <p class="lead"><?=seconds2human($data['life_spent_on_anime'])?></p>"
     </div>
 
     <div class="col-lg-12 col-md-12 col-sm-12">
