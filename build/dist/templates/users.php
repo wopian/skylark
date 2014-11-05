@@ -20,14 +20,6 @@
       }
 
       return "$M $d $h $and $m of anime";
-
-      /*
-      years    months    days    hours    minutes
-               months    days    hours    minutes
-                         days    hours    minutes
-                                 hours    minutes
-                                          minutes
-      /*
   }
 
   function secondsToTime($seconds) {
