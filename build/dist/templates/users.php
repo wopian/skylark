@@ -9,7 +9,8 @@
   function time_elapsed_string($datetime, $full = false) {
       $now = new DateTime;
       # Get minutes
-      $ago = new DateTime(@(time()-($datetime*60)));
+      $time = time()-($datetime*60);
+      $ago = new DateTime($time);
       # $ago = new DateTime($datetime);
       $diff = $now->diff($ago);
 
