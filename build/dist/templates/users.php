@@ -7,12 +7,11 @@
   $data = json_decode($json, true);
 
   function seconds2human($ss) {
-      $s = $ss % 60;
       $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
       $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
       $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
       $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
-      return "$M $d $h $m $s seconds of anime";
+      return "$M $d $h $m seconds of anime";
   }
   
   function secondsToTime($seconds) {
