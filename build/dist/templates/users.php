@@ -7,9 +7,9 @@
   $data = json_decode($json, true);
 
   function seconds2human($ss) {
-      $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes,':"";
-      $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours,':"";
-      $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days,':"";
+      $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
+      $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
+      $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
       $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months,':"";
 
       if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
