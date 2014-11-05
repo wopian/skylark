@@ -12,9 +12,13 @@
       $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days,':"";
       $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months,':"";
 
-      if (strlen($m) > 1 && ((strlen($h) > 1) || (strlen($d) > 1) || (strlen($M) > 1))) {
+      if ( $strlen($m) > 1 && strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 ) {
+
         $and = 'and';
+      } else {
+        $and = '';
       }
+
       return "$M $d $h $and $m of anime";
 
       /*
