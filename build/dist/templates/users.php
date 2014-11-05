@@ -11,7 +11,7 @@
       # Get minutes
       $time = "-".$datetime." minutes";
       $datetime = strtotime($time);
-      $ago = new DateTime($datetime);
+      $ago = new DateTime(@$datetime);
       # $ago = new DateTime($datetime);
       $diff = $now->diff($ago);
 
