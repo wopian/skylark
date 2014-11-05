@@ -11,9 +11,21 @@
       $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours,':"";
       $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days,':"";
       $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months,':"";
-      return "$M $d $h $m seconds of anime";
+
+      if (strlen($m) > 1 && (strlen($h) > 1 || (strlen($d) > 1 || (strlen($M) > 1)) {
+        $and = 'and';
+      }
+      return "$M $d $h $and $m of anime";
+
+      /*
+      years    months    days    hours    minutes
+               months    days    hours    minutes
+                         days    hours    minutes
+                                 hours    minutes
+                                          minutes
+      /*
   }
-  
+
   function secondsToTime($seconds) {
     $seconds = $seconds*60;
     if ($seconds < 3600) {$format = '%i minutes ';}
