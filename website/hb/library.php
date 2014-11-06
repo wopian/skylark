@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<?
+<?php
   ob_end_flush();
 
   $user = $_GET['user'];

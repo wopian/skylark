@@ -2,18 +2,16 @@
     if ($_POST['type'] == 'info' && !empty($_POST['user'])) {
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user");
-        //header("Location: http://wopian.me/$user");
     }
 
     if ($_POST['type'] == 'library' && !empty($_POST['user'])) {
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user/library");
-        //header("Location: http://wopian.me/$user/library");
     }
 ?>
 
 <!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#">
+<html>
 
 <head>
   <title>Hummingbird Tools</title>
