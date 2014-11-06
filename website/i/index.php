@@ -6,7 +6,7 @@ $uploadhost = "http://wopian.me/i/";
 $redirect = "http://wopian.me/i/denied";
 
 #Comment this next line if you want Robots to index this site.
-if ($_SERVER["REQUEST_URI"] == "/robot.txt") { die("User-agent: *\nDisallow: /"); }
+#if ($_SERVER["REQUEST_URI"] == "/robot.txt") { die("User-agent: *\nDisallow: /"); }
 
 if (isset($_POST['key'])) {
     if ($_POST['key'] == $key) {
