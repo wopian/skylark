@@ -18,9 +18,7 @@
           $and = '';
       }
 
-      $test = ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) ? 'and needed' : 'and not needed';
-
-      return "$M $d $h $and $m of anime";
+      return "$M $d $h $and $m";
   }
 
   $waifu = $data['waifu'];
@@ -66,7 +64,7 @@
     <div class="col-lg-6 col-md-6 col-sm-6 text-right">
       <p class="h1">Watched</p>
       <!--<p class="lead"><?=secondsToTime($data['life_spent_on_anime'])?> of anime</p>-->
-      <p class="lead"><?=seconds2human($data['life_spent_on_anime']*60)?></p>"
+      <p class="lead"><?=seconds2human($data['life_spent_on_anime']*60)?> of anime</p>"
     </div>
 
     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -96,22 +94,7 @@
           $episodes = $recent['anime'][$x]['episode_count'];
           $watched = $recent['library_entries'][$x]['episodes_watched'];
           $status = $recent['library_entries'][$x]['status'];
-          $ss = (time()-strtotime($recent['library_entries'][$x]['last_watched']));
-          
-          # NEW TIME CALCULATION
-          $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
-          $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
-          $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
-          $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
-
-          if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
-              $and = 'and';
-          } else {
-              $and = '';
-          }
-
-          $last = "$M $d $h $and $m ago";
-          # NEW TIME CALCULATION END
+          $last = seconds2human(time()-strtotime($recent['library_entries'][$x]['last_watched']));
           
           /* if($last<60){$last=$last." seconds";}
           elseif($last<3600){$last = round($last/60,0)." minutes";}
@@ -119,6 +102,7 @@
           elseif($last<2629740){$last=round($last/60/60/24,0)." days";}
           elseif($last<31556900){$last=round($last/60/60/24/7/4,0)." months";}
           elseif($last>31556900){$last=round($last/60/60/24/7/4/12,0)." years";} */
+          
           if($episodes==0){$episodes='∞';}
           $title=(strlen($title)>30)?substr($title,0,27).'&hellip;':$title;
 
@@ -147,7 +131,7 @@
                     <div class="caption">
                       <h4>'.$title.'</h4>
                       <p>'.$status.'</p>
-                      <p>'.$last.'</p>
+                      <p>'.$last.' ago</p>
                     </div>
                   </div>
                 </div>';
