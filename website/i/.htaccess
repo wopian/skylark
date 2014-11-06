@@ -8,4 +8,4 @@
   RewriteRule ^denied /denied.shtml [NC,L]
 </IfModule>
 
-ErrorDocument 404 /denied.shtml
+ErrorDocument 404 i/denied.shtml
