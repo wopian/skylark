@@ -2,7 +2,6 @@
   Options +FollowSymLinks -MultiViews
 
   RewriteEngine On
-  RewriteBase   /hb
 
   # Redirect /users|/covers
   RewriteCond  %{REQUEST_FILENAME} !-f
