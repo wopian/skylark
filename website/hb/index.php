@@ -1,5 +1,4 @@
 <?php
-    echo $_SERVER['HTTP_HOST'];
     if ($_POST['type'] == 'info' && strlen($_POST['user']) > 0) {
         $user = $_POST['user'];
         if ($_SERVER['HTTP_HOST'] == '9.dev.boomcraft.co.uk') {
