@@ -3,12 +3,12 @@
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user");
         //header("Location: http://wopian.me/$user");
-        exit;
-    } elseif ($_POST['type'] == 'library' && !empty($_POST['user'])) {
+    }
+
+    if ($_POST['type'] == 'library' && !empty($_POST['user'])) {
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user/library");
         //header("Location: http://wopian.me/$user/library");
-        exit;
     }
 ?>
 
