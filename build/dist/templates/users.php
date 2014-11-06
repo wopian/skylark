@@ -94,7 +94,7 @@
           $episodes = $recent['anime'][$x]['episode_count'];
           $watched = $recent['library_entries'][$x]['episodes_watched'];
           $status = $recent['library_entries'][$x]['status'];
-          $time = strtotime($recent['library_entries'][$x]['last_watched']);
+          $time = strtotime($recent['library_entries'][$x]['last_watched'])*60;
           $last = seconds2human($time);
           
           /* if($last<60){$last=$last." seconds";}
