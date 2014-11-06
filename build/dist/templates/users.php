@@ -7,7 +7,6 @@
   $data = json_decode($json, true);
 
   function seconds2human($ss) {
-      $s = (($ss%60)>0)?($ss%60).' seconds':"";
       $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
       $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
       $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
@@ -19,7 +18,7 @@
           $and = '';
       }
 
-      return "$M $d $h $m $and $s";
+      return "$M $d $h $and $m";
   }
 
   $waifu = $data['waifu'];
@@ -93,7 +92,7 @@
                   $episodes = $recent['anime'][$x]['episode_count'];
                   $watched = $recent['library_entries'][$x]['episodes_watched'];
                   $status = $recent['library_entries'][$x]['status'];
-                  $time = time()-(strtotime($recent['library_entries'][$x]['last_watched'])*60);
+                  $time = time()-(strtotime($recent['library_entries'][$x]['last_watched']));
                   $last = seconds2human($time);
           
                   /* 
