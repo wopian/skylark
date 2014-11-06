@@ -13,6 +13,7 @@
             header("Location: http://9.dev.boocmraft.co.uk/$user/library");
         } else {
             header("Location: http://wopian.me/$user/library");
+        }
         exit;
     }
 ?>
