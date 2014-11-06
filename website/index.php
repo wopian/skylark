@@ -1,1 +1,1 @@
-<?php header('Location: http://hb.wopian.me');
+<?php header('Location: http://wopian.me/hb');

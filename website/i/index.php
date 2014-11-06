@@ -2,8 +2,8 @@
 header("Content-Type: text/text");
 
 $key = "befd7918ae80d68cfe03530e453ceb587a053144";
-$uploadhost = "http://i.wopian.me/";
-$redirect = "http://i.wopian.me/denied";
+$uploadhost = "http://wopian.me/i";
+$redirect = "http://wopian.me/i/denied";
 
 #Comment this next line if you want Robots to index this site.
 if ($_SERVER["REQUEST_URI"] == "/robot.txt") { die("User-agent: *\nDisallow: /"); }
