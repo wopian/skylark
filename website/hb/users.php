@@ -1,22 +1,20 @@
+<?php
+    $user = $_GET['user'];
+    $userh = ucfirst($user);
+    if (substr($user, -1) == "s") {
+        $plural = "'";
+    } else {
+        $plural = "'s";
+    }
+        $header = $userh.$plural;
+
+    $url = "http://hummingbird.me/api/v1/users/".$user;
+    $json = file_get_contents($url);
+    $data = json_decode($json, true);
+?>
+
 <!DOCTYPE html>
 <html>
-
-<?php
-
-  $user = $_GET['user'];
-  $userh = ucfirst($user);
-  if (substr($user, -1) == "s") {
-    $plural = "'";
-  } else {
-    $plural = "'s";
-  }
-  $header = $userh.$plural;
-
-  $url = "http://hummingbird.me/api/v1/users/".$user;
-  $json = file_get_contents($url);
-  $data = json_decode($json, true);
-
-?>
 
 <head>
   <title><?=$header?> Profile - Hummingbird Tools</title>
