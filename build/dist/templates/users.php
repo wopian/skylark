@@ -75,205 +75,205 @@
 
     <div class="row">
 
-      <?
-        $user = $_GET['user'];
-        $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
-        $json = file_get_contents($url);
-        $recent = json_decode($json, true);
+      <?php
+          $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
+          $json = file_get_contents($url);
+          $recent = json_decode($json, true);
 
-        for ($x=0; $x<=3; $x++) {
-          if (strlen($recent['anime'][$x]['id']) != null){
-          if ($x==3) { //#4
-            $hidden = ' hidden-md hidden-sm';
-          } else {
-            $hidden = '';
-          }
-          $cover = $recent['anime'][$x]['poster_image'];
-          $uri = $recent['anime'][$x]['id'];
-          $title = $recent['anime'][$x]['canonical_title'];
-          $episodes = $recent['anime'][$x]['episode_count'];
-          $watched = $recent['library_entries'][$x]['episodes_watched'];
-          $status = $recent['library_entries'][$x]['status'];
-          $time = strtotime($recent['library_entries'][$x]['last_watched'])*60;
-          $last = seconds2human($time);
+          for ($x=0; $x<=3; $x++) {
+              if (strlen($recent['anime'][$x]['id']) != null){
+                  if ($x==3) { //#4
+                      $hidden = ' hidden-md hidden-sm';
+                  } else {
+                      $hidden = '';
+                  }
+                  $cover = $recent['anime'][$x]['poster_image'];
+                  $uri = $recent['anime'][$x]['id'];
+                  $title = $recent['anime'][$x]['canonical_title'];
+                  $episodes = $recent['anime'][$x]['episode_count'];
+                  $watched = $recent['library_entries'][$x]['episodes_watched'];
+                  $status = $recent['library_entries'][$x]['status'];
+                  $time = strtotime($recent['library_entries'][$x]['last_watched'])*60;
+                  $last = seconds2human($time);
           
-          /* if($last<60){$last=$last." seconds";}
-          elseif($last<3600){$last = round($last/60,0)." minutes";}
-          elseif($last<86400){$last=round($last/60/60,0)." hours";}
-          elseif($last<2629740){$last=round($last/60/60/24,0)." days";}
-          elseif($last<31556900){$last=round($last/60/60/24/7/4,0)." months";}
-          elseif($last>31556900){$last=round($last/60/60/24/7/4/12,0)." years";} */
+                  /* 
+                  if($last<60){$last=$last." seconds";}
+                  elseif($last<3600){$last = round($last/60,0)." minutes";}
+                  elseif($last<86400){$last=round($last/60/60,0)." hours";}
+                  elseif($last<2629740){$last=round($last/60/60/24,0)." days";}
+                  elseif($last<31556900){$last=round($last/60/60/24/7/4,0)." months";}
+                  elseif($last>31556900){$last=round($last/60/60/24/7/4/12,0)." years";} 
+                  */
           
-          if($episodes==0){$episodes='∞';}
-          $title=(strlen($title)>30)?substr($title,0,27).'&hellip;':$title;
+                  if($episodes==0){
+                    $episodes='∞';
+                  }
+                  
+                  $title = (strlen($title)>30) ? substr($title,0,27).'&hellip;' : $title;
 
-          switch ($status) {
-            case 'Currently Watching':
-              $status = 'Watched '.$watched.' of '.$episodes.' episodes';
-              break;
-            case 'Completed':
-              $status = 'Completed.';
-              break;
-            case 'Plan to Watch':
-              $status = 'Plans to watch.';
-              break;
-            case 'On Hold':
-              $status = 'On hold.';
-              break;
-            case 'Dropped':
-              $status = 'Dropped after '.$watched.' episodes.';
-              break;
-          }
-          }
+                  switch ($status) {
+                      case 'Currently Watching':
+                          $status = 'Watched '.$watched.' of '.$episodes.' episodes';
+                          break;
+                      case 'Completed':
+                          $status = 'Completed.';
+                          break;
+                      case 'Plan to Watch':
+                          $status = 'Plans to watch.';
+                          break;
+                      case 'On Hold':
+                          $status = 'On hold.';
+                          break;
+                      case 'Dropped':
+                          $status = 'Dropped after '.$watched.' episodes.';
+                          break;
+                  }
+              }
 
-          echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
-                  <div class="thumbnail card-image">
-                    <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
-                    <div class="caption">
-                      <h4>'.$title.'</h4>
-                      <p>'.$status.'</p>
-                      <p>'.$last.' ago</p>
-                    </div>
-                  </div>
-                </div>';
-        }
+              echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
+                      <div class="thumbnail card-image">
+                        <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
+                        <div class="caption">
+                          <h4>'.$title.'</h4>
+                          <p>'.$status.'</p>
+                          <p>'.$last.' ago</p>
+                        </div>
+                      </div>
+                    </div>';
+          }
       ?>
 
     </div>
 
-    <?
-    ob_end_flush();
+    <?php
 
-    $url = "http://hummingbird.me/library_entries?user_id=".$user;
-    $json = file_get_contents($url);
-    $genre = json_decode($json, true);
-    $count = count($genre['anime'])-1;
-    //echo $count;
+        $url = "http://hummingbird.me/library_entries?user_id=".$user;
+        $json = file_get_contents($url);
+        $genre = json_decode($json, true);
+        $count = count($genre['anime'])-1;
+        //echo $count;
 
-    //Get individual
-    for ($x=0; $x<=$count; $x++) {
-      if ($genre['library_entries'][$x]['status'] == 'Completed') {
-        $genres = $genre['anime'][$x]['genres'];
-        $genres = implode(',', $genres);
-        $genres = str_replace(' ', '-', $genres);
-        $total_c = $total_c.$genres.' ';
-        $total = $total.$genres.' ';
-      }
-      if ($genre['library_entries'][$x]['status'] == 'Currently Watching') {
-        $genres = $genre['anime'][$x]['genres'];
-        $genres = implode(',', $genres);
-        $genres = str_replace(' ', '-', $genres);
-        $total_cw = $total_cw.$genres.' ';
-        $total = $total.$genres.' ';
-      }
-      if ($genre['library_entries'][$x]['status'] == 'Plan to Watch') {
-        $genres = $genre['anime'][$x]['genres'];
-        $genres = implode(',', $genres);
-        $genres = str_replace(' ', '-', $genres);
-        $total_ptw = $total_ptw.$genres.' ';
-        $total = $total.$genres.' ';
-      }
-      if ($genre['library_entries'][$x]['status'] == 'On Hold') {
-        $genres = $genre['anime'][$x]['genres'];
-        $genres = implode(',', $genres);
-        $genres = str_replace(' ', '-', $genres);
-        $total_oh = $total_oh.$genres.' ';
-        $total = $total.$genres.' ';
-      }
-      if ($genre['library_entries'][$x]['status'] == 'Dropped') {
-        $genres = $genre['anime'][$x]['genres'];
-        $genres = implode(',', $genres);
-        $genres = str_replace(' ', '-', $genres);
-        $total_d = $total_d.$genres.' ';
-        $total = $total.$genres.' ';
-      }
-    }
+        //Get individual
+        for ($x=0; $x<=$count; $x++) {
+            if ($genre['library_entries'][$x]['status'] == 'Completed') {
+                $genres = $genre['anime'][$x]['genres'];
+                $genres = implode(',', $genres);
+                $genres = str_replace(' ', '-', $genres);
+                $total_c = $total_c.$genres.' ';
+                $total = $total.$genres.' ';
+            }
+            if ($genre['library_entries'][$x]['status'] == 'Currently Watching') {
+                $genres = $genre['anime'][$x]['genres'];
+                $genres = implode(',', $genres);
+                $genres = str_replace(' ', '-', $genres);
+                $total_cw = $total_cw.$genres.' ';
+                $total = $total.$genres.' ';
+            }
+            if ($genre['library_entries'][$x]['status'] == 'Plan to Watch') {
+                $genres = $genre['anime'][$x]['genres'];
+                $genres = implode(',', $genres);
+                $genres = str_replace(' ', '-', $genres);
+                $total_ptw = $total_ptw.$genres.' ';
+                $total = $total.$genres.' ';
+            }
+            if ($genre['library_entries'][$x]['status'] == 'On Hold') {
+                $genres = $genre['anime'][$x]['genres'];
+                $genres = implode(',', $genres);
+                $genres = str_replace(' ', '-', $genres);
+                $total_oh = $total_oh.$genres.' ';
+                $total = $total.$genres.' ';
+            }
+            if ($genre['library_entries'][$x]['status'] == 'Dropped') {
+                $genres = $genre['anime'][$x]['genres'];
+                $genres = implode(',', $genres);
+                $genres = str_replace(' ', '-', $genres);
+                $total_d = $total_d.$genres.' ';
+                $total = $total.$genres.' ';
+            }
+        }
 
-    //Cut off point
-    $cut = 14;
+        //Cut off point
+        $cut = 14;
 
-    //OVERVIEW
-    // Grabs data generated from above
-    $result = array_count_values(str_word_count($total, 1));
-    // Reverses the order of array: Highest => Lowest
-    arsort($result);
-    // Splits off first 15 instances
-    $first = array_slice($result, 0, $cut);
-    // Cycles through each instance
-    foreach ($first as $key => $row) {
-      // Replaces safety character with space
-      $key = str_replace('-', ' ', $key);
-      // Formats each instance for graph
-      $overview = $overview . '["'.$key.'", '.$row.'], ';
-    }
-    // Splits off rest of array
-    $second = array_slice($result, $cut);
-    $other = 0;
-    foreach ($second as $key => $row) {
-      // Adds each instance's value together
-      $other = $other + $row;
-    }
-    // Adds 'other' instance to main blob
-    $overview = $overview . '["Other", '.$other.']';
+        //OVERVIEW
+        // Grabs data generated from above
+        $result = array_count_values(str_word_count($total, 1));
+        // Reverses the order of array: Highest => Lowest
+        arsort($result);
+        // Splits off first 15 instances
+        $first = array_slice($result, 0, $cut);
+        // Cycles through each instance
+        foreach ($first as $key => $row) {
+            // Replaces safety character with space
+            $key = str_replace('-', ' ', $key);
+            // Formats each instance for graph
+            $overview = $overview . '["'.$key.'", '.$row.'], ';
+        }
+        // Splits off rest of array
+        $second = array_slice($result, $cut);
+        $other = 0;
+        foreach ($second as $key => $row) {
+            // Adds each instance's value together
+            $other = $other + $row;
+        }
+        // Adds 'other' instance to main blob
+        $overview = $overview . '["Other", '.$other.']';
 
-    //COMPLETED
-    $result = array_count_values(str_word_count($total_c, 1));
-    arsort($result);
-    $first = array_slice($result, 0, $cut);
-    foreach ($first as $key => $row) {
-      $key = str_replace('-', ' ', $key);
-      $completed = $completed . '["'.$key.'", '.$row.'], ';
-    }
-    $second = array_slice($result, $cut);
-    $other = 0;
-    foreach ($second as $key => $row) {
-      $other = $other + $row;
-    }
-    $completed = $completed . '["Other", '.$other.']';
+        //COMPLETED
+        $result = array_count_values(str_word_count($total_c, 1));
+        arsort($result);
+        $first = array_slice($result, 0, $cut);
+        foreach ($first as $key => $row) {
+            $key = str_replace('-', ' ', $key);
+            $completed = $completed . '["'.$key.'", '.$row.'], ';
+        }
+        $second = array_slice($result, $cut);
+        $other = 0;
+        foreach ($second as $key => $row) {
+            $other = $other + $row;
+        }
+        $completed = $completed . '["Other", '.$other.']';
 
-    //CURRENTLY WATCHING
-    $result = array_count_values(str_word_count($total_cw, 1));
-    arsort($result);
-    $first = array_slice($result, 0, $cut);
-    foreach ($first as $key => $row) {
-      $key = str_replace('-', ' ', $key);
-      $currently = $currently . '["'.$key.'", '.$row.'], ';
-    }
-    $second = array_slice($result, $cut);
-    $other = 0;
-    foreach ($second as $key => $row) {
-      $other = $other + $row;
-    }
-    $currently = $currently . '["Other", '.$other.']';
+        //CURRENTLY WATCHING
+        $result = array_count_values(str_word_count($total_cw, 1));
+        arsort($result);
+        $first = array_slice($result, 0, $cut);
+        foreach ($first as $key => $row) {
+            $key = str_replace('-', ' ', $key);
+            $currently = $currently . '["'.$key.'", '.$row.'], ';
+        }
+        $second = array_slice($result, $cut);
+        $other = 0;
+        foreach ($second as $key => $row) {
+            $other = $other + $row;
+        }
+        $currently = $currently . '["Other", '.$other.']';
 
-    //PLAN TO WATCH
-    $result = array_count_values(str_word_count($total_ptw, 1));
-    arsort($result);
-    $first = array_slice($result, 0, $cut);
-    foreach ($first as $key => $row) {
-      $key = str_replace('-', ' ', $key);
-      $plan = $plan . '["'.$key.'", '.$row.'], ';
-    }
-    $second = array_slice($result, $cut);
-    $other = 0;
-    foreach ($second as $key => $row) {
-      $other = $other + $row;
-    }
-    $plan = $plan . '["Other", '.$other.']';
+        //PLAN TO WATCH
+        $result = array_count_values(str_word_count($total_ptw, 1));
+        arsort($result);
+        $first = array_slice($result, 0, $cut);
+        foreach ($first as $key => $row) {
+            $key = str_replace('-', ' ', $key);
+            $plan = $plan . '["'.$key.'", '.$row.'], ';
+        }
+        $second = array_slice($result, $cut);
+        $other = 0;
+        foreach ($second as $key => $row) {
+            $other = $other + $row;
+        }
+        $plan = $plan . '["Other", '.$other.']';
 
-    function pieColour() {
-      $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
-      shuffle($colours);
-      $colour = '';
-      foreach ($colours as $row) {
-        $colour = $colour.'"#'.$row.'", ';
-      }
-      $colour = substr($colour, 0, -2);
-      return $colour;
-    }
-
-    ob_start();
-    flush();
+        function pieColour() {
+            $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
+            shuffle($colours);
+            $colour = '';
+            foreach ($colours as $row) {
+                $colour = $colour.'"#'.$row.'", ';
+            }
+            $colour = substr($colour, 0, -2);
+            return $colour;
+        }
     ?>
 
     <div class="col-lg-6 no-gutter">
