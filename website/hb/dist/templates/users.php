@@ -77,14 +77,10 @@
         $json = file_get_contents($url);
         $recent = json_decode($json, true);
 
-        for ($x=0; $x<=3; $x++) {
-            if (strlen($recent['anime'][$x]['id']) != null){
+        for ($x=0; $x<4; $x++) {
+            if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
 
-                if ($x==3) { //#4
-                    $hidden = ' hidden-md hidden-sm';
-                } else {
-                    $hidden = '';
-                }
+                $hidden =  ($x === 3) ? ' hidden-md hidden-sm' : '';
 
                 $cover = $recent['anime'][$x]['poster_image'];
                 $uri = $recent['anime'][$x]['id'];
@@ -92,7 +88,7 @@
                 $episodes = $recent['anime'][$x]['episode_count'];
                 $watched = $recent['library_entries'][$x]['episodes_watched'];
                 $status = $recent['library_entries'][$x]['status'];
-                $time = time()-(strtotime($recent['library_entries'][$x]['last_watched']));
+                $time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
                 $last = seconds2human($time);
 
                 /*
