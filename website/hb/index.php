@@ -1,4 +1,5 @@
 <?php
+    echo $_SERVER['HTTP_HOST'];
     if ($_POST['type'] == 'info' && strlen($_POST['user']) > 0) {
         $user = $_POST['user'];
         header("Location: http://wopian.me/$user");
