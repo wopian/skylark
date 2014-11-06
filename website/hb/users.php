@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<?
-  ob_end_flush();
+<?php
 
   $user = $_GET['user'];
   $userh = ucfirst($user);
@@ -16,9 +15,6 @@
   $url = "http://hummingbird.me/api/v1/users/".$user;
   $json = file_get_contents($url);
   $data = json_decode($json, true);
-
-  ob_start();
-  flush();
 
 ?>
 
@@ -84,12 +80,7 @@
   <div class="cover cover-loading">
     <div class="spinner">
       <div class="double-bounce1"></div>
-      <!--<div class="double-bounce2"></div>-->
     </div>
-  </div>
-
-  <div id="container">
-    <!--<div id="cover loading" style="background-image: url('https://s3.amazonaws.com/f.cl.ly/items/062K3X2O2724291l0X0y/cover-default.png')">-->
   </div>
 
 
@@ -103,20 +94,14 @@
 
   <script>
     $(document).ready(function start(){
+      $.material.init();
+
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
+        $("body").append(result);
         setTimeout(function(){
           $(".cover-loading").fadeOut('slow');
         }, 400);
-        setTimeout(function(){
-          $("#container").hide().html(result).fadeIn('slow');
-        }, 500);
       },'html');
-    });
-  </script>
-
-  <script>
-    $(document).ready(function() {
-      $.material.init();
     });
   </script>
 

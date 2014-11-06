@@ -1,10 +1,10 @@
 <?php
-    if ($_POST['type'] == 'info' && strlen($_POST['user']) > 0) {
+    if ($_POST['type'] == 'info' && !empty($_POST['user'])) {
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user");
         //header("Location: http://wopian.me/$user");
         exit;
-    } elseif ($_POST['type'] == 'library' && strlen($_POST['user']) > 0) {
+    } elseif ($_POST['type'] == 'library' && !empty($_POST['user'])) {
         $user = $_POST['user'];
         header("Location: http://9.dev.boocmraft.co.uk/$user/library");
         //header("Location: http://wopian.me/$user/library");
