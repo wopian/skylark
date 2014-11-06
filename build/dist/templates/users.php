@@ -20,7 +20,7 @@
 
       $test = ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) ? 'and needed' : 'and not needed';
 
-      return "$M $d $h $and $m of anime<br> $test";
+      return "$M $d $h $and $m of anime";
   }
 
   function secondsToTime($seconds) {
