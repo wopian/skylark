@@ -3,6 +3,10 @@
         $user = $_POST['user'];
         header("Location: http://wopian.me/$user");
         exit;
+    } elseif ($_POST['type'] == 'library' && strlen($_POST['user']) > 0) {
+        $user = $_POST['user'];
+        header("Location: http://wopian.me/$user/library");
+        exit;
     }
 ?>
 
@@ -87,7 +91,6 @@
             <div class="form-group">
               <input type="hidden" name="type" value="info">
               <button type="submit" class="btn btn-default btn-lg btn-flat btn-block">View Stats</button>
-              <!--<a class="btn btn-flat btn-material-teal btn-lg btn-block" onclick="infoUser()">View Stats</a>-->
             </div>
           </fieldset>
         </form>
@@ -98,7 +101,7 @@
       <div class="panel-body">
         <h2><i class="mdi-maps-local-library"></i> User Library</h2>
         <p>Something cool here?</p>
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="POST" action="/">
           <fieldset>
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
@@ -108,8 +111,8 @@
             </div>
 
             <div class="form-group">
-              <!--<button type="submit" class="btn btn-default btn-lg btn-flat btn-block withripple">View Stats<div class="ripple-wrapper"></div></button>-->
-              <a class="btn btn-flat btn-material-teal btn-lg btn-block" onclick="libraryUser()">View Stats</a>
+              <input type="hidden" name="type" value="library">
+              <button type="submit" class="btn btn-default btn-lg btn-flat btn-block">View Stats</button>
             </div>
           </fieldset>
         </form>
