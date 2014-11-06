@@ -1,3 +1,11 @@
+<?php
+    if ($_POST['type'] == 'info' && $_POST['user'] > 0) {
+        $user = $_POST['user'];
+        header("Location: http://wopian.me/$user");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#">
 
@@ -67,7 +75,7 @@
       <div class="panel-body">
         <h2><i class="mdi-social-poll"></i> User Info</h2>
         <p>Something cool here?</p>
-        <form class="form-horizontal" method="GET" action="users.php">
+        <form class="form-horizontal" method="POST" action="/">
           <fieldset>
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
@@ -77,6 +85,7 @@
             </div>
 
             <div class="form-group">
+              <input type="hidden" name="type" value="info">
               <button type="submit" class="btn btn-default btn-lg btn-flat btn-block">View Stats</button>
               <!--<a class="btn btn-flat btn-material-teal btn-lg btn-block" onclick="infoUser()">View Stats</a>-->
             </div>
