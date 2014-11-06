@@ -2,11 +2,18 @@
     echo $_SERVER['HTTP_HOST'];
     if ($_POST['type'] == 'info' && strlen($_POST['user']) > 0) {
         $user = $_POST['user'];
-        header("Location: http://wopian.me/$user");
+        if ($_SERVER['HTTP_HOST'] == '9.dev.boomcraft.co.uk') {
+            header("Location: http://9.dev.boocmraft.co.uk/$user");
+        } else {
+            header("Location: http://wopian.me/$user");
+        }
         exit;
     } elseif ($_POST['type'] == 'library' && strlen($_POST['user']) > 0) {
         $user = $_POST['user'];
-        header("Location: http://wopian.me/$user/library");
+        if ($_SERVER['HTTP_HOST'] == '9.dev.boomcraft.co.uk') {
+            header("Location: http://9.dev.boocmraft.co.uk/$user/library");
+        } else {
+            header("Location: http://wopian.me/$user/library");
         exit;
     }
 ?>
