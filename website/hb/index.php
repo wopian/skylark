@@ -92,7 +92,7 @@
 
             <div class="form-group">
               <input type="hidden" name="type" value="info">
-              <button type="submit" class="btn btn-default btn-lg btn-flat btn-block">View Stats</button>
+              <button type="submit" class="btn btn-material-teal btn-lg btn-flat btn-block">View Stats</button>
             </div>
           </fieldset>
         </form>
@@ -114,7 +114,7 @@
 
             <div class="form-group">
               <input type="hidden" name="type" value="library">
-              <button type="submit" class="btn btn-default btn-lg btn-flat btn-block">View Stats</button>
+              <button type="submit" class="btn btn-material-teal btn-lg btn-flat btn-block">View Stats</button>
             </div>
           </fieldset>
         </form>
