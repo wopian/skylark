@@ -19,7 +19,7 @@
           $and = '';
       }
 
-      return "$M $d $h $and $m";
+      return "$M $d $h $m $and $s";
   }
 
   $waifu = $data['waifu'];
