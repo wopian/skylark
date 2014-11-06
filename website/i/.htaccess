@@ -2,7 +2,7 @@
   Options +FollowSymLinks -MultiViews
 
   RewriteEngine On
-  RewriteBase   /
+  RewriteBase   i/
 
   RewriteCond  %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
