@@ -80,21 +80,6 @@
         $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
         $json = file_get_contents($url);
         $recent = json_decode($json, true);
-        
-        function seconds2human($ss) {
-            $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
-            $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
-            $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
-            $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
-
-            if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
-                $and = 'and';
-            } else {
-                $and = '';
-            }
-
-            return "$M $d $h $and $m";
-        }
 
         for ($x=0; $x<=3; $x++) {
           if (strlen($recent['anime'][$x]['id']) != null){
@@ -109,7 +94,7 @@
           $episodes = $recent['anime'][$x]['episode_count'];
           $watched = $recent['library_entries'][$x]['episodes_watched'];
           $status = $recent['library_entries'][$x]['status'];
-          $time = time()-strtotime($recent['library_entries'][$x]['last_watched']);
+          $time = strtotime($recent['library_entries'][$x]['last_watched']);
           $last = seconds2human($time);
           
           /* if($last<60){$last=$last." seconds";}
