@@ -296,13 +296,11 @@
   $(document).ready(function() {
     $.material.init();
   });
-
   function infoUser() {
     username = document.getElementById('infoUser').value;
     /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
     location.href = '' + username;
   };
-
   function libraryUser() {
     username = document.getElementById('libraryUser').value;
     /*window.history.replaceState('page2', 'Title', '/user/' + userid);*/
