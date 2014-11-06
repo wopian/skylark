@@ -1,5 +1,5 @@
 <?php
-    if ($_POST['type'] == 'info' && $_POST['user'] > 0) {
+    if ($_POST['type'] == 'info' && strlen($_POST['user']) > 0) {
         $user = $_POST['user'];
         header("Location: http://wopian.me/$user");
         exit;
