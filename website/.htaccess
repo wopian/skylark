@@ -2,6 +2,10 @@ Redirect 302 /hb/*  /
 Redirect 302 /hb/    /
 Redirect 302 /hb    /
 
+Redirect 302 /dev/*   /
+Redirect 302 /dev/     /
+Redirect 302 /dev     /
+
 Redirect 302 /i/*   /
 Redirect 302 /i/     /
 Redirect 302 /i     /
