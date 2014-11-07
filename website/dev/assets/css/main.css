@@ -27,8 +27,7 @@ body {
     margin: 8px 0;
 }
 
-.panel img {
-    border-bottom: 5px solid teal;
+.panel img:hover {
 }
 
 .caption {
