@@ -16,7 +16,7 @@
     <main>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -104,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -115,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -137,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -159,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -170,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -192,7 +192,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -203,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -225,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -236,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -247,7 +247,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -258,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -269,7 +269,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -280,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -291,7 +291,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -302,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -313,7 +313,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -324,7 +324,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -335,7 +335,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
@@ -346,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-1">
                 <div class="panel">
                     <img src="https://static.hummingbird.me/anime/poster_images/000/008/147/large/b0012149_53d85a49c60c2.jpg?1408463649">
                     <div class="caption">
