@@ -220,7 +220,7 @@
       }
       // Adds 'other' instance to main blob
       $overview = $overview . '["Other", '.$other.']';
-      if (!empty($overview)) {
+      if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Genre Overview</p>
@@ -243,7 +243,7 @@
           $other = $other + $row;
       }
       $completed = $completed . '["Other", '.$other.']';
-      if (!empty($completed)) {
+      if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Completed Anime</p>
@@ -266,7 +266,7 @@
           $other = $other + $row;
       }
       $currently = $currently . '["Other", '.$other.']';
-      if (!empty($currently)) {
+      if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Currently Watching Anime</p>
@@ -289,7 +289,7 @@
           $other = $other + $row;
       }
       $plan = $plan . '["Other", '.$other.']';
-      if (!empty($plan)) {
+      if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Plan to Watch Anime</p>
