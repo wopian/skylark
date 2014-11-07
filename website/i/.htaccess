@@ -5,7 +5,7 @@
 
   RewriteCond  %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^denied i/denied.shtml [NC,L]
+  RewriteRule ^denied denied.shtml [NC,L]
 </IfModule>
 
-ErrorDocument 404 /i/denied.shtml
+ErrorDocument 404 denied.shtml
