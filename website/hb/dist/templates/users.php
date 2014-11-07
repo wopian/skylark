@@ -8,7 +8,7 @@
     $username = $data['name'];
     $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
-    function seconds2human($ss) {
+    function seconds2human($ss, $recent = false) {
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
         $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
         $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
@@ -19,7 +19,21 @@
         } else {
             $and = '';
         }
-        return "$y $M $d $h $and $m";
+        if ($recent === false) {
+            return "$y $M $d $h $and $m";
+        } else {
+            if ($y != '') {
+                return "$y";
+            } elseif ($y == '' && $M != '') {
+                return "$M";
+            } elseif ($y == '' && $M == '' && $d != '') {
+                return "$d";
+            } elseif ($y == '' && $M == '' && $d == '' && $h != '') {
+                return "$h";
+            } elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') {
+                return "$m";
+            }
+        }
     }
 
     $waifu = $data['waifu'];
