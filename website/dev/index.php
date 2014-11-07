@@ -4,6 +4,7 @@
 <head>
     <title>Hummingbird Tools</title>
     <link rel="stylesheet" href="/assets/css/flexboxgrid.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
 </head>
 
