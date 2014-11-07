@@ -5,6 +5,9 @@
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
+    $username = $data['user'];
+    $userplural = (substr($username, -1) == "s") ? "'" : "'s";
+
     function seconds2human($ss) {
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
         $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
@@ -40,7 +43,7 @@
 
   <div class="page-header">
     <div class="col-lg-6 col-md-6 col-sm-6">
-      <h1><?=$userh?></h1>
+      <h1><?=$username?></h1>
       <p class="lead"><?=$data['bio']?></p>
     </div>
 

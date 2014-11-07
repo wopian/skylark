@@ -14,6 +14,9 @@
   }
   $header = $userh.$plural;
 
+  $username = $data['user'];
+  $userplural = (substr($username, -1) == "s") ? "'" : "'s";
+
   $cu = '';
   $co = '';
   $pl = '';
@@ -74,11 +77,11 @@
 
   if(strlen($status)<1){
     $meta_status = '';
-    $meta_description = 'View all of '.$header.' anime.';
+    $meta_description = 'View all of '.$userplural.' anime.';
   }
   else{
     $meta_status = '/'.$status;
-    $meta_description = 'View '.$header.' '.strtolower($active).' anime.';
+    $meta_description = 'View '.$userplural.' '.strtolower($active).' anime.';
   }
 
   ob_start();
@@ -95,20 +98,20 @@
 ?>
 
 <head>
-  <title><?=$header?> Library - Hummingbird Tools</title>
+  <title><?=$userplural?> Library - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?=$meta_description?>">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Library,User Library,<?=$user?>">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Library,User Library,<?=$username?>">
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$data['avatar']?>" />
   <meta property="og:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>/library/<?=$meta_status?>" />
-  <meta property="og:title" content="<?=$header?> Library - Hummingbird Tools" />
+  <meta property="og:title" content="<?=$userplural?> Library - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=$header?> Library - Hummingbird Tools" />
+  <meta name="twitter:title" content="<?=$userplural?> Library - Hummingbird Tools" />
   <meta name="twitter:description" content="<?=$meta_description?>" />
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
   <meta name="twitter:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>/library<?=$meta_status?>" />
@@ -193,7 +196,7 @@ flush();
 
     <div class="page-header">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <h1><?echo $header?> Library</h1>
+        <h1><?echo $userplural?> Library</h1>
         <br>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">

@@ -11,18 +11,21 @@
     $url = "http://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
+
+    $username = $data['user'];
+    $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title><?=$header?> Profile - Hummingbird Tools</title>
+  <title><?=$userplural?> Profile - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View <?=$header?> profile.">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user?>">
+  <meta name="description" content="View <?=$userplural?> profile.">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$username?>">
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$data['avatar']?>" />
@@ -31,8 +34,8 @@
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=$header?> Profile - Hummingbird Tools" />
-  <meta name="twitter:description" content="View <?=$header?> profile." />
+  <meta name="twitter:title" content="<?=$userplural?> Profile - Hummingbird Tools" />
+  <meta name="twitter:description" content="View <?=$userplural?> profile." />
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
   <meta name="twitter:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>" />
 
