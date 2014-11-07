@@ -89,6 +89,9 @@
         $recent = json_decode($json, true);
 
         for ($x=0; $x<4; $x++) {
+            if (empty($recent['anime'][0]['id'])) {
+              echo "$username hasn't watched any anime recently.";
+            }
             if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
 
                 $hidden =  ($x === 3) ? ' hidden-md hidden-sm' : '';
