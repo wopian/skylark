@@ -22,17 +22,11 @@
         if ($recent === false) {
             return "$y $M $d $h $and $m";
         } else {
-            if ($y != '') {
-                return "$y";
-            } elseif ($y == '' && $M != '') {
-                return "$M";
-            } elseif ($y == '' && $M == '' && $d != '') {
-                return "$d";
-            } elseif ($y == '' && $M == '' && $d == '' && $h != '') {
-                return "$h";
-            } elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') {
-                return "$m";
-            }
+            if ($y != '') { return "$y"; }
+            elseif ($y == '' && $M != '') { return "$M"; }
+            elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return "$h"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
         }
     }
 
@@ -131,18 +125,17 @@
                         $status = 'Dropped after '.$watched.' episodes.';
                         break;
                 }
+                echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
+                        <div class="thumbnail card-image">
+                          <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
+                          <div class="caption">
+                            <h4>'.$title.'</h4>
+                            <p>'.$status.'</p>
+                            <p>'.$last.' ago</p>
+                          </div>
+                        </div>
+                      </div>';
             }
-
-            echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
-                    <div class="thumbnail card-image">
-                      <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
-                      <div class="caption">
-                        <h4>'.$title.'</h4>
-                        <p>'.$status.'</p>
-                        <p>'.$last.' ago</p>
-                      </div>
-                    </div>
-                  </div>';
         }
     ?>
   </div>
