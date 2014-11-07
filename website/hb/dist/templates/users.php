@@ -91,6 +91,7 @@
         for ($x=0; $x<4; $x++) {
             if (empty($recent['anime'][0]['id'])) {
               echo "$username hasn't watched any anime recently.";
+              break;
             }
             if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
 
