@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow(0 1px 1.5px rgba(#000, 0.12), 0 1px 1px rgba(#000, 0.24));
+}
