@@ -106,16 +106,7 @@
                 $watched = $recent['library_entries'][$x]['episodes_watched'];
                 $status = $recent['library_entries'][$x]['status'];
                 $time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
-                $last = seconds2human($time);
-
-                /*
-                if($last<60){$last=$last." seconds";}
-                elseif($last<3600){$last = round($last/60,0)." minutes";}
-                elseif($last<86400){$last=round($last/60/60,0)." hours";}
-                elseif($last<2629740){$last=round($last/60/60/24,0)." days";}
-                elseif($last<31556900){$last=round($last/60/60/24/7/4,0)." months";}
-                elseif($last>31556900){$last=round($last/60/60/24/7/4/12,0)." years";}
-                */
+                $last = seconds2human($time, true);
 
                 if ($episodes == 0 || $episodes == null || $episodes == '?') {
                     $episodes='∞';
