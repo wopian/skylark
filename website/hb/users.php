@@ -12,7 +12,7 @@
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
-    $username = $data['user'];
+    $username = $data['username'];
     $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 ?>
 
