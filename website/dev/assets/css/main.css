@@ -1,9 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
     background: #eee;
 }
 
@@ -16,6 +20,23 @@ main {
     background: #fff;
     border-radius: 2px;
     box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.caption {
+    padding: 9px;
+}
+
+.caption .lead {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.caption p:not(.lead) {
+
 }
 
 #dploy {
