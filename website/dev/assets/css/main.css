@@ -19,7 +19,12 @@ main {
 }
 
 #dploy {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: border-box;
 }

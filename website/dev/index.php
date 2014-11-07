@@ -16,8 +16,13 @@
     <main>
 
         <div class="row">
-            <div class="panel col-md-4">
-                <div class="box">Responsive</div>
+            <div class="col-md-3">
+                <div class="panel">
+                    <img src="http://hummingbird.me/anime/kiseijuu">
+                    <p class="lead">Kiseijuu: Sei no Kakuritsu</p>
+                    <p>Watched 5 of 24 episodes</p>
+                    <p>18 hours ago</p>
+                </div>
             </div>
         </div>
 
