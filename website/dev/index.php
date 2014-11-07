@@ -14,6 +14,8 @@
         </div>
     </div>
 
+    <img id="dploy" src="https://wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
+
 </body>
 
 </html>
