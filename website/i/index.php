@@ -2,7 +2,7 @@
 header("Content-Type: text/text");
 
 $key = "befd7918ae80d68cfe03530e453ceb587a053144";
-$uploadhost = "http://i.wopian.me";
+$uploadhost = "http://i.wopian.me/";
 $redirect = "http://i.wopian.me/denied";
 
 #Comment this next line if you want Robots to index this site.
