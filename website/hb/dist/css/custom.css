@@ -41,7 +41,7 @@
   .cover {
     height: 200px;
   }
-  .page-header, .page-header > .text-right {
+  .page-header, .page-header > .text-right, .row > .lead {
     text-align: center;
   }
 

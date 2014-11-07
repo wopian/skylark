@@ -220,6 +220,14 @@
       }
       // Adds 'other' instance to main blob
       $overview = $overview . '["Other", '.$other.']';
+      if (!empty($overview)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">Genre Overview</p>
+                  </div>
+                  <div id="overview" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
 
       //COMPLETED
       $result = array_count_values(str_word_count($total_c, 1));
@@ -235,6 +243,15 @@
           $other = $other + $row;
       }
       $completed = $completed . '["Other", '.$other.']';
+      if (!empty($completed)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">Completed Anime</p>
+                  </div>
+                  <div id="completed" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
+
       //CURRENTLY WATCHING
       $result = array_count_values(str_word_count($total_cw, 1));
       arsort($result);
@@ -249,6 +266,15 @@
           $other = $other + $row;
       }
       $currently = $currently . '["Other", '.$other.']';
+      if (!empty($currently)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">Currently Watching Anime</p>
+                  </div>
+                  <div id="currently" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
+
       //PLAN TO WATCH
       $result = array_count_values(str_word_count($total_ptw, 1));
       arsort($result);
@@ -263,6 +289,15 @@
           $other = $other + $row;
       }
       $plan = $plan . '["Other", '.$other.']';
+      if (!empty($plan)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">Plan to Watch Anime</p>
+                  </div>
+                  <div id="overview" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
+
       function pieColour() {
           $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
           shuffle($colours);
@@ -274,34 +309,6 @@
           return $colour;
       }
   ?>
-
-  <div class="col-lg-6 no-gutter">
-    <div class="col-lg-12">
-      <p class="h1">Genre Overview</p>
-    </div>
-    <div id="overview" class="col-lg-12" style="height: auto; max-width: 570px"></div>
-  </div>
-
-  <div class="col-lg-6 no-gutter">
-    <div class="col-md-6 col-lg-12">
-      <p class="h1">Completed Anime</p>
-    </div>
-    <div id="completed" class="col-lg-12" style="height: auto; max-width: 570px"></div>
-  </div>
-
-  <div class="col-lg-6 no-gutter">
-    <div class="col-lg-12">
-      <p class="h1">Currently Watching Anime</p>
-    </div>
-    <div id="currently" class="col-lg-12" style="height: auto; max-width: 570px"></div>
-  </div>
-
-  <div class="col-lg-6 no-gutter">
-    <div class="col-lg-12">
-      <p class="h1">Plan to Watch Anime</p>
-    </div>
-    <div id="plan" class="col-lg-12" style="height: auto; max-width: 570px"></div>
-  </div>
 
 </div>
 
