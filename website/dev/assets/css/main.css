@@ -27,6 +27,10 @@ body {
     margin: 8px 0;
 }
 
+.panel img {
+    border-bottom: 5px solid teal;
+}
+
 .caption {
     padding: 9px;
 }
