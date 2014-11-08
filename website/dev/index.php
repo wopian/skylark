@@ -47,7 +47,7 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="container">
 
     <div class="navbar navbar-material-teal">
         <div class="container">
@@ -85,41 +85,30 @@
 
     <img id="dploy" src="https://wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
 
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-    <script>
-        $('.spinner').show();
-
-        var post_data = "<?=$ajaxData?>";
-        $.ajax({
-            url: '/assets/modules/processor.php',
-            type: 'POST',
-            data: post_data,
-            dataType: 'html',
-            success: function(data) {
-                $('body').html(data);
-                //Moved the hide event so it waits to run until the prior event completes
-                //It hide the spinner immediately, without waiting, until I moved it here
-                $('.spinner').hide();
-            },
-            error: function() {
-                alert("Something went wrong!");
-            }
-        });
-    </script>
-
-    <script src="/assets/javascript/ripples.min.js"></script>
-    <script src="/assets/javascript/material.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $.material.init();
-        });
-    </script>
-
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
-
 </body>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $('.spinner').show();
+
+    var post_data = "<?=$ajaxData?>";
+    $.ajax({
+        url: '/assets/modules/processor.php',
+        type: 'POST',
+        data: post_data,
+        dataType: 'html',
+        success: function(data) {
+            $('#container').html(data);
+            //Moved the hide event so it waits to run until the prior event completes
+            //It hide the spinner immediately, without waiting, until I moved it here
+            $('.spinner').hide();
+        },
+        error: function() {
+            alert("Something went wrong!");
+        }
+    });
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
 </html>
