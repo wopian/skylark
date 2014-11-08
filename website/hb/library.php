@@ -74,7 +74,7 @@
   $json = file_get_contents($url);
   $data = json_decode($json, true);
 
-  $username = $data['user'];
+  $username = ucfirst($data['name']);
   $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
   if(strlen($status)<1){

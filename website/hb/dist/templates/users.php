@@ -5,7 +5,7 @@
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
-    $username = $data['name'];
+    $username = ucfirst($data['name']);
     $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
     function seconds2human($ss, $recent = false) {
