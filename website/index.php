@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    Nothing here yet, Hummingbird Tools is located <a href="http://hb.wopian.me">here</a>.
+    Nothing here yet, Hummingbird Tools is located <a href="//hb.wopian.me">here</a>.
 </body>
 
 </html>

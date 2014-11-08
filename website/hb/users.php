@@ -1,7 +1,7 @@
 <?php
     $user = $_GET['user'];
     $userh = ucfirst($user);
-    $url = "http://hummingbird.me/api/v1/users/".$user;
+    $url = "//hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
@@ -22,7 +22,7 @@
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$data['avatar']?>" />
-  <meta property="og:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>" />
+  <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
   <meta property="og:title" content="<?=$header?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
@@ -30,7 +30,7 @@
   <meta name="twitter:title" content="<?=$userplural?> Profile - Hummingbird Tools" />
   <meta name="twitter:description" content="View <?=$userplural?> profile." />
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
-  <meta name="twitter:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>" />
+  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
 
   <link href="/dist/css/custom.css" rel="stylesheet">
 </head>
@@ -78,7 +78,7 @@
   </div>
 
 
-  <img id="dploy" src="https://wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
+  <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
 
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

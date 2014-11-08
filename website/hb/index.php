@@ -1,14 +1,14 @@
 <?php
     if ($_POST['type'] == 'info' && !empty($_POST['infoUser'])) {
         $user = $_POST['infoUser'];
-        header("Location: http://hb.wopian.me/$user");
+        header("Location: //hb.wopian.me/$user");
     }
 
     if ($_POST['type'] == 'library' && !empty($_POST['libraryUser'])) {
         $user = $_POST['libraryUser'];
         $status = '/' . $_POST['libraryStatus'];
         if ($status == '/') { $status = ''; }
-        header("Location: http://hb.wopian.me/$user/library$status");
+        header("Location: //hb.wopian.me/$user/library$status");
     }
 ?>
 
@@ -23,16 +23,16 @@
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="http://9.dev.boomcraft.co.uk/dist/images/avatar_teal.png" />
-  <meta property="og:url" content="http://9.dev.boomcraft.co.uk" />
+  <meta property="og:image" content="//9.dev.boomcraft.co.uk/dist/images/avatar_teal.png" />
+  <meta property="og:url" content="//9.dev.boomcraft.co.uk" />
   <meta property="og:title" content="Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
   <meta name="twitter:title" content="Hummingbird Tools" />
   <meta name="twitter:description" content="A variety of tools and stats for Hummingbird." />
-  <meta name="twitter:image" content="http://9.dev.boomcraft.co.uk/dist/images/twitter_teal.png" />
-  <meta name="twitter:url" content="http://9.dev.boomcraft.co.uk" />
+  <meta name="twitter:image" content="//9.dev.boomcraft.co.uk/dist/images/twitter_teal.png" />
+  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk" />
 
   <link href="/dist/css/custom.css" rel="stylesheet">
 </head>
@@ -202,7 +202,7 @@
       <div class="panel-body">
         <h2>Cover Images</h2>
         <p>Something cool here?</p>
-        <img class="img-responsive" src="http://anime.jamesharris.net/assets/images/cover/examples/normal1.png" alt="Cover image example."><br />
+        <img class="img-responsive" src="//dist/images/covers/default/normal1.png" alt="Cover image example."><br />
 
         <form class="form-horizontal">
           <fieldset>
@@ -334,7 +334,7 @@
 
   </div>
 
-  <img id="dploy" src="https://wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
+  <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
 
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

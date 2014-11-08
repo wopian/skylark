@@ -1,7 +1,7 @@
 <?php
     $user = $_GET['user'];
     $userh = ucfirst($user);
-    $url = "http://hummingbird.me/api/v1/users/".$user;
+    $url = "//hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
@@ -84,7 +84,7 @@
 
   <div class="row">
     <?php
-        $url = "http://hummingbird.me/library_entries?user_id=".$user."&recent=true";
+        $url = "//hummingbird.me/library_entries?user_id=".$user."&recent=true";
         $json = file_get_contents($url);
         $recent = json_decode($json, true);
 
@@ -131,7 +131,7 @@
                 }
                 echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
                         <div class="thumbnail">
-                          <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
+                          <a href="//hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
                           <div class="caption">
                             <h4>'.$title.'</h4>
                             <p>'.$status.'</p>
@@ -145,7 +145,7 @@
   </div>
 
   <?php
-      $url = "http://hummingbird.me/library_entries?user_id=".$user;
+      $url = "//hummingbird.me/library_entries?user_id=".$user;
       $json = file_get_contents($url);
       $genre = json_decode($json, true);
       $count = count($genre['anime'])-1;
