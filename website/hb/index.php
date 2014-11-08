@@ -4,9 +4,11 @@
         header("Location: http://hb.wopian.me/$user");
     }
 
-    if ($_POST['type'] == 'library' && !empty($_POST['user'])) {
-        $user = $_POST['user'];
-        header("Location: http://hb.wopian.me/$user/library");
+    if ($_POST['type'] == 'library' && !empty($_POST['libraryUser'])) {
+        $user = $_POST['libraryUser'];
+        $status = '/' . $_POST['libraryStatus'];
+        if (strlen($status == 1)) { $status = '' }
+        header("Location: http://hb.wopian.me/$user/library$status");
     }
 ?>
 
