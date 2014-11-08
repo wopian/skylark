@@ -130,7 +130,7 @@
                         break;
                 }
                 echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
-                        <div class="thumbnail card-image">
+                        <div class="thumbnail">
                           <a href="http://hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
                           <div class="caption">
                             <h4>'.$title.'</h4>
@@ -294,7 +294,7 @@
                   <div class="col-lg-12">
                     <p class="h1">Plan to Watch Anime</p>
                   </div>
-                  <div id="overview" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                  <div id="plan" class="col-lg-12" style="height: auto; max-width: 570px"></div>
                 </div>';
       }
 

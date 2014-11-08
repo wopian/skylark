@@ -125,11 +125,11 @@
   $status_selector = '<a class="btn btn-default col-xs-9 disabled">'.$active.'</a>
                       <a class="btn btn-default col-xs-3 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status1[0].'">'.$status1[1].'</a></li>
-                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status2[0].'">'.$status2[1].'</a></li>
-                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status3[0].'">'.$status3[1].'</a></li>
-                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status4[0].'">'.$status4[1].'</a></li>
-                        <li><a rel="prerender" href="/users/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
+                        <li><a rel="prerender" href="/'.$user.'/library/'.$status1[0].'">'.$status1[1].'</a></li>
+                        <li><a rel="prerender" href="/'.$user.'/library/'.$status2[0].'">'.$status2[1].'</a></li>
+                        <li><a rel="prerender" href="/'.$user.'/library/'.$status3[0].'">'.$status3[1].'</a></li>
+                        <li><a rel="prerender" href="/'.$user.'/library/'.$status4[0].'">'.$status4[1].'</a></li>
+                        <li><a rel="prerender" href="/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
                       </ul>';
 
 ob_start();
@@ -255,7 +255,7 @@ flush();
         }
 
         echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-          <div class="thumbnail card-image">
+          <div class="thumbnail">
             <a href="'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
             <div class="caption">
               <h4>'.$title.'</h4>

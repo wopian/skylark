@@ -1,6 +1,6 @@
 <?php
-    if ($_POST['type'] == 'info' && !empty($_POST['user'])) {
-        $user = $_POST['user'];
+    if ($_POST['type'] == 'info' && !empty($_POST['infoUser'])) {
+        $user = $_POST['infoUser'];
         header("Location: http://hb.wopian.me/$user");
     }
 
@@ -84,7 +84,7 @@
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" name="user" id="infoUser" placeholder="Enter a Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" name="infoUser" id="infoUser" placeholder="Enter a Hummingbird username." type="text">
               </div>
             </div>
 
@@ -106,13 +106,61 @@
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" id="libraryUser" placeholder="Enter a Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" name="libraryUser" id="libraryUser" placeholder="Enter a Hummingbird username." type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-1">Status</label>
+              <div class="col-lg-11">
+                <div class="col-lg-4">
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus1" value="" checked="" type="radio">
+                      All
+                    </label>
+                  </div>
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus2" value="plan-to-watch" type="radio">
+                      Plan To Watch
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus3" value="completed" type="radio">
+                      Completed
+                    </label>
+                  </div>
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus4" value="on-hold" type="radio">
+                      On Hold
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus5" value="currently-watching" type="radio">
+                      Currently Watching
+                    </label>
+                  </div>
+                  <div class="radio radio-material-teal">
+                    <label>
+                      <input name="libraryStatus" id="libraryStatus6" value="dropped" type="radio">
+                      Dropped
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="form-group">
               <input type="hidden" name="type" value="library">
-              <button type="submit" class="btn btn-material-teal btn-lg btn-flat btn-block">View Stats</button>
+              <button type="submit" class="btn btn-material-teal btn-lg btn-flat btn-block">View Library</button>
             </div>
           </fieldset>
         </form>
@@ -141,7 +189,7 @@
 
             <div class="form-group">
               <!--<button type="submit" class="btn btn-default btn-lg btn-flat btn-block withripple">View Stats<div class="ripple-wrapper"></div></button>-->
-              <a class="btn btn-flat btn-material-teal btn-lg btn-block">View Stats</a>
+              <a class="btn btn-flat btn-material-teal btn-lg btn-block">Compare Users</a>
             </div>
           </fieldset>
         </form>
