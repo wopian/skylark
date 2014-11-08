@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-
 <?php
-
     $user = $_GET['user'];
     $status = $_GET['status'];
     $url = "http://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
-    $username = $data['name'];
-    $username = ucfirst($username);
+
+    $username = ucfirst($data['name']);
     $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
     function seconds2human($ss, $recent = false) {
@@ -101,6 +97,8 @@
     $meta_description = 'View '.$userplural.' '.strtolower($active).' anime.';
   }
 ?>
+<!DOCTYPE html>
+<html>
 
 <head>
   <title><?=$userplural?> Library - Hummingbird Tools</title>
