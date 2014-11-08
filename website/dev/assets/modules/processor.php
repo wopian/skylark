@@ -3,7 +3,7 @@
 
     switch ($page) {
         case 'index';
-            require_once('//dev.hb.wopian.me/assets/modules/index.php');
+            include('/assets/modules/index.php');
             break;
         case "user":
             echo "user";
