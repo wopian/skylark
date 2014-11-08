@@ -49,7 +49,7 @@
 
 <body>
 
-    <div id="container">
+    <div class="contain">
 
     <div class="navbar navbar-material-teal">
         <div class="container">
@@ -103,7 +103,7 @@
         data: post_data,
         dataType: 'html',
         success: function(data) {
-            $('#container').html(data);
+            $('.contain').html(data);
             //Moved the hide event so it waits to run until the prior event completes
             //It hide the spinner immediately, without waiting, until I moved it here
             $('.spinner').hide();
