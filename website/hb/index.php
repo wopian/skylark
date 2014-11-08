@@ -202,7 +202,7 @@
       <div class="panel-body">
         <h2>Cover Images</h2>
         <p>Something cool here?</p>
-        <img class="img-responsive" src="//dist/images/covers/default/normal1.png" alt="Cover image example."><br />
+        <img class="img-responsive" src="/dist/images/covers/default/normal1.png" alt="Cover image example."><br />
 
         <form class="form-horizontal">
           <fieldset>

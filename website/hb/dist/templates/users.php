@@ -1,7 +1,7 @@
 <?php
     $user = $_GET['user'];
     $userh = ucfirst($user);
-    $url = "//hummingbird.me/api/v1/users/".$user;
+    $url = "https://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
@@ -33,10 +33,10 @@
     $waifu = $data['waifu'];
     $waifuOrhusbando = $data['waifu_or_husbando'];
     if($user == 'doramu'){
-        $waifu = '<a class="waifu" href="//hummingbird.me/users/kusoneko">Kusoneko</a>';
+        $waifu = '<a class="waifu" href="/kusoneko">Kusoneko</a>';
         $waifuOrhusbando = 'Husbando';
     } elseif($user == 'kusoneko'){
-        $waifu = '<a class="waifu" href="//hummingbird.me/users/doramu">Doramu</a>';
+        $waifu = '<a class="waifu" href="/doramu">Doramu</a>';
         $waifuOrhusbando = 'Waifu';
     }
 ?>
@@ -84,7 +84,7 @@
 
   <div class="row">
     <?php
-        $url = "//hummingbird.me/library_entries?user_id=".$user."&recent=true";
+        $url = "https://hummingbird.me/library_entries?user_id=".$user."&recent=true";
         $json = file_get_contents($url);
         $recent = json_decode($json, true);
 
@@ -145,7 +145,7 @@
   </div>
 
   <?php
-      $url = "//hummingbird.me/library_entries?user_id=".$user;
+      $url = "https://hummingbird.me/library_entries?user_id=".$user;
       $json = file_get_contents($url);
       $genre = json_decode($json, true);
       $count = count($genre['anime'])-1;

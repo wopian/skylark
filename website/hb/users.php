@@ -1,7 +1,7 @@
 <?php
     $user = $_GET['user'];
     $userh = ucfirst($user);
-    $url = "//hummingbird.me/api/v1/users/".$user;
+    $url = "https://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 

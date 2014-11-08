@@ -1,7 +1,7 @@
 <?php
     $user = $_GET['user'];
     $status = $_GET['status'];
-    $url = "//hummingbird.me/api/v1/users/".$user;
+    $url = "https://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
@@ -134,7 +134,7 @@
                         <li><a rel="prerender" href="/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
                       </ul>';
 
-$url = "//hummingbird.me/api/v1/users/".$user."/library?status=".$status;
+$url = "https://hummingbird.me/api/v1/users/".$user."/library?status=".$status;
 $json = file_get_contents($url);
 $data = json_decode($json, true);
 $count = count($data)-1;
