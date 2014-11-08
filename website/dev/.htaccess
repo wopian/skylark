@@ -7,8 +7,8 @@
   RewriteCond   %{REQUEST_FILENAME}                           !-f
   RewriteCond   %{REQUEST_FILENAME}                           !-d
 
-  RewriteRule   ^([A-Za-z0-9_-]+)/library/?$                  /library.php?user=$1&page=library           [NC,L]
-  RewriteRule   ^([A-Za-z0-9_-]+)/library/([A-Za-z0-9-]+)/?$  /library.php?user=$1&status=$2&page=library [NC,L]
-  RewriteRule   ^([A-Za-z0-9_-]+)/compare/([A-Za-z0-9-]+)/?$  /compare.php?user=$1&user2=$2&page=compare  [NC,L]
-  RewriteRule   ^([A-Za-z0-9_-]+)/?$                          /users.php?user=$1&page=info                [NC,L]
+  RewriteRule   ^([A-Za-z0-9_-]+)/library/?$                  /bundler.php?user=$1&page=library           [NC,L]
+  RewriteRule   ^([A-Za-z0-9_-]+)/library/([A-Za-z0-9-]+)/?$  /bundler.php?user=$1&status=$2&page=library [NC,L]
+  RewriteRule   ^([A-Za-z0-9_-]+)/compare/([A-Za-z0-9-]+)/?$  /bundler.php?user=$1&user2=$2&page=compare  [NC,L]
+  RewriteRule   ^([A-Za-z0-9_-]+)/?$                          /bundler.php?user=$1&page=info                [NC,L]
 </IfModule>
