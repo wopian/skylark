@@ -3,7 +3,6 @@
 
 <head>
     <?php include_once('head.php'); ?>
-    <title>Index Ok</title>
 </head>
 
 <h1>We can have html in our included file</h1>
