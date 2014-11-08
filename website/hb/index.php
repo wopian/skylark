@@ -7,7 +7,7 @@
     if ($_POST['type'] == 'library' && !empty($_POST['libraryUser'])) {
         $user = $_POST['libraryUser'];
         $status = '/' . $_POST['libraryStatus'];
-        if (strlen($status == 1)) { $status = '' }
+        if ($status == '/') { $status = ''; }
         header("Location: http://hb.wopian.me/$user/library$status");
     }
 ?>
