@@ -1,59 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
-
-* {
-    padding: 0;
-    margin: 0;
+.spinner {
+  animation: rotator 1.4s linear infinite;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #666;
-    background: #eee;
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
 }
 
-@media (min-width: 768px) {
-
-    main {
-        width: 970px;
-        margin: 0 auto;
-    }
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash 1.4s ease-in-out infinite,
+    colors (1.4s*4) ease-in-out infinite;
 }
 
-.panel {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-    overflow: hidden;
-    margin: 8px 0;
+@keyframes colors {
+    0% { stroke: #4285F4; }
+    25% { stroke: #DE3E35; }
+    50% { stroke: #F7C223; }
+    75% { stroke: #1B9A59; }
+  100% { stroke: #4285F4; }
 }
 
-.panel img:hover {
-}
-
-.caption {
-    padding: 9px;
-}
-
-.caption .lead {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 18px;
-    margin-bottom: 9px;
-}
-
-.caption p:not(.lead) {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-#dploy {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-img {
-    max-width: 100%;
-    box-sizing: border-box;
+@keyframes dash {
+ 0% { stroke-dashoffset: 187; }
+ 50% {
+   stroke-dashoffset: 187/4;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: 187;
+   transform:rotate(450deg);
+ }
 }
