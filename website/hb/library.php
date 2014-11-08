@@ -17,8 +17,8 @@ $user = $_GET['user'];
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
         $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
         $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
-        $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months,':"";
-        $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years,':"";
+        $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
+        $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
         if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
             $and = 'and';
         } else {
@@ -221,7 +221,7 @@ array_multisort($sort, SORT_DESC, $data);
         $episodes = $data[$x]['anime']['episode_count'];
         $watched = $data[$x]['episodes_watched'];
         $status = $data[$x]['status'];
-        $time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
+        $time = time() - (strtotime($data[$x]['last_watched']));
         $last = seconds2human($time, true);
 
         if($episodes==0){$episodes='∞';}

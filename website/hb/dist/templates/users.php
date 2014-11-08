@@ -12,8 +12,8 @@
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
         $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
         $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
-        $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months,':"";
-        $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years,':"";
+        $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
+        $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
         if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
             $and = 'and';
         } else {
