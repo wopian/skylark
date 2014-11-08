@@ -2,8 +2,6 @@
 <html>
 
 <?php
-  ob_end_flush();
-
   $user = $_GET['user'];
   $userh = ucfirst($user);
   $status = $_GET['status'];
@@ -13,9 +11,6 @@
     $plural = "'s";
   }
   $header = $userh.$plural;
-
-  $username = $data['user'];
-  $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
   $cu = '';
   $co = '';
@@ -75,6 +70,13 @@
     $status5 = ['dropped', 'Dropped'];
   }
 
+  $url = "http://hummingbird.me/api/v1/users/".$user;
+  $json = file_get_contents($url);
+  $data = json_decode($json, true);
+
+  $username = $data['user'];
+  $userplural = (substr($username, -1) == "s") ? "'" : "'s";
+
   if(strlen($status)<1){
     $meta_status = '';
     $meta_description = 'View all of '.$userplural.' anime.';
@@ -83,18 +85,6 @@
     $meta_status = '/'.$status;
     $meta_description = 'View '.$userplural.' '.strtolower($active).' anime.';
   }
-
-  ob_start();
-  flush();
-
-  ob_end_flush();
-
-  $url = "http://hummingbird.me/api/v1/users/".$user;
-  $json = file_get_contents($url);
-  $data = json_decode($json, true);
-
-  ob_start();
-  flush();
 ?>
 
 <head>
@@ -119,8 +109,7 @@
   <link href="/dist/css/custom.css" rel="stylesheet">
 </head>
 
-<?
-  ob_end_flush();
+<?php
 
   $status_selector = '<a class="btn btn-default col-xs-9 disabled">'.$active.'</a>
                       <a class="btn btn-default col-xs-3 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
@@ -131,11 +120,6 @@
                         <li><a rel="prerender" href="/'.$user.'/library/'.$status4[0].'">'.$status4[1].'</a></li>
                         <li><a rel="prerender" href="/'.$user.'/library/'.$status5[0].'">'.$status5[1].'</a></li>
                       </ul>';
-
-ob_start();
-flush();
-
-ob_end_flush();
 
 $url = "http://hummingbird.me/api/v1/users/".$user."/library?status=".$status;
 $json = file_get_contents($url);
@@ -149,9 +133,6 @@ foreach ($data as $key => $row) {
   $sort[$key] = $row['last_watched'];
 }
 array_multisort($sort, SORT_DESC, $data);
-
-ob_start();
-flush();
 ?>
 
 <body>
@@ -196,7 +177,7 @@ flush();
 
     <div class="page-header">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <h1><?echo $userplural?> Library</h1>
+        <h1><?=$userplural?> Library</h1>
         <br>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
@@ -216,8 +197,6 @@ flush();
     <div class="row">
 
       <?
-      ob_end_flush();
-
       for ($x=0; $x<=$count; $x++) {
       //for ($x=0; $x<=10; $x++) {
         $cover = $data[$x]['anime']['cover_image'];
@@ -226,31 +205,27 @@ flush();
         $episodes = $data[$x]['anime']['episode_count'];
         $watched = $data[$x]['episodes_watched'];
         $status = $data[$x]['status'];
-        $last = (time()-strtotime($data[$x]['last_watched']));
-        if($last<60){$last=$last." seconds";}
-        elseif($last<3600){$last = round($last/60,0)." minutes";}
-        elseif($last<86400){$last=round($last/60/60,0)." hours";}
-        elseif($last<2629740){$last=round($last/60/60/24,0)." days";}
-        elseif($last<31556900){$last=round($last/60/60/24/7/4,0)." months";}
-        elseif($last>31556900){$last=round($last/60/60/24/7/4/12,0)." years";}
+        $time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
+        $last = seconds2human($time, true);
+
         if($episodes==0){$episodes='∞';}
         //$title=(strlen($title)>30)?substr($title,0,27).'&hellip;':$title;
 
         switch ($status) {
           case 'currently-watching':
-            $status = 'Watched '.$watched.' of '.$episodes.' episodes.';
+            $status = 'Watched '.$watched.' of '.$episodes.' episodes';
             break;
           case 'completed':
-            $status = 'Completed.';
+            $status = 'Watched all '.$episodes.' episodes';
             break;
           case 'plan-to-watch':
-            $status = 'Plans to watch.';
+            $status = 'Plans to watch '.$episodes.' episodes';
             break;
           case 'on-hold':
-            $status = 'On hold.';
+            $status = 'On hold';
             break;
           case 'dropped':
-            $status = 'Dropped after '.$watched.' episodes.';
+            $status = 'Dropped after '.$watched.' episodes';
             break;
         }
 
@@ -260,14 +235,11 @@ flush();
             <div class="caption">
               <h4>'.$title.'</h4>
               <p>'.$status.'</p>
-              <p>'.$last.' ago.</p>
+              <p>'.$last.' ago</p>
             </div>
           </div>
         </div>';
       }
-
-      ob_start();
-      flush();
       ?>
 
     </div>
