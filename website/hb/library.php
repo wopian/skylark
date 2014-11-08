@@ -2,15 +2,16 @@
 <html>
 
 <?php
-  $user = $_GET['user'];
-  $userh = ucfirst($user);
-  $status = $_GET['status'];
-  if (substr($user, -1) == "s") {
-    $plural = "'";
-  } else {
-    $plural = "'s";
-  }
-  $header = $userh.$plural;
+
+$user = $_GET['user'];
+    $status = $_GET['status'];
+    $userh = ucfirst($user);
+    $url = "http://hummingbird.me/api/v1/users/".$user;
+    $json = file_get_contents($url);
+    $data = json_decode($json, true);
+
+    $username = ucfirst($data['name']);
+    $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
     function seconds2human($ss, $recent = false) {
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
@@ -91,13 +92,6 @@
     $status4 = ['on-hold', 'On Hold'];
     $status5 = ['dropped', 'Dropped'];
   }
-
-  $url = "http://hummingbird.me/api/v1/users/".$user;
-  $json = file_get_contents($url);
-  $data = json_decode($json, true);
-
-  $username = ucfirst($data['name']);
-  $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
   if(strlen($status)<1){
     $meta_status = '';
