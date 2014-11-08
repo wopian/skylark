@@ -2,9 +2,6 @@
     $page = $_GET['page'];
 
     switch ($page) {
-        case "index":
-            $ajaxData = 'page=index';
-            break;
         case "user":
             $user = $_GET['user'];
             $ajaxData = 'user='. $user .'&page=user';
@@ -19,8 +16,12 @@
             $user2 = $_GET['user2'];
             $ajaxData = 'user='. $user .'&user2='. $user2 .'page=compare';
             break;
+        default:
+            $ajaxData = 'page=index';
+            break;
     }
 ?>
+
 <!DOCTYPE html>
 <html>
 
