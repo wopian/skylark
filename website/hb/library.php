@@ -3,14 +3,13 @@
 
 <?php
 
-$user = $_GET['user'];
+    $user = $_GET['user'];
     $status = $_GET['status'];
-    $userh = ucfirst($user);
     $url = "http://hummingbird.me/api/v1/users/".$user;
     $json = file_get_contents($url);
     $data = json_decode($json, true);
-
-    $username = ucfirst($data['name']);
+    $username = $data['name'];
+    $username = ucfirst($username);
     $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
     function seconds2human($ss, $recent = false) {
