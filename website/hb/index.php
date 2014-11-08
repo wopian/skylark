@@ -86,7 +86,7 @@
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" name="infoUser" id="infoUser" placeholder="Enter a Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" name="infoUser" id="infoUser" placeholder="Enter a Hummingbird username." type="text" required>
               </div>
             </div>
 
@@ -108,7 +108,7 @@
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" name="libraryUser" id="libraryUser" placeholder="Enter a Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" name="libraryUser" id="libraryUser" placeholder="Enter a Hummingbird username." type="text" required>
               </div>
             </div>
 
@@ -178,14 +178,14 @@
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" id="compareUser" placeholder="Enter a Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" id="compareUser" placeholder="Enter a Hummingbird username." type="text" required>
               </div>
             </div>
 
             <div class="form-group">
               <label class="control-label col-lg-1">Username</label>
               <div class="col-lg-11">
-                <input class="form-control input-lg floating-label" id="compareUser2" placeholder="Enter another Hummingbird username." type="text">
+                <input class="form-control input-lg floating-label" id="compareUser2" placeholder="Enter another Hummingbird username." type="text" required>
               </div>
             </div>
 
