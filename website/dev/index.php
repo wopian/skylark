@@ -47,7 +47,9 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body id="container">
+<body>
+
+    <div id="container">
 
     <div class="navbar navbar-material-teal">
         <div class="container">
@@ -77,6 +79,8 @@
                 </ul>
             </div>
         </div>
+    </div>
+
     </div>
 
     <svg class="spinner" width="66px" height="66px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
