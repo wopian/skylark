@@ -1,3 +1,1 @@
-Options +FollowSymLinks -MultiViews
-
 ErrorDocument 404 denied.shtml
