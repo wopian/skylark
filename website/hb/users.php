@@ -71,11 +71,9 @@
     </div>
   </div>
 
-  <div class="cover cover-loading">
-    <div class="spinner">
-      <div class="double-bounce1"></div>
-    </div>
-  </div>
+  <svg class="spinner" width="66px" height="66px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+  </svg>
 
 
   <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
@@ -93,7 +91,9 @@
       $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         $("body").append(result);
         setTimeout(function(){
-          $(".cover-loading").fadeOut('slow');
+          $(".spinner").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+            $(".spinner").remove();
+          };
         }, 400);
       },'html');
     });
