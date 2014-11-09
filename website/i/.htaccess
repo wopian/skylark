@@ -1,1 +1,13 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks -MultiViews
+
+  RewriteEngine On
+  # RewriteBase /
+
+  # Redirect /users|/covers
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^denied/?$ denied.shtml [NC,L]
+</IfModule>
+
 ErrorDocument 404 denied.shtml
