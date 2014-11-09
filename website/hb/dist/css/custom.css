@@ -64,17 +64,6 @@
   height: 100%;
 }
 
-.cover-loading {
-  background-color: #009688;
-  position: absolute;
-  top: 60px;
-}
-
-.cover-loading > div {
-  background: #eee;
-  border-radius: 50%;
-}
-
 @media (min-width: 768px) {
   .lead {
     font-size: 16px;
@@ -84,6 +73,23 @@
 .no-gutter {
   padding-left:0;
   padding-right:0;
+}
+
+.waifu {
+  color: #333;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.waifu:hover {
+  color: #009688;
+  text-decoration: none;
+}
+
+#dploy {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 .spinner {
@@ -191,24 +197,6 @@
     -webkit-transform: rotate(450deg);
             transform: rotate(450deg);
   }
-}
-
-
-.waifu {
-  color: #333;
-  text-decoration: none;
-  transition: color .2s ease-in-out;
-}
-
-.waifu:hover {
-  color: #009688;
-  text-decoration: none;
-}
-
-#dploy {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
 }
 
 ::-webkit-scrollbar {background:transparent;overflow:visible;width:15px}
