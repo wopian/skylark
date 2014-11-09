@@ -1,14 +1,11 @@
 <IfModule mod_rewrite.c>
-    Options +FollowSymLinks -MultiViews
+  Options +FollowSymLinks -MultiViews
 
-    RewriteEngine On
+  RewriteEngine On
 
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    RewriteCond  %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^denied denied.shtml [NC,L]
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^denied denied.shtml [NC,L]
 </IfModule>
 
 ErrorDocument 404 denied.shtml
