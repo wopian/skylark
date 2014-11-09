@@ -1,11 +1,3 @@
-<IfModule mod_rewrite.c>
-  Options +FollowSymLinks -MultiViews
-
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond  %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^denied denied.shtml [NC,L]
-</IfModule>
+Options +FollowSymLinks -MultiViews
 
 ErrorDocument 404 denied.shtml
