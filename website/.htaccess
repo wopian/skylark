@@ -1,3 +1,11 @@
-Redirect 302 /hb*  /    [NC,L]
-Redirect 302 /dev* /    [NC,L]
-Redirect 302 /i*   /    [NC,L]
+Redirect 302 /hb/*  https://hb.wopian.me        [NC,L]
+Redirect 302 /hb/   https://hb.wopian.me        [NC,L]
+Redirect 302 /hb    https://hb.wopian.me        [NC,L]
+
+Redirect 302 /dev/* https://dev.hb.wopian.me    [NC,L]
+Redirect 302 /dev/  https://dev.hb.wopian.me    [NC,L]
+Redirect 302 /dev   https://dev.hb.wopian.me    [NC,L]
+
+Redirect 302 /i/*   https://i.wopian.me         [NC,L]
+Redirect 302 /i/    https://i.wopian.me         [NC,L]
+Redirect 302 /i     https://i.wopian.me         [NC,L]
