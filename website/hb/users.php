@@ -105,11 +105,7 @@
         dataType: 'html',
         success: function(data) {
           $('body').append(data);
-          //Moved the hide event so it waits to run until the prior event completes
-          //It hide the spinner immediately, without waiting, until I moved it here
-          $('.spinner').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-            $('.spinner').hide();
-          });
+          $('.spinner').remove();
         },
         error: function() {
           alert("Something went wrong!");
