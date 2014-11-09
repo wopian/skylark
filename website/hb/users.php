@@ -88,14 +88,31 @@
     $(document).ready(function start(){
       $.material.init();
 
-      $.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
+      /*$.get('/dist/templates/users.php?user=<?=$user?>',null,function(result) {
         $("body").append(result);
         setTimeout(function(){
           $(".spinner").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
             $(".spinner").remove();
           });
         }, 400);
-      },'html');
+      },'html');*/
+
+      $('.spinner').show();
+
+      $.ajax({
+        url: '/dist/templates/users.php?user=<?=$user?>',
+        type: 'GET',
+        dataType: 'html',
+        success: function(data) {
+          $('body').append(data);
+          //Moved the hide event so it waits to run until the prior event completes
+          //It hide the spinner immediately, without waiting, until I moved it here
+          $('.spinner').hide();
+        },
+        error: function() {
+          alert("Something went wrong!");
+        }
+      });
     });
   </script>
 
