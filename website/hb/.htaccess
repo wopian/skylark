@@ -10,8 +10,7 @@
   RewriteRule ^([A-Za-z0-9_-]+)/library/?$ /library.php?user=$1 [NC,L]
   RewriteRule ^([A-Za-z0-9_-]+)/library/([A-Za-z0-9-]+)/?$ /library.php?user=$1&status=$2 [NC,L]
   RewriteRule ^([A-Za-z0-9_-]+)/compare/([A-Za-z0-9-]+)/?$ /compare.php?user=$1&user2=$2 [NC,L]
-  # RewriteRule ^cover/([A-Za-z0-9_-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ /cover.php?user=$1&amount=$2&style=$3 [NC,L]
-  # RewriteRule ^cover/([A-Za-z0-9_-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ /cover.php?user=$1&amount=$2&style=$3&status=$4 [NC,L]
+  # RewriteRule ^([A-Za-z0-9_-]+)/cover/?$ /cover.php [NC,L]
   RewriteRule ^([A-Za-z0-9_-]+)/?$ /users.php?user=$1 [NC,L]
 </IfModule>
 
