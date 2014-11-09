@@ -1,14 +1,11 @@
-Redirect 302 /hb/*  https://hb.wopian.me                [L,R=301]
-Redirect 302 /hb/   https://hb.wopian.me                [L,R=301]
-Redirect 302 /hb    https://hb.wopian.me                [L,R=301]
+Redirect 302 /hb/*  https://hb.wopian.me        [NC,L]
+Redirect 302 /hb/   https://hb.wopian.me        [NC,L]
+Redirect 302 /hb    https://hb.wopian.me        [NC,L]
 
-Redirect 302 /dev/* https://dev.hb.wopian.me            [L,R=301]
-Redirect 302 /dev/  https://dev.hb.wopian.me            [L,R=301]
-Redirect 302 /dev   https://dev.hb.wopian.me            [L,R=301]
+Redirect 302 /dev/* https://dev.hb.wopian.me    [NC,L]
+Redirect 302 /dev/  https://dev.hb.wopian.me    [NC,L]
+Redirect 302 /dev   https://dev.hb.wopian.me    [NC,L]
 
-Redirect 302 /i/*   https://i.wopian.me                 [L,R=301]
-Redirect 302 /i/    https://i.wopian.me                 [L,R=301]
-Redirect 302 /i     https://i.wopian.me                 [L,R=301]
-
-RewriteCond %{HTTPS} !=on
-RewriteRule ^       https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 302 /i/*   https://i.wopian.me         [NC,L]
+Redirect 302 /i/    https://i.wopian.me         [NC,L]
+Redirect 302 /i     https://i.wopian.me         [NC,L]
