@@ -93,7 +93,7 @@
         setTimeout(function(){
           $(".spinner").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
             $(".spinner").remove();
-          }
+          });
         }, 400);
       },'html');
     });
