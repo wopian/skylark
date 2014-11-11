@@ -360,27 +360,21 @@
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
-  <script src="/dist/js/outdatedbrowser.min.js" async="async"></script>
-  <div id="outdated"></div>
+  <script src="/dist/js/outdatedbrowser.min.js"></script>
+  <div id="outdated">
+     <h6>Your browser is out-of-date!</h6>
+     <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  </div>
   <script>
-    function addLoadEvent(func) {
-      var oldonload = window.onload;
-      if (typeof window.onload != 'function') {
-        window.onload = func;
-      } else {
-        window.onload = function() {
-          oldonload();
-          func();
-        }
-      }
-    }
-    addLoadEvent(
+    $( document ).ready(function() {
       outdatedBrowser({
-        bgColor: '#f25649',
+        bgColor: '#f25648',
         color: '#ffffff',
-        lowerThan: 'transform'
+        lowerThan: 'transform',
+        languagePath: ''
       })
-    );
+    })
   </script>
 
 </body>

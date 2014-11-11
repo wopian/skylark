@@ -1,7 +1,7 @@
 @import url('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('/dist/css/material-wfont.min.css');
 @import url('/dist/css/ripples.min.css');
-@import url('/dist/css/outdatedBrowser.min.cs');
+@import url('/dist/css/outdatedbrowser.min.cs');
 
 .navbar {
   margin-bottom: 0;
