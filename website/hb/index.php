@@ -363,14 +363,24 @@
   <script src="/dist/js/outdatedbrowser.min.js" async="async"></script>
   <div id="outdated"></div>
   <script>
-    $(document).ready(function start(){
+    function addLoadEvent(func) {
+      var oldonload = window.onload;
+      if (typeof window.onload != 'function') {
+        window.onload = func;
+      } else {
+        window.onload = function() {
+          oldonload();
+          func();
+        }
+      }
+    }
+    addLoadEvent(
       outdatedBrowser({
-        bgColor: '#f25648',
+        bgColor: '#f25649',
         color: '#ffffff',
-        lowerThan: 'transform',
-        languagePath: 'your_path/outdatedbrowser/lang/en.html'
+        lowerThan: 'transform'
       })
-    })
+    );
   </script>
 
 </body>
