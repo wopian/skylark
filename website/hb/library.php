@@ -275,6 +275,19 @@ array_multisort($sort, SORT_DESC, $data);
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
+  <script src="outdatedBrowser.min.js" async="async"></script>
+  <div id="outdated"></div>
+  <script>
+    $(document).ready(function start(){
+      outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: 'your_path/outdatedbrowser/lang/en.html'
+      })
+    })
+  </script>
+
 </body>
 
 </html>
