@@ -33,11 +33,6 @@
   <meta name="twitter:description" content="A variety of tools and stats for Hummingbird." />
   <meta name="twitter:image" content="//9.dev.boomcraft.co.uk/dist/images/twitter_teal.png" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk" />
-  
-  <dc:title>Hummingbird Tools</dc:title>
-  <dc:creator>James Harris</dc:creator>
-  <dc:subject>Stats, Tools, Hummingbird, Anime, Manga, Tracking, Tracker, Track</dc:subject>
-  <dc:description>Hummingbird Tools hosts a variety of tools and stats for Hummingbird.</dc:description>
 
   <link href="/dist/css/custom.css" rel="stylesheet">
 </head>
