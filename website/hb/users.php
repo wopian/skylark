@@ -11,6 +11,8 @@
         }
 
         $user_name = $user_data['name'];
+        echo $user_data['name'];
+        echo $user_name;
     }
 
     # Format username or pluralize. Should only declare 'plural':  format_name('plural');
