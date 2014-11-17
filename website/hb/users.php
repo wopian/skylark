@@ -10,24 +10,11 @@
             header("Location: //hb.wopian.me");
         }
 
-        $user_name = $user_data['name'];
+        $user_name = ucfirst($user_data['name']);
     }
 
-    # Format username or pluralize. Should only declare 'plural':  format_name('plural');
-    function format_name($x = 'full') {
-
-        echo $user_name;
-
-        switch ($x) {
-            case 'full':
-                $x = ucfirst($user_name);
-                return $x;
-                break;
-            case 'plural':
-                $x = (substr($user_name, -1) == "s") ? "'" : "'s";
-                return $x;
-                break;
-        }
+    function properize($string) {
+        return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
 
     initialize();
@@ -37,22 +24,22 @@
 <html>
 
 <head>
-  <title><?=format_name('plural')?> Profile - Hummingbird Tools</title>
+  <title><?=properize($user_name)?> Profile - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View <?=format_name('plural')?> profile.">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=format_name()?>">
+  <meta name="description" content="View <?=properize($user_name)?> profile.">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name?>">
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$user_data['avatar']?>" />
   <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
-  <meta property="og:title" content="<?=format_name('plural')?> Profile - Hummingbird Tools" />
+  <meta property="og:title" content="<?=properize($user_name)?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=format_name('plural')?> Profile - Hummingbird Tools" />
-  <meta name="twitter:description" content="View <?=format_name('plural')?> profile." />
+  <meta name="twitter:title" content="<?=properize($user_name)?> Profile - Hummingbird Tools" />
+  <meta name="twitter:description" content="View <?=properize($user_name)?> profile." />
   <meta name="twitter:image" content="<?=$user_data['avatar']?>" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
 
