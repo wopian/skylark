@@ -11,8 +11,17 @@
     $user_avatar = $user_data['avatar'];
     $user_bio = $user_data['bio'];
     $user_location = $user_data['location'];
-    $user_waifu = $data['waifu'];
-    $user_waifuor = $data['waifu_or_husbando'];
+    #$user_waifu = $data['waifu'];
+    #$user_waifuor = $data['waifu_or_husbando'];
+
+    if(strlen($data['waifu']) > 0) {
+        $user_waifu = '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+            <p class="h1">'.$data['waifu'].'</p>
+            <p class="lead">'.$data['waifu_or_husbando'].'<p>
+            </div>';
+    } else {
+        $user_waifu = '';
+    }
 
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
@@ -56,14 +65,7 @@
             <p class="lead"><?=$user_bio?></p>
         </div>
 
-        <?
-            if(strlen($user_waifu) > 0) {
-                echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                      <p class="h1">'.$user_waifu.'</p>
-                      <p class="lead">'.$user_waifuor.'<p>
-                      </div>';
-            }
-        ?>
+        <?=$user_waifu?>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
