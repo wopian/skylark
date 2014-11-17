@@ -9,11 +9,12 @@
         if (empty($user_data['name'])) {
             header("Location: //hb.wopian.me");
         }
+
+        $user_name = $user_data['name'];
     }
 
     # Format username or pluralize. Should only declare 'plural':  format_name('plural');
     function format_name($x = 'full') {
-        $user_name = $user_data['name'];
 
         switch ($x) {
             case 'full':
