@@ -1,19 +1,15 @@
 <?php
-    function initialize() {
-        # Grab user field from url and load user stats
-        $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
-        $user_url = "https://hummingbird.me/api/v1/users/$user";
-        $user_json = file_get_contents($user_url);
-        $user_data= json_decode($user_json, true);
+    # Grab user field from url and load user stats
+    $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
+    $user_url = "https://hummingbird.me/api/v1/users/$user";
+    $user_json = file_get_contents($user_url);
+    $user_data= json_decode($user_json, true);
 
-        if (empty($user_data['name'])) {
-            header("Location: //hb.wopian.me");
-        }
-
-        $user_name = ucfirst($user_data['name']);
+    if (empty($user_data['name'])) {
+        header("Location: //hb.wopian.me");
     }
 
-    initialize();
+    $user_name = ucfirst($user_data['name']);
 
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
@@ -24,24 +20,24 @@
 <html>
 
 <head>
-  <title><?=properize($user_name)?> Profile - Hummingbird Tools</title>
+  <title><?=properize($user_name);?> Profile - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View <?=properize($user_name)?> profile.">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name?>">
+  <meta name="description" content="View <?=properize($user_name);?> profile.">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name;?>">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="<?=$user_data['avatar']?>" />
-  <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
-  <meta property="og:title" content="<?=properize($user_name)?> Profile - Hummingbird Tools" />
+  <meta property="og:image" content="<?=$user_data['avatar'];?>" />
+  <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user;?>" />
+  <meta property="og:title" content="<?=properize($user_name);?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=properize($user_name)?> Profile - Hummingbird Tools" />
-  <meta name="twitter:description" content="View <?=properize($user_name)?> profile." />
-  <meta name="twitter:image" content="<?=$user_data['avatar']?>" />
-  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
+  <meta name="twitter:title" content="<?=properize($user_name);?> Profile - Hummingbird Tools" />
+  <meta name="twitter:description" content="View <?=properize($user_name);?> profile." />
+  <meta name="twitter:image" content="<?=$user_data['avatar'];?>" />
+  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user;?>" />
 
   <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
