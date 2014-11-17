@@ -56,7 +56,14 @@
             <p class="lead"><?=$user_bio?></p>
         </div>
 
-        <?=$user_waifu?>
+        <?
+            if(strlen($user_waifu) > 0) {
+                echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                      <p class="h1">'.$user_waifu.'</p>
+                      <p class="lead">'.$user_waifuor.'<p>
+                      </div>';
+            }
+        ?>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
