@@ -20,10 +20,12 @@
 
         switch ($x) {
             case 'full':
-                return ucfirst($user_name);
+                $x = ucfirst($user_name);
+                return $x;
                 break;
             case 'plural':
-                return (substr($user_name, -1) == "s") ? "'" : "'s";
+                $x = (substr($user_name, -1) == "s") ? "'" : "'s";
+                return $x;
                 break;
         }
     }
