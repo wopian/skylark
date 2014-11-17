@@ -11,7 +11,7 @@
     $user_avatar = $user_data['avatar'];
     $user_bio = $user_data['bio'];
     $user_location = $user_data['location'];
-    $user_life = $data['life_spent_on_anime']*60);
+    $user_life = $data['life_spent_on_anime']*60;
     $user_waifu = $data['waifu'];
     $user_waifuor = $data['waifu_or_husbando'];
 
@@ -92,11 +92,12 @@
 
             for ($x = 0; $x < 4; $x++) {
 
-                if  (empty($recent['anime'][0]['id'])) {
+                if (empty($recent['anime'][0]['id'])) {
                     echo "<p class='lead'>$user_name has not watched any anime recently. :(</p>";
                 }
 
                 if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
+
                     $hidden = ($x === 3) ? ' hidden-md hidden-sm' : '';
 
                     $recent_cover = $recent['anime'][$x]['poster_image'];
@@ -112,24 +113,24 @@
                         $recent_episodes = '∞';
                     }
 
-                    # $recent_title = (strlen($recent_title)>30) ? substr($recent_title,0,27).'&hellip;' : $recent_title;
+                    $recent_title = (strlen($recent_title)>30) ? substr($recent_title,0,27).'&hellip;' : $recent_title;
 
                     switch ($recent_status) {
-                    case 'Currently Watching':
-                        $recent_status = 'Watched '.$recent_watched.' of '.$recent_episodes.' episodes';
-                        break;
-                    case 'Completed':
-                        $recent_status = 'Completed.';
-                        break;
-                    case 'Plan to Watch':
-                        $recent_status = 'Plans to watch.';
-                        break;
-                    case 'On Hold':
-                        $recent_status = 'On hold.';
-                        break;
-                    case 'Dropped':
-                        $recent_status = 'Dropped after '.$recent_watched.' episodes.';
-                        break;
+                        case 'Currently Watching':
+                            $recent_status = 'Watched '.$recent_watched.' of '.$recent_episodes.' episodes';
+                            break;
+                        case 'Completed':
+                            $recent_status = 'Completed.';
+                            break;
+                        case 'Plan to Watch':
+                            $recent_status = 'Plans to watch.';
+                            break;
+                        case 'On Hold':
+                            $recent_status = 'On hold.';
+                            break;
+                        case 'Dropped':
+                            $recent_status = 'Dropped after '.$recent_watched.' episodes.';
+                            break;
                     }
 
                     echo    '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
