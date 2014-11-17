@@ -11,19 +11,8 @@
     $user_avatar = $user_data['avatar'];
     $user_bio = $user_data['bio'];
     $user_location = $user_data['location'];
-    #$user_waifu = $data['waifu'];
-    #$user_waifuor = $data['waifu_or_husbando'];
-
-    $waifu = $data['waifu'];
-    $waifuOrhusbando = $data['waifu_or_husbando'];
-    echo $waifu .' / '. $waifuOrhusbando;
-    if($user == 'doramu'){
-        $waifu = '<a class="waifu" href="/kusoneko">Kusoneko</a>';
-        $waifuOrhusbando = 'Husbando';
-    } elseif($user == 'kusoneko'){
-        $waifu = '<a class="waifu" href="/doramu">Doramu</a>';
-        $waifuOrhusbando = 'Waifu';
-    }
+    $user_waifu = $user_data['waifu'];
+    $user_waifuor = $user_data['waifu_or_husbando'];
 
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
@@ -45,10 +34,10 @@
             return "$y $M $d $h $and $m";
         }   else {
             if ($y != '') { return "$y"; }
-            elseif ($y == '' && $M != '') { return $M; }
-            elseif ($y == '' && $M == '' && $d != '') { return $d; }
-            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return $h; }
-            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return $m; }
+            elseif ($y == '' && $M != '') { return "$M"; }
+            elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return "$h"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
         }
     }
 ?>
@@ -67,14 +56,7 @@
             <p class="lead"><?=$user_bio?></p>
         </div>
 
-        <?
-        if(strlen($waifu) > 0) {
-            echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                    <p class="h1">'.$waifu.'</p>
-                    <p class="lead">'.$waifuOrhusbando.'<p>
-                  </div>';
-        }
-    ?>
+        <?=$user_waifu?>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
