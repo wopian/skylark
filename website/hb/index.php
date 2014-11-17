@@ -360,23 +360,6 @@
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
-  <script src="/assets/js/outdatedbrowser.min.js"></script>
-  <div id="outdated">
-     <h6>Your browser is out-of-date!</h6>
-     <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-  </div>
-  <script>
-    $( document ).ready(function() {
-      outdatedBrowser({
-        bgColor: '#f25648',
-        color: '#ffffff',
-        lowerThan: 'transform',
-        languagePath: ''
-      })
-    })
-  </script>
-
 </body>
 
 </html>

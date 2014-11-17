@@ -5,12 +5,15 @@
     $user_json = file_get_contents($user_url);
     $user_data= json_decode($user_json, true);
 
+    # Redirect to homepage if invalid username given
     if (empty($user_data['name'])) {
         header("Location: //hb.wopian.me");
     }
 
+    # Makes first character uppercase
     $user_name = ucfirst($user_data['name']);
 
+    # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
@@ -34,7 +37,7 @@
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=properize($user_name);?> Profile - Hummingbird Tools" />
+  <meta name="twitter:title" content="Check out <?=properize($user_name);?> profile on Hummingbird Tools" />
   <meta name="twitter:description" content="View <?=properize($user_name);?> profile." />
   <meta name="twitter:image" content="<?=$user_data['avatar'];?>" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user;?>" />
@@ -95,15 +98,6 @@
     $(document).ready(function start(){
       $.material.init();
 
-      /*$.get('/assets/modules/users.php?user=<?=$user?>',null,function(result) {
-        $("body").append(result);
-        setTimeout(function(){
-          $(".spinner").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-            $(".spinner").remove();
-          });
-        }, 400);
-      },'html');*/
-
       $('.spinner').show();
 
       $.ajax({
@@ -125,23 +119,6 @@
   <script src="/assets/js/exporting.js"></script>
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
-
-  <script src="/assets/js/outdatedbrowser.min.js"></script>
-  <div id="outdated">
-     <h6>Your browser is out-of-date!</h6>
-     <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-     <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-  </div>
-  <script>
-    $( document ).ready(function() {
-      outdatedBrowser({
-        bgColor: '#f25648',
-        color: '#ffffff',
-        lowerThan: 'transform',
-        languagePath: ''
-      })
-    })
-  </script>
 
 </body>
 

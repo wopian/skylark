@@ -1,24 +1,12 @@
 <?php
-    # Grab user field from url and load user stats
-    $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
-    $user_url = "https://hummingbird.me/api/v1/users/$user";
-    $user_json = file_get_contents($user_url);
-    $user_data= json_decode($user_json, true);
+    $user = $_GET['user'];
+    $userh = ucfirst($user);
+    $url = "https://hummingbird.me/api/v1/users/".$user;
+    $json = file_get_contents($url);
+    $data = json_decode($json, true);
 
-    # Makes first character uppercase
-    $user_name = ucfirst($user_data['name']);
-    $user_cover = $user_data['cover_image'];
-    $user_avatar = $user_data['avatar'];
-    $user_bio = $user_data['bio'];
-    $user_location = $user_data['location'];
-    $user_life = $data['life_spent_on_anime']*60);
-    $user_waifu = $data['waifu'];
-    $user_waifuor = $data['waifu_or_husbando'];
-
-    # Strips trailing 's' from username when last character of username is 's'
-    function properize($string) {
-        return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
-    }
+    $username = ucfirst($data['name']);
+    $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 
     function seconds2human($ss, $recent = false) {
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
@@ -28,12 +16,12 @@
         $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
         if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
             $and = 'and';
-        }   else {
+        } else {
             $and = '';
         }
         if ($recent === false) {
             return "$y $M $d $h $and $m";
-        }   else {
+        } else {
             if ($y != '') { return "$y"; }
             elseif ($y == '' && $M != '') { return "$M"; }
             elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
@@ -41,71 +29,64 @@
             elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
         }
     }
+
+    $waifu = $data['waifu'];
+    $waifuOrhusbando = $data['waifu_or_husbando'];
+    if($user == 'doramu'){
+        $waifu = '<a class="waifu" href="/kusoneko">Kusoneko</a>';
+        $waifuOrhusbando = 'Husbando';
+    } elseif($user == 'kusoneko'){
+        $waifu = '<a class="waifu" href="/doramu">Doramu</a>';
+        $waifuOrhusbando = 'Waifu';
+    }
 ?>
 
-<div class="cover" style="background-image: url('<?=$user_cover?>')">
-    <div>
-        <img src="<?=$user_avatar?>">
-    </div>
+<div class="cover" style="background-image: url('<?=$data['cover_image']?>')">
+  <div>
+    <img src="<?=$data['avatar']?>">
+  </div>
 </div>
 
 <div class="container">
-    <div class="page-header">
 
-        <div class="col-lg-6 col-md-6 col-sm-6">
-            <h1><?=$user_name?></h1>
-            <p class="lead"><?=$user_bio?></p>
-        </div>
-
-        <?
-            if(strlen($user_waifu) > 0) {
-                echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                      <p class="h1">'.$user_waifu.'</p>
-                      <p class="lead">'.$user_waifuor.'<p>
-                      </div>';
-            }
-        ?>
-
-        <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6">
-            <p class="h1">Location</p>
-            <p class="lead"><?=$user_location?></p>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-            <p class="h1">Watched</p>
-            <p class="lead"><?=seconds2human($user_life)?> of anime</p>"
-        </div>
-
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <p class="h1">Recent Anime</p>
-        </div>
-
+  <div class="page-header">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <h1><?=$username?></h1>
+      <p class="lead"><?=$data['bio']?></p>
     </div>
 
-    <div class="row">
-        <?php
-            $recent_url = "https://hummingbird.me/library_entries?user_id=$user&recent=true";
-            $recent_json = file_get_contents($recent_url);
-            $recent= json_decode($recent_json, true);
+    <?
+        if(strlen($waifu) > 0) {
+            echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                    <p class="h1">'.$waifu.'</p>
+                    <p class="lead">'.$waifuOrhusbando.'<p>
+                  </div>';
+        }
+    ?>
 
-            for ($x = 0; $x < 4; $x++) {
+    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
-                if  (empty($recent['anime'][0]['id'])) {
-                    echo "<p class='lead'>$user_name has not watched any anime recently. :(</p>";
-                }
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <p class="h1">Location</p>
+      <p class="lead"><?=$data['location']?></p>
+    </div>
 
-                if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
-                    $hidden = ($x === 3) ? ' hidden-md hidden-sm' : '';
+    <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+      <p class="h1">Watched</p>
+      <p class="lead"><?=seconds2human($data['life_spent_on_anime']*60)?> of anime</p>"
+    </div>
 
-                    $recent_cover = $recent['anime'][$x][''];
-                    $recent_uri = $recent['anime'][$x][''];
-                    $recent_title = $recent['anime'][$x][''];
-                    $recent_episodes = $recent['anime'][$x][''];
-                }
-            }
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <p class="h1">Recent Anime</p>
+    </div>
 
+  </div>
+
+  <div class="row">
+    <?php
+        $url = "https://hummingbird.me/library_entries?user_id=".$user."&recent=true";
+        $json = file_get_contents($url);
+        $recent = json_decode($json, true);
 
         for ($x=0; $x<4; $x++) {
             if (empty($recent['anime'][0]['id'])) {
