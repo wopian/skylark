@@ -8,7 +8,8 @@ $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_URL => "https://hummingbird.me/api/v2/anime/$id",
-    CURLOPT_HTTPHEADER => 'X-Client-Id: 053d7e4280a956145494',
+    CURLINFO_HEADER_OUT => 1,
+    CURLOPT_HTTPHEADER => ['X-Client-Id: 053d7e4280a956145494'],
     CURLOPT_USERAGENT => 'Hummingbird Tools Indexer'
 ));
 // Send the request & save response to $resp
