@@ -13,11 +13,11 @@
         $user_name = ucfirst($user_data['name']);
     }
 
+    initialize();
+
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
-
-    initialize();
 ?>
 
 <!DOCTYPE html>
