@@ -3,7 +3,7 @@
         # Grab user field from url and load user stats
         $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
         $user_url = "https://hummingbird.me/api/v1/users/$user";
-        $user_json = file_get_contents($url);
+        $user_json = file_get_contents($user_url);
         $user_data= json_decode($user_json, true);
 
         if (empty($user_data['name'])) {
