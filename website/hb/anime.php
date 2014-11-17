@@ -1,6 +1,6 @@
 <?php
 // Get cURL resource
-$id = mt_rand(1,10000);
+$id = rand(1,10000);
 echo $id;
 
 $curl = curl_init();

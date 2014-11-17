@@ -14,13 +14,14 @@
     #$user_waifu = $data['waifu'];
     #$user_waifuor = $data['waifu_or_husbando'];
 
-    if(strlen($data['waifu']) > 0) {
-        $user_waifu = '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
-            <p class="h1">'.$data['waifu'].'</p>
-            <p class="lead">'.$data['waifu_or_husbando'].'<p>
-            </div>';
-    } else {
-        $user_waifu = '';
+    $waifu = $data['waifu'];
+    $waifuOrhusbando = $data['waifu_or_husbando'];
+    if($user == 'doramu'){
+        $waifu = '<a class="waifu" href="/kusoneko">Kusoneko</a>';
+        $waifuOrhusbando = 'Husbando';
+    } elseif($user == 'kusoneko'){
+        $waifu = '<a class="waifu" href="/doramu">Doramu</a>';
+        $waifuOrhusbando = 'Waifu';
     }
 
     # Strips trailing 's' from username when last character of username is 's'
@@ -65,7 +66,14 @@
             <p class="lead"><?=$user_bio?></p>
         </div>
 
-        <?=$user_waifu?>
+        <?
+        if(strlen($waifu) > 0) {
+            echo '<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+                    <p class="h1">'.$waifu.'</p>
+                    <p class="lead">'.$waifuOrhusbando.'<p>
+                  </div>';
+        }
+    ?>
 
         <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
 
