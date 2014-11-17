@@ -17,7 +17,7 @@ $results = curl_exec($curl);
 // Close request to clear up some resources
 curl_close($curl);
 
-echo $results;
+echo "<pre>$results</pre>";
 $json = json_decode($results, true);
 print_r($json);
 ?>
