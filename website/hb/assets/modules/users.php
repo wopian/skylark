@@ -40,13 +40,13 @@
             $and = '';
         }
         if ($recent === false) {
-            return "$y $M $d $h $and $m";
+            return $y $M $d $h $and $m;
         }   else {
             if ($y != '') { return "$y"; }
-            elseif ($y == '' && $M != '') { return "$M"; }
-            elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
-            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return "$h"; }
-            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
+            elseif ($y == '' && $M != '') { return $M; }
+            elseif ($y == '' && $M == '' && $d != '') { return $d; }
+            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return $h; }
+            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return $m; }
         }
     }
 ?>
