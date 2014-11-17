@@ -22,5 +22,7 @@ print_r($results);
 echo "</pre>";
 
 $json = json_decode($results, true);
+echo "<pre>";
 print_r($json);
+echo "</pre>";
 ?>
