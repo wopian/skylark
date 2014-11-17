@@ -1,5 +1,5 @@
 <?php
-    class initialize {
+    function initialize() {
         # Grab user field from url and load user stats
         $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
         $user_url = "https://hummingbird.me/api/v1/users/$user";
@@ -15,6 +15,8 @@
         # Plural username
         $user_plural = (substr($user_name, -1) == "s") ? "'" : "'s";
     }
+
+    initialize();
 ?>
 
 <!DOCTYPE html>
