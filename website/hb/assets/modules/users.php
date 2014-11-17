@@ -16,6 +16,7 @@
 
     $waifu = $data['waifu'];
     $waifuOrhusbando = $data['waifu_or_husbando'];
+    echo $waifu .' / '. $waifuOrhusbando;
     if($user == 'doramu'){
         $waifu = '<a class="waifu" href="/kusoneko">Kusoneko</a>';
         $waifuOrhusbando = 'Husbando';
