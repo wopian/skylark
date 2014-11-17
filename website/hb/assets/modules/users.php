@@ -11,7 +11,7 @@
     $user_avatar = $user_data['avatar'];
     $user_bio = $user_data['bio'];
     $user_location = $user_data['location'];
-    $user_life = $data['life_spent_on_anime']*60;
+    $user_life = $data['life_spent_on_anime'];
     $user_waifu = $data['waifu'];
     $user_waifuor = $data['waifu_or_husbando'];
 
@@ -75,7 +75,7 @@
 
         <div class="col-lg-6 col-md-6 col-sm-6 text-right">
             <p class="h1">Watched</p>
-            <p class="lead"><?=seconds2human($user_life)?> of anime</p>"
+            <p class="lead"><?=seconds2human($user_life*60)?> of anime</p>"
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12">
