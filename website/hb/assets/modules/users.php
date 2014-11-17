@@ -99,69 +99,53 @@
                 if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
                     $hidden = ($x === 3) ? ' hidden-md hidden-sm' : '';
 
-                    $recent_cover = $recent['anime'][$x][''];
-                    $recent_uri = $recent['anime'][$x][''];
-                    $recent_title = $recent['anime'][$x][''];
-                    $recent_episodes = $recent['anime'][$x][''];
-                }
-            }
+                    $recent_cover = $recent['anime'][$x]['poster_image'];
+                    $recent_uri = $recent['anime'][$x]['id'];
+                    $recent_title = $recent['anime'][$x]['canonical_title'];
+                    $recent_episodes = $recent['anime'][$x]['episode_count'];
+                    $recent_watched = $recent['library_entries'][$x]['episodes_watched'];
+                    $recent_status = $recent['library_entries'][$x]['status'];
+                    $recent_time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
+                    $recent_last = seconds2human($recent_time, true);
 
+                    if ($recent_episodes == 0 || $recent_episodes == null || $recent_episodes == '?') {
+                        $recent_episodes = '∞';
+                    }
 
-        for ($x=0; $x<4; $x++) {
-            if (empty($recent['anime'][0]['id'])) {
-              echo "$username hasn't watched any anime recently.";
-              break;
-            }
-            if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
+                    # $recent_title = (strlen($recent_title)>30) ? substr($recent_title,0,27).'&hellip;' : $recent_title;
 
-                $hidden =  ($x === 3) ? ' hidden-md hidden-sm' : '';
-
-                $cover = $recent['anime'][$x]['poster_image'];
-                $uri = $recent['anime'][$x]['id'];
-                $title = $recent['anime'][$x]['canonical_title'];
-                $episodes = $recent['anime'][$x]['episode_count'];
-                $watched = $recent['library_entries'][$x]['episodes_watched'];
-                $status = $recent['library_entries'][$x]['status'];
-                $time = time() - (strtotime($recent['library_entries'][$x]['last_watched']));
-                $last = seconds2human($time, true);
-
-                if ($episodes == 0 || $episodes == null || $episodes == '?') {
-                    $episodes='∞';
-                }
-
-                $title = (strlen($title)>30) ? substr($title,0,27).'&hellip;' : $title;
-
-                switch ($status) {
+                    switch ($recent_status) {
                     case 'Currently Watching':
-                        $status = 'Watched '.$watched.' of '.$episodes.' episodes';
+                        $recent_status = 'Watched '.$recent_watched.' of '.$recent_episodes.' episodes';
                         break;
                     case 'Completed':
-                        $status = 'Completed.';
+                        $recent_status = 'Completed.';
                         break;
                     case 'Plan to Watch':
-                        $status = 'Plans to watch.';
+                        $recent_status = 'Plans to watch.';
                         break;
                     case 'On Hold':
-                        $status = 'On hold.';
+                        $recent_status = 'On hold.';
                         break;
                     case 'Dropped':
-                        $status = 'Dropped after '.$watched.' episodes.';
+                        $recent_status = 'Dropped after '.$recent_watched.' episodes.';
                         break;
+                    }
+
+                    echo    '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
+                                <div class="thumbnail">
+                                    <a href="//hummingbird.me/anime/'.$recent_uri.'"><img src="'.$recent_cover.'" alt="'.$recent_title.'"></a>
+                                    <div class="caption">
+                                        <h4>'.$recent_title.'</h4>
+                                        <p>'.$recent_status.'</p>
+                                        <p>'.$recent_last.' ago</p>
+                                    </div>
+                                </div>
+                            </div>';
                 }
-                echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6'.$hidden.'">
-                        <div class="thumbnail">
-                          <a href="//hummingbird.me/anime/'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
-                          <div class="caption">
-                            <h4>'.$title.'</h4>
-                            <p>'.$status.'</p>
-                            <p>'.$last.' ago</p>
-                          </div>
-                        </div>
-                      </div>';
             }
-        }
-    ?>
-  </div>
+        ?>
+    </div>
 
   <?php
       $url = "https://hummingbird.me/library_entries?user_id=".$user;
