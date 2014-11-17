@@ -23,7 +23,7 @@
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="//9.dev.boomcraft.co.uk/dist/images/avatar_teal.png" />
+  <meta property="og:image" content="//9.dev.boomcraft.co.uk/assets/images/avatar_teal.png" />
   <meta property="og:url" content="//9.dev.boomcraft.co.uk" />
   <meta property="og:title" content="Hummingbird Tools" />
 
@@ -31,10 +31,10 @@
   <meta name="twitter:site" content="@hb_tools" />
   <meta name="twitter:title" content="Hummingbird Tools" />
   <meta name="twitter:description" content="A variety of tools and stats for Hummingbird." />
-  <meta name="twitter:image" content="//9.dev.boomcraft.co.uk/dist/images/twitter_teal.png" />
+  <meta name="twitter:image" content="//9.dev.boomcraft.co.uk/assets/images/twitter_teal.png" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk" />
 
-  <link href="/dist/css/custom.css" rel="stylesheet">
+  <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -202,7 +202,7 @@
       <div class="panel-body">
         <h2>Cover Images</h2>
         <p>Something cool here?</p>
-        <img class="img-responsive" src="/dist/images/covers/default/normal1.png" alt="Cover image example."><br />
+        <img class="img-responsive" src="/assets/images/covers/default/normal1.png" alt="Cover image example."><br />
 
         <form class="form-horizontal">
           <fieldset>
@@ -339,8 +339,8 @@
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-  <script src="/dist/js/ripples.min.js"></script>
-  <script src="/dist/js/material.min.js"></script>
+  <script src="/assets/js/ripples.min.js"></script>
+  <script src="/assets/js/material.min.js"></script>
 
   <script>
   $(document).ready(function() {
@@ -360,7 +360,7 @@
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
-  <script src="/dist/js/outdatedbrowser.min.js"></script>
+  <script src="/assets/js/outdatedbrowser.min.js"></script>
   <div id="outdated">
      <h6>Your browser is out-of-date!</h6>
      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>

@@ -1,43 +1,35 @@
 <?php
-    class initialize {
-        # Grab user field from url and load user stats
-        $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
-        $user_url = "https://hummingbird.me/api/v1/users/$user";
-        $user_json = file_get_contents($url);
-        $user_data= json_decode($user_json, true);
+    $user = $_GET['user'];
+    $userh = ucfirst($user);
+    $url = "https://hummingbird.me/api/v1/users/".$user;
+    $json = file_get_contents($url);
+    $data = json_decode($json, true);
 
-        if (empty($user_data['name'])) {
-            header("Location: //hb.wopian.me");
-        }
-
-        # Format username
-        $user_name = ucfirst($user_data['name']);
-        # Plural username
-        $user_plural = (substr($user_name, -1) == "s") ? "'" : "'s";
-    }
+    $username = ucfirst($data['name']);
+    $userplural = (substr($username, -1) == "s") ? "'" : "'s";
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title><?=$user_plural?> Profile - Hummingbird Tools</title>
+  <title><?=$userplural?> Profile - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View <?=$user_plural?> profile.">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name?>">
+  <meta name="description" content="View <?=$userplural?> profile.">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$username?>">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="<?=$user_data['avatar']?>" />
+  <meta property="og:image" content="<?=$data['avatar']?>" />
   <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
-  <meta property="og:title" content="<?=$user_plural?> Profile - Hummingbird Tools" />
+  <meta property="og:title" content="<?=$header?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
-  <meta name="twitter:title" content="<?=$user_plural?> Profile - Hummingbird Tools" />
-  <meta name="twitter:description" content="View <?=$user_plural?> profile." />
-  <meta name="twitter:image" content="<?=$user_data['avatar']?>" />
+  <meta name="twitter:title" content="<?=$userplural?> Profile - Hummingbird Tools" />
+  <meta name="twitter:description" content="View <?=$userplural?> profile." />
+  <meta name="twitter:image" content="<?=$data['avatar']?>" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>" />
 
   <link href="/assets/css/custom.css" rel="stylesheet">
@@ -57,21 +49,21 @@
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
+          <li><a rel="prerender" href="/">Home</a></li>
           <li class="active"><a href="/<?=$user?>">Info</a></li>
-          <li><a href="/<?=$user?>/library">Library</a></li>
-          <li><a href="/<?=$user?>/">Cover Images</a></li>
-          <li><a href="//hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
+          <li><a rel="prerender" href="/<?=$user?>/library">Library</a></li>
+          <li><a rel="prerender" href="/<?=$user?>/">Cover Images</a></li>
+          <li><a rel="prerender" href="//hummingbird.me/users/<?=$user?>">Hummingbird</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="" class="dropdown-toggle" data-toggle="dropdown">Other Sites <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="//manga.jamesharris.net">Manga</a></li>
+              <li><a rel="prerender" href="//manga.jamesharris.net">Manga</a></li>
               <li class="divider"></li>
-              <li><a href="//jamesharris.net">Portfolio</a></li>
-              <li><a href="//whatpulse.jamesharris.net">WhatPulse Stats</a></li>
-              <li><a href="//lastfm.jamesharris.net">Lastistics</a></li>
+              <li><a rel="prerender" href="//jamesharris.net">Portfolio</a></li>
+              <li><a rel="prerender" href="//whatpulse.jamesharris.net">WhatPulse Stats</a></li>
+              <li><a rel="prerender" href="//lastfm.jamesharris.net">Lastistics</a></li>
             </ul>
           </li>
         </ul>

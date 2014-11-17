@@ -42,7 +42,7 @@
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
   <meta name="twitter:url" content="http://9.dev.boomcraft.co.uk/<?=$user?>" />
 
-  <link href="/dist/css/custom.css" rel="stylesheet">
+  <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
 
 <?
@@ -362,8 +362,8 @@ flush();
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-  <script src="/dist/js/ripples.min.js"></script>
-  <script src="/dist/js/material.min.js"></script>
+  <script src="/assets/js/ripples.min.js"></script>
+  <script src="/assets/js/material.min.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -371,8 +371,8 @@ flush();
     });
   </script>
 
-  <script src="/dist/js/highcharts.js"></script>
-  <script src="/dist/js/exporting.js"></script>
+  <script src="/assets/js/highcharts.js"></script>
+  <script src="/assets/js/exporting.js"></script>
 
   <script type="text/javascript">
 $(function () {

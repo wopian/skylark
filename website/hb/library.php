@@ -119,7 +119,7 @@
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
   <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>/library<?=$meta_status?>" />
 
-  <link href="/dist/css/custom.css" rel="stylesheet">
+  <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
 
 <?php
@@ -264,8 +264,8 @@ array_multisort($sort, SORT_DESC, $data);
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-  <script src="/dist/js/ripples.min.js"></script>
-  <script src="/dist/js/material.min.js"></script>
+  <script src="/assets/js/ripples.min.js"></script>
+  <script src="/assets/js/material.min.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -275,7 +275,7 @@ array_multisort($sort, SORT_DESC, $data);
 
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
 
-  <script src="/dist/js/outdatedbrowser.min.js"></script>
+  <script src="/assets/js/outdatedbrowser.min.js"></script>
   <div id="outdated">
      <h6>Your browser is out-of-date!</h6>
      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
