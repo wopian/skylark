@@ -16,12 +16,12 @@
     $data = array();
     $all = array();
 
-    for ($x=1; $x<5; $x++) {
-        $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
+    for ($x=1; $x<=5; $x++) {
+        $url = "//hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
 
-        $all = array_merge($all, $data);
+        $all = $all + $data;
     }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
