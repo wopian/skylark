@@ -13,6 +13,7 @@
     $user_location = $user_data['location'];
     $user_waifu = $user_data['waifu'];
     $user_waifuor = $user_data['waifu_or_husbando'];
+    $user_life = $user_data['life_spent_on_anime']*60;
 
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
@@ -74,7 +75,7 @@
 
         <div class="col-lg-6 col-md-6 col-sm-6 text-right">
             <p class="h1">Watched</p>
-            <p class="lead"><?=seconds2human($data['life_spent_on_anime']*60)?> of anime</p>"
+            <p class="lead"><?=seconds2human($user_life)?> of anime</p>"
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12">
