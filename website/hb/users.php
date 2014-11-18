@@ -112,8 +112,7 @@
         error: function() {
             var options =  {
                 content: "Failed to retrieve user information, refreshing in 5 seconds. :(",
-                style: "toast",
-                timeout: 0
+                timeout: 1000000
             }
 
             $.snackbar(options);
