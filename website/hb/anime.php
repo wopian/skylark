@@ -17,15 +17,11 @@ $results = curl_exec($curl);
 // Close request to clear up some resources
 curl_close($curl);
 
-#echo "<pre>";
-#print_r($results);
-#echo "</pre>";
-
 $json = json_decode($results, true);
 
-#echo "<pre>";
-#print_r($json);
-#echo "</pre>";
+echo "<pre>";
+print_r($json);
+echo "</pre>";
 
 $id = $json['anime']['id'];
 $slug = $json['anime']['slug'];
