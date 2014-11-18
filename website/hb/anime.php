@@ -19,9 +19,9 @@ curl_close($curl);
 
 $json = json_decode($results, true);
 
-echo "<pre>";
-print_r($json);
-echo "</pre>";
+#echo "<pre>";
+#print_r($json);
+#echo "</pre>";
 
 $id = $json['anime']['id'];
 $slug = $json['anime']['slug'];
