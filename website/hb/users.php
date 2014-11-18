@@ -110,7 +110,10 @@
           $('.spinner').remove();
         },
         error: function() {
-            $.snackbar({content: "Oops, something went wrong! :("});
+            $.snackbar({content: "Failed to retrieve user information, refreshing in 5 seconds. :("});
+            setInterval(function(){
+                window.location.reload();
+            }, 5000);
         }
       });
     });
