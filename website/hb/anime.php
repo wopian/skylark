@@ -50,67 +50,6 @@ $rating_reviews = $json['anime']['bayesian_rating'];
 $poster = $json['anime']['poster_image'];
 $cover = $json['anime']['cover_image'];
 
-function printme() {
-
-    echo    "<div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        ID: $id
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        Slug: $slug
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        Title: $title_canonical
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        Synopsis: $synopsis
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        Start: $airing_start
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        End: $airing_end
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
-                        Duration: $airing_duration
-                    </div>
-                </div>
-            </div>
-    ";
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -175,7 +114,61 @@ function printme() {
     <div class="container">
 
     <div class="row">
-        <?=printme()?>
+        <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        ID: <?=$id?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Slug: <?=$slug?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Title: <?=$title_canonical?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Synopsis: <?=$synopsis?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Start: <?=$airing_start?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        End: <?=$airing_end?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Duration: <?=$airing_duration?>
+                    </div>
+                </div>
+            </div>
     </div>
 
     </div>
