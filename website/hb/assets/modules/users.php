@@ -1,9 +1,11 @@
 <?php
+    # Redirect to homepage if not AJAX call (prevents indexing)
     $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND
     strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
     if(!$isAjax) {
         header("Location: //hb.wopian.me");
     }
+
     # Grab user field from url and load user stats
     $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
     $user_url = "https://hummingbird.me/api/v1/users/$user";
