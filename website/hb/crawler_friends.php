@@ -24,7 +24,12 @@
     print_r($data);
     echo '</pre>';
 
-    foreach($data['users'][''] as $key => $value) {
+
+    for ($x=0; $x<=$count; $x++) {
+        echo $data['users'][$x]['id'];
+    }
+
+    /*foreach($data['users'] as $key => $value) {
         echo($value);
     }
 
