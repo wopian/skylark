@@ -14,6 +14,7 @@
     $user = 'wopian';
 
     $data = array();
+    $all = array();
 
     for ($x=1; $x<5; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
