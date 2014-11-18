@@ -13,32 +13,14 @@
 
     $user = 'wopian';
 
-    function loadUsers($user = 'wopian', $n) {
-        $url = "https://hummingbird.me/users?followers_of=$user&page=$n";
-        $json = file_get_contents($url);
-        $followers = json_decode($json, true);
-
-        $url = "https://hummingbird.me/users?followed_by=$user&page=$n";
-        $json = file_get_contents($url);
-        $following = json_decode($json, true);
-
-        $data_ = array_merge($followers, $following);
-
-        return $data_;
-    }
-
     $data = array();
 
     for ($x=1; $x<5; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
-        $followers = json_decode($json, true);
+        $data = json_decode($json, true);
 
-        $url = "https://hummingbird.me/users?followed_by=$user&page=$x";
-        $json = file_get_contents($url);
-        $following = json_decode($json, true);
-
-        $data = array_merge($data,array_merge($followers, $following));
+        $all = array_merge($all, $data);
     }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
