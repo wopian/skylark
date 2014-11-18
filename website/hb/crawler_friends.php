@@ -1,5 +1,16 @@
 <?php
 
+    $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
+    if($db->connect_errno > 0){
+        die('Unable to connect to database [' . $db->connect_error . ']');
+    }
+
+    $sql = "SELECT `id`, `name` FROM `users` ORDER BY `id`";
+    if(!$result = $db->query($sql)){
+        die('There was an error running the query [' . $db->error . ']');
+    }
+    echo mysqli_num_rows($result);
+
     $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
     $url = "https://hummingbird.me/users?followers_of=$user";
     $url2 = "https://hummingbird.me/users?followed_by=$user";
