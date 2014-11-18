@@ -98,7 +98,7 @@
   }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title><?=$userplural?> Library - Hummingbird Tools</title>

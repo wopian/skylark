@@ -74,7 +74,7 @@ $cover = $json['anime']['cover_image'];
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Hummingbird Tools</title>
