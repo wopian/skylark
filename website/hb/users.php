@@ -111,15 +111,11 @@
         },
         error: function() {
             var options =  {
-                content: "Failed to retrieve user information, refreshing in 5 seconds. :(",
-                timeout: 1000000
+                content: "Failed to retrieve user information. :(<br>Refresh to try again.",
+                timeout: 0
             }
 
             $.snackbar(options);
-
-            setInterval(function(){
-                window.location.reload();
-            }, 5000);
         }
       });
     });
