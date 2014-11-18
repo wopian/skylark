@@ -308,7 +308,7 @@
                   <div id="plan" class="col-lg-12" style="height: auto; max-width: 570px"></div>
                 </div>';
       }
-      
+
       //ON HOLD
       $result = array_count_values(str_word_count($total_oh, 1));
       arsort($result);
@@ -331,7 +331,7 @@
                   <div id="hold" class="col-lg-12" style="height: auto; max-width: 570px"></div>
                 </div>';
       }
-      
+
       //DROPPED
       $result = array_count_values(str_word_count($total_d, 1));
       arsort($result);
@@ -526,7 +526,7 @@
                 ],
             }]
         });
-        $('#plan').highcharts({
+        $('#hold').highcharts({
             colors: [ <?=pieColour()?> ],
             credits: {
                 enabled: false
@@ -564,7 +564,7 @@
                 ],
             }]
         });
-        $('#plan').highcharts({
+        $('#drop').highcharts({
             colors: [ <?=pieColour()?> ],
             credits: {
                 enabled: false
