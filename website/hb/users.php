@@ -111,7 +111,7 @@
         },
         error: function() {
             var options =  {
-                content: "Failed to load page. :(<br><br>Refresh to try again.",
+                content: '<i class="mdi-action-report-problem" style="font-size: 40pt; padding-right: 15px"></i>Failed to load page. :(<br>Refresh to try again.',
                 timeout: 0
             }
 
