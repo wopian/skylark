@@ -9,7 +9,7 @@
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
-    echo mysqli_num_rows($result);
+    $rows = mysqli_num_rows($result);
 
     $user = 'wopian';
     $url = "https://hummingbird.me/users?followers_of=$user";
@@ -20,6 +20,8 @@
     $data2 = json_decode($json2, true);
 
     $data = array_merge($data, $data2);
+    $count = count($data)-1;
+    echo "Rows: $rows <br>Users: $count";
 
     echo '<pre>';
     print_r($data);
