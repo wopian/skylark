@@ -39,6 +39,9 @@ SQL;
                     <priority>0.9</priority>
                   </url>";
         }
+
+        $result->free();
+        $db->close();
     ?>
 
 </urlset>

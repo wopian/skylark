@@ -22,6 +22,35 @@
     $user_waifuor = $user_data['waifu_or_husbando'];
     $user_life = $user_data['life_spent_on_anime']*60;
 
+    ############################################################################
+    ############################################################################
+    ## MYSQLI UPDATE
+    ############################################################################
+    ############################################################################
+
+    $name = strtolower($username);
+    $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
+
+    if($db->connect_errno > 0){
+        die('Unable to connect to database [' . $db->connect_error . ']');
+    }
+
+$sql = <<<SQL
+    INSERT INTO `users`
+    SET `name`=$name ON DUPLICATE KEY
+    UPDATE `name`=$name
+SQL;
+
+    if(!$result = $db->query($sql)){
+        die('There was an error running the query [' . $db->error . ']');
+    }
+
+    ############################################################################
+    ############################################################################
+    ## END
+    ############################################################################
+    ############################################################################
+
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
