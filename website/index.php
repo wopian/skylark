@@ -3,6 +3,7 @@
 
 <head>
     <title>Wopian</title>
+    <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
