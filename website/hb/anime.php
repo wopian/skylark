@@ -1,7 +1,6 @@
 <?php
 // Get cURL resource
 $id = rand(1,10000);
-echo $id;
 
 $curl = curl_init();
 // Set some options - we are passing in a useragent too here
@@ -163,14 +162,6 @@ $cover = $json['anime']['cover_image'];
             <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
                 <div class='panel panel-default'>
                     <div class='panel-body'>
-                        Synopsis: <?=$synopsis?>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
-                <div class='panel panel-default'>
-                    <div class='panel-body'>
                         Start: <?=$airing_start?>
                     </div>
                 </div>
@@ -188,6 +179,54 @@ $cover = $json['anime']['cover_image'];
                 <div class='panel panel-default'>
                     <div class='panel-body'>
                         Duration: <?=$airing_duration?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Type: <?=$type?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Age Rating: <?=$age?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Episodes: <?=$episodes?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Length: <?=$length?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Rating: <?=$rating_community?> <br> <?=$rating_reviews?>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        Synopsis: <?=$synopsis?>
                     </div>
                 </div>
             </div>
