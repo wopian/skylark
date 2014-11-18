@@ -308,6 +308,52 @@
                   <div id="plan" class="col-lg-12" style="height: auto; max-width: 570px"></div>
                 </div>';
       }
+      
+      //ON HOLD
+      $result = array_count_values(str_word_count($total_oh, 1));
+      arsort($result);
+      $first = array_slice($result, 0, $cut);
+      foreach ($first as $key => $row) {
+          $key = str_replace('-', ' ', $key);
+          $hold = $hold . '["'.$key.'", '.$row.'], ';
+      }
+      $second = array_slice($result, $cut);
+      $other = 0;
+      foreach ($second as $key => $row) {
+          $other = $other + $row;
+      }
+      $hold = $hold . '["Other", '.$other.']';
+      if (!empty($result)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">On Hold Anime</p>
+                  </div>
+                  <div id="hold" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
+      
+      //DROPPED
+      $result = array_count_values(str_word_count($total_d, 1));
+      arsort($result);
+      $first = array_slice($result, 0, $cut);
+      foreach ($first as $key => $row) {
+          $key = str_replace('-', ' ', $key);
+          $drop = $drop . '["'.$key.'", '.$row.'], ';
+      }
+      $second = array_slice($result, $cut);
+      $other = 0;
+      foreach ($second as $key => $row) {
+          $other = $other + $row;
+      }
+      $drop = $drop . '["Other", '.$other.']';
+      if (!empty($result)) {
+          echo '<div class="col-lg-6 no-gutter">
+                  <div class="col-lg-12">
+                    <p class="h1">Dropped Anime</p>
+                  </div>
+                  <div id="drop" class="col-lg-12" style="height: auto; max-width: 570px"></div>
+                </div>';
+      }
 
       function pieColour() {
           $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
@@ -477,6 +523,82 @@
                 name: 'Amount',
                 data: [
                     <?=$plan?>
+                ],
+            }]
+        });
+        $('#plan').highcharts({
+            colors: [ <?=pieColour()?> ],
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,//null,
+                plotShadow: false
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.0f}',
+                        style: {
+                            color: 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Amount',
+                data: [
+                    <?=$hold?>
+                ],
+            }]
+        });
+        $('#plan').highcharts({
+            colors: [ <?=pieColour()?> ],
+            credits: {
+                enabled: false
+            },
+            chart: {
+                backgroundColor: 'transparent',
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,//null,
+                plotShadow: false
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.0f}',
+                        style: {
+                            color: 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Amount',
+                data: [
+                    <?=$drop?>
                 ],
             }]
         });
