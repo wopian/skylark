@@ -9,8 +9,8 @@
     $user_name = ucfirst($user_data['name']);
     $user_cover = $user_data['cover_image'];
     $user_avatar = $user_data['avatar'];
-    $user_bio = !empty($user_data['bio']) ? $user_data['bio'] : $user_name . ' is a mysterious fellow who hasn\'t edited their bio yet.';
-    $user_location = !empty($user_data['location']) ? $user_data['location'] : 'Unknown';
+    $user_bio = $user_data['bio'];
+    $user_location = empty($user_data['location']) ? 'Unknown' : $user_data['location'];
     $user_waifu = $user_data['waifu'];
     $user_waifuor = $user_data['waifu_or_husbando'];
     $user_life = $user_data['life_spent_on_anime']*60;
