@@ -29,8 +29,16 @@
 
     $data = array();
 
-    for ($x=1; $x<10; $x++) {
-        $data = array_merge($data,loadUsers($x));
+    for ($x=1; $x<5; $x++) {
+        $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
+        $json = file_get_contents($url);
+        $followers = json_decode($json, true);
+
+        $url = "https://hummingbird.me/users?followed_by=$user&page=$x";
+        $json = file_get_contents($url);
+        $following = json_decode($json, true);
+
+        $data = array_merge($data,array_merge($followers, $following));
     }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
