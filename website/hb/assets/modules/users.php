@@ -28,7 +28,7 @@
     ############################################################################
     ############################################################################
 
-    $name = strtolower($username);
+    $name = strtolower($user_name);
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
 
     if($db->connect_errno > 0){
