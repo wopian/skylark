@@ -27,7 +27,7 @@
 
     $data = array();
 
-    for ($x=1; $x<4; $x++) {
+    for ($x=1; $x<10; $x++) {
         $data = array_merge($data,loadUsers());
     }
     $count = count($data['users'])-1;
