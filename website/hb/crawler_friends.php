@@ -24,14 +24,14 @@
     print_r($data);
     echo '</pre>';
 
-    for ($x=0; $x<=$count; $x++) {
-        $name = $data['users'][$x]['id'];
+    foreach($data['users'][''] as $key => $value) {
+        echo($value);
+    }
 
-        $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
+    /* $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
         if(!$result = $db->query($sql)){
             die('There was an error running the query [' . $db->error . ']');
-        }
-    }
+        } */
 
 
     /*$name = strtolower($user_name);
