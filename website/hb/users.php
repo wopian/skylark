@@ -102,7 +102,7 @@
       $('.spinner').show();
 
       $.ajax({
-        url: '/assets/modules/userss.php?user=<?=$user?>',
+        url: '/assets/modules/users.php?user=<?=$user?>',
         type: 'GET',
         dataType: 'html',
         success: function(data) {
