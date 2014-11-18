@@ -230,7 +230,7 @@
           $other = $other + $row;
       }
       // Adds 'other' instance to main blob
-      if ($other > 0) { $overview = $overview . '["Other", '.$other.']'; }
+      if (!empty($other)) { $overview = $overview . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
@@ -253,7 +253,7 @@
       foreach ($second as $key => $row) {
           $other = $other + $row;
       }
-      if ($other > 0) { $completed = $completed . '["Other", '.$other.']'; }
+      if (!empty($other)) { $completed = $completed . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
@@ -276,7 +276,7 @@
       foreach ($second as $key => $row) {
           $other = $other + $row;
       }
-      if ($other > 0) { $currently = $currently . '["Other", '.$other.']'; }
+      if (!empty($other)) { $currently = $currently . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
@@ -299,7 +299,7 @@
       foreach ($second as $key => $row) {
           $other = $other + $row;
       }
-      if ($other > 0) { $plan = $plan . '["Other", '.$other.']'; }
+      if (!empty($other)) { $plan = $plan . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
@@ -322,7 +322,7 @@
       foreach ($second as $key => $row) {
           $other = $other + $row;
       }
-      if ($other > 0) { $hold = $hold . '["Other", '.$other.']'; }
+      if (!empty($other)) { $hold = $hold . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
@@ -345,7 +345,7 @@
       foreach ($second as $key => $row) {
           $other = $other + $row;
       }
-      if ($other > 0) { $drop = $drop . '["Other", '.$other.']'; }
+      if (!empty($other)) { $drop = $drop . '["Other", '.$other.']'; }
       if (!empty($result)) {
           echo '<div class="col-lg-6 no-gutter">
                   <div class="col-lg-12">
