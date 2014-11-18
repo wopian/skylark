@@ -110,7 +110,14 @@
           $('.spinner').remove();
         },
         error: function() {
-            $.snackbar({content: "Failed to retrieve user information, refreshing in 5 seconds. :("},{timeout: 0});
+            var options =  {
+                content: "Failed to retrieve user information, refreshing in 5 seconds. :(",
+                style: "toast",
+                timeout: 0
+            }
+
+            $.snackbar(options);
+
             setInterval(function(){
                 window.location.reload();
             }, 5000);
