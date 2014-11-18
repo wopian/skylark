@@ -36,7 +36,7 @@
     }
 
     #$sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
-    $sql = "INSERT IGNORE INTO `users` (`name`) VALUES ('".$name."')";
+    $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
 
 
     if(!$result = $db->query($sql)){
