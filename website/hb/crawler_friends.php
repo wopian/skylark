@@ -20,7 +20,7 @@
     $data2 = json_decode($json2, true);
 
     $data = array_merge($data, $data2);
-    $count = count($data)-1;
+    $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
 
     echo '<pre>';
