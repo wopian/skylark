@@ -13,22 +13,25 @@
 
     $user = 'wopian';
 
-    $data = array();
-    $all = array();
+    $url = "//hummingbird.me/users?followers_of=$user&page=1";
+    $json = file_get_contents($url);
+    $data = json_decode($json, true);
 
-    for ($x=1; $x<=5; $x++) {
-        $url = "//hummingbird.me/users?followers_of=".$user."&page=".$x;
-        $json = file_get_contents($url);
-        $data = json_decode($json, true);
-
-        $all = array_push($all, $data);
-    }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
 
     echo '<pre>';
-    print_r($all);
+    print_r($data);
     echo '</pre>';
+
+    for ($x=0; $x<=$count; $x++) {
+        $name = $data['users'][$x]['id'];
+
+        $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
+        if(!$result = $db->query($sql)){
+            die('There was an error running the query [' . $db->error . ']');
+        }
+    }
 
 
     /*$name = strtolower($user_name);
