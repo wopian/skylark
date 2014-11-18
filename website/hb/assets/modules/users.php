@@ -94,6 +94,7 @@
 
                 if (empty($recent['anime'][0]['id'])) {
                     echo "<p class='lead'>$user_name has not watched any anime recently. :(</p>";
+                    break;
                 }
 
                 if (isset($recent['anime'][$x]['id']) || !empty($recent['anime'][$x]['id'])) {
