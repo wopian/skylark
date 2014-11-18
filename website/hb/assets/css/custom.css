@@ -1,5 +1,6 @@
 @import url('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
 @import url('/assets/css/material-wfont.min.css');
+@import url('/assets/css/snackbar.css');
 @import url('/assets/css/ripples.min.css');
 
 #outdated{

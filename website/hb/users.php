@@ -93,6 +93,7 @@
 
   <script src="/assets/js/ripples.min.js"></script>
   <script src="/assets/js/material.min.js"></script>
+  <script src="/assets/js/snackbar.js"></script>
 
   <script>
     $(document).ready(function start(){
@@ -109,7 +110,7 @@
           $('.spinner').remove();
         },
         error: function() {
-          alert("Something went wrong!");
+            $.snackbar({content: "Oops, something went wrong! :("});
         }
       });
     });
