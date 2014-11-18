@@ -26,7 +26,11 @@
 
 
     for ($x=0; $x<=$count; $x++) {
-        echo $data['users'][$x]['id'];
+        $name = $data['users'][$x]['id'];
+        $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
+        if(!$result = $db->query($sql)){
+            die('There was an error running the query [' . $db->error . ']');
+        }
     }
 
     /*foreach($data['users'] as $key => $value) {
