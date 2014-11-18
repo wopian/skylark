@@ -35,7 +35,7 @@ $synopsis = $json['anime']['synopsis'];
 
 $airing_start = $json['anime']['started_airing_date'];
 $airing_end = $json['anime']['finished_airing_date'];
-$airing_duration = strtotime($airing_start) - strtotime($airing_start);
+$airing_duration = strtotime($airing_end) - strtotime($airing_start);
 
 $age = $json['anime']['age_rating'];
 $type = $json['anime']['show_type'];
