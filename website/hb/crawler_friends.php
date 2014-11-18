@@ -13,7 +13,35 @@
 
     $user = 'wopian';
 
-    $url = "https://hummingbird.me/users?followers_of=$user&page=1";
+
+    $tick = true;
+    for ($x=1; $x<=10; $x++) {
+        $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
+        $json = file_get_contents($url);
+        $data = json_decode($json, true);
+
+        if (!empty($data['users'][0])) {
+            $count = count($data['users'])-1;
+            echo "Rows: $rows <br>Users: $count";
+
+            for ($y=0; $y<=$count; $y++) {
+                $name = $data['users'][$y]['id'];
+                $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
+                if(!$result = $db->query($sql)){
+                    die('There was an error running the query [' . $db->error . ']');
+                }
+            }
+        } else {
+            break;
+        }
+    }
+
+
+
+
+
+
+   /* $url = "https://hummingbird.me/users?followers_of=$user&page=1";
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
