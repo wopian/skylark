@@ -36,7 +36,7 @@
     }
 
 $sql = <<<SQL
-    INSERT INTO `users` (`name`) VALUES ('$name') ON DUPLICATE KEY UPDATE `name` = $name
+    INSERT INTO `users` (`name`) VALUES ($name) ON DUPLICATE KEY UPDATE `name` = $name
 SQL;
 
     if(!$result = $db->query($sql)){
