@@ -109,7 +109,7 @@
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$data['avatar']?>" />
-  <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user?>/library/<?=$meta_status?>" />
+  <meta property="og:url" content="//hb.wopian.me/<?=$user?>/library/<?=$meta_status?>" />
   <meta property="og:title" content="<?=$userplural?> Library - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
@@ -117,7 +117,7 @@
   <meta name="twitter:title" content="<?=$userplural?> Library - Hummingbird Tools" />
   <meta name="twitter:description" content="<?=$meta_description?>" />
   <meta name="twitter:image" content="<?=$data['avatar']?>" />
-  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user?>/library<?=$meta_status?>" />
+  <meta name="twitter:url" content="//hb.wopian.me/<?=$user?>/library<?=$meta_status?>" />
 
   <link href="/assets/css/custom.css" rel="stylesheet">
 </head>

@@ -23,16 +23,16 @@
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="//9.dev.boomcraft.co.uk/assets/images/avatar_teal.png" />
-  <meta property="og:url" content="//9.dev.boomcraft.co.uk" />
+  <meta property="og:image" content="//hb.wopian.me/assets/images/avatar_teal.png" />
+  <meta property="og:url" content="hb.wopian.me" />
   <meta property="og:title" content="Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
   <meta name="twitter:title" content="Hummingbird Tools" />
   <meta name="twitter:description" content="A variety of tools and stats for Hummingbird." />
-  <meta name="twitter:image" content="//9.dev.boomcraft.co.uk/assets/images/twitter_teal.png" />
-  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk" />
+  <meta name="twitter:image" content="//hb.wopian.me/assets/images/twitter_teal.png" />
+  <meta name="twitter:url" content="//hb.wopian.me" />
 
   <link href="/assets/css/custom.css" rel="stylesheet">
 </head>

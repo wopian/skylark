@@ -20,7 +20,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title><?=properize($user_name);?> Profile - Hummingbird Tools</title>
@@ -32,7 +32,7 @@
   <meta name="author" content="James Harris">
 
   <meta property="og:image" content="<?=$user_data['avatar'];?>" />
-  <meta property="og:url" content="//9.dev.boomcraft.co.uk/<?=$user;?>" />
+  <meta property="og:url" content="//hb.wopian.me/<?=$user;?>" />
   <meta property="og:title" content="<?=properize($user_name);?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
@@ -40,7 +40,7 @@
   <meta name="twitter:title" content="Check out <?=properize($user_name);?> profile on Hummingbird Tools" />
   <meta name="twitter:description" content="View <?=properize($user_name);?> profile." />
   <meta name="twitter:image" content="<?=$user_data['avatar'];?>" />
-  <meta name="twitter:url" content="//9.dev.boomcraft.co.uk/<?=$user;?>" />
+  <meta name="twitter:url" content="//hb.wopian.me/<?=$user;?>" />
 
   <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
