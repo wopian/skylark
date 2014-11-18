@@ -12,20 +12,31 @@
     $rows = mysqli_num_rows($result);
 
     $user = 'wopian';
-    $url = "https://hummingbird.me/users?followers_of=$user";
-    $url2 = "https://hummingbird.me/users?followed_by=$user";
-    $json = file_get_contents($url);
-    $json2 = file_get_contents($url2);
-    $data = json_decode($json, true);
-    $data2 = json_decode($json2, true);
 
-    $data = array_merge($data, $data2);
+    function loadUsers($user = 'wopian', $n) {
+        $url = "https://hummingbird.me/users?followers_of=$user&page=$n";
+        $json = file_get_contents($url);
+        $followers = json_decode($json, true);
+
+        $url = "https://hummingbird.me/users?followed_by=$user&page=$n";
+        $json = file_get_contents($url);
+        $following = json_decode($json, true);
+
+        return array_merge($followers, $following);
+    }
+
+    $data = array();
+
+    for ($x=1; $x<4; $x++) {
+        $data = array_merge($data,loadUsers());
+    }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
 
     echo '<pre>';
     print_r($data);
     echo '</pre>';
+
 
     /*$name = strtolower($user_name);
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
