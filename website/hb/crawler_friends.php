@@ -17,7 +17,7 @@
     $all = array();
 
     for ($x=1; $x<=5; $x++) {
-        $url = "//hummingbird.me/users?followers_of=$user&page=$x";
+        $url = "//hummingbird.me/users?followers_of=".$user."&page=".$x;
         $json = file_get_contents($url);
         $data = json_decode($json, true);
 
