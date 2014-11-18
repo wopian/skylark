@@ -35,9 +35,8 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-$sql = <<<SQL
-    INSERT INTO `users` (`name`) VALUES ($name) ON DUPLICATE KEY UPDATE `name` = $name
-SQL;
+    $sql = "INSERT INTO `users`(`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = ".$name;
+
 
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
