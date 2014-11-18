@@ -38,7 +38,7 @@
             elseif ($y == '' && $M != '') { return "$M"; }
             elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
             elseif ($y == '' && $M == '' && $d == '' && $h != '') { return "$h"; }
-            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m";
+            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
             elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m = '') { return "0 minutes"; }
         }
     }
