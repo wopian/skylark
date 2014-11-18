@@ -22,7 +22,9 @@
         $json = file_get_contents($url);
         $following = json_decode($json, true);
 
-        return array_merge($followers, $following);
+        $data_ = array_merge($followers, $following);
+
+        return $data_;
     }
 
     $data = array();
