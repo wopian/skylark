@@ -23,6 +23,28 @@ $json = json_decode($results, true);
 #print_r($json);
 #echo "</pre>";
 
+function seconds2human($ss, $recent = false) {
+        $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
+        $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
+        $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
+        $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
+        $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
+        if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
+            $and = 'and';
+        }   else {
+            $and = '';
+        }
+        if ($recent === false) {
+            return "$y $M $d $h $and $m";
+        }   else {
+            if ($y != '') { return "$y"; }
+            elseif ($y == '' && $M != '') { return "$M"; }
+            elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h != '') { return "$h"; }
+            elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
+        }
+}
+
 $id = $json['anime']['id'];
 $slug = $json['anime']['slug'];
 
@@ -35,7 +57,7 @@ $synopsis = $json['anime']['synopsis'];
 
 $airing_start = $json['anime']['started_airing_date'];
 $airing_end = $json['anime']['finished_airing_date'];
-$airing_duration = strtotime($airing_end) - strtotime($airing_start);
+$airing_duration = seconds2human(strtotime($airing_end) - strtotime($airing_start));
 
 $age = $json['anime']['age_rating'];
 $type = $json['anime']['show_type'];
