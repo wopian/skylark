@@ -21,13 +21,13 @@
         $json = file_get_contents($url);
         $data = json_decode($json, true);
 
-        $all = $all + $data;
+        $all = array_push($all, $data);
     }
     $count = count($data['users'])-1;
     echo "Rows: $rows <br>Users: $count";
 
     echo '<pre>';
-    print_r($data);
+    print_r($all);
     echo '</pre>';
 
 
