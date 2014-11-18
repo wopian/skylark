@@ -33,7 +33,7 @@
         }
 
         # If no anime watched fill in with 0 minutes
-        if (strlen($m) == '' && strlen($h) == '' && strlen($d) == '' && strlen($M) == '' && strlen($y) == '' &&) {
+        if (strlen($m) == '' && strlen($h) == '' && strlen($d) == '' && strlen($M) == '' && strlen($y) == '') {
             $m = '0 minutes';
         }
 
