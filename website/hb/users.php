@@ -111,7 +111,7 @@
         },
         error: function() {
             var options =  {
-                content: "Failed to retrieve user information. :(<br>Refresh to try again.",
+                content: "Failed to load page. :(<br><br>Refresh to try again.",
                 timeout: 0
             }
 
