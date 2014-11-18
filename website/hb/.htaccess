@@ -19,7 +19,7 @@
   # RewriteRule ^([A-Za-z0-9_-]+)/cover/?$ /cover.php [NC,L]
   RewriteRule ^([A-Za-z0-9_-]+)/?$ /users.php?user=$1 [NC,L]
 
-  RewriteRule ^r /anime.php [NC, L]
+  RewriteRule /r /anime.php [NC, L]
 </IfModule>
 
 # <IfModule mod_deflate.c>
