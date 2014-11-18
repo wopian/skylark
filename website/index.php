@@ -4,7 +4,7 @@
 <head>
     <title>Wopian</title>
     <link href="/assets/css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
