@@ -5,17 +5,19 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-    $sql = "SELECT `id`, `name` FROM `users` ORDER BY `id`";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled`";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
     $rows = mysqli_num_rows($result);
 
+
+
     $user = 'wopian';
 
 
     $tick = true;
-    for ($x=1; $x<=10; $x++) {
+    for ($x=1; $x<=20; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
@@ -26,7 +28,7 @@
 
             for ($y=0; $y<=$count; $y++) {
                 $name = $data['users'][$y]['id'];
-                $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
+                $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
                 if(!$result = $db->query($sql)){
                     die('There was an error running the query [' . $db->error . ']');
                 }
