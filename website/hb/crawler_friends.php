@@ -11,7 +11,7 @@
     }
     echo mysqli_num_rows($result);
 
-    $user = filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING);
+    $user = 'wopian';
     $url = "https://hummingbird.me/users?followers_of=$user";
     $url2 = "https://hummingbird.me/users?followed_by=$user";
     $json = file_get_contents($url);
