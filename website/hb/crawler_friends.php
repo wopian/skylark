@@ -13,7 +13,7 @@
 
     $user = 'wopian';
 
-    $url = "//hummingbird.me/users?followers_of=$user&page=1";
+    $url = "https://hummingbird.me/users?followers_of=$user&page=1";
     $json = file_get_contents($url);
     $data = json_decode($json, true);
 
