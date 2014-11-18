@@ -16,12 +16,12 @@
         $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
         if ( strlen($m) > 1 && ( strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
             $and = 'and';
-        }   else {
+        } else {
             $and = '';
         }
         if ($recent === false) {
             return "$y $M $d $h $and $m";
-        }   else {
+        } else {
             if ($y != '') { return "$y"; }
             elseif ($y == '' && $M != '') { return "$M"; }
             elseif ($y == '' && $M == '' && $d != '') { return "$d"; }
