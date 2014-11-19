@@ -5,7 +5,7 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled`";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
@@ -13,7 +13,7 @@
 
 
 
-    $user = 'wopian';
+    $user = $result['name'];
 
 
     $tick = true;
