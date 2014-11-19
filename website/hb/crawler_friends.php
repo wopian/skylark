@@ -11,9 +11,11 @@
     }
     $rows = mysqli_num_rows($result);
 
-    while ($row = mysqli_fetch_row($result)) {
+    $name = $mysqli->query("SELECT `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `crawled` ASC LIMIT 1")->fetch_object()->name;
+    echo $name;
+    /*while ($row = mysqli_fetch_row($result)) {
         echo $row[0] . $row[1];
-    }
+    }*/
 
     echo '<pre>';
     print_r($result);
