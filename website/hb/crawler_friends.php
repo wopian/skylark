@@ -22,7 +22,7 @@
     }
 
     $total = 0;
-    for ($x=1; $x<=20; $x++) {
+    for ($x=1; $x<=100; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
