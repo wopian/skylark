@@ -12,9 +12,11 @@
     $rows = mysqli_num_rows($result);
 
 
-
-    $user = $result['name'];
-
+    echo '<pre>';
+    print_r($result);
+    echo '</pre>';
+    #$user = $result['name'];
+    $user = 'wopian;'
 
     $tick = true;
     for ($x=1; $x<=20; $x++) {
