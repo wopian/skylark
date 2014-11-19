@@ -42,4 +42,4 @@
             break;
         }
     }
-    echo "Added $total users";
+    echo "Added $total users from $user's followers.";
