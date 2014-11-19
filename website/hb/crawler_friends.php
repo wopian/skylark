@@ -16,7 +16,7 @@
     print_r($result);
     echo '</pre>';
     #$user = $result['name'];
-    $user = 'wopian;'
+    $user = 'wopian';
 
     $tick = true;
     for ($x=1; $x<=20; $x++) {
