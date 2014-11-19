@@ -11,17 +11,15 @@
     }
     $rows = mysqli_num_rows($result);
 
-    $name = $mysqli->query("SELECT `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `crawled` ASC LIMIT 1")->fetch_object()->name;
-    echo $name;
-    /*while ($row = mysqli_fetch_row($result)) {
-        echo $row[0] . $row[1];
-    }*/
+    while ($row = mysqli_fetch_row($result)) {
+        $user = $row[1];
+    }
 
     echo '<pre>';
     print_r($result);
     echo '</pre>';
     #$user = $result['name'];
-    $user = 'wopian';
+    #$user = 'wopian';
 
     $tick = true;
     for ($x=1; $x<=20; $x++) {
