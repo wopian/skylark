@@ -14,6 +14,8 @@
 
     echo '<pre>';
     print_r($result);
+    echo '---';
+    print_r(mysqli_fetch_row($result))
     echo '</pre>';
     #$user = $result['name'];
     $user = 'wopian';
