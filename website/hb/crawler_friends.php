@@ -9,19 +9,19 @@
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
-    $rows = mysqli_num_rows($result);
+    #$rows = mysqli_num_rows($result);
 
-    /*while ($row = mysqli_fetch_row($result)) {
+    while ($row = mysqli_fetch_row($result)) {
         $user = $row[1];
-    }*/
-    $user = 'wopian';
+    }
+    #$user = 'wopian';
 
     $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
 
-    $tick = true;
+    $total = 0;
     for ($x=1; $x<=20; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
@@ -29,7 +29,7 @@
 
         if (!empty($data['users'][0])) {
             $count = count($data['users'])-1;
-            echo "Rows: $rows <br>Users: $count";
+            $total = $total + $count;
 
             for ($y=0; $y<=$count; $y++) {
                 $name = strtolower($data['users'][$y]['id']);
@@ -42,52 +42,4 @@
             break;
         }
     }
-
-
-
-
-
-
-   /* $url = "https://hummingbird.me/users?followers_of=$user&page=1";
-    $json = file_get_contents($url);
-    $data = json_decode($json, true);
-
-    $count = count($data['users'])-1;
-    echo "Rows: $rows <br>Users: $count";
-
-    echo '<pre>';
-    print_r($data);
-    echo '</pre>';
-
-
-    for ($x=0; $x<=$count; $x++) {
-        $name = $data['users'][$x]['id'];
-        $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
-        if(!$result = $db->query($sql)){
-            die('There was an error running the query [' . $db->error . ']');
-        }
-    }
-
-    /*foreach($data['users'] as $key => $value) {
-        echo($value);
-    }
-
-    /* $sql = "REPLACE INTO `users` SET `name` = '".$name."'";
-        if(!$result = $db->query($sql)){
-            die('There was an error running the query [' . $db->error . ']');
-        } */
-
-
-    /*$name = strtolower($user_name);
-    $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
-
-    if($db->connect_errno > 0){
-        die('Unable to connect to database [' . $db->connect_error . ']');
-    }
-
-    $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
-
-
-    if(!$result = $db->query($sql)){
-        die('There was an error running the query [' . $db->error . ']');
-    }
+    echo "Added $total users";
