@@ -11,15 +11,15 @@
     }
     $rows = mysqli_num_rows($result);
 
-    while ($row = mysqli_fetch_row($result)) {
+    /*while ($row = mysqli_fetch_row($result)) {
         $user = $row[1];
-    }
+    }*/
+    $user = 'wopian';
 
-    echo '<pre>';
-    print_r($result);
-    echo '</pre>';
-    #$user = $result['name'];
-    #$user = 'wopian';
+    $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
+    if(!$result = $db->query($sql)){
+        die('There was an error running the query [' . $db->error . ']');
+    }
 
     $tick = true;
     for ($x=1; $x<=20; $x++) {
@@ -32,7 +32,7 @@
             echo "Rows: $rows <br>Users: $count";
 
             for ($y=0; $y<=$count; $y++) {
-                $name = $data['users'][$y]['id'];
+                $name = strtolower($data['users'][$y]['id']);
                 $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
                 if(!$result = $db->query($sql)){
                     die('There was an error running the query [' . $db->error . ']');
