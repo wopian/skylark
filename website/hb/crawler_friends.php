@@ -12,7 +12,7 @@
     $rows = mysqli_num_rows($result);
 
     while ($row = mysqli_fetch_row($result)) {
-        echo $row[0];
+        echo $row[0] . $row[1];
     }
 
     echo '<pre>';
