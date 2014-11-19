@@ -27,9 +27,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View <?=properize($user_name);?> profile.">
+  <meta name="description" content="View stats and other information about <?=$user_name;?> on Hummingbird. Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name;?>">
   <meta name="author" content="James Harris">
+  <meta name="robots" content="NOODP">
 
   <meta property="og:image" content="<?=$user_data['avatar'];?>" />
   <meta property="og:url" content="//hb.wopian.me/<?=$user;?>" />

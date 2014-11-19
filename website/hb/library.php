@@ -107,6 +107,7 @@
   <meta name="description" content="<?=$meta_description?>">
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Library,User Library,<?=$username?>">
   <meta name="author" content="James Harris">
+  <meta name="robots" content="NOODP">
 
   <meta property="og:image" content="<?=$data['avatar']?>" />
   <meta property="og:url" content="//hb.wopian.me/<?=$user?>/library/<?=$meta_status?>" />

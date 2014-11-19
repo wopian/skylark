@@ -22,6 +22,7 @@
   <meta name="description" content="Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
   <meta name="author" content="James Harris">
+  <meta name="robots" content="NOODP">
 
   <meta property="og:image" content="//hb.wopian.me/assets/images/avatar_teal.png" />
   <meta property="og:url" content="hb.wopian.me" />
