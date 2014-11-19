@@ -11,11 +11,12 @@
     }
     $rows = mysqli_num_rows($result);
 
+    while ($row = mysqli_fetch_row($result)) {
+        echo $row[0];
+    }
 
     echo '<pre>';
     print_r($result);
-    echo '---';
-    print_r(mysqli_fetch_row($result))
     echo '</pre>';
     #$user = $result['name'];
     $user = 'wopian';
