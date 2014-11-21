@@ -8,14 +8,34 @@
     echo "<pre>";
     print_r($user_data);
     echo "</pre>";
+    
+    # `User A` has watched 17 days 3 hours and 12 minutes more than `User B`.
+    # 18 days 3 hours and 12 minutes                                    1 day
+    #
+    # `User A` has watched 193 shows, whereas `User B` has watched 8.
+    #
+    # `User A` and `User B` both share [Action], [Comedy] and [Sci Fi] as
+    # their top genres
+    #
+    # `User A` and `User B` has both watched:
+    # [Anime Card 1] [Anime Card 2] [Anime Card 3] {[Anime Card 4]}
+    # and {4} others {{{Click to show}}}
+    #
+    # `User B` rates anime {4.7} on average while `User A` rates {4.2}
+    # [Rating Breakdown Card B] [Rating Breakdown Card A]
+    #
+    # List of anime both watched {{{Limit to 20 shows}}}
+    #
+    # Give reccomendation based on shared genres. {{{If have time also take into account user rating}}}
+    # [User A reccomends] [User B reccomends]
   
     # Redirect to homepage if invalid username given
-    if (empty($user_data['name'])) {
+    if (empty($user_data[0]['name'] || $user_data[1]['name'])) {
         header("Location: //hb.wopian.me");
     }
 
     # Makes first character uppercase
-    $user_name = ucfirst($user_data['name']);
+    $user_name = [ucfirst($user_data[0]['name']), ucfirst($user_data[1]['name'])];
 
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
@@ -27,14 +47,13 @@
 <html lang="en">
 
 <head>
-  <title><?=$user_name;?> - Hummingbird Tools</title>
+  <title><?=$user_name[0];?> vs. <?=$user_name[1];?> - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="View stats and other information about <?=$user_name;?> on Hummingbird. Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
   <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name;?>">
   <meta name="author" content="James Harris">
-  <meta name="robots" content="NOODP">
 
   <meta property="og:image" content="<?=$user_data['avatar'];?>" />
   <meta property="og:url" content="//hb.wopian.me/<?=$user;?>" />
