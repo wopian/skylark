@@ -48,7 +48,7 @@
     
     $compare_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
     $compare_watched_diff = $compare_watched[0] - $compare_watched[1];
-    $compare_watched_more = $compare_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name'];
+    $compare_watched_more = $compare_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name']; # Change this to call 2 functions to auto complete the below stuff and perform better.
     $compare_watched_diff = abs($compare_watched_diff);
     echo $compare_watched_more . " has watched ". $compare_watched_diff ." minutes more than ". $user_data[1]['name'];
 ?>
