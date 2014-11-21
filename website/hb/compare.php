@@ -1,7 +1,7 @@
 <?php
     # Grab user field from url and load user stats
     $user = [filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING), filter_input(INPUT_GET, 'user2', FILTER_SANITIZE_STRING)];
-    $user_url = ["https://hummingbird.me/api/v1/users/$user[0]", "https://hummingbird.me/api/v1/users/$user[1]"];
+    $user_url = ["https://hummingbird.me/api/v1/users/".$user[0], "https://hummingbird.me/api/v1/users/".$user[1]];
     $user_json = [file_get_contents($user_url[0]), file_get_contents($user_url[1])];
     $user_data = [json_decode($user_json[0], true), json_decode($user_json[0], true)];
     
