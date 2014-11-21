@@ -30,7 +30,7 @@
     # [User A reccomends] [User B reccomends]
   
     # Redirect to homepage if invalid username given
-    if (empty($user_data[0]['name'] || $user_data[1]['name'])) {
+    if (empty($user_data[0]['name']) || empty($user_data[1]['name'])) {
         header("Location: //hb.wopian.me");
     }
 
