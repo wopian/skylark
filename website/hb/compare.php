@@ -41,6 +41,15 @@
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
+    
+    # =============================== #
+    # === INITIALIZE USER COMPARE === #
+    # =============================== #
+    
+    $compare_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
+    $compare_watched_diff = $compare_watched[0] - $compare_watched[1];
+    $compare_watched_more = $compare_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name'];
+    echo $compare_watched_more;
 ?>
 
 <!DOCTYPE html>
