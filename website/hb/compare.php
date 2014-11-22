@@ -47,7 +47,7 @@
     # =============================== #
 
     function timeWatched($time_userA, $time_userB) {
-      abs($time_watched_diff);
+      $time_watched_diff = $time_watched_diff > 0 ? $time_watched_diff : abs($time_watched_diff);
       $time_watched_more = [$time_userA, $time_userB];
     }
 
