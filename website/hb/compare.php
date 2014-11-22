@@ -4,11 +4,11 @@
     $user_url = ["https://hummingbird.me/api/v1/users/$user[0]", "https://hummingbird.me/api/v1/users/$user[1]"];
     $user_json = [file_get_contents($user_url[0]), file_get_contents($user_url[1])];
     $user_data = [json_decode($user_json[0], true), json_decode($user_json[1], true)];
-    
+
     echo "<pre>";
     print_r($user_data);
     echo "</pre>";
-    
+
     # `User A` has watched 17 days 3 hours and 12 minutes more than `User B`.
     # 18 days 3 hours and 12 minutes                                    1 day
     #
@@ -28,7 +28,7 @@
     #
     # Give reccomendation based on shared genres. {{{If have time also take into account user rating}}}
     # [User A reccomends] [User B reccomends]
-  
+
     # Redirect to homepage if invalid username given
     if (empty($user_data[0]['name']) || empty($user_data[1]['name'])) {
         header("Location: //hb.wopian.me");
@@ -41,16 +41,23 @@
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
-    
+
     # =============================== #
     # === INITIALIZE USER COMPARE === #
     # =============================== #
-    
-    $compare_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
-    $compare_watched_diff = $compare_watched[0] - $compare_watched[1];
-    $compare_watched_more = $compare_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name']; # Change this to call 2 functions to auto complete the below stuff and perform better.
-    $compare_watched_diff = abs($compare_watched_diff);
-    echo $compare_watched_more . " has watched ". $compare_watched_diff ." minutes more than ". $user_data[1]['name'];
+
+    function timeWatched($time_userA, $time_userB) {
+      abs($time_watched_diff);
+      $time_watched_more = [$time_userA, $time_userB];
+    }
+
+    $time_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
+    $time_watched_diff = $time_watched[0] - $time_watched[1];
+    $time_watched_more = $time_watched_diff > 0 ? timeWatched($user_data[0]['name'], $user_data[1]['name']) : timeWatched($user_data[1]['name'], $user_data[0]['name']);
+    # $time_watched_more = $time_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name']; # Change this to call 2 functions to auto complete the below stuff and perform better.
+    # $time_watched_diff = abs($time_watched_diff);
+
+    echo $time_watched_more[0] . " has watched ". $time_watched_diff ." minutes more than ". $time_watched_more[1];
 ?>
 
 <!DOCTYPE html>
