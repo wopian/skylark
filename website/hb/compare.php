@@ -1,13 +1,27 @@
 <?php
+
+    function debug($type) {
+        if (filter_input(INPUT_GET, 'debug', FILTER_SANITIZE_STRING) = true) {
+            echo '<pre>';
+            switch ($type) {
+                case 'data':
+                    print_r($data);
+                    break;
+                case 'library':
+                    print_r($library);
+                    break;
+            }
+            echo '</pre>';
+        }
+    }
+
     # Grab user field from url and load user stats
     $user = [filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING), filter_input(INPUT_GET, 'user2', FILTER_SANITIZE_STRING)];
     $url = ["https://hummingbird.me/api/v1/users/$user[0]", "https://hummingbird.me/api/v1/users/$user[1]"];
     $json = [file_get_contents($url[0]), file_get_contents($url[1])];
     $data = [json_decode($json[0], true), json_decode($json[1], true)];
 
-    echo "<pre>";
-    print_r($data);
-    echo "</pre>";
+    debug('data');
 
     # `User A` has watched 17 days 3 hours and 12 minutes more than `User B`.
     # 18 days 3 hours and 12 minutes                                    1 day
@@ -66,9 +80,7 @@
     $json = [file_get_contents($url[0]), file_get_contents($url[1])];
     $library = [json_decode($json[0], true), json_decode($json[1], true)];
 
-    echo "<pre>";
-    print_r($library);
-    echo "</pre>";
+    debug('library');
 ?>
 
 <!DOCTYPE html>
