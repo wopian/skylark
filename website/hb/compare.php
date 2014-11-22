@@ -53,7 +53,7 @@
         $time_watched_more = [$user_data[0]['name'], $user_data[1]['name']];
     } else {
         $time_watched_more = [$user_data[1]['name'], $user_data[0]['name']];
-        abs($time_watched_diff);
+        $time_watched_diff = abs($time_watched_diff);
     }
 
     echo $time_watched_more[0] . " has watched ". $time_watched_diff ." minutes more than ". $time_watched_more[1];
