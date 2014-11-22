@@ -46,16 +46,15 @@
     # === INITIALIZE USER COMPARE === #
     # =============================== #
 
-    function timeWatched($time_userA, $time_userB) {
-      $time_watched_diff = $time_watched_diff > 0 ? $time_watched_diff : abs($time_watched_diff);
-      $time_watched_more = [$time_userA, $time_userB];
-    }
-
     $time_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
     $time_watched_diff = $time_watched[0] - $time_watched[1];
-    $time_watched_more = $time_watched_diff > 0 ? timeWatched($user_data[0]['name'], $user_data[1]['name']) : timeWatched($user_data[1]['name'], $user_data[0]['name']);
-    # $time_watched_more = $time_watched_diff > 0 ? $user_data[0]['name'] : $user_data[1]['name']; # Change this to call 2 functions to auto complete the below stuff and perform better.
-    # $time_watched_diff = abs($time_watched_diff);
+
+    if ($time_watched_diff > 0) {
+        $time_watched_more = [$user_data[0]['name'], $user_data[1]['name']];
+    } else {
+        $time_watched_more = [$user_data[1]['name'], $user_data[0]['name']];
+        abs($time_watched_diff);
+    }
 
     echo $time_watched_more[0] . " has watched ". $time_watched_diff ." minutes more than ". $time_watched_more[1];
 ?>
