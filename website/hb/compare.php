@@ -1,12 +1,12 @@
 <?php
     # Grab user field from url and load user stats
     $user = [filter_input(INPUT_GET, 'user', FILTER_SANITIZE_STRING), filter_input(INPUT_GET, 'user2', FILTER_SANITIZE_STRING)];
-    $user_url = ["https://hummingbird.me/api/v1/users/$user[0]", "https://hummingbird.me/api/v1/users/$user[1]"];
-    $user_json = [file_get_contents($user_url[0]), file_get_contents($user_url[1])];
-    $user_data = [json_decode($user_json[0], true), json_decode($user_json[1], true)];
+    $url = ["https://hummingbird.me/api/v1/users/$user[0]", "https://hummingbird.me/api/v1/users/$user[1]"];
+    $json = [file_get_contents($url[0]), file_get_contents($url[1])];
+    $data = [json_decode($json[0], true), json_decode($json[1], true)];
 
     echo "<pre>";
-    print_r($user_data);
+    print_r($data);
     echo "</pre>";
 
     # `User A` has watched 17 days 3 hours and 12 minutes more than `User B`.
@@ -30,50 +30,62 @@
     # [User A reccomends] [User B reccomends]
 
     # Redirect to homepage if invalid username given
-    if (empty($user_data[0]['name']) || empty($user_data[1]['name'])) {
+    if (empty($data[0]['name']) || empty($data[1]['name'])) {
         header("Location: //hb.wopian.me");
     }
 
     # Makes first character uppercase
-    $user_name = [ucfirst($user_data[0]['name']), ucfirst($user_data[1]['name'])];
+    $name = [ucfirst($data[0]['name']), ucfirst($data[1]['name'])];
 
     # Strips trailing 's' from username when last character of username is 's'
     function properize($string) {
         return $string.'\''.($string[strlen($string) - 1] != 's' ? 's' : '');
     }
 
-    # =============================== #
-    # === INITIALIZE USER COMPARE === #
-    # =============================== #
+    # ================================ #
+    # ===== COMPARE TIME WATCHED ===== #
+    # ================================ #
 
-    $time_watched = [$user_data[0]['life_spent_on_anime'], $user_data[1]['life_spent_on_anime']];
+    $time_watched = [$data[0]['life_spent_on_anime'], $data[1]['life_spent_on_anime']];
     $time_watched_diff = $time_watched[0] - $time_watched[1];
 
     if ($time_watched_diff > 0) {
-        $time_watched_more = [$user_data[0]['name'], $user_data[1]['name']];
+        $time_watched_more = [$data[0]['name'], $data[1]['name']];
     } else {
-        $time_watched_more = [$user_data[1]['name'], $user_data[0]['name']];
+        $time_watched_more = [$data[1]['name'], $data[0]['name']];
         $time_watched_diff = abs($time_watched_diff);
     }
 
     echo $time_watched_more[0] . " has watched ". $time_watched_diff ." minutes more than ". $time_watched_more[1];
+
+    # ================================================ #
+    # ===== LIBRARY COMPARE - SHOWS AND EPISODES ===== #
+    # ================================================ #
+
+    $url = ["https://hummingbird.me/api/v1/users/$user[0]/library", "https://hummingbird.me/api/v1/users/$user[1]/library"];
+    $json = [file_get_contents($url[0]), file_get_contents($url[1])];
+    $library = [json_decode($json[0], true), json_decode($json[1], true)];
+
+    echo "<pre>";
+    print_r($library);
+    echo "</pre>";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title><?=$user_name[0];?> vs. <?=$user_name[1];?> - Hummingbird Tools</title>
+  <title><?=$name[0];?> vs. <?=$name[1];?> - Hummingbird Tools</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="View stats and other information about <?=$user_name;?> on Hummingbird. Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
-  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$user_name;?>">
+  <meta name="description" content="View stats and other information about <?=$name;?> on Hummingbird. Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
+  <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,Profile,User,Stats,<?=$name;?>">
   <meta name="author" content="James Harris">
 
-  <meta property="og:image" content="<?=$user_data['avatar'];?>" />
+  <meta property="og:image" content="<?=$data[0]['avatar'];?>" />
   <meta property="og:url" content="//hb.wopian.me/<?=$user;?>" />
-  <meta property="og:title" content="<?=properize($user_name);?> Profile - Hummingbird Tools" />
+  <meta property="og:title" content="<?=properize($name);?> Profile - Hummingbird Tools" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hb_tools" />
