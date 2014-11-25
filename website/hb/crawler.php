@@ -60,8 +60,8 @@
     }
 
     # Calculations
-    $pCrawled = round($b / $a * 100);
-    $pUncrawled = round($c / $a * 100);
+    $pCrawled = round($b / $a * 100, 1);
+    $pUncrawled = round($c / $a * 100, 1);
     $tLeft = seconds2human($c*60);
 
     echo "Tracking $a users.<br>
