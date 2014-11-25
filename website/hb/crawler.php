@@ -62,8 +62,8 @@
     $pUncrawled = $c / $a * 100;
     $tLeft = seconds2human($c*60);
 
-    echo "Tracking $a users.\n
-        \n
-        $b users processed ($pCrawled%). $c waiting to be processed ($pUncrawled%).\n
-        \n
+    echo "Tracking $a users.<br>
+        <br>
+        $b users processed ($pCrawled%). $c waiting to be processed ($pUncrawled%).<br>
+        <br>
         Approx $tLeft remaining to process all users.";
