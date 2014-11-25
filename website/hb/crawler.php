@@ -1,6 +1,6 @@
 <?php
 
-    header("Refresh: 60");
+    header("Refresh: 5");
 
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
@@ -66,6 +66,8 @@
 
     echo "Tracking $a users.<br>
         <br>
-        $b users processed ($pCrawled%). $c waiting to be processed ($pUncrawled%).<br>
+        $b users processed ($pCrawled%).<br>
+        <br>
+        $c waiting to be processed ($pUncrawled%).<br>
         <br>
         Approx $tLeft remaining to process all users.";
