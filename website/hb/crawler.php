@@ -10,15 +10,13 @@
         die('There was an error running the query [' . $db->error . ']');
     }
 
-    print_r(mysqli_fetch_row($result));
-    $a = $result;
+    $a = mysqli_fetch_row($result))[1];
 
     $sql = "SELECT COUNT(*) FROM `users` WHERE `crawled` = 0";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
 
-    print_r(mysqli_fetch_row($result));
-    $b = $result;
+    $b = mysqli_fetch_row($result))[1];
 
     echo "$b of $a users processed.";
