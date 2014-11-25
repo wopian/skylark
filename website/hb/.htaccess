@@ -25,6 +25,12 @@
 
 </IfModule>
 
+# Password protect /admin/
+AuthName "Secure Area"
+AuthType Basic
+AuthUserFile /admin/.htpasswd
+require valid-user
+
 # <IfModule mod_deflate.c>
 #   AddOutputFilterByType DEFLATE text/plain
 #   AddOutputFilterByType DEFLATE text/html
