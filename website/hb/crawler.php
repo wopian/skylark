@@ -1,6 +1,6 @@
 <?php
 
-    header("Refresh: 5");
+    header("Refresh: 60");
 
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
