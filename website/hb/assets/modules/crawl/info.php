@@ -129,7 +129,7 @@
                         <p class="btn btn-default disabled">Processed</p>
                     </div>
                     <div class="panel-body">
-                        <p class="h2"><?=$crawledPer?>% | <?=$crawled?></p>
+                        <p class="h2"><?=$crawledPer?>% <small>|</small> <?=$crawled?></p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         <p class="btn btn-default disabled">Queued</p>
                     </div>
                     <div class="panel-body">
-                        <p class="h2"><?=$uncrawledPer?>% | <?=$uncrawled?></p>
+                        <p class="h2"><?=$uncrawledPer?>% <small>|</small> <?=$uncrawled?></p>
                     </div>
                 </div>
             </div>
