@@ -11,7 +11,8 @@
     $sql = "SELECT `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 5";
     $q = $conn->query($sql);
     while($r = $q->fetch()){
-        print_r($r);
+        echo $r['name'] . "<br>";
+        #print_r($r);
     }
 
 /*
