@@ -21,6 +21,7 @@
     foreach($users as $usr) {
         $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = :name";
         $q = $conn->prepare($sql);
+        $q->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $q->execute(array(':name'=>$usr));
 
         $total = 0;
@@ -38,6 +39,7 @@
                     echo $name;
                     $sql = "INSERT INTO `users` (`name`, `crawled`) VALUES (:name, 0) ON DUPLICATE KEY UPDATE `name` = :name";
                     $q = $conn->prepare($sql);
+                    $q->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $q->execute(array(':name'=>$name));
                 }
             } else {
