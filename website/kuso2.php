@@ -7,5 +7,5 @@
     }
 
     setcookie("uid",$uid,time() + (86400*365), '/');
-    echo "Cookie: ".$_COOKIE['uid'].".";
+    echo "Cookie: ".$_COOKIE['uid'].".<br>";
     echo "Initial: $uid <br>";
