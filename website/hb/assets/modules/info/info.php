@@ -2,17 +2,47 @@
 
     header("Refresh: 60");
     
-    try {
-        $user = 'bobstudi_humming';
-        $pass = 'music195';
-        $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $user = 'bobstudi_humming';
+    $pass = 'music195';
+    $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     
-        echo '<pre>';
+    try {
+        foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
+            $users = $row;
+        }
+        $dbh = null;
+        /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
             print_r($row);
         }
         $dbh = null;
-        echo '</pre>';
+        echo '</pre>';*/
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
+    }
+    
+    try {
+        foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 1') as $row) {
+            $crawled = $row;
+        }
+        $dbh = null;
+        /*echo '<pre>';
+        foreach($dbh->query('SELECT * from `users`') as $row) {
+            print_r($row);
+        }
+        $dbh = null;
+        echo '</pre>';*/
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
+    }
+    
+    try {
+        foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
+            $uncrawled = $row;
+        }
+        $dbh = null;
         /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
             print_r($row);
