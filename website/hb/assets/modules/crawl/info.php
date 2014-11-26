@@ -160,14 +160,6 @@
 
     </div>
 
-    echo "Tracking $users users.<br>
-        <br>
-        $crawled users processed ($pCrawled%).<br>
-        <br>
-        $uncrawled waiting to be processed ($pUncrawled%).<br>
-        <br>
-        Approx $tLeft remaining to process all users.";
-
     <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
 
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
