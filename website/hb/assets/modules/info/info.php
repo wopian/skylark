@@ -8,9 +8,7 @@
         $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     
         echo '<pre>';
-        foreach($dbh->query('SELECT * from `users` WHERE `name` = :name',
-                array(':name' => "doramu")
-                ) as $row) {
+        foreach($dbh->query('SELECT * from `users`') as $row) {
             print_r($row);
         }
         $dbh = null;
