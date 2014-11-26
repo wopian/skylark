@@ -7,7 +7,7 @@
 
     $users = array();
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `timestamp` ASC LIMIT 20";
+    $sql = "SELECT * FROM `users` WHERE `crawled` = 0 ORDER BY `timestamp` ASC LIMIT 20";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
@@ -21,7 +21,8 @@
 
 
     foreach($users as $user) {
-        $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
+        $time = time();
+        $sql = "UPDATE `users` SET `crawled` = 1, `timestamp` = $time WHERE `name` = '".$user."'";
         if(!$result = $db->query($sql)){
             die('There was an error running the query [' . $db->error . ']');
         }
