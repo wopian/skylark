@@ -148,7 +148,7 @@
             <div class="col-md-12">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
-                        <p class="btn btn-default disabled">Queued Time</p>
+                        <p class="btn btn-default disabled">Queue Processing Time</p>
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$tLeft?> remaining</p>
