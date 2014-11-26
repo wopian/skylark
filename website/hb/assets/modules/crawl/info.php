@@ -112,22 +112,22 @@
 
         <div class="row">
 
-            <div class="col-md-3">
-                <div class="well well-lg">
+            <div class="col-md-3 panel panel-default">
+                <div class="panel-body">
                     <p class="h2"><?=$users?></p>
                     <small>Tracked Users</small>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="well well-lg">
+            <div class="col-md-3 panel panel-default">
+                <div class="panel-body">
                     <p class="h2"><?=$crawledPer?></p>
                     <small>Processed</small>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="well well-lg">
+            <div class="col-md-3 panel panel-default">
+                <div class="panel-body">
                     <p class="h2"><?=$uncrawledPer?></p>
                     <small>Queued</small>
                 </div>
