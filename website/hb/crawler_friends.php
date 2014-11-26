@@ -7,7 +7,7 @@
 
     $users = array();
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 20";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `timestamp` ASC LIMIT 20";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
@@ -38,7 +38,8 @@
 
                 for ($y=0; $y<=$count; $y++) {
                     $name = strtolower($data['users'][$y]['id']);
-                    $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
+                    $time = time();
+                    $sql = "INSERT INTO `users` (`name`, `timestamp`) VALUES ('$name', '$time') ON DUPLICATE KEY UPDATE `name` = '$name', `timestamp` = '$time'";
                     if(!$result = $db->query($sql)){
                         die('There was an error running the query [' . $db->error . ']');
                     }
