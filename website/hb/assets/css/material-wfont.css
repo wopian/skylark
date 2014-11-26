@@ -2074,7 +2074,7 @@
 .mdi-notification-dnd-forwardslash:before {
   content: "\e8aa";
 }
-.mdi-notification-do-not-assetsurb:before {
+.mdi-notification-do-not-disturb:before {
   content: "\e8ab";
 }
 .mdi-notification-drive-eta:before {
@@ -2997,6 +2997,12 @@ body .jumbotron-material-lightgrey,
 }
 .open > .dropdown-toggle.btn-material-lightgrey {
   background-color: #ececec;
+}
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+  margin-left: 0;
 }
 .btn-group,
 .btn-group-vertical {
@@ -5412,6 +5418,9 @@ icon-material-lightgrey {
 }
 .panel-footer {
   background-color: #ececec;
+}
+.modal {
+  background: rgba(0, 0, 0, 0.3);
 }
 .snackbar {
   background-color: #323232;
