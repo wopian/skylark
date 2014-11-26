@@ -8,8 +8,7 @@
     
     try {
         foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
-            print_r($row);
-            #$users = $row;
+            $users = $row[0];
         }
         $dbh = null;
         /*echo '<pre>';
@@ -25,8 +24,7 @@
     
     try {
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 1') as $row) {
-            print_r($row);
-            #$crawled = $row;
+            $crawled = $row[0];
         }
         $dbh = null;
         /*echo '<pre>';
@@ -42,8 +40,7 @@
     
     try {
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
-            print_r($row);
-            #$uncrawled = $row;
+            $uncrawled = $row[0];
         }
         $dbh = null;
         /*echo '<pre>';
