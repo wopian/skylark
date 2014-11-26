@@ -82,7 +82,7 @@
     # Calculations
     $crawledPer = round($crawled / $users * 100, 1);
     $uncrawledPer = round($uncrawled / $users * 100, 1);
-    $tLeft = seconds2human(($uncrawled/10)*60);
+    $tLeft = seconds2human(($uncrawled/20)*60);
 ?>
 
 <!DOCTYPE html>
