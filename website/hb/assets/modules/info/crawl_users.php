@@ -5,12 +5,14 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 5";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
     #$rows = mysqli_num_rows($result);
-    $users = mysqli_fetch_row($result);
+    #$users = mysqli_fetch_assoc($result);
+    print_r(mysqli_fetch_assoc($result));
+    /*
 
     foreach($users as $user) {
         $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
