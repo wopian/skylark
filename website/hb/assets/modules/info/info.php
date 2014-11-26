@@ -1,11 +1,11 @@
 <?php
 
     header("Refresh: 60");
-    
+
     $user = 'bobstudi_humming';
     $pass = 'music195';
     $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
-    
+
     try {
         foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
             $users = $row[0];
@@ -82,7 +82,7 @@
     # Calculations
     $crawledPer = round($crawled / $users * 100, 1);
     $uncrawledPer = round($uncrawled / $users * 100, 1);
-    $tLeft = seconds2human($uncrawled*60);
+    $tLeft = seconds2human(($uncrawled/10)*60);
 ?>
 
 <!DOCTYPE html>
