@@ -5,13 +5,17 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 5";
+    $users = array();
+
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 5";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
     #$rows = mysqli_num_rows($result);
     #$users = mysqli_fetch_assoc($result);
-    print_r(mysqli_fetch_assoc($result));
+    $array = mysqli_fetch_assoc($result);
+    $users[] = $array;
+    print_r($users);
     /*
 
     foreach($users as $user) {
