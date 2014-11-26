@@ -20,7 +20,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
   <title><?=$user_name;?> - Hummingbird Tools</title>
