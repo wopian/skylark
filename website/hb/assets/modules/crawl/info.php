@@ -126,7 +126,7 @@
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
-                        <p class="btn btn-default disabled">Processed</p>
+                        <p class="btn btn-default disabled">Processed Users</p>
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$crawledPer?>%</p>
@@ -138,7 +138,7 @@
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
-                        <p class="btn btn-default disabled">Queued</p>
+                        <p class="btn btn-default disabled">Queued Users</p>
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$uncrawledPer?>%</p>
