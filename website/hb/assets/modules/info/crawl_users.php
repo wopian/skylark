@@ -8,14 +8,11 @@
         foreach($dbh->query('SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1') as $row) {
             $user = $row[0];
         }
-        "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
         foreach($dbh->query('UPDATE `users` SET `crawled` = 1 WHERE `name` = $user') as $row) {
-            $crawled = $row[0];
         }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
-        $dbh = null;
         /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
             print_r($row);
@@ -28,7 +25,7 @@
     }
     
     $total = 0;
-    for ($x=1; $x<=100; $x++) {
+    for ($x=1; $x<=1000; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
         $json = file_get_contents($url);
         $data = json_decode($json, true);
@@ -39,6 +36,12 @@
 
             for ($y=0; $y<=$count; $y++) {
                 $name = strtolower($data['users'][$y]['id']);
+                try {
+                $dbh->query('INSERT INTO `users` (`name`) VALUES (`$name`) ON DUPLICATE KEY UPDATE `name` = `$name`') as $row) {
+                } catch (PDOException $e) {
+                    print "Error!: " . $e->getMessage() . "<br/>";
+                    die();
+                }
                 $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
                 if(!$result = $db->query($sql)){
                     die('There was an error running the query [' . $db->error . ']');
