@@ -104,7 +104,7 @@
 
     <!-- Start of content. -->
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="page-header">
             <h1>Database, Crawler & Other Info</h1>
@@ -112,21 +112,21 @@
 
         <div class="row">
 
-            <div class="col-md-3 panel panel-default">
+            <div class="col-md-2 panel panel-default">
                 <div class="panel-body text-center">
                     <p class="h2"><?=$users?></p>
                     <small>Tracked Users</small>
                 </div>
             </div>
 
-            <div class="col-md-3 panel panel-default">
+            <div class="col-md-2 panel panel-default">
                 <div class="panel-body text-center">
                     <p class="h2"><?=$crawledPer?></p>
                     <small>Processed</small>
                 </div>
             </div>
 
-            <div class="col-md-3 panel panel-default">
+            <div class="col-md-2 panel panel-default">
                 <div class="panel-body text-center">
                     <p class="h2"><?=$uncrawledPer?></p>
                     <small>Queued</small>
