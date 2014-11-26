@@ -13,24 +13,18 @@
     $sqlUncrawled = "SELECT COUNT(*) FROM `users` WHERE `crawled` = 0";
 
     # Users in database
-    if(!$result = $db->query($sqlUsers)){
-        die('There was an error running the query [' . $db->error . ']');
-    } else {
-        $a = mysqli_fetch_row($result)[0];
+    if(!$result = $db->query($sqlUsers)){die('There was an error running the query [' . $db->error . ']');} else {
+        $users = mysqli_fetch_row($result)[0];
     }
 
     # Users crawled
-    if(!$result = $db->query($sqlCrawled)){
-        die('There was an error running the query [' . $db->error . ']');
-    } else {
-        $b = mysqli_fetch_row($result)[0];
+    if(!$result = $db->query($sqlCrawled)){die('There was an error running the query [' . $db->error . ']');} else {
+        $crawled = mysqli_fetch_row($result)[0];
     }
 
     # Users crawled
-    if(!$result = $db->query($sqlUncrawled)){
-        die('There was an error running the query [' . $db->error . ']');
-    } else {
-        $c = mysqli_fetch_row($result)[0];
+    if(!$result = $db->query($sqlUncrawled)){die('There was an error running the query [' . $db->error . ']');} else {
+        $uncrawled = mysqli_fetch_row($result)[0];
     }
 
     function seconds2human($ss, $recent = false) {
@@ -60,14 +54,91 @@
     }
 
     # Calculations
-    $pCrawled = round($b / $a * 100, 1);
-    $pUncrawled = round($c / $a * 100, 1);
-    $tLeft = seconds2human($c*60);
+    $pCrawled = round($crawled / $users * 100, 1);
+    $pUncrawled = round($uncrawled / $users * 100, 1);
+    $tLeft = seconds2human($uncrawled*60);
+?>
 
-    echo "Tracking $a users.<br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hummingbird Tools</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="NOODP">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar navbar-material-teal">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Hummingbird Tools</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Other Sites <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="//manga.jamesharris.net">Manga</a></li>
+                            <li class="divider"></li>
+                            <li><a href="//jamesharris.net">Portfolio</a></li>
+                            <li><a href="//whatpulse.jamesharris.net">WhatPulse Stats</a></li>
+                            <li><a href="//lastfm.jamesharris.net">Lastistics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of content. -->
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Database, Crawler & Other Info</h1>
+        </div>
+
+        <div class="row">
+            <div class="well well-lg">
+                <p class="lead"><?=$users?></p>
+                <p>Tracked Users</p>
+            </div>
+        </div>
+
+    </div>
+
+    echo "Tracking $users users.<br>
         <br>
-        $b users processed ($pCrawled%).<br>
+        $crawled users processed ($pCrawled%).<br>
         <br>
-        $c waiting to be processed ($pUncrawled%).<br>
+        $uncrawled waiting to be processed ($pUncrawled%).<br>
         <br>
         Approx $tLeft remaining to process all users.";
+
+    <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/assets/js/ripples.min.js"></script>
+    <script src="/assets/js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
+
+</body>
+</html>
