@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
                         <p class="btn btn-default disabled">Queued Time</p>
