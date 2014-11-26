@@ -6,11 +6,11 @@
         $uid = (isset($_COOKIE['uid'])) ? $_COOKIE['uid'] : 0;
     }
 
-    echo $uid;
+    echo "$uid <br>";
 
     $uid = 1;
 
-    echo $uid;
+    echo "$uid <br>";
 
     setcookie("uid",$uid,time() + (86400*365));
     echo "Cookie ok: ".$_COOKIE['uid'].".";
