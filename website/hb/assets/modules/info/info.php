@@ -1,8 +1,24 @@
 <?php
 
     header("Refresh: 60");
+    
+    $user = 'bobstudi_humming';
+    $pass = 'music195';
+    
+    $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass);
+    
+    echo '<pre>';
+    foreach($dbh->query('SELECT * from `users`') as $row) {
+        print_r($row);
+    }
+    $dbh = null;
+    echo '</pre>';
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
 
-    $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
+    /*$db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
@@ -25,7 +41,7 @@
     # Users crawled
     if(!$result = $db->query($sqlUncrawled)){die('There was an error running the query [' . $db->error . ']');} else {
         $uncrawled = mysqli_fetch_row($result)[0];
-    }
+    }*/
 
     function seconds2human($ss, $recent = false) {
         $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
