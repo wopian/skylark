@@ -20,6 +20,7 @@
 
     foreach($users as $usr) {
         $name = $usr;
+        echo "$usr --- $name";
 
         $sql = "UPDATE `users` SET `crawled` + 1 WHERE `name` = :name";
         $q = $conn->prepare($sql);
