@@ -19,7 +19,7 @@
     #print_r($users);
 
     foreach($users as $usr) {
-        $sql = "UPDATE `users` SET `crawled` + 1 WHERE `name` = :name";
+        $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = :name";
         $q = $conn->prepare($sql);
         $q->execute(array(':name'=>$usr));
 
@@ -36,7 +36,7 @@
                 for ($y=0; $y<=$count; $y++) {
                     $name = $data['users'][$y]['id'];
                     echo $name;
-                    $sql = "INSERT INTO `users` (`name`) VALUES (:name) ON DUPLICATE KEY UPDATE `name` = :name";
+                    $sql = "INSERT INTO `users` (`name`, `crawled`) VALUES (:name, 0) ON DUPLICATE KEY UPDATE `name` = :name";
                     $q = $conn->prepare($sql);
                     $q->execute(array(':name'=>$name));
                 }
