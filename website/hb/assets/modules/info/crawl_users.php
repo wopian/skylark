@@ -14,7 +14,7 @@
 
     $users = array();
     while ($row = mysql_fetch_assoc($result)) {
-        $users[] = $row;
+        $users[] = $row['name'];
     }
     print_r($users);
     /*
