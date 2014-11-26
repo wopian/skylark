@@ -21,8 +21,9 @@
     echo "</pre>";
     #print_r($users);
 
-
+    $abc = 1;
     foreach($users as $user) {
+        echo $abc++;
         $time = time();
         $sql = "UPDATE `users` SET `crawled` = 1, `timestamp` = $time WHERE `name` = '".$user."'";
         if(!$result = $db->query($sql)){
