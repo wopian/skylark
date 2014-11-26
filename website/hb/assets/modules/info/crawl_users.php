@@ -5,7 +5,7 @@
     $dbname     = "bobstudi_hummingbird";
     $dbuser     = "bobstudi_humming";
     $dbpass     = "music195";
-    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass,array(PDO::ATTR_PERSISTENT => true));
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
 
     # Setup default values
     $users = array();
@@ -21,9 +21,7 @@
     foreach($users as $usr) {
         $name = $usr;
 
-        $sql = "UPDATE `users`
-                SET `crawled` + 1
-                WHERE `name` = :name";
+        $sql = "UPDATE `users` SET `crawled` + 1 WHERE `name` = :name";
         $q = $conn->prepare($sql);
         $q->execute(array(':name'=>$name));
 
@@ -39,9 +37,7 @@
 
                 for ($y=0; $y<=$count; $y++) {
                     $names = strtolower($data['users'][$y]['id']);
-                    $sql = "INSERT INTO `users` (`name`)
-                            VALUES (:name)
-                            ON DUPLICATE KEY UPDATE `name` = :name";
+                    $sql = "INSERT INTO `users` (`name`) VALUES (:name) ON DUPLICATE KEY UPDATE `name` = :name";
                     $q = $conn->prepare($sql);
                     $q->execute(array(':name'=>$names));
                 }
