@@ -7,7 +7,7 @@
     $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     
     try {
-        foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
+        foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `name` = :name',array('name' => "doramu")) as $row) {
             $users = $row[0];
         }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 1') as $row) {
