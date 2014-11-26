@@ -104,7 +104,7 @@
 
     <!-- Start of content. -->
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="page-header">
             <h1>Database, Crawler & Other Info</h1>
