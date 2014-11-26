@@ -15,11 +15,10 @@
     $users = array();
     while ($row = mysqli_fetch_row($result)) {
         print_r($row);
-        #$users[] = $row['name'];
+        $users[] = $row[1];
     }
     #print_r($users);
 
-    /*
 
     foreach($users as $user) {
         $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
@@ -49,4 +48,4 @@
             }
         }
         echo "Added $total users from $user's followers.<br>";
-    }*/
+    }
