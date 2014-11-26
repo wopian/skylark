@@ -112,19 +112,25 @@
 
         <div class="row">
 
-            <div class="well well-lg col-md-4">
-                <p class="h2"><?=$users?></p>
-                <small>Tracked Users</small>
+            <div class="col-md-3">
+                <div class="well well-lg">
+                    <p class="h2"><?=$users?></p>
+                    <small>Tracked Users</small>
+                </div>
             </div>
 
-            <div class="well well-lg col-md-4">
-                <p class="h2"><?=$crawledPer?></p>
-                <small>Processed</small>
+            <div class="col-md-3">
+                <div class="well well-lg">
+                    <p class="h2"><?=$crawledPer?></p>
+                    <small>Processed</small>
+                </div>
             </div>
 
-            <div class="well well-lg col-md-4">
-                <p class="h2"><?=$uncrawledPer?></p>
-                <small>Queued</small>
+            <div class="col-md-3">
+                <div class="well well-lg">
+                    <p class="h2"><?=$uncrawledPer?></p>
+                    <small>Queued</small>
+                </div>
             </div>
 
         </div>
