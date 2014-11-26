@@ -28,7 +28,7 @@
         $q->execute(array(':name'=>$name));
 
         $total = 0;
-        for ($x=1, $x<=1000; $x++) {
+        for ($x=1; $x<=1000; $x++) {
             $url = "https://hummingbird.me/users?followers_of=$user&pages=$x";
             $json = file_get_contents($url);
             $data = json_decode($json, true);
