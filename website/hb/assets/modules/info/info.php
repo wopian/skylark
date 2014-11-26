@@ -16,9 +16,6 @@
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
-        $a = $users;
-        $a .= $crawled;
-        $a .= $uncrawled;
         echo $a;
         $dbh = null;
         /*echo '<pre>';
@@ -196,6 +193,8 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="/assets/js/ripples.min.js"></script>
     <script src="/assets/js/material.min.js"></script>
+    <script src="/assets/js/highcharts.js"></script>
+    <script src="/assets/js/exporting.js"></script>
     <script>
         $(document).ready(function() {
             $.material.init();
