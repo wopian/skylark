@@ -32,7 +32,7 @@
             if (!empty($data['users'][0])) {
                 $count = count($data['users'])-1;
                 $total .= $count;
-                echo "$count / $total<br>;
+                echo "$count / $total<br>";
 
                 for ($y=0; $y<=$count; $y++) {
                     $name = $data['users'][$y]['id'];
