@@ -13,7 +13,7 @@
     }
 
     $users = array();
-    while ($row = mysql_fetch_assoc($result)) {
+    while ($row = mysql_fetch_row($result)) {
         print_r($row);
         #$users[] = $row['name'];
     }
