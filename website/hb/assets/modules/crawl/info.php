@@ -54,8 +54,8 @@
     }
 
     # Calculations
-    $pCrawled = round($crawled / $users * 100, 1);
-    $pUncrawled = round($uncrawled / $users * 100, 1);
+    $crawledPer = round($crawled / $users * 100, 1);
+    $uncrawledPer = round($uncrawled / $users * 100, 1);
     $tLeft = seconds2human($uncrawled*60);
 ?>
 
@@ -111,10 +111,22 @@
         </div>
 
         <div class="row">
-            <div class="well well-lg">
-                <p class="lead"><?=$users?></p>
-                <p>Tracked Users</p>
+
+            <div class="well well-lg col-md-4">
+                <p class="h2"><?=$users?></p>
+                <small>Tracked Users</small>
             </div>
+
+            <div class="well well-lg col-md-4">
+                <p class="h2"><?=$crawledPer?></p>
+                <small>Processed</small>
+            </div>
+
+            <div class="well well-lg col-md-4">
+                <p class="h2"><?=$uncrawledPer?></p>
+                <small>Queued</small>
+            </div>
+
         </div>
 
     </div>
