@@ -16,6 +16,10 @@
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
+        $a = $users;
+        $a .= $crawled;
+        $a .= $uncrawled;
+        echo $a;
         $dbh = null;
         /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
