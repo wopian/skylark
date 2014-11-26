@@ -7,14 +7,14 @@
 
     $users = array();
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 5";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 25";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
 
     $users = array();
     while ($row = mysqli_fetch_row($result)) {
-        print_r($row);
+        #print_r($row);
         $users[] = $row[1];
     }
     #print_r($users);
@@ -34,7 +34,7 @@
 
             if (!empty($data['users'][0])) {
                 $count = count($data['users'])-1;
-                $total = $total + $count;
+                $total .= $count;
 
                 for ($y=0; $y<=$count; $y++) {
                     $name = strtolower($data['users'][$y]['id']);
