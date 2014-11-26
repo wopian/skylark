@@ -16,7 +16,7 @@
         $users[] = $r['name'];
         #print_r($r);
     }
-    print_r($users);
+    #print_r($users);
 
     foreach($users as $usr) {
         $name = $usr;
