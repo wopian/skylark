@@ -1,0 +1,5 @@
+# Password protect /admin/
+AuthName "Secure Area"
+AuthType Basic
+AuthUserFile /admin/.htpasswd
+require valid-user
