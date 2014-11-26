@@ -19,12 +19,9 @@
     #print_r($users);
 
     foreach($users as $usr) {
-        $name = $usr;
-        echo "$usr --- $name";
-
         $sql = "UPDATE `users` SET `crawled` + 1 WHERE `name` = :name";
         $q = $conn->prepare($sql);
-        $q->execute(array(':name'=>$name));
+        $q->execute(array(':name'=>$usr));
 
         $total = 0;
         for ($x=1; $x<=1000; $x++) {
@@ -37,16 +34,16 @@
                 $total .= $count;
 
                 for ($y=0; $y<=$count; $y++) {
-                    $names = strtolower($data['users'][$y]['id']);
-                    echo $names;
-                    $sql = "INSERT INTO `users` (`name`) VALUES (:names) ON DUPLICATE KEY UPDATE `name` = :names";
+                    $name = $data['users'][$y]['id'];
+                    echo $name;
+                    $sql = "INSERT INTO `users` (`name`) VALUES (:name) ON DUPLICATE KEY UPDATE `name` = :name";
                     $q = $conn->prepare($sql);
-                    $q->execute(array(':names'=>$names));
+                    $q->execute(array(':name'=>$name));
                 }
             } else {
                 break;
             }
         }
 
-        echo "Added $total users from $name<br>";
+        echo "Added $total users from $usr<br>";
     }
