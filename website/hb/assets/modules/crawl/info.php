@@ -112,10 +112,14 @@
 
         <div class="row">
 
-            <div class="col-md-2 panel panel-default">
-                <div class="panel-body text-center">
-                    <p class="h2"><?=$users?></p>
-                    <small>Tracked Users</small>
+            <div class="col-md-2">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                        <p class="h2"><?=$users?></p>
+                    </div>
+                    <div class="panel-footer">
+                        <small>Tracked Users</small>
+                    </div>
                 </div>
             </div>
 
