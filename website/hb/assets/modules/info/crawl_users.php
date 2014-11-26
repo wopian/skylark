@@ -13,11 +13,12 @@
     }
 
     $users = array();
-    while ($row = mysql_fetch_row($result)) {
+    while ($row = mysqli_fetch_row($result)) {
         print_r($row);
         #$users[] = $row['name'];
     }
     #print_r($users);
+
     /*
 
     foreach($users as $user) {
@@ -48,4 +49,4 @@
             }
         }
         echo "Added $total users from $user's followers.<br>";
-    }
+    }*/
