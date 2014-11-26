@@ -5,41 +5,47 @@
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1";
+    $users = array();
+
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 10";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
-    #$rows = mysqli_num_rows($result);
 
+    $users = array();
     while ($row = mysqli_fetch_row($result)) {
-        $user = $row[1];
+        #print_r($row);
+        $users[] = $row[1];
     }
-    #$user = 'wopian';
+    #print_r($users);
 
-    $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
-    if(!$result = $db->query($sql)){
-        die('There was an error running the query [' . $db->error . ']');
-    }
 
-    $total = 0;
-    for ($x=1; $x<=100; $x++) {
-        $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
-        $json = file_get_contents($url);
-        $data = json_decode($json, true);
-
-        if (!empty($data['users'][0])) {
-            $count = count($data['users'])-1;
-            $total = $total + $count;
-
-            for ($y=0; $y<=$count; $y++) {
-                $name = strtolower($data['users'][$y]['id']);
-                $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
-                if(!$result = $db->query($sql)){
-                    die('There was an error running the query [' . $db->error . ']');
-                }
-            }
-        } else {
-            break;
+    foreach($users as $user) {
+        $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
+        if(!$result = $db->query($sql)){
+            die('There was an error running the query [' . $db->error . ']');
         }
+
+        $total = 0;
+        for ($x=1; $x<=100; $x++) {
+            $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
+            $json = file_get_contents($url);
+            $data = json_decode($json, true);
+
+            if (!empty($data['users'][0])) {
+                $count = count($data['users'])-1;
+                $total += $count;
+
+                for ($y=0; $y<=$count; $y++) {
+                    $name = strtolower($data['users'][$y]['id']);
+                    $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
+                    if(!$result = $db->query($sql)){
+                        die('There was an error running the query [' . $db->error . ']');
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        echo "Added $total users from $user's followers.<br>";
     }
-    echo "Added $total users from $user's followers.";
