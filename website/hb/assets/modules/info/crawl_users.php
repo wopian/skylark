@@ -1,29 +1,41 @@
 <?php
 
-    $dbu = 'bobstudi_humming';
-    $dbp = 'music195';
-    $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $dbp, $dbu, array(PDO::ATTR_PERSISTENT => true));
-    
+    $dbhost     = "localhost";
+    $dbname     = "bobstudi_hummingbird";
+    $dbuser     = "bobstudi_humming";
+    $dbpass     = "music195";
+
+    # database connection
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass,array(PDO::ATTR_PERSISTENT => true));
+
+    $sql = "SELECT `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 5";
+    $q = $conn->query($sql);
+    while($r = $q->fetch()){
+        print_r($r);
+    }
+
+/*
     try {
-        foreach($dbh->query('SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1') as $row) {
-            $user = $row[0];
-        }
+
+        #foreach($dbh->query('SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1') as $row) {
+        #    $user = $row[0];
+        #}
         foreach($dbh->query('UPDATE `users` SET `crawled` = 1 WHERE `name` = $user') as $row) {
         }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
-        /*echo '<pre>';
-        foreach($dbh->query('SELECT * from `users`') as $row) {
-            print_r($row);
-        }
+        #echo '<pre>';
+        #foreach($dbh->query('SELECT * from `users`') as $row) {
+        #    print_r($row);
+        #}
         $dbh = null;
-        echo '</pre>';*/
+        echo '</pre>';
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
     }
-    
+
     $total = 0;
     for ($x=1; $x<=1000; $x++) {
         $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
