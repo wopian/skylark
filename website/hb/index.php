@@ -13,7 +13,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
   <title>Hummingbird Tools</title>
