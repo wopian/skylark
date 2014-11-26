@@ -26,7 +26,7 @@
             die('There was an error running the query [' . $db->error . ']');
         }
 
-        $total = 0;
+        $total = '';
         for ($x=1; $x<=100; $x++) {
             $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
             $json = file_get_contents($url);
