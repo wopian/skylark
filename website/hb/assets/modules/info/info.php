@@ -4,19 +4,19 @@
     
     $user = 'bobstudi_humming';
     $pass = 'music195';
+    try {
+        $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass);
     
-    $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass);
-    
-    echo '<pre>';
-    foreach($dbh->query('SELECT * from `users`') as $row) {
-        print_r($row);
+        echo '<pre>';
+        foreach($dbh->query('SELECT * from `users`') as $row) {
+            print_r($row);
+        }
+        $dbh = null;
+        echo '</pre>';
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
     }
-    $dbh = null;
-    echo '</pre>';
-} catch (PDOException $e) {
-    print "Error!: " . $e->getMessage() . "<br/>";
-    die();
-}
 
     /*$db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
