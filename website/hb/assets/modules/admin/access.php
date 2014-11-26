@@ -1,5 +1,3 @@
-//access.php
-
 <?php
 //put sha1() encrypted password here - example is 'hello'
 $password = 'aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d';
