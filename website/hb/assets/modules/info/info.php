@@ -9,7 +9,8 @@
     
         echo '<pre>';
         foreach($dbh->query('SELECT * from `users` WHERE `name` = :name',
-        array(':name'=>"doramu")) as $row) {
+                array(':name' => "doramu")
+                ) as $row) {
             print_r($row);
         }
         $dbh = null;
