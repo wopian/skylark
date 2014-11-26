@@ -114,33 +114,33 @@
 
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
-                    <div class="panel-body">
-                        <p class="h2"><?=$users?></p>
-                    </div>
                     <div class="panel-heading">
                         <p class="btn btn-default disabled">Tracked Users</p>
                     </div>
+                    <div class="panel-body">
+                        <p class="h2"><?=$users?></p>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
-                    <div class="panel-body">
-                        <p class="h2"><?=$crawledPer?>% | <?=$crawled?></p>
-                    </div>
                     <div class="panel-heading">
                         <p class="btn btn-default disabled">Processed</p>
                     </div>
+                    <div class="panel-body">
+                        <p class="h2"><?=$crawledPer?>% | <?=$crawled?></p>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
-                    <div class="panel-body">
-                        <p class="h2"><?=$uncrawledPer?>% | <?=$uncrawled?></p>
-                    </div>
                     <div class="panel-heading">
                         <p class="btn btn-default disabled">Queued</p>
+                    </div>
+                    <div class="panel-body">
+                        <p class="h2"><?=$uncrawledPer?>% | <?=$uncrawled?></p>
                     </div>
                 </div>
             </div>
