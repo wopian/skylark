@@ -19,7 +19,7 @@
     print_r($users);
 
     foreach($users as $usr) {
-        $name = $usr['name'];
+        $name = $usr;
 
         $sql = "UPDATE `users`
                 SET `crawled` + 1
