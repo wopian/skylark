@@ -1,9 +1,9 @@
 <?
 
     if (!isset($_COOKIE['uid'])) {
-        $uid = (isset($_POST["userid"])) ? $_POST["userid"] : "post";
+        $uid = (isset($_POST["userid"])) ? "post set" : "post not set";
     } else {
-        $uid = (isset($_COOKIE['uid'])) ? $_COOKIE['uid'] : "cookie";
+        $uid = (isset($_COOKIE['uid'])) ? "cookie set" : "cookie not set";
     }
 
     setcookie("uid",$uid,time() + (86400*365), '/');
