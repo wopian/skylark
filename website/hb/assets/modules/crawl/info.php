@@ -118,7 +118,7 @@
                         <p class="h2"><?=$users?></p>
                     </div>
                     <div class="panel-footer">
-                        <small>Tracked Users</small>
+                        <small class="btn btn-default disabled">Tracked Users</small>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
             <div class="col-md-2 panel panel-default">
                 <div class="panel-body text-center">
                     <p class="h2"><?=$crawledPer?></p>
-                    <small>Processed</small>
+                    <p class="btn btn-default disabled">Processed</p>
                 </div>
             </div>
 
