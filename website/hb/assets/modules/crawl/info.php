@@ -1,7 +1,6 @@
 <?php
 
     header("Refresh: 60");
-    require('/assets/modules/admin/access.php');
 
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
