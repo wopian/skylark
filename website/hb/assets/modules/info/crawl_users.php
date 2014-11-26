@@ -11,10 +11,11 @@
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
-    #$rows = mysqli_num_rows($result);
-    #$users = mysqli_fetch_assoc($result);
-    $array = mysqli_fetch_assoc($result);
-    $users[] = $array;
+
+    $users = array();
+    while ($row = mysql_fetch_assoc($result)) {
+        $users[] = $row;
+    }
     print_r($users);
     /*
 
