@@ -14,9 +14,10 @@
 
     $users = array();
     while ($row = mysql_fetch_assoc($result)) {
-        $users[] = $row['name'];
+        print_r($row);
+        #$users[] = $row['name'];
     }
-    print_r($users);
+    #print_r($users);
     /*
 
     foreach($users as $user) {
