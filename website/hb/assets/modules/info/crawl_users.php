@@ -7,7 +7,7 @@
 
     $users = array();
 
-    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 25";
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` WHERE `crawled` = 0 ORDER BY `name` ASC LIMIT 10";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
