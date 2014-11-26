@@ -37,9 +37,9 @@
 
                 for ($y=0; $y<=$count; $y++) {
                     $names = strtolower($data['users'][$y]['id']);
-                    $sql = "INSERT INTO `users` (`name`) VALUES (:name) ON DUPLICATE KEY UPDATE `name` = :name";
+                    $sql = "INSERT INTO `users` (`name`) VALUES (:names) ON DUPLICATE KEY UPDATE `name` = :names";
                     $q = $conn->prepare($sql);
-                    $q->execute(array(':name'=>$names));
+                    $q->execute(array(':names'=>$names));
                 }
             } else {
                 break;
