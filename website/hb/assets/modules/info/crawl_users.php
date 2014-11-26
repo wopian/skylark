@@ -1,50 +1,43 @@
 <?php
 
-    # Database connection
-    $dbhost     = "localhost";
-    $dbname     = "bobstudi_hummingbird";
-    $dbuser     = "bobstudi_humming";
-    $dbpass     = "music195";
-    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
-
-    # Setup default values
-    $users = array();
-
-    $sql = "SELECT `name` FROM `users` ORDER BY `crawled` ASC LIMIT 5";
-    $q = $conn->query($sql);
-    while($r = $q->fetch()) {
-        $users[] = $r['name'];
-        #print_r($r);
+    $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
+    if($db->connect_errno > 0){
+        die('Unable to connect to database [' . $db->connect_error . ']');
     }
-    #print_r($users);
 
-    foreach($users as $usr) {
-        $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = :name";
-        $q = $conn->prepare($sql);
-        $q->execute(array(':name'=>$usr));
+    $sql = "SELECT `id`, `name`, `crawled` FROM `users` ORDER BY `crawled` ASC LIMIT 1";
+    if(!$result = $db->query($sql)){
+        die('There was an error running the query [' . $db->error . ']');
+    }
+    #$rows = mysqli_num_rows($result);
+    $users = mysqli_fetch_row($result);
+
+    foreach($users as $user) {
+        $sql = "UPDATE `users` SET `crawled` = 1 WHERE `name` = '".$user."'";
+        if(!$result = $db->query($sql)){
+            die('There was an error running the query [' . $db->error . ']');
+        }
 
         $total = 0;
-        for ($x=1; $x<=1000; $x++) {
-            $url = "https://hummingbird.me/users?followers_of=$user&pages=$x";
+        for ($x=1; $x<=100; $x++) {
+            $url = "https://hummingbird.me/users?followers_of=$user&page=$x";
             $json = file_get_contents($url);
             $data = json_decode($json, true);
 
             if (!empty($data['users'][0])) {
                 $count = count($data['users'])-1;
-                $total .= $count;
-                echo "$count / $total<br>";
+                $total = $total + $count;
 
                 for ($y=0; $y<=$count; $y++) {
-                    $name = $data['users'][$y]['id'];
-                    echo $name;
-                    $sql = "INSERT INTO `users` (`name`, `crawled`) VALUES (:name, 0) ON DUPLICATE KEY UPDATE `name` = :name";
-                    $q = $conn->prepare($sql);
-                    $q->execute(array(':name'=>$name));
+                    $name = strtolower($data['users'][$y]['id']);
+                    $sql = "INSERT INTO `users` (`name`) VALUES ('".$name."') ON DUPLICATE KEY UPDATE `name` = '".$name."'";
+                    if(!$result = $db->query($sql)){
+                        die('There was an error running the query [' . $db->error . ']');
+                    }
                 }
             } else {
                 break;
             }
         }
-
-        echo "Added $total users from $usr<br>";
+        echo "Added $total users from $user's followers.<br>";
     }
