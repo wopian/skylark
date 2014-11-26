@@ -2,17 +2,24 @@
 
     header("Refresh: 60");
     
-    $user = 'bobstudi_humming';
-    $pass = 'music195';
     try {
-        $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass);
+        $user = 'bobstudi_humming';
+        $pass = 'music195';
+        $dbh = new PDO('mysql:host=localhost;dbname=bobstudi_hummingbird', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     
         echo '<pre>';
-        foreach($dbh->query('SELECT * from `users`') as $row) {
+        foreach($dbh->query('SELECT * from `users` WHERE `name` = :name',
+        array(':name'=>"doramu")) as $row) {
             print_r($row);
         }
         $dbh = null;
         echo '</pre>';
+        /*echo '<pre>';
+        foreach($dbh->query('SELECT * from `users`') as $row) {
+            print_r($row);
+        }
+        $dbh = null;
+        echo '</pre>';*/
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
