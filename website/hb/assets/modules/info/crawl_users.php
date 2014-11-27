@@ -42,7 +42,7 @@
                 for ($y=0; $y<=$count; $y++) {
                     $name = strtolower($data['users'][$y]['id']);
                     $time = time();
-                    $sql = "INSERT INTO `users` (`name`, `timestamp`) VALUES ('$name', '$time') ON DUPLICATE KEY UPDATE `users` SET `name` = '$name', `timestamp` = '$time'";
+                    $sql = "INSERT INTO `users` (`name`, `timestamp`) VALUES ('$name', '$time') ON DUPLICATE KEY UPDATE `name` = '$name', `timestamp` = '$time'";
                     if(!$result = $db->query($sql)){
                         die('There was an error running the query [' . $db->error . ']');
                     }
