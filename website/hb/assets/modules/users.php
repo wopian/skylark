@@ -267,7 +267,7 @@
       // Adds 'other' instance to main blob
       if (!empty($other)) { $overview = $overview . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Genre Overview</p>
                   </div>
@@ -290,7 +290,7 @@
       }
       if (!empty($other)) { $completed = $completed . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Completed Anime</p>
                   </div>
@@ -313,7 +313,7 @@
       }
       if (!empty($other)) { $currently = $currently . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Currently Watching Anime</p>
                   </div>
@@ -336,7 +336,7 @@
       }
       if (!empty($other)) { $plan = $plan . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Plan to Watch Anime</p>
                   </div>
@@ -359,7 +359,7 @@
       }
       if (!empty($other)) { $hold = $hold . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">On Hold Anime</p>
                   </div>
@@ -382,7 +382,7 @@
       }
       if (!empty($other)) { $drop = $drop . '["Other", '.$other.']'; }
       if (!empty($result)) {
-          echo '<div class="col-lg-6 no-gutter">
+          echo '<div class="col-md-6 no-gutter">
                   <div class="col-lg-12">
                     <p class="h1">Dropped Anime</p>
                   </div>
