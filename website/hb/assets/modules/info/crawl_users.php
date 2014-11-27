@@ -13,13 +13,14 @@
     }
 
     $users = array();
-    #echo "<pre>";
+    echo "<pre>";
     while ($row = mysqli_fetch_row($result)) {
-        #print_r($row);
+        print_r($row);
         $users[] = $row[1];
     }
-    #echo "</pre>";
-    #print_r($users);
+    echo "<br>";
+    print_r($users);
+    echo "</pre>";
 
     foreach($users as $user) {
         $time = time();
