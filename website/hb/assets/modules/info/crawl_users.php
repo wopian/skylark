@@ -13,12 +13,12 @@
     }
 
     $users = array();
-    echo "<pre>";
+    #echo "<pre>";
     while ($row = mysqli_fetch_row($result)) {
-        print_r($row);
+        #print_r($row);
         $users[] = $row[1];
     }
-    echo "</pre>";
+    #echo "</pre>";
     #print_r($users);
 
     foreach($users as $user) {
