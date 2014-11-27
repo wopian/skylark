@@ -7,7 +7,7 @@
 
     $users = array();
 
-    $sql = "SELECT * FROM `users` WHERE `crawled` >= 1 ORDER BY `crawled`, `timestamp` ASC LIMIT 20";
+    $sql = "SELECT * FROM `users` WHERE `crawled` >= 1 ORDER BY `crawled` ASC LIMIT 20";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
