@@ -25,7 +25,7 @@
     foreach($users as $user) {
         echo $abc++;
         $time = time();
-        $sql = "UPDATE `users` SET `crawled` = 1, `timestamp` = '".$time."' WHERE `name` = '".$user."'";
+        $sql = "UPDATE `users` SET `crawled` = 1, `timestamp` = $time WHERE `name` = '$user'";
         if(!$result = $db->query($sql)){
             die('There was an error running the query [' . $db->error . ']');
         }
@@ -43,7 +43,7 @@
                 for ($y=0; $y<=$count; $y++) {
                     $name = strtolower($data['users'][$y]['id']);
                     $time = time();
-                    $sql = "INSERT INTO `users` (`name`, `timestamp`) VALUES ('".$user."', '".$time."') ON DUPLICATE KEY UPDATE `users` SET `name` = '".$user."', `timestamp` = '".$time."'";
+                    $sql = "INSERT INTO `users` (`name`, `timestamp`) VALUES ('$user', $time) ON DUPLICATE KEY UPDATE `name` = '$user', `timestamp` = $time";
                     if(!$result = $db->query($sql)){
                         die('There was an error running the query [' . $db->error . ']');
                     }
