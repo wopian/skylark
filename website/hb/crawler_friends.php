@@ -24,7 +24,7 @@
 
     foreach($users as $user) {
         $time = time();
-        $sql = "UPDATE `users` SET `crawled` + 1, `timestamp` = $time WHERE `name` = '".$user."'";
+        $sql = "UPDATE `users` SET `crawled` = `crawled` + 1, `timestamp` = $time WHERE `name` = '".$user."'";
         if(!$result = $db->query($sql)){
             die('There was an error running the query [' . $db->error . ']');
         }
