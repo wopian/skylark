@@ -11,6 +11,9 @@
             $users = $row[0];
         }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 1') as $row) {
+            $crawledonce = $row[0];
+        }
+        foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` >= 1') as $row) {
             $crawled = $row[0];
         }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
@@ -145,6 +148,17 @@
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$users?></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="panel panel-material-teal text-center">
+                    <div class="panel-heading">
+                        <p class="btn btn-default disabled">First-time Processed Users</p>
+                    </div>
+                    <div class="panel-body">
+                        <p class="h2"><?=$crawledonce?></p>
                     </div>
                 </div>
             </div>
