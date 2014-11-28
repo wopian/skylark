@@ -1,5 +1,6 @@
 <?php
-
+    header("Content-Type:text/plain");
+    
     $db = new mysqli('localhost', 'bobstudi_humming', 'music195', 'bobstudi_hummingbird');
     if($db->connect_errno > 0){
         die('Unable to connect to database [' . $db->connect_error . ']');
@@ -51,5 +52,6 @@
                 break;
             }
         }
-        echo "Added $total users from $user's followers.<br>";
+        echo "Added $total users from $user's followers.\n";
     }
+    echo "Finished.";
