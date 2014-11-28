@@ -7,7 +7,7 @@
 
     $users = array();
 
-    $sql = "SELECT * FROM `users` ORDER BY `crawled`, `timestamp` ASC LIMIT 20";
+    $sql = "SELECT * FROM `users` WHERE `timestamp` < NOW() - INTERVAL 24 HOUR ORDER BY `crawled`, `timestamp` ASC LIMIT 10";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
