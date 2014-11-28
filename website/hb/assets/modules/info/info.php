@@ -13,6 +13,9 @@
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `timestamp` >= unix_timestamp() - 86400') as $row) {
             $recent = $row[0];
         }
+        foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `timestamp` >= unix_timestamp() - 3600') as $row) {
+            $recentHr = $row[0];
+        }
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` >= 1') as $row) {
             $crawled = $row[0];
         }
@@ -192,6 +195,17 @@
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$recent?></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="panel panel-material-teal text-center">
+                    <div class="panel-heading">
+                        <p class="btn btn-default disabled">Processed This Hour</p>
+                    </div>
+                    <div class="panel-body">
+                        <p class="h2"><?=$recentHr?></p>
                     </div>
                 </div>
             </div>
