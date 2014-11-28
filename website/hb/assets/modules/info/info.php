@@ -202,7 +202,7 @@
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
-                        <p class="btn btn-default disabled">Processed This Hour</p>
+                        <p class="btn btn-default disabled">Processed In Last Hour</p>
                     </div>
                     <div class="panel-body">
                         <p class="h2"><?=$recentHr?></p>
