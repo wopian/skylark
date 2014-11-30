@@ -8,7 +8,7 @@
 
     $users = array();
 
-    $sql = "SELECT * FROM `users` WHERE `timestamp` <= unix_timestamp() - 86400 ORDER BY `crawled`, `timestamp` ASC LIMIT 10";
+    $sql = "SELECT * FROM `users` WHERE `timestamp` <= unix_timestamp() - 604800 ORDER BY `crawled`, `timestamp` ASC LIMIT 10";
     if(!$result = $db->query($sql)){
         die('There was an error running the query [' . $db->error . ']');
     }
