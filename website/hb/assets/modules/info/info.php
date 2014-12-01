@@ -211,6 +211,8 @@
             </div>
 
         </div>
+        
+        <div id="history" class="col-lg-12"></div>
 
     </div>
 
@@ -233,7 +235,7 @@
 
     <script type="text/javascript">
         $(function () {
-            $('#container').highcharts({
+            $('#history').highcharts({
                 chart: {
                     type: 'spline'
                 },
