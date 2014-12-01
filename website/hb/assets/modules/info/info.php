@@ -25,7 +25,7 @@
         
         $history = array();
         //$history[1] = 0;
-        foreach($dbh->query('SELECT * FROM `users`') as $row) {
+        foreach($dbh->query('SELECT * FROM `users` GROUP BY `timestamp`') as $row) {
             $historyA = $row[3]*1000;
             $history[0][] = '['.$historyA.']';
             //$history[1]++;
