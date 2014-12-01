@@ -24,10 +24,10 @@
         }
         
         $history = array();
-        $history[1] = 0;
+        //$history[1] = 0;
         foreach($dbh->query('SELECT * FROM `users`') as $row) {
-            $history[0][] = $row[3];
-            $history[1]++;
+            $history[0][] = "[".$row[3]*1000."]";
+            //$history[1]++;
         }
         print_r($history);
         
@@ -283,8 +283,9 @@
                         //[Date.UTC(1970,  9, 27), 0   ],
                         //[Date.UTC(1970, 10, 10), 0.6 ],
                         //[Date.UTC(1970, 10, 18), 0.7 ],
-                        [1417425688*1000, 10],
-                        [1417425388*1000, 1093]
+                        //[1417425688*1000, 10],
+                        //[1417425388*1000, 1093]
+                        <?php echo implode(",",$history);?>
                     ]
                 }]
              });
