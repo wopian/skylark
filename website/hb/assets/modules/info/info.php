@@ -22,6 +22,15 @@
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
+        
+        $history = array();
+        $history[1] = 0;
+        foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
+            $history[0][] = $row[3];
+            $history[1]++;
+        }
+        print_r($history);
+        
         $dbh = null;
         /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
