@@ -26,7 +26,8 @@
         $history = array();
         //$history[1] = 0;
         foreach($dbh->query('SELECT * FROM `users`') as $row) {
-            $history[0][] = '['.$row[3]*1000.']';
+            $historyA = $row[3]*1000;
+            $history[0][] = '['.$historyA.']';
             //$history[1]++;
         }
         print_r($history);
