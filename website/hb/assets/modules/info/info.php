@@ -25,7 +25,7 @@
         
         $history = array();
         $history[1] = 0;
-        foreach($dbh->query('SELECT COUNT(*) FROM `users`') as $row) {
+        foreach($dbh->query('SELECT * FROM `users`') as $row) {
             $history[0][] = $row[3];
             $history[1]++;
         }
