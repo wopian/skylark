@@ -7,11 +7,21 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body id='skrollr-body' data-0='background-color:rgb(255,255,255);' data-100p='background-color:rgb(0,150,136);'>
+<body id='skrollr-body' data-top='background-color:rgb(255,255,255);' data-bottom='background-color:rgb(0,150,136);'>
 
     <section>
         <h1>wopian</h1>
         <p>Nothing here yet, Hummingbird Tools is located <a href="//hb.wopian.me">here</a>.</p>
+    </section>
+    
+    <section>
+        <h2>Work</h2>
+        <p>Hi</p>
+    </section>
+    
+    <section>
+        <h2>Placeholder</h2>
+        <p>Howdy</p>
     </section>
     
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
