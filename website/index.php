@@ -7,7 +7,12 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body id='skrollr-body' data-0='background-color:#eee;' data-50p='background-color:#000;' data-bottom='background-color:#009688;'>
+<body id='skrollr-body' data-0='background-color:#eee;' 
+                        data-50p='background-color:#000;' 
+                        data-60p='background-color:#eee;' 
+                        data-70p='background-color:#000;' 
+                        data-80p='background-color:#eee;' 
+                        data-bottom='background-color:#009688;'>
 
     <section>
         <h1>wopian</h1>
