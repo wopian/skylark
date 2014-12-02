@@ -7,8 +7,11 @@ body {
   font-size: 18px;
 }
 
-section {
+section:first-of-type {
   padding-top: 50vh;
+}
+
+section {
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
