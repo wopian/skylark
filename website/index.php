@@ -24,6 +24,7 @@
         <p>Howdy</p>
     </section>
     
+    <script type="text/javascript" src="/assets/javascript/skroll-colors.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
