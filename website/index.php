@@ -7,7 +7,7 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body id='skrollr-body' data-0='background-color:rgb(255,255,255);' data-100p='background-color:rgb(0,150,136);'>
+<body id='skrollr-body' data-0='background-color:rgb(255,255,255);' data-bottom='background-color:rgb(0,150,136);'>
 
     <section>
         <h1>wopian</h1>
