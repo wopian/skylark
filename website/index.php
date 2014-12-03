@@ -9,7 +9,7 @@
 
 <body>
 
-    <<section id="s1" class="home">
+    <section id="s1" class="home">
         <div class="bg"
              data-center="background-position: 50% 0px;"
              data-top-bottom="background-position: 50% -100px;"
