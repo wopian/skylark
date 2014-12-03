@@ -64,9 +64,6 @@
                 foreach($data['languages'] as $key => $row) {
                     $languages[] = array($key, $row['level']);
                 }
-                echo "<pre>";
-                print_r($languages);
-                echo "</pre>";
 
                 $sort = array();
                 foreach ($languages as $row) {
@@ -74,10 +71,6 @@
                     $sortname[] = $row[0];
                 }
                 array_multisort($sort, SORT_DESC, $sortname, $languages);
-
-                echo "<pre>";
-                print_r($languages);
-                echo "</pre>";
 
                 $string = '';
                 foreach ($languages as $row) {
