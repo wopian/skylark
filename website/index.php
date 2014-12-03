@@ -9,25 +9,7 @@
 
 <body>
 
-    <section id="s1" class="home">
-        <div class="bg"
-             data-center="background-position: 50% 0px;"
-             data-top-bottom="background-position: 50% -100px;"
-             data-achor-target="#s1"
-        >
-            <div class="container">
-                <div class="content"
-                     data-center="opacity: 1"
-                     data-106-top="opacity: 0"
-                     data-achor-target="#s1 h1"
-                >
-                    <h1>Wopian</h1>
-                    <p>Nothing here yet, Hummingbird Tools is located <a href="//hb.wopian.me">here</a>.</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
+    <text id="hello" transform="translate(390, 370)" fill="#ECF0F1" font-weight="900" font-size="120" data-0="    transform: translate(390px, 370px); " data-100="    transform: translate(30px, 400px); " style="-webkit-transform: translate(390px, 370px); transform: translate(390px, 370px);" class="skrollable skrollable-between">hello</text>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
