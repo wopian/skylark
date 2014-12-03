@@ -58,7 +58,7 @@
                 }
 
                 #print_r($data);
-                echo "<h4>" . seconds2human($data['time_spent']) . " spent coding</h4>"
+                echo "<h4>" . seconds2human($data['time_spent']*8.95) . " spent coding</h4>"
             ?>
 
             <li>PHP</li>
