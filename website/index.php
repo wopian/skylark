@@ -62,9 +62,11 @@
 
                 $languages = array();
                 echo "<pre>";
+                i = 0;
                 foreach($data['languages'] as $row) {
                     print_r($row);
-                    $languages[] = array(key($row), $row['level']);
+                    $languages[] = array(key($row[i]), $row['level']);
+                    i++;
                 }
                 print_r($languages);
                 echo "</pre>";
