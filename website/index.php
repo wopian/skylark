@@ -76,7 +76,7 @@
                 array_multisort($sort, SORT_DESC, $edition, $languages);
 
                 echo "<pre>";
-                print_r($sort);
+                print_r($languages);
                 echo "</pre>";
                 # List of languages bar chart
                 echo "<div class='meter'><span style='width: 25%'></span></div>";
