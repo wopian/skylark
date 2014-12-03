@@ -11,7 +11,8 @@
 
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
-            data-top="color:rgba(255,255,255,0)"
+            data-30p-top="color:rgba(255,255,255,1)"
+            data-5p-top="color:rgba(255,255,255,0)"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
            data-30p-top="color:rgba(255,255,255,0)"
