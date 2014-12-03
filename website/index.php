@@ -63,7 +63,7 @@
                 $languages = array();
                 $i = 0;
                 foreach($data['languages'] as $row) {
-                    $languages[] = array(key($row[$i]), $row['level']);
+                    $languages[] = array(key($row), $row['level']);
                     $i++;
                 }
                 echo "<pre>";
