@@ -10,11 +10,6 @@ body {
   font-size: 18px;
 }
 
-h1 {
-  font-size: 4em;
-  font-weight: 700;
-}
-
 section {
   width: 100%;
   min-height: 100vh;
@@ -31,4 +26,13 @@ section {
 section > * {
   flex: 0 1 auto;
   align-self: auto;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
 }
