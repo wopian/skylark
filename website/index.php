@@ -58,7 +58,15 @@
                 }
 
                 #print_r($data);
-                echo "<p class='big'>" . seconds2human($data['time_spent']+1520000) . " spent coding</p>"
+                echo "<p class='big'>I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
+
+                foreach($data['languages'] as $row) {
+                    print_r($row);
+                    $languages[] = array(key($row), $row[]['level']);
+                }
+                print_r($languages);
+                # List of languages bar chart
+                echo "<div class='meter'><span style='width: 25%'></span></div>";
             ?>
 
             <li>PHP</li>
@@ -76,6 +84,50 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/main.js"></script>
+    <script type="text/javascript" src="/assets/javascript/highcharts.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#languages').highcharts({
+                colors: [ <?=pieColour()?> ],
+                credits: {
+                    enabled: false
+                },
+                chart: {
+                    backgroundColor: 'transparent',
+                    plotBackgroundColor: null,
+                    plotBorderWidth: 0,//null,
+                    plotShadow: false
+                },
+                title: {
+                    text: ''
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.name}: {point.y:.0f}',
+                            style: {
+                                color: 'black'
+                            }
+                        },
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Amount',
+                    data: [
+                        <?= implode(",",$languages);?>
+                    ],
+                }]
+            });
+        });
+    </script>
 </body>
 
 </html>
