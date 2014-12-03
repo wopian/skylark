@@ -69,16 +69,13 @@
                 echo "</pre>";
 
                 $sort = array();
-                foreach ($languages as $key => $row) {
-                    $sort[$key] = array($key, $row[1]);
+                foreach ($languages as $row) {
+                    $sort[$key] = array($row[0], $row[1]);
                 }
                 array_multisort($sort[1], SORT_DESC, $languages);
 
                 echo "<pre>";
                 print_r($sort);
-                echo "</pre>";
-                echo "<pre>";
-                print_r($languages);
                 echo "</pre>";
                 # List of languages bar chart
                 echo "<div class='meter'><span style='width: 25%'></span></div>";
