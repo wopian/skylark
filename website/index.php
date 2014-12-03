@@ -33,6 +33,14 @@
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,0)"
         >
+            <?php
+                $url = "https://codeivate.com/users/wopian.json";
+                $json = file_get_contents($url);
+                $data= json_decode($json, true);
+
+                print_r($data);
+            ?>
+
             <li>PHP</li>
             <li>HTML5</li>
             <li>CSS3</li>
