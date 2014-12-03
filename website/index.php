@@ -21,6 +21,7 @@
               data-25p-top="color:rgba(255,255,255,0)"
               data-anchor-target="ul"
     >
+        <h2>Skills</h2>
         <ul>
             <li>PHP</li>
             <li>HTML5</li>

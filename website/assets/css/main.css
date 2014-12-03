@@ -28,9 +28,14 @@ section > * {
   align-self: auto;
 }
 
+h1,
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
 h1 {
   font-size: 4em;
-  font-weight: 700;
 }
 
 ul {
