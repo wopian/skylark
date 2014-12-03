@@ -18,9 +18,13 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
+}
+
+section:first-of-type {
+  justify-content: center;
 }
 
 section > * {
