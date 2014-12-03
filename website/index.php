@@ -9,9 +9,14 @@
 
 <body>
 
-    <section>
+    <section data-center="opacity: 1"
+             data-106-top="opacity: 0"
+    >
         <h1>wopian</h1>
-        <p>Front-end Web Developer</p>
+        <p>Frontend Web Developer</p>
+    </section>
+
+    <section>
     </section>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
