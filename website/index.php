@@ -70,9 +70,9 @@
 
                 $sort = array();
                 foreach ($languages as $key => $row) {
-                    $sort[$key] = array($key, $row[1];
+                    $sort[$key] = array($key, $row[1]);
                 }
-                array_multisort($sort, SORT_DESC, $languages);
+                array_multisort($sort[1], SORT_DESC, $languages);
 
                 echo "<pre>";
                 print_r($sort);
