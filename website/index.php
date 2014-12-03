@@ -58,7 +58,7 @@
                 }
 
                 #print_r($data);
-                echo "<h4>" . seconds2human($data['time_spent']+2520000) . " spent coding</h4>"
+                echo "<p class='big'>" . seconds2human($data['time_spent']+1520000) . " spent coding</p>"
             ?>
 
             <li>PHP</li>
