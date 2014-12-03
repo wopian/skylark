@@ -23,8 +23,16 @@
               data-25p-top="color:rgba(255,255,255,0)"
               data-anchor-target="ul"
     >
-        <h2>Skills</h2>
-        <ul>
+        <h2 data-bottom="color:rgba(255,255,255,0)"
+            data-30p-bottom="color:rgba(255,255,255,0)"
+            data-center="color:rgba(255,255,255,1)"
+            data-30p-top="color:rgba(255,255,255,1)"
+            data-5p-top="color:rgba(255,255,255,0)"
+        >Skills</h2>
+        <ul data-bottom="color:rgba(255,255,255,0)"
+            data-center="color:rgba(255,255,255,1)"
+            data-30p-top="color:rgba(255,255,255,0)"
+        >
             <li>PHP</li>
             <li>HTML5</li>
             <li>CSS3</li>
