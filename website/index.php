@@ -73,7 +73,7 @@
                     $sort[] = $row[1];
                     $sortname[] = $row[0];
                 }
-                array_multisort($sort, SORT_DESC, $edition, $languages);
+                array_multisort($sort, SORT_DESC, $sortname, $languages);
 
                 echo "<pre>";
                 print_r($languages);
