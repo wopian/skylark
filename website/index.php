@@ -60,9 +60,10 @@
                 #print_r($data);
                 echo "<p class='big'>I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
 
+                $languages = array();
                 foreach($data['languages'] as $row) {
                     print_r($row);
-                    $languages[] = array(key($row), $row[]['level']);
+                    $languages[] = array(key($row), $row['level']);
                 }
                 print_r($languages);
                 # List of languages bar chart
