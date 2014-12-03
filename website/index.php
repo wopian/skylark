@@ -69,6 +69,8 @@
                 echo "<div class='meter'><span style='width: 25%'></span></div>";
             ?>
 
+            <div id="languages"></div>
+
             <li>PHP</li>
             <li>HTML5</li>
             <li>CSS3</li>
