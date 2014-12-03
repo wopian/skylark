@@ -78,8 +78,22 @@
                 echo "<pre>";
                 print_r($languages);
                 echo "</pre>";
-                # List of languages bar chart
-                echo "<div class='meter'><span style='width: 25%'></span></div>";
+
+                $string = '';
+                foreach ($languages as $row) {
+                    $string .= "['" . $row[0] . "', " . $row[1] . "]";
+                }
+
+                function pieColour() {
+                    $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
+                    shuffle($colours);
+                    $colour = '';
+                    foreach ($colours as $row) {
+                        $colour = $colour.'"#'.$row.'", ';
+                    }
+                    $colour = substr($colour, 0, -2);
+                    return $colour;
+                }
             ?>
 
             <div id="languages"></div>
@@ -137,7 +151,7 @@
                     type: 'pie',
                     name: 'Amount',
                     data: [
-                        <?= implode(",",$languages);?>
+                        <?=$string?>
                     ],
                 }]
             });
