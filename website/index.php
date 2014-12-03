@@ -3,7 +3,7 @@
 
 <head>
     <title>Wopian</title>
-    <link href='//fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Quicksand:<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>' rel='stylesheet' type='text/css'>
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
