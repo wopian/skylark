@@ -11,6 +11,7 @@
 
     <section data-center="opacity: 1"
              data-106-top="opacity: 0"
+             data-anchor-target="h1"
     >
         <h1>wopian</h1>
         <p>Frontend Web Developer</p>
