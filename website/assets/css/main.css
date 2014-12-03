@@ -7,6 +7,43 @@ body {
   font-size: 18px;
 }
 
+.container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+
+.content {
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: block;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+.bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bg {background-image:url('../img/bcg_slide-1.jpg')}
+
+
+
+
+
+
+
+
+
 section:first-of-type {
   padding-top: 50vh;
 }

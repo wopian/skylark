@@ -7,33 +7,30 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body id='skrollr-body' data-0='background-color:#eee;' 
-                        data-50p='background-color:#000;' 
-                        data-60p='background-color:#eee;' 
-                        data-70p='background-color:#000;' 
-                        data-80p='background-color:#eee;' 
-                        data-bottom='background-color:#009688;'>
+<body>
 
-    <section>
-        <h1>wopian</h1>
-        <p>Nothing here yet, Hummingbird Tools is located <a href="//hb.wopian.me">here</a>.</p>
+    <<section id="s1" class="home">
+        <div class="bg"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -100px;"
+             data-achor-target="#s1"
+        >
+            <div class="container">
+                <div class="content"
+                     data-center="opacity: 1"
+                     data-106-top="opacity: 0"
+                     data-achor-target="#s1 h1"
+                >
+                    <h1>Wopian</h1>
+                    <p>Nothing here yet, Hummingbird Tools is located <a href="//hb.wopian.me">here</a>.</p>
+
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section>
-        <h2>Work</h2>
-        <p>Hi</p>
-    </section>
-    
-    <section>
-        <h2>Placeholder</h2>
-        <p>Howdy</p>
-    </section>
-    
-    <script type="text/javascript" src="/assets/javascript/skroll-colors.min.js"></script>
+
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init();
-    </script>
+    <script type="text/javascript" src="/assets/javascript/main.js"></script>
 </body>
 
 </html>
