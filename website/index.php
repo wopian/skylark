@@ -77,6 +77,9 @@
                 echo "<pre>";
                 print_r($sort);
                 echo "</pre>";
+                echo "<pre>";
+                print_r($languages);
+                echo "</pre>";
                 # List of languages bar chart
                 echo "<div class='meter'><span style='width: 25%'></span></div>";
             ?>
