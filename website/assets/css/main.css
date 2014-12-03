@@ -19,5 +19,14 @@ section {
   height: 100vh;
   background: #009688;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
   align-items: center;
+}
+
+section > * {
+  flex: 0 1 auto;
+  align-self: auto;
 }
