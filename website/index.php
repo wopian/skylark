@@ -57,7 +57,7 @@
                     return "$y $M $d $h $and $m";
                 }
 
-                print_r($data);
+                #print_r($data);
                 echo "<h4>" . seconds2human($data['time_spent']) . " spent coding</h4>"
             ?>
 
