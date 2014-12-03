@@ -61,10 +61,8 @@
                 echo "<p class='big'>I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
 
                 $languages = array();
-                $i = 0;
                 foreach($data['languages'] as $key => $row) {
                     $languages[] = array($key, $row['level']);
-                    $i++;
                 }
                 echo "<pre>";
                 print_r($languages);
