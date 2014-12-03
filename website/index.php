@@ -9,10 +9,9 @@
 
 <body>
 
-    <section data-center="opacity: 1"
-             data-106-top="opacity: 0"
-             data-anchor-target="h1"
-    >
+    <section data-center="color:rgba(255,255,255,1)"
+             data-106-top="color:rgba(255,255,255,0)"
+             data-anchor-target="h1">
         <h1>wopian</h1>
         <p>Frontend Web Developer</p>
     </section>
