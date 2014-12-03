@@ -7,7 +7,7 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="skrollr-body">
 
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
@@ -28,7 +28,7 @@
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1)"
             data-5p-top="color:rgba(255,255,255,0)"
-        >Skills</h2>
+        >Stats & Skills</h2>
         <ul data-bottom="color:rgba(255,255,255,0)"
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,0)"
@@ -38,7 +38,27 @@
                 $json = file_get_contents($url);
                 $data= json_decode($json, true);
 
+                function seconds2human($ss) {
+                    $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
+                    $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
+                    $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
+                    $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
+                    $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
+                    if (strlen($m) > 1 && (strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
+                        $and = 'and';
+                    }   else {
+                        $and = '';
+                    }
+
+                    # If no anime watched fill in with 0 minutes
+                    if (strlen($m) == '' && strlen($h) == '' && strlen($d) == '' && strlen($M) == '' && strlen($y) == '') {
+                        $m = '0 minutes';
+                    }
+                    return "$y $M $d $h $and $m";
+                }
+
                 print_r($data);
+                echo "<h4>" . seconds2human($data['time_spent']) . " spent coding</h4>"
             ?>
 
             <li>PHP</li>
