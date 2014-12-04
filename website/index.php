@@ -82,17 +82,6 @@
                     }
                 }
                 $string .= "['Other', $other]";
-
-                function pieColour() {
-                    $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
-                    shuffle($colours);
-                    $colour = '';
-                    foreach ($colours as $row) {
-                        $colour = $colour.'"#'.$row.'", ';
-                    }
-                    $colour = substr($colour, 0, -2);
-                    return $colour;
-                }
             ?>
 
             <div id="languages"></div>
@@ -117,7 +106,7 @@
     <script type="text/javascript">
         $(function () {
             $('#languages').highcharts({
-                colors: ['#1CC2FF', '#5677FC', '#673AB7','#1CC2FF','#1CC2FF','#1CC2FF'],
+                colors: ['#009663', '#00966f', '#673AB7','#009688','#009695','#008b96', '#007f96'],
                 credits: {
                     enabled: false
                 },
