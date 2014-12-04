@@ -76,11 +76,7 @@
 
         <div id="languages" data-bottom="opacity:0"
                             data-center="opacity:1"
-                            data-top="opacity:0"
-
-                            data-anchor-target="#two"
-                            data-bottom="left:100%;margin-left:-100px;"
-                            data-top="left:0%;margin-left:0px;" style="position:absolute;"></div>
+                            data-top="opacity:0"></div>
     </section>
 
     <section>
