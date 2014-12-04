@@ -159,7 +159,8 @@
                         lineHeight: '14px',
                         fontWeight: 400,
                         fontSize: '18px',
-                        color: '#fff'
+                        color: '#fff',
+                        fontFamily: 'Quicksand'
                     }
                 },
                 series: [{
