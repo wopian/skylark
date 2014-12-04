@@ -7,9 +7,9 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
-<canvas id="snow"></canvas>
-
 <body id="skrollr-body">
+
+    <canvas id="snow"></canvas>
 
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
