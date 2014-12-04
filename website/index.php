@@ -85,13 +85,6 @@
             ?>
 
             <div id="languages"></div>
-
-            <li>PHP</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript & jQuery</li>
-            <li>LESS/SASS</li>
-            <li>SQLite</li>
         </ul>
     </section>
 

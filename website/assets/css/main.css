@@ -47,5 +47,10 @@ ul {
 }
 
 .big {
-  font-size: 1.5em;
+  padding: .5em;
+}
+
+.big,
+.bigger {
+  font-size: 1.25em;
 }
