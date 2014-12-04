@@ -125,6 +125,7 @@
                     text: null
                 },
                 chart: {
+                    backgroundColor: 'transparent',
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false
