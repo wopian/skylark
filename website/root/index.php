@@ -16,7 +16,7 @@
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1);"
             data-25p-top="color:rgba(255,255,255,0);"
-            data-lang="en"
+            data-lang="ja-katakana"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
            data-45p-top="color:rgba(255,255,255,0)"
