@@ -31,6 +31,7 @@
       ].join(","),
       "inputElements": "input.form-control, textarea.form-control, select.form-control",
       "checkboxElements": ".checkbox > label > input[type=checkbox]",
+      "togglebuttonElements": ".togglebutton > label > input[type=checkbox]",
       "radioElements": ".radio > label > input[type=radio]"
     },
     "checkbox": function(selector) {
@@ -39,6 +40,13 @@
       .filter(":notmdproc")
       .data("mdproc", true)
       .after("<span class=ripple></span><span class=check></span>");
+    },
+    "togglebutton": function(selector) {
+      // Add fake-checkbox to material checkboxes
+      $((selector) ? selector : this.options.togglebuttonElements)
+      .filter(":notmdproc")
+      .data("mdproc", true)
+      .after("<span class=toggle></span>");
     },
     "radio": function(selector) {
       // Add fake-radio to material radios
@@ -121,9 +129,12 @@
       $.ripples({"target": (selector) ? selector : this.options.withRipples});
     },
     "init": function() {
-      this.ripples();
+      if ($.ripples) {
+        this.ripples();
+      }
       this.input();
       this.checkbox();
+      this.togglebutton();
       this.radio();
 
       if (document.arrive) {
@@ -150,7 +161,7 @@
         var focused;
         $(document)
         .on("focus", "input", function() {
-          var $inputs = $(this).parents("form").find("input");
+          var $inputs = $(this).parents("form").find("input").not("[type=file]");
           focused = setInterval(function() {
             $inputs.each(function() {
               if ($(this).val() !== $(this).attr("value")) {
