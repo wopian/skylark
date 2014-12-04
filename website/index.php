@@ -106,7 +106,7 @@
     <script type="text/javascript">
         $(function () {
             $('#languages').highcharts({
-                colors: ['#009663', '#00966f', '#673AB7','#009688','#009695','#008b96', '#007f96'],
+                colors: ['#FFFFFF', '#D1ECE9','#A2D9D4','#74C6BE','#46B3A8', '#17A093'],
                 credits: {
                     enabled: false
                 },
