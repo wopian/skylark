@@ -12,9 +12,11 @@
 <body id="skrollr-body">
 
     <section>
-        <h1 data-center="color:rgba(255,255,255,1)"
+        <h1 class="chaffle"
+            data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1);"
             data-25p-top="color:rgba(255,255,255,0);"
+            data-lang="en"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
            data-45p-top="color:rgba(255,255,255,0)"
@@ -88,9 +90,10 @@
     <section>
     </section>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/main.js"></script>
+    <script type="text/javascript" src="/assets/javascript/chaffle.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/highcharts.js"></script>
 
     <script type="text/javascript">
