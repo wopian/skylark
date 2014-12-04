@@ -21,7 +21,7 @@
 
     <section data-center="color:rgba(255,255,255,1)"
               data-25p-top="color:rgba(255,255,255,0)"
-              data-anchor-target="ul"
+              data-anchor-target="h2 p div"
     >
         <h2 data-bottom="color:rgba(255,255,255,0)"
             data-30p-bottom="color:rgba(255,255,255,0)"
