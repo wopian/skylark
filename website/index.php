@@ -155,6 +155,8 @@
                     padding: 3,
                     itemMarginTop: 5,
                     itemMarginBottom: 5,
+                    symbolWidth: width,
+                    symbolRadius: width/2,
                     itemStyle: {
                         lineHeight: '14px',
                         fontWeight: 400,
