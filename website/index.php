@@ -12,14 +12,14 @@
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1);"
-            data-25p-top="color:rgba(255,255,255,0);top:0%;"
+            data-25p-top="color:rgba(255,255,255,0);"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
            data-45p-top="color:rgba(255,255,255,0)"
         >Frontend Web Developer</p>
     </section>
 
-    <section>
+    <section id="two">
         <h2 data-bottom="color:rgba(255,255,255,0)"
             data-center="color:rgba(255,255,255,1)"
             data-top="color:rgba(255,255,255,0)"
@@ -76,7 +76,11 @@
 
         <div id="languages" data-bottom="opacity:0"
                             data-center="opacity:1"
-                            data-top="opacity:0"></div>
+                            data-top="opacity:0"
+
+                            data-anchor-target="#two"
+                            data-bottom="left:100%;margin-left:-100px;"
+                            data-top="left:0%;margin-left:0px;" style="position:absolute;"></div>
     </section>
 
     <section>
