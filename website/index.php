@@ -117,7 +117,7 @@
     <script type="text/javascript">
         $(function () {
             $('#languages').highcharts({
-                colors: [ <?=pieColour()?> ],
+                colors: ['#1CC2FF', '#5677FC', '#673AB7','#1CC2FF','#1CC2FF','#1CC2FF'],
                 credits: {
                     enabled: false
                 },
@@ -155,8 +155,8 @@
                     padding: 3,
                     itemMarginTop: 5,
                     itemMarginBottom: 5,
-                    symbolWidth: width,
-                    symbolRadius: width/2,
+                    symbolWidth: 18,
+                    symbolRadius: 18/2,
                     itemStyle: {
                         lineHeight: '14px',
                         fontWeight: 400,
