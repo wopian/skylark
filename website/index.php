@@ -138,7 +138,7 @@
                     verticalAlign: 'top',
                     layout: 'vertical',
                     x: 0,
-                    y: 150,
+                    y: 100,
                     itemHoverStyle: {
                         color: '#e2e2e2'
                     },
