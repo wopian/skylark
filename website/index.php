@@ -29,63 +29,59 @@
             data-30p-top="color:rgba(255,255,255,1)"
             data-5p-top="color:rgba(255,255,255,0)"
         >Stats & Skills</h2>
-        <!--<ul data-bottom="color:rgba(255,255,255,0)"
-            data-center="color:rgba(255,255,255,1)"
-            data-30p-top="color:rgba(255,255,255,0)"
-        >-->
-            <?php
-                $url = "https://codeivate.com/users/wopian.json";
-                $json = file_get_contents($url);
-                $data= json_decode($json, true);
+        <?php
+            $url = "https://codeivate.com/users/wopian.json";
+            $json = file_get_contents($url);
+            $data= json_decode($json, true);
 
-                function seconds2human($ss) {
-                    $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
-                    $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
-                    $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
-                    $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
-                    $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
-                    if (strlen($m) > 1 && (strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
-                        $and = 'and';
-                    }   else {
-                        $and = '';
-                    }
-
-                    # If no anime watched fill in with 0 minutes
-                    if (strlen($m) == '' && strlen($h) == '' && strlen($d) == '' && strlen($M) == '' && strlen($y) == '') {
-                        $m = '0 minutes';
-                    }
-                    return "$y $M $d $h $and $m";
+            function seconds2human($ss) {
+                $m = (floor(($ss%3600)/60)>0)?floor(($ss%3600)/60).' minutes':"";
+                $h = (floor(($ss % 86400) / 3600)>0)?floor(($ss % 86400) / 3600).' hours':"";
+                $d = (floor(($ss % 2592000) / 86400)>0)?floor(($ss % 2592000) / 86400).' days':"";
+                $M = (floor($ss / 2592000)>0)?floor($ss / 2592000).' months':"";
+                $y = (floor($ss / 31557600)>0)?floor($ss / 31557600).' years':"";
+                if (strlen($m) > 1 && (strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1 )) {
+                    $and = 'and';
+                }   else {
+                    $and = '';
                 }
-
-                #print_r($data);
-                echo "<p class='big'>I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
-
-                $languages = array();
-                foreach($data['languages'] as $key => $row) {
-                    $languages[] = array($key, $row['level']);
+                if (strlen($m) == '' && strlen($h) == '' && strlen($d) == '' && strlen($M) == '' && strlen($y) == '') {
+                    $m = '0 minutes';
                 }
+                return "$y $M $d $h $and $m";
+            }
 
-                $sort = array();
-                foreach ($languages as $row) {
-                    $sort[] = $row[1];
-                    $sortname[] = $row[0];
+            echo "<p class='big' data-30p-bottom="color:rgba(255,255,255,0)"
+                                 data-center="color:rgba(255,255,255,1)"
+                                 data-30p-top="color:rgba(255,255,255,0)">I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
+
+            $languages = array();
+            foreach($data['languages'] as $key => $row) {
+                $languages[] = array($key, $row['level']);
+            }
+
+            $sort = array();
+            foreach ($languages as $row) {
+                $sort[] = $row[1];
+                $sortname[] = $row[0];
+            }
+            array_multisort($sort, SORT_DESC, $sortname, $languages);
+
+            $string = '';
+            $other = '';
+            foreach ($languages as $row) {
+                if ($row[1] >= 1) {
+                    $string .= "['" . $row[0] . "', " . $row[1] . "],";
+                } else {
+                    $other += $row[1];
                 }
-                array_multisort($sort, SORT_DESC, $sortname, $languages);
+            }
+            $string .= "['Other', $other]";
+        ?>
 
-                $string = '';
-                $other = '';
-                foreach ($languages as $row) {
-                    if ($row[1] >= 1) {
-                        $string .= "['" . $row[0] . "', " . $row[1] . "],";
-                    } else {
-                        $other += $row[1];
-                    }
-                }
-                $string .= "['Other', $other]";
-            ?>
-
-            <div id="languages"></div>
-        </ul>
+        <div id="languages" data-50p-bottom="color:rgba(255,255,255,0)"
+                            data-center="color:rgba(255,255,255,1)"
+                            data-50p-top="color:rgba(255,255,255,0)"></div>
     </section>
 
     <section>
