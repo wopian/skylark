@@ -21,7 +21,7 @@
 
     <section>
         <h2 data-bottom="color:rgba(255,255,255,0)"
-            data-60p-bottom="color:rgba(255,255,255,0)"
+            data-30p-bottom="color:rgba(255,255,255,0)"
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1)"
             data-5p-top="color:rgba(255,255,255,0)"
@@ -76,7 +76,7 @@
             $string .= "['Other', $other]";
         ?>
 
-        <div id="languages" data-50p-bottom="color:rgba(255,255,255,0)"
+        <div id="languages" data-30p-bottom="color:rgba(255,255,255,0)"
                             data-center="color:rgba(255,255,255,1)"
                             data-50p-top="color:rgba(255,255,255,0)"></div>
     </section>
