@@ -148,7 +148,19 @@
                     verticalAlign: 'top',
                     layout: 'vertical',
                     x: 0,
-                    y: 150
+                    y: 150,
+                    itemHoverStyle: {
+                        color: '#e2e2e2'
+                    },
+                    padding: 3,
+                    itemMarginTop: 5,
+                    itemMarginBottom: 5,
+                    itemStyle: {
+                        lineHeight: '14px',
+                        fontWeight: 400,
+                        fontSize: '18px',
+                        color: '#fff'
+                    }
                 },
                 series: [{
                     type: 'pie',
