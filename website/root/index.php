@@ -92,8 +92,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
-    <script type="text/javascript" src="/assets/javascript/main.js"></script>
     <script type="text/javascript" src="/assets/javascript/chaffle.min.js"></script>
+    <script type="text/javascript" src="/assets/javascript/main.js"></script>
     <script type="text/javascript" src="/assets/javascript/highcharts.js"></script>
 
     <script type="text/javascript">
