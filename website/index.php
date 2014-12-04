@@ -121,6 +121,9 @@
                 credits: {
                     enabled: false
                 },
+                title: {
+                    text: null
+                },
                 chart: {
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
