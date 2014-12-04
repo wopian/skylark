@@ -3,8 +3,8 @@ $(function() {
     if(Modernizr.history){
 
     var newHash      = "",
-        $mainContent = $("#main-content"),
-        $pageWrap    = $("#page-wrap"),
+        $mainContent = $("#skrollr-body"),
+        $pageWrap    = $("body"),
         baseHeight   = 0,
         $el;
 
