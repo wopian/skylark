@@ -139,7 +139,8 @@
                         cursor: 'pointer',
                         dataLabels: {
                             enabled: false,
-                        }
+                        },
+                        showInLegend: true
                     }
                 },
                 series: [{
