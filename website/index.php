@@ -76,9 +76,9 @@
             $string .= "['Other', $other]";
         ?>
 
-        <div id="languages" data-30p-bottom="opacity:0"
+        <div id="languages" data-bottom="opacity:0"
                             data-center="opacity:1"
-                            data-50p-top="opacity:0"></div>
+                            data-top="opacity:0"></div>
     </section>
 
     <section>
