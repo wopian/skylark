@@ -53,7 +53,7 @@
 
             echo "<p class='big' data-30p-bottom="color:rgba(255,255,255,0)"
                                  data-center="color:rgba(255,255,255,1)"
-                                 data-30p-top="color:rgba(255,255,255,0)">I have spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
+                                 data-30p-top="color:rgba(255,255,255,0)">I've spent <span class='bold'>" . seconds2human($data['time_spent']+1520000) . "</span> coding</p>";
 
             $languages = array();
             foreach($data['languages'] as $key => $row) {
