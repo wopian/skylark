@@ -12,10 +12,10 @@
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
             data-40p-top="color:rgba(255,255,255,1)"
-            data-20p-top="color:rgba(255,255,255,0)"
+            data-10p-top="color:rgba(255,255,255,0)"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
-           data-40p-top="color:rgba(255,255,255,0)"
+           data-45p-top="color:rgba(255,255,255,0)"
         >Frontend Web Developer</p>
     </section>
 
