@@ -74,6 +74,10 @@
             $string .= "['Other', $other]";
         ?>
 
+        <p class='big' data-bottom='color:rgba(255,255,255,0)'
+                       data-center='color:rgba(255,255,255,1)'
+                       data-top='color:rgba(255,255,255,0)'>Top languages:</p>
+
         <div id="languages" data-bottom="opacity:0"
                             data-center="opacity:1"
                             data-top="opacity:0"></div>
