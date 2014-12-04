@@ -11,17 +11,17 @@
 
     <section>
         <h1 data-center="color:rgba(255,255,255,1)"
-            data-30p-top="color:rgba(255,255,255,1)"
-            data-5p-top="color:rgba(255,255,255,0)"
+            data-60p-top="color:rgba(255,255,255,1)"
+            data-70p-top="color:rgba(255,255,255,0)"
         >wopian</h1>
         <p data-center="color:rgba(255,255,255,1)"
-           data-30p-top="color:rgba(255,255,255,0)"
+           data-55p-top="color:rgba(255,255,255,0)"
         >Frontend Web Developer</p>
     </section>
 
     <section>
         <h2 data-bottom="color:rgba(255,255,255,0)"
-            data-30p-bottom="color:rgba(255,255,255,0)"
+            data-60p-bottom="color:rgba(255,255,255,0)"
             data-center="color:rgba(255,255,255,1)"
             data-30p-top="color:rgba(255,255,255,1)"
             data-5p-top="color:rgba(255,255,255,0)"
