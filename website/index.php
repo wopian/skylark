@@ -148,7 +148,7 @@
                     symbolWidth: 18,
                     symbolRadius: 18/2,
                     itemStyle: {
-                        lineHeight: '14px',
+                        lineHeight: '18px',
                         fontWeight: 400,
                         fontSize: '18px',
                         color: '#fff',
