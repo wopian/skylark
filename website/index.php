@@ -73,11 +73,15 @@
                 array_multisort($sort, SORT_DESC, $sortname, $languages);
 
                 $string = '';
+                $other = '';
                 foreach ($languages as $row) {
                     if ($row[1] >= 1) {
                         $string .= "['" . $row[0] . "', " . $row[1] . "],";
+                    } else {
+                        $other .= $row[1];
                     }
                 }
+                echo $other;
                 rtrim($string, ",");
 
                 function pieColour() {
