@@ -143,6 +143,13 @@
                         showInLegend: true
                     }
                 },
+                legend: {
+                    align: 'right',
+                    verticalAlign: 'top',
+                    layout: 'vertical',
+                    x: 0,
+                    y: 150
+                },
                 series: [{
                     type: 'pie',
                     name: 'Languages',
