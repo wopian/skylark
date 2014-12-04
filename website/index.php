@@ -78,7 +78,7 @@
                     if ($row[1] >= 1) {
                         $string .= "['" . $row[0] . "', " . $row[1] . "],";
                     } else {
-                        $other .= $row[1];
+                        $other += $row[1];
                     }
                 }
                 echo $other;
