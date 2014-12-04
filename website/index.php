@@ -74,7 +74,9 @@
 
                 $string = '';
                 foreach ($languages as $row) {
-                    $string .= "['" . $row[0] . "', " . $row[1] . "],";
+                    if ($row[1] >= 1) {
+                        $string .= "['" . $row[0] . "', " . $row[1] . "],";
+                    }
                 }
                 rtrim($string, ",");
 
