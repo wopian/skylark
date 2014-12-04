@@ -122,33 +122,25 @@
                     enabled: false
                 },
                 chart: {
-                    backgroundColor: 'transparent',
                     plotBackgroundColor: null,
-                    plotBorderWidth: 0,//null,
+                    plotBorderWidth: null,
                     plotShadow: false
                 },
-                title: {
-                    text: ''
-                },
                 tooltip: {
-                    pointFormat: '{series.name}: <b>{point.y:.0f}</b> ({point.percentage:.1f} %)'
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>';
                 },
                 plotOptions: {
                     pie: {
                         allowPointSelect: true,
                         cursor: 'pointer',
                         dataLabels: {
-                            enabled: true,
-                            format: '{point.name}: {point.y:.0f}',
-                            style: {
-                                color: 'black'
-                            }
-                        },
+                            enabled: false,
+                        }
                     }
                 },
                 series: [{
                     type: 'pie',
-                    name: 'Amount',
+                    name: 'Languages',
                     data: [
                         <?=$string?>
                     ],
