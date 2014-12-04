@@ -81,8 +81,7 @@
                         $other += $row[1];
                     }
                 }
-                echo $other;
-                rtrim($string, ",");
+                $string .= "['Other', $other]";
 
                 function pieColour() {
                     $colours = [ "607d8b", "e91e63", "03a9f4", "3f51b5", "ff5722", "ffc107", "9c27b0", "00bcd4", "795548", "009688", "e51c23", "9e9e9e", "ff9800", "259b24", "ffeb3b", "cddc39", "8bc34a", "5677fc", "673ab7" ];
