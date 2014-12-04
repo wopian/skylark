@@ -126,6 +126,7 @@
                     pie: {
                         allowPointSelect: true,
                         cursor: 'pointer',
+                        borderWidth: 0,
                         dataLabels: {
                             enabled: false,
                         },
