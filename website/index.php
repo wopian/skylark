@@ -7,6 +7,8 @@
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 
+<canvas id="snow"></canvas>
+
 <body id="skrollr-body">
 
     <section>
