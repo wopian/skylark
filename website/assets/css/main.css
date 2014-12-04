@@ -51,6 +51,6 @@ ul {
 }
 
 .big,
-.bigger {
+.big > span {
   font-size: 1.25em;
 }
