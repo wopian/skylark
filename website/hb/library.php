@@ -269,7 +269,7 @@ array_multisort($sort, SORT_DESC, $data);
   <script src="/assets/js/ripples.js"></script>
   <script src="/assets/js/material.js"></script>
 
-  <script src="lazyload.js" type="text/javascript"></script>
+  <script src="/assets/js/lazyload.js" type="text/javascript"></script>
 
   <script>
     $(document).ready(function() {
