@@ -21,13 +21,13 @@
         >Frontend Web Developer</p>
     </section>
 
-    <section id="two">
+    <!--<section id="two">
         <h2 data-bottom="color:rgba(255,255,255,0)"
             data-center="color:rgba(255,255,255,1)"
             data-top="color:rgba(255,255,255,0)"
         >Stats & Skills</h2>
         <?php
-            $url = "https://codeivate.com/users/wopian.json";
+            /*$url = "https://codeivate.com/users/wopian.json";
             $json = file_get_contents($url);
             $data= json_decode($json, true);
 
@@ -74,6 +74,7 @@
                 }
             }
             $string .= "['Other', $other]";
+            */
         ?>
 
         <p data-bottom='color:rgba(255,255,255,0)'
@@ -83,10 +84,7 @@
         <div id="languages" data-bottom="opacity:0"
                             data-center="opacity:1"
                             data-top="opacity:0"></div>
-    </section>
-
-    <section>
-    </section>
+    </section>-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
