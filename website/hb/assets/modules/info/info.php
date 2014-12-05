@@ -22,7 +22,7 @@
         foreach($dbh->query('SELECT COUNT(*) FROM `users` WHERE `crawled` = 0') as $row) {
             $uncrawled = $row[0];
         }
-        
+
         $history = array();
         //$history[1] = 0;
         foreach($dbh->query('SELECT COUNT(`timestamp`) FROM `users` GROUP BY `timestamp`') as $row) {
@@ -32,7 +32,7 @@
             //$history[1]++;
         }
         print_r($history);
-        
+
         $dbh = null;
         /*echo '<pre>';
         foreach($dbh->query('SELECT * from `users`') as $row) {
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4">
                 <div class="panel panel-material-teal text-center">
                     <div class="panel-heading">
@@ -222,13 +222,14 @@
             </div>
 
         </div>
-        
+
         <div id="history" class="col-lg-12"></div>
 
     </div>
 
     <img id="dploy" src="//wopian.dploy.io/badge/13023223950720/13284.png" alt="Deployment status from dploy.io">
 
+    <script src='/assets/js/modernizr.min.js'></script>
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="/assets/js/ripples.min.js"></script>
@@ -239,7 +240,7 @@
             $.material.init();
         });
     </script>
-    
+
     <script src="/assets/js/highcharts.js"></script>
     <script src="/assets/js/exporting.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545296d61bde8abb" async="async"></script>
