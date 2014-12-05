@@ -90,7 +90,6 @@
     <script type="text/javascript" src="/assets/javascript/skrollr.min.js"></script>
     <script type="text/javascript" src="/assets/javascript/main.js"></script>
     <script type="text/javascript" src="/assets/javascript/highcharts.js"></script>
-    <script type="text/javascript" src="/assets/javascript/livereload.js"></script>
 
     <script type="text/javascript">
         $(function () {
