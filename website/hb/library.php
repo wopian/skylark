@@ -245,7 +245,7 @@ array_multisort($sort, SORT_DESC, $data);
 
         echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
           <div class="thumbnail">
-            <a href="'.$uri.'"><img class="lazy" data-original="'.$cover.'" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="'.$title.'"></a>
+            <a href="'.$uri.'"><img class="lazy" data-original="'.$cover.'" alt="'.$title.'"></a>
             <div class="caption">
               <h4>'.$title.'</h4>
               <p>'.$status.'</p>
