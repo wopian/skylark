@@ -6,9 +6,9 @@ var __protocol = {}, __connector = {}, __customevents = {}, __less = {}, __timer
 var PROTOCOL_6, PROTOCOL_7, Parser, ProtocolError,
   __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-__protocol.PROTOCOL_6 = PROTOCOL_6 = '//livereload.com/protocols/official-6';
+__protocol.PROTOCOL_6 = PROTOCOL_6 = 'http://livereload.com/protocols/official-6';
 
-__protocol.PROTOCOL_7 = PROTOCOL_7 = '//livereload.com/protocols/official-7';
+__protocol.PROTOCOL_7 = PROTOCOL_7 = 'http://livereload.com/protocols/official-7';
 
 __protocol.ProtocolError = ProtocolError = (function() {
   function ProtocolError(reason, data) {
@@ -1032,7 +1032,7 @@ __livereload.LiveReload = LiveReload = (function() {
       liveImg: (_ref1 = message.liveImg) != null ? _ref1 : true,
       originalPath: message.originalPath || '',
       overrideURL: message.overrideURL || '',
-      serverURL: "//" + this.options.host + ":" + this.options.port
+      serverURL: "http://" + this.options.host + ":" + this.options.port
     });
   };
 
