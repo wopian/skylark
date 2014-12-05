@@ -278,7 +278,8 @@ array_multisort($sort, SORT_DESC, $data);
 
     $(function() {
       $("img.lazy").lazyload({
-        effect: "fadeIn"
+        effect: "fadeIn",
+        failure_limit : 4
       });
     });
   </script>

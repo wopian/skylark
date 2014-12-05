@@ -18,9 +18,9 @@
   overflow: hidden;
 }
 
-/*.thumbnail > a > img {
+.thumbnail > a > img {
   background: url("/assets/images/missing.jpg");
-}*/
+}
 
 .cover {
   position: relative;
