@@ -6,9 +6,9 @@ var __protocol = {}, __connector = {}, __customevents = {}, __less = {}, __timer
 var PROTOCOL_6, PROTOCOL_7, Parser, ProtocolError,
   __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-__protocol.PROTOCOL_6 = PROTOCOL_6 = 'https://livereload.com/protocols/official-6';
+__protocol.PROTOCOL_6 = PROTOCOL_6 = '//livereload.com/protocols/official-6';
 
-__protocol.PROTOCOL_7 = PROTOCOL_7 = 'https://livereload.com/protocols/official-7';
+__protocol.PROTOCOL_7 = PROTOCOL_7 = '//livereload.com/protocols/official-7';
 
 __protocol.ProtocolError = ProtocolError = (function() {
   function ProtocolError(reason, data) {
@@ -114,7 +114,8 @@ __connector.Connector = Connector = (function() {
     this.WebSocket = WebSocket;
     this.Timer = Timer;
     this.handlers = handlers;
-    this._uri = "wss://" + this.options.host + ":" + this.options.port + "/livereload";
+    this._uri = "//" + this.options.host + ":" + this.options.port + "/livereload";
+    //this._uri = "ws://" + this.options.host + ":" + this.options.port + "/livereload";
     this._nextDelay = this.options.mindelay;
     this._connectionDesired = false;
     this.protocol = 0;
@@ -1032,7 +1033,7 @@ __livereload.LiveReload = LiveReload = (function() {
       liveImg: (_ref1 = message.liveImg) != null ? _ref1 : true,
       originalPath: message.originalPath || '',
       overrideURL: message.overrideURL || '',
-      serverURL: "https://" + this.options.host + ":" + this.options.port
+      serverURL: "//" + this.options.host + ":" + this.options.port
     });
   };
 
