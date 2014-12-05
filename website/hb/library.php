@@ -245,7 +245,7 @@ array_multisort($sort, SORT_DESC, $data);
 
         echo '<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
           <div class="thumbnail">
-            <a href="'.$uri.'"><img src="'.$cover.'" alt="'.$title.'"></a>
+            <a href="'.$uri.'"><img data-original="'.$cover.'" src="/assets/images/missing2.jpg" alt="'.$title.'"></a>
             <div class="caption">
               <h4>'.$title.'</h4>
               <p>'.$status.'</p>
@@ -269,9 +269,15 @@ array_multisort($sort, SORT_DESC, $data);
   <script src="/assets/js/ripples.js"></script>
   <script src="/assets/js/material.js"></script>
 
+  <script src="lazyload.js" type="text/javascript"></script>
+
   <script>
     $(document).ready(function() {
       $.material.init();
+    });
+
+    $(function() {
+      $("img.lazy").lazyload();
     });
   </script>
 

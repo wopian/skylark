@@ -4,7 +4,7 @@
     strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
     if(!$isAjax) {
         header("Location: //hb.wopian.me");
-        header('X-Robots-Tag: noindex, nofollow', true); 
+        header('X-Robots-Tag: noindex, nofollow', true);
     }
 
     # Grab user field from url and load user stats
