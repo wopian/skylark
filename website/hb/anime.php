@@ -231,6 +231,14 @@ $cover = $json['anime']['cover_image'];
                     </div>
                 </div>
             </div>
+
+            <div class='col-lg-3 col-md-4 col-sm-4 col-xs-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-body'>
+                        <img src="<?=$synopsis?>">
+                    </div>
+                </div>
+            </div>
     </div>
 
     </div>
