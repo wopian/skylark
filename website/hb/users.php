@@ -99,6 +99,7 @@
 
   <script>
     $(document).ready(function start(){
+      $.material.options.autofill = false
       $.material.init();
 
       $('.spinner').show();
