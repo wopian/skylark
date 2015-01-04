@@ -273,6 +273,7 @@ array_multisort($sort, SORT_DESC, $data);
 
   <script>
     $(document).ready(function() {
+      $.material.options.autofill = false
       $.material.init();
     });
 
