@@ -346,6 +346,7 @@
 
   <script>
   $(document).ready(function() {
+    $.material.options.autofill = false
     $.material.init();
   });
   function infoUser() {
