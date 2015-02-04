@@ -5,7 +5,8 @@ module.exports = {
             collapseWhitespace: true
         },
         files: {
-            'production/index.html': 'index.html' // 'destination': 'source'
+            'production/index.php': 'index.php',
+            'production/slack.php': 'slack.php'
         }
     }
 }

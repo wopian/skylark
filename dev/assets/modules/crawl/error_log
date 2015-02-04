@@ -1,0 +1,28 @@
+[17-Nov-2014 23:24:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:24:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:24:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:24:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:24:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:29:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:30:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:30:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:30:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:30:28 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:30:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 14
+[17-Nov-2014 23:50:54 UTC] PHP Parse error:  syntax error, unexpected '$M' (T_VARIABLE) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 43
+[18-Nov-2014 00:52:06 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:52:15 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:52:22 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:52:28 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:52:59 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:53:10 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 13
+[18-Nov-2014 00:53:15 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 42
+[18-Nov-2014 00:53:22 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 42
+[18-Nov-2014 00:54:27 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 42
+[18-Nov-2014 00:54:31 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 42
+[18-Nov-2014 00:54:36 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 42
+[18-Nov-2014 01:01:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 36
+[18-Nov-2014 01:01:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 36
+[18-Nov-2014 01:01:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/bobstudi/wopian/hb/assets/modules/users.php on line 36
+[13-Jan-2015 21:31:37 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 33
+[19-Jan-2015 21:59:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bobstudi/wopian/hb/assets/modules/users.php on line 33
