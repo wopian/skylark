@@ -1,0 +1,400 @@
+[26-Nov-2014 10:04:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:04:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:05:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 16
+[26-Nov-2014 10:06:00 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 73
+[26-Nov-2014 10:06:00 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 74
+[26-Nov-2014 10:06:23 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 73
+[26-Nov-2014 10:06:23 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 74
+[26-Nov-2014 10:07:36 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 73
+[26-Nov-2014 10:07:36 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 74
+[26-Nov-2014 10:08:38 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 73
+[26-Nov-2014 10:08:38 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 74
+[26-Nov-2014 10:09:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 73
+[26-Nov-2014 10:09:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 74
+[26-Nov-2014 10:10:18 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:18 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:18 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:21 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:21 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:21 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:24 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:24 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:24 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:27 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:27 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:27 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:30 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:30 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:30 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:33 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:33 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:33 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:35 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:35 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:35 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:10:36 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:10:36 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:10:36 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:11:37 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:11:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:11:37 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:11:37 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:12:37 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:12:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:12:37 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:12:37 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:13:38 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:13:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:13:38 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:13:38 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:14:39 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:14:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:14:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:14:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:15:40 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:15:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:15:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:15:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:16:40 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:16:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:16:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:16:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:17:41 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:17:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:17:41 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:17:41 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:18:42 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:18:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:18:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:18:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:19:28 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:19:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:19:28 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:19:28 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:20:28 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:20:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 12
+[26-Nov-2014 10:20:28 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:20:28 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:21:29 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:29 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:21:29 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 82
+[26-Nov-2014 10:21:39 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:21:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 82
+[26-Nov-2014 10:21:42 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:21:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 82
+[26-Nov-2014 10:21:44 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:21:44 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:21:44 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 82
+[26-Nov-2014 10:22:42 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:22:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 13
+[26-Nov-2014 10:22:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 81
+[26-Nov-2014 10:22:42 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 82
+[26-Nov-2014 10:22:44 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 79
+[26-Nov-2014 10:22:44 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:23:48 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 79
+[26-Nov-2014 10:23:48 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:24:51 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 79
+[26-Nov-2014 10:24:51 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:25:06 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 79
+[26-Nov-2014 10:25:06 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:25:17 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 79
+[26-Nov-2014 10:25:17 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 80
+[26-Nov-2014 10:25:21 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:25:24 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:24 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:26 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:27 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:28 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:28 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:28 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:26:29 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:31 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:31 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:33 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:33 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:35 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:35 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:36 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:36 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:26:37 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:26 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:27 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:28 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:28 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:29 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:30 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:30 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:31 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 27
+[26-Nov-2014 10:27:31 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:27:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:27:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:27:33 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:27:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:27:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:28:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:29:35 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 26
+[26-Nov-2014 10:30:40 UTC] PHP Warning:  PDO::query(): SQLSTATE[HY000]: General error: mode must be an integer in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 10
+[26-Nov-2014 10:30:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 10
+[26-Nov-2014 10:30:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 10:30:40 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[26-Nov-2014 11:06:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'music195'@'localhost' (using password: YES)' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php:5
+Stack trace:
+#0 /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php(5): PDO->__construct('mysql:host=loca...', 'music195', 'bobstudi_hummin...', Array)
+#1 {main}
+  thrown in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 5
+[26-Nov-2014 21:07:19 UTC] PHP Warning:  Unterminated comment starting line 17 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 17
+[26-Nov-2014 21:09:59 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:10:05 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:10:08 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:10:28 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:10:34 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:11:29 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:12:11 UTC] PHP Warning:  Unterminated comment starting line 18 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:40:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:40:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 18
+[26-Nov-2014 21:43:33 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 31
+[26-Nov-2014 21:43:42 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 31
+[26-Nov-2014 21:43:46 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 31
+[26-Nov-2014 21:46:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:26 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:26 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:27 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:27 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 21:46:27 UTC] PHP Warning:  Illegal string offset 'name' in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 22
+[26-Nov-2014 22:13:50 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:50 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:50 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:51 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:51 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:52 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:52 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:52 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:52 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:52 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:13:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:14:01 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:14:01 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:14:01 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:14:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:14:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:41 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:41 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:42 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:42 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:42 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:47 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:47 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:47 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:48 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:48 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:57 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:58 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:15:59 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:00 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:00 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:00 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:00 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:01 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:02 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:03 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:03 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:03 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:03 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:04 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:05 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:05 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:05 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:06 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:06 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:15 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:15 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:15 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:15 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:16:15 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:33:54 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:33:54 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:33:55 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:33:55 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:33:55 UTC] PHP Warning:  PDOStatement::setAttribute(): SQLSTATE[IM001]: Driver does not support this function: This driver doesn't support setting attributes in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 24
+[26-Nov-2014 22:47:49 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:21 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:22 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:23 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:24 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:24 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:25 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:48:26 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 38
+[26-Nov-2014 22:54:34 UTC] PHP Warning:  Unterminated comment starting line 15 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 15
+[26-Nov-2014 22:55:29 UTC] PHP Warning:  Unterminated comment starting line 15 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 15
+[26-Nov-2014 22:55:30 UTC] PHP Warning:  Unterminated comment starting line 15 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 15
+[26-Nov-2014 22:55:32 UTC] PHP Warning:  Unterminated comment starting line 15 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 15
+[26-Nov-2014 22:55:33 UTC] PHP Warning:  Unterminated comment starting line 15 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 15
+[26-Nov-2014 22:57:44 UTC] PHP Warning:  Unterminated comment starting line 19 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 19
+[26-Nov-2014 22:57:47 UTC] PHP Warning:  Unterminated comment starting line 19 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 19
+[26-Nov-2014 22:57:47 UTC] PHP Warning:  Unterminated comment starting line 19 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 19
+[26-Nov-2014 22:57:48 UTC] PHP Warning:  Unterminated comment starting line 19 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 19
+[26-Nov-2014 23:16:20 UTC] PHP Warning:  Unterminated comment starting line 20 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 20
+[26-Nov-2014 23:16:20 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:17:38 UTC] PHP Warning:  Unterminated comment starting line 20 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 20
+[26-Nov-2014 23:17:38 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:17:41 UTC] PHP Warning:  Unterminated comment starting line 20 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 20
+[26-Nov-2014 23:17:41 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:17:42 UTC] PHP Warning:  Unterminated comment starting line 20 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 20
+[26-Nov-2014 23:17:42 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:26 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:26 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:28 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:28 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:29 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:29 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:34 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:34 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:35 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:35 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:36 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:36 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:36 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:36 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:38 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:38 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:38 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:38 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:39 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:39 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:39 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:39 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:18:40 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:18:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:07 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:07 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:08 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:08 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:08 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:08 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:09 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:09 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:10 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:10 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:10 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:10 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:11 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:11 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:12 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:12 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:13 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:13 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:13 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:13 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:14 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:14 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:15 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:15 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:16 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:16 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:16 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:16 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:17 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:17 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:18 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:18 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:18 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:18 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:19 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:19 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:21 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:21 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:22 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:22 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:23 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:23 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:24 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:24 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:24 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:24 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:25 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:25 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:27 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:27 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:19:27 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:19:27 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:20:54 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:20:54 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:20:56 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:20:56 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:20:57 UTC] PHP Warning:  Unterminated comment starting line 21 in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 21
+[26-Nov-2014 23:20:57 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/bobstudi/wopian/hb/assets/modules/info/crawl_users.php on line 16
+[26-Nov-2014 23:32:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 23:32:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[26-Nov-2014 23:33:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 23:33:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[26-Nov-2014 23:34:46 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 23:34:46 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[26-Nov-2014 23:35:47 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 23:35:47 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[26-Nov-2014 23:36:48 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[26-Nov-2014 23:36:48 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[27-Nov-2014 00:40:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[27-Nov-2014 00:40:39 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[27-Nov-2014 00:40:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[27-Nov-2014 00:40:45 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[27-Nov-2014 00:40:47 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[27-Nov-2014 00:40:47 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[27-Nov-2014 00:40:49 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[27-Nov-2014 00:40:49 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[27-Nov-2014 00:40:52 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 83
+[27-Nov-2014 00:40:52 UTC] PHP Warning:  Division by zero in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 84
+[01-Dec-2014 09:34:44 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:01 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:03 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:32 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:33 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:34 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:34 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:35 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:36 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:36 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:37 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:38 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:38 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:39 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:40 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:40 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
+[01-Dec-2014 09:35:41 UTC] PHP Parse error:  syntax error, unexpected '"]"' (T_CONSTANT_ENCAPSED_STRING) in /home/bobstudi/wopian/hb/assets/modules/info/info.php on line 29
