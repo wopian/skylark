@@ -1,7 +1,7 @@
 module.exports = {
   combine: {
     files: {
-      'production/assets/css/app.min.css': ['assets/css/app.css']
+      'app/assets/css/app.min.css': ['dev/assets/css/app.css']
     }
   }
 }

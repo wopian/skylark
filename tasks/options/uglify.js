@@ -1,7 +1,7 @@
 module.exports = {
   build: {
     files: {
-        'production/assets/javascript/app.min.js' : ['production/assets/javascript/app.js']
+        'app/assets/javascript/app.min.js' : ['app/assets/javascript/app.js']
     }
   }
 }
