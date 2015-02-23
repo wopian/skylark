@@ -1,7 +1,7 @@
 module.exports = {
   dist: {
     files: {
-        'production/assets/javascript/app.js' : ['assets/javascript/skrollr.js', 'assets/javascript/main.js', 'assets/javascript/highcharts.js', 'assets/javascript/snow.js']
+        'app/assets/javascript/app.js' : ['dev/assets/javascript/skrollr.js', 'dev/assets/javascript/main.js', 'dev/assets/javascript/highcharts.js', 'dev/assets/javascript/snow.js']
     }
   }
 }

@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   images: {
-    files: ['assets/images/**/*.{png,jpg,gif}', 'assets/images/*.{png,jpg,gif}'],
+    files: ['dev/assets/images/**/*.{png,jpg,gif}', 'dev/assets/images/*.{png,jpg,gif}'],
     tasks: ['imagemin'],
     options: {
       spawn: false,
