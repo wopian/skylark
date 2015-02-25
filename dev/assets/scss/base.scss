@@ -58,17 +58,17 @@ header {
             order: 1;
             flex: 0 1 auto;
             align-self: auto;
-        }
 
-        ul {
-            padding: 0;
-            list-style: none;
-            margin-bottom: 0;
-            float: right;
-            margin-top: 0;
+            ul {
+                padding: 0;
+                list-style: none;
+                margin-bottom: 0;
+                float: right;
+                margin-top: 0;
 
-            li {
-                display: inline-block;
+                li {
+                    display: inline-block;
+                }
             }
         }
     }
