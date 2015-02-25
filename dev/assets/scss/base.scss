@@ -23,6 +23,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    line-height: 1.5;
 }
 
 header {
@@ -36,12 +37,26 @@ header {
     div {
         @include container(970px);
 
+        span {
+            display: inline-block;
+            padding: 1em 0;
+            a {
+                color: #fff;
+                text-decoration: none;
+                border: 0;
+            }
+        }
+
+        nav {
+            display: block;
+        }
+
         ul {
             padding: 0;
             list-style: none;
-            margin-top: 0;
             margin-bottom: 0;
             float: right;
+            margin-top: 0;
 
             li {
                 display: inline-block;
