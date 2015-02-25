@@ -79,7 +79,7 @@ small {
 }
 
 .headroom {
-    transition: transform 200ms linear;
+    transition: transform .6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .headroom--pinned {
     transform: translateY(0%);
