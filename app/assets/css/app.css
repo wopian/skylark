@@ -20,4 +20,10 @@ div:after {
   }
 }
 
+#dploy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /*# sourceMappingURL=app.css.map */
