@@ -31,12 +31,14 @@
         <div>
             <span><a href="/">Hibari</a>.<small> Hummingbird Tools</small></span>
             <nav>
-                <li>
-                    <a href="#stats">Stats</a>
-                </li>
-                <li>
-                    <a href="#users">Users</a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="#stats">Stats</a>
+                    </li>
+                    <li>
+                        <a href="#users">Users</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
