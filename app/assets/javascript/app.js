@@ -14,8 +14,8 @@ var headroom  = new Headroom(myElement, {
   "tolerance": 5,
   "classes": {
     "initial": "animated",
-    "pinned": "slideDown",
-    "unpinned": "slideUp"
+    "pinned": "headroom--pinned",
+    "unpinned": "headroom--unpinned"
   }
 });
 // initialise
