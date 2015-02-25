@@ -46,7 +46,7 @@
     <section>
 
 
-        <div>Lorem ipsum dolor sit amet</div>
+        <div>Scroll down to hide header!</div>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

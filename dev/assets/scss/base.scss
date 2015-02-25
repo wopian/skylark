@@ -89,6 +89,11 @@ header {
     }
 }
 
+section {
+    @include container(970px);
+    margin-top: 67px;
+}
+
 small {
     font-family: 'Open Sans Condensed', sans-serif;
 }
