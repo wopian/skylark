@@ -59,14 +59,14 @@ header > div nav {
   flex: 0 1 auto;
   align-self: auto;
 }
-header > div ul {
+header > div nav ul {
   padding: 0;
   list-style: none;
   margin-bottom: 0;
   float: right;
   margin-top: 0;
 }
-header > div ul li {
+header > div nav ul li {
   display: inline-block;
 }
 
