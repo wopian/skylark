@@ -2,7 +2,6 @@
 @import 'breakpoint';
 
 $wide: 1200px;
-$container: 970px;
 
 /*div {
     @include container($container);
@@ -33,7 +32,7 @@ header {
     color: #fff;
 
     div {
-        @include container($container);
+        @include container(970px);
 
         ul {
             padding: 0;
