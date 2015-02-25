@@ -26,4 +26,6 @@
 
 <body>
     <p>Lorem ipsum dolor sit amet</p>
+
+    <a id="dploy" href="http://dploy.io"><img src="https://wopian-hb.dploy.io/badge/88313865898261/19495.png" alt="Deployment status from dploy.io"></a>
 </body>
