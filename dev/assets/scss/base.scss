@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-div {
+p {
     @include container(970px);
     background: red;
     @include breakpoint($wide) {
