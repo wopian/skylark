@@ -25,6 +25,22 @@
 </head>
 
 <body>
+
+    <header>
+        <div>
+            <span><a href="/">Hibari</a>.<small> Hummingbird Tools</small></span>
+            <nav>
+                <li>
+                    <a href="#stats">Stats</a>
+                </li>
+                <li>
+                    <a href="#users">Users</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+
     <div>Lorem ipsum dolor sit amet</div>
 
     <a id="dploy" href="http://dploy.io"><img src="https://wopian-hb.dploy.io/badge/88313865898261/19495.png" alt="Deployment status from dploy.io"></a>
