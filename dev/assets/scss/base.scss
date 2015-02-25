@@ -44,15 +44,14 @@ header {
         align-content: center;
         align-items: center;
 
-        > p {
+        > a {
             order: 0;
             flex: 0 1 auto;
             align-self: auto;
-            a {
-                color: #fff;
-                text-decoration: none;
-                border: 0;
-            }
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            border: 0;
         }
 
         nav {

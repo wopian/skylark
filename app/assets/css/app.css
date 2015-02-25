@@ -45,12 +45,11 @@ header > div:after {
   display: block;
   clear: both;
 }
-header > div > p {
+header > div > a {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-}
-header > div > p a {
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   border: 0;
