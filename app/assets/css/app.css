@@ -23,41 +23,51 @@ body {
 header {
   width: 100%;
   line-height: 40px;
+  max-height: 40px;
   background: #333;
   color: #fff;
   position: fixed;
   top: 0;
 }
-header div {
+header > div {
   max-width: 970px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
-header div:after {
+header > div:after {
   content: " ";
   display: block;
   clear: both;
 }
-header div span {
-  display: inline-block;
-  padding: 1em 0;
+header > div > p {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
-header div span a {
+header > div > p a {
   color: #fff;
   text-decoration: none;
   border: 0;
 }
-header div nav {
-  display: block;
+header > div nav {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
 }
-header div ul {
+header > div ul {
   padding: 0;
   list-style: none;
   margin-bottom: 0;
   float: right;
   margin-top: 0;
 }
-header div ul li {
+header > div ul li {
   display: inline-block;
 }
 
