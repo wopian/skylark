@@ -29,7 +29,7 @@
 
     <header class="headroom">
         <div>
-            <p><a href="/">Hibari</a>.<small> Hummingbird Tools</small></p>
+            <a href="/">Hibari</a>
             <nav>
                 <ul>
                     <li>
