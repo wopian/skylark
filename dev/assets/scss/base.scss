@@ -1,0 +1,6 @@
+@import 'susy';
+@import 'breakpoint';
+
+body {
+    @include container(80em);
+}

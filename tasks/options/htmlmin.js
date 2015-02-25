@@ -5,8 +5,7 @@ module.exports = {
             collapseWhitespace: true
         },
         files: {
-            'app/index.php': 'dev/index.php',
-            'app/slack.php': 'dev/slack.php'
+            'app/index.php': 'dev/index.php'
         }
     }
 }
