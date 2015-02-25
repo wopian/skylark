@@ -3,19 +3,19 @@ body {
   padding: 0;
 }
 
-p {
+div {
   max-width: 970px;
   margin-left: auto;
   margin-right: auto;
   background: red;
 }
-p:after {
+div:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 1200px) {
-  p {
+  div {
     background: green;
   }
 }
