@@ -68,6 +68,10 @@ header > div nav ul {
 }
 header > div nav ul li {
   display: inline-block;
+  margin-right: 1em;
+}
+header > div nav ul li:last-of-type {
+  margin-right: 0;
 }
 
 small {
