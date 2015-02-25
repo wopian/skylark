@@ -1,1 +1,1 @@
-body{max-width:80em;margin-left:auto;margin-right:auto}body:after{content:" ";display:block;clear:both}
+body{margin:0;padding:0}div{max-width:970px;margin-left:auto;margin-right:auto;background:red}div:after{content:" ";display:block;clear:both}@media (min-width:1200px){div{background:green}}
