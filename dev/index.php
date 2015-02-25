@@ -66,3 +66,7 @@
 
     <a id="dploy" href="http://dploy.io"><img src="https://wopian-hb.dploy.io/badge/88313865898261/19495.png" alt="Deployment status from dploy.io"></a>
 </body>
+
+<script type="text/javascript" src="/assets/javascript/app.min.js"></script>
+
+</html>
