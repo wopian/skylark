@@ -17,6 +17,7 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  line-height: 1.5;
 }
 
 header {
@@ -37,12 +38,24 @@ header div:after {
   display: block;
   clear: both;
 }
+header div span {
+  display: inline-block;
+  padding: 1em 0;
+}
+header div span a {
+  color: #fff;
+  text-decoration: none;
+  border: 0;
+}
+header div nav {
+  display: block;
+}
 header div ul {
   padding: 0;
   list-style: none;
-  margin-top: 0;
   margin-bottom: 0;
   float: right;
+  margin-top: 0;
 }
 header div ul li {
   display: inline-block;
