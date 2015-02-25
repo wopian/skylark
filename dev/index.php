@@ -22,6 +22,7 @@
     <meta name="twitter:url" content="//hb.wopian.me" />
 
     <link href="/assets/css/app.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
