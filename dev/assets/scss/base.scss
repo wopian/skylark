@@ -29,17 +29,25 @@ body {
 header {
     width: 100%;
     line-height: 40px;
+    max-height: 40px;
     background: #333;
     color: #fff;
     position: fixed;
     top: 0;
 
-    div {
+    > div {
         @include container(970px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
 
-        span {
-            display: inline-block;
-            padding: 1em 0;
+        > p {
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
             a {
                 color: #fff;
                 text-decoration: none;
@@ -48,7 +56,9 @@ header {
         }
 
         nav {
-            display: block;
+            order: 1;
+            flex: 0 1 auto;
+            align-self: auto;
         }
 
         ul {
