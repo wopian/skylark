@@ -49,6 +49,7 @@ header {
             align-self: auto;
             font-size: 18px;
             color: #fff;
+            opacity: .84;
             text-decoration: none;
             border: 0;
             padding: .75em 0;
@@ -69,14 +70,18 @@ header {
                 li {
                     display: inline-block;
                     font-size: 14px;
-                    color: #fff;
-                    text-decoration: none;
-                    border: 0;
                     padding: .75em 0;
                     margin-right: 1em;
 
                     &:last-of-type {
                         margin-right: 0;
+                    }
+
+                    a {
+                        color: #fff;
+                        opacity: .84;
+                        text-decoration: none;
+                        border: 0;
                     }
                 }
             }
