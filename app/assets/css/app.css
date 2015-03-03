@@ -4798,6 +4798,8 @@ section:after {
   width: 23.72881%;
   float: left;
   display: inline-block;
+  text-align: center;
+  font-size: 3em;
 }
 .section-1 div:nth-child(4n + 1) {
   margin-left: 0;
@@ -4819,6 +4821,13 @@ section:after {
   margin-left: 76.27119%;
   margin-right: -100%;
   clear: none;
+}
+.section-1 div p {
+  color: #009688;
+}
+.section-1 div small {
+  font-size: .5em;
+  font-weight: 400;
 }
 
 small {
