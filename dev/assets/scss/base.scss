@@ -1,7 +1,11 @@
+@import 'reset';
 @import 'susy';
 @import 'breakpoint';
+@import 'hover/hover';
 
-$wide: 1200px;
+// Susy stuff
+$large-breakpoint: container(12);
+
 
 /*div {
     @include container($container);
@@ -90,8 +94,16 @@ header {
 }
 
 section {
-    @include container(970px);
+    @include span(12);
+    //@include container(970px);
     margin-top: 67px;
+
+    .section-1 {
+        width: 100%;
+        div {
+            @include span(3 of 12);
+        }
+    }
 }
 
 small {
