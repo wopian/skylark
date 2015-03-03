@@ -94,8 +94,8 @@ header {
 }
 
 section {
-    @include span(12);
-    //@include container(970px);
+    @include container(970px);
+
     margin-top: 67px;
 }
 
@@ -104,6 +104,8 @@ section {
 
     div {
         @include span(3 of 12);
+
+        display: inline-block;
     }
 }
 
