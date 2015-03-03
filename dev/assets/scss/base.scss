@@ -100,7 +100,7 @@ section {
 }
 
 .section-1 {
-    @include span(12);
+    @include full;
 
     div {
         @include span(3 of 12);
