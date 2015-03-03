@@ -103,7 +103,7 @@ section {
     @include full;
 
     div {
-        @include span(3 of 12);
+        @include gallery(3 of 12);
 
         display: inline-block;
     }

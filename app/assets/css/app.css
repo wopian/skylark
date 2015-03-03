@@ -4797,8 +4797,28 @@ section:after {
 .section-1 div {
   width: 23.72881%;
   float: left;
-  margin-right: 1.69492%;
   display: inline-block;
+}
+.section-1 div:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.section-1 div:nth-child(4n + 2) {
+  margin-left: 25.42373%;
+  margin-right: -100%;
+  clear: none;
+}
+.section-1 div:nth-child(4n + 3) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+.section-1 div:nth-child(4n + 4) {
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  clear: none;
 }
 
 small {
