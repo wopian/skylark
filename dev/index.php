@@ -48,8 +48,6 @@
 
         <div class="section-1">
 
-            <p>Since 1st May 2015, Hibari is tracking&hellip;</p>
-
             <div><p>16,167</p><small>users</small></div>
             <div><p>173,050</p><small>watched episodes</small></div>
             <div><p>200</p><small>anime</small></div>
