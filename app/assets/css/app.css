@@ -4781,10 +4781,13 @@ section {
   margin-right: 5.26316%;
   margin-top: 67px;
 }
-section .section-1 {
-  width: 100%;
+
+.section-1 {
+  width: 310.52632%;
+  float: left;
+  margin-right: 5.26316%;
 }
-section .section-1 div {
+.section-1 div {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
