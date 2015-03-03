@@ -4776,10 +4776,15 @@ header > div nav ul li a {
 }
 
 section {
-  width: 310.52632%;
-  float: left;
-  margin-right: 5.26316%;
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 67px;
+}
+section:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .section-1 {
@@ -4791,6 +4796,7 @@ section {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
+  display: inline-block;
 }
 
 small {
