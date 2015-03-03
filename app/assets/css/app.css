@@ -4788,9 +4788,11 @@ section:after {
 }
 
 .section-1 {
-  width: 310.52632%;
+  clear: both;
+  width: 100%;
   float: left;
-  margin-right: 5.26316%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .section-1 div {
   width: 23.72881%;
