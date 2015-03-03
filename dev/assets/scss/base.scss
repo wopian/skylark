@@ -96,7 +96,7 @@ header {
 section {
     @include container(970px);
 
-    margin-top: 67px;
+    margin-top: calc(61px * 2);
 }
 
 .section-1 {
@@ -109,6 +109,9 @@ section {
         text-align: center;
         font-size: 3em;
 
+        display: flex;
+        flex-direction: column;
+
         p {
             color: #009688;
         }
@@ -120,9 +123,11 @@ section {
     }
 }
 
+/*
 small {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+*/
 
 .headroom {
     transition: transform .6s cubic-bezier(0.19, 1, 0.22, 1);
