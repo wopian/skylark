@@ -5,10 +5,11 @@ $nth: nth($species, $rnd);
 
 $version: "0.0.1";
 $release: "#{$nth}";
-/*!Copyright &copy; James Harris 2015.
-Version #{$version}.
-
-Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.*/
+/*!
+* Copyright \00a9 James Harris 2015.
+* Version #{$version}.
+*
+* Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.*/
 
 @import 'reset';
 @import 'susy';
