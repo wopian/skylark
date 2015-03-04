@@ -4758,28 +4758,26 @@ header > div nav ul {
   margin-bottom: 0;
   float: right;
   margin-top: 0;
-  transition: opacity .2s ease-in-out;
 }
 header > div nav ul li {
   display: inline-block;
   font-size: 14px;
   padding: .75em 0;
-}
-header > div nav ul li:after {
-  content: "\a0\00b7\a0";
-  padding: 0 3px;
+  margin-right: 1em;
 }
 header > div nav ul li:last-of-type {
   content: "";
-}
-header > div nav ul li:hover {
-  opacity: 1;
+  margin-right: 0;
 }
 header > div nav ul li a {
   color: #fff;
   opacity: .84;
   text-decoration: none;
   border: 0;
+}
+header > div nav ul li a:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
 }
 
 section {
