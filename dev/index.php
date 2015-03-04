@@ -60,7 +60,22 @@
         </tracking>
 
         <popular>
-            <p>
+            <p>Popular this month...</p>
+
+            <card>
+                <poster>
+                    <img data-src="holder.js/490x710/#fff:#bbb:Tomako Market">
+                    <!--<img src="http://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
+                </poster>
+                <details>
+                    <title>Tamako Market</title>
+                    <rating>PG13</rating>
+                    <type>TV</type>
+                    <episodes>12</episodes> <!-- " Episodes" in :after -->
+                    <season>Winter 2013</season>
+                </details>
+            </card>
+        </popular>
 
     </section>
 
