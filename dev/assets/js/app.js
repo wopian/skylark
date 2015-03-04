@@ -1,5 +1,20 @@
+/*$(function() {
+    $("img.lazy").lazyload({
+        //threshold : 200,
+        skip_invisible : false,
+        effect : "fadeIn"
+    });
+});
+*/
+
 $(function() {
     $("img.lazy").lazyload({
-        skip_invisible : false
+        event : "sporty",
+        skip_invisible : false,
+        effect : "fadeIn"
     });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
 });
