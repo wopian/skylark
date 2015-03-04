@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Dachiyou).
+     Version 0.0.1 (Perikan).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Dachiyou).
+     バージョン0.0.1 (Perikan).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Dachiyou)";
+  content: "v0.0.1 (Perikan)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4924,6 +4924,7 @@ popular card detail {
   width: 100%;
   height: 100%;
   text-align: center;
+  vertical-align: middle;
   background: rgba(0, 0, 0, 0.2);
 }
 popular card poster, popular card img {
