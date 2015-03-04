@@ -43,6 +43,7 @@ $large-breakpoint: container(12);
 
 body {
     color: #333;
+    background: #eee;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
@@ -153,15 +154,19 @@ section {
     card {
         @include gallery(3 of 12);
 
-        display: inline-block;
         text-align: center;
-        font-size: 3em;
-
+        font-size: 2em;
         background: #fff;
         box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+        border-radius: 2px;
+        padding: .75em 0;
 
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
 
         p {
             color: #009688;

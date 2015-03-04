@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Kakin).
+     Version 0.0.1 (Tori).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Kakin).
+     バージョン0.0.1 (Tori).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4714,6 +4714,7 @@ table {
 
 body {
   color: #333;
+  background: #eee;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -4757,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Kakin)";
+  content: "v0.0.1 (Tori)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4829,13 +4830,18 @@ section:after {
 .section-1 card {
   width: 23.72881%;
   float: left;
-  display: inline-block;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   background: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  padding: .75em 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
 }
 .section-1 card:nth-child(4n + 1) {
   margin-left: 0;
