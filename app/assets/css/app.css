@@ -4768,7 +4768,7 @@ header > div nav ul li:after {
   content: "\a0\00b7\a0";
   padding: 0 3px;
 }
-header > div nav ul li:last-of-type {
+header > div nav ul li:last-of-type:after {
   content: " ";
 }
 header > div nav ul li a {
