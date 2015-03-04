@@ -34,6 +34,8 @@ $footerHeight: 60px;
 
 // Susy stuff
 $large-breakpoint: container(12);
+$gutter-width: 1em;
+$grid-padding: 1em;
 
 #dploy {
     position: fixed;
@@ -148,7 +150,7 @@ section {
     margin-bottom: $footerHeight
 }
 
-.section-1 {
+tracking {
     @include full;
 
     card {
@@ -157,8 +159,9 @@ section {
         text-align: center;
         font-size: 2em;
         background: #fff;
-        box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
-        border-radius: 2px;
+        //box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);
+        box-shadow: 0 0 5px rgba(0,0,0,.1), 0 1px 5px rgba(0,0,0,.1);
+        border-radius: 4px;
         padding: .75em 0;
 
         display: flex;
