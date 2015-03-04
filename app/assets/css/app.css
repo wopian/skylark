@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Menfukurou).
+     Version 0.0.1 (Kiji).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Menfukurou).
+     バージョン0.0.1 (Kiji).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Menfukurou)";
+  content: "v0.0.1 (Kiji)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4912,12 +4912,6 @@ popular card:nth-child(4n + 4) {
   clear: none;
 }
 popular card detail {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -4932,6 +4926,17 @@ popular card detail {
 popular card detail:hover {
   color: #fff;
   background: rgba(0, 150, 136, 0.8);
+}
+popular card detail show {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+popular card detail season {
+  display: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 popular card poster, popular card img {
   width: 100%;
