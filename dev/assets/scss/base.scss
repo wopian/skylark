@@ -1,19 +1,18 @@
+$version:"0.0.1";
+/*Copyright © James Harris 2015.
+Version #{$version}.
+
+Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.*/
+
 @import 'reset';
 @import 'susy';
 @import 'breakpoint';
 @import 'hover/hover';
 
+$footerHeight: 60px;
+
 // Susy stuff
 $large-breakpoint: container(12);
-
-
-/*div {
-    @include container($container);
-    background: red;
-    @include breakpoint($wide) {
-        background: green;
-    }
-}*/
 
 #dploy {
     position: fixed;
@@ -104,10 +103,29 @@ header {
     }
 }
 
+cta {
+    width: 100%;
+    line-height: 40px;
+    background: #009688;
+    color: #fff;
+    position: fixed;
+    top: 61px;
+}
+
+footer {
+    content: #{$version};
+    position: relative;
+    margin-top: -#{$footerHeight};
+    height: $footerHeight;
+    clear: both;
+    width: 100%;
+}
+
 section {
     @include container(970px);
 
-    margin-top: calc(61px * 1.5);
+    margin-top: 61px * 1.5;
+    margin-bottom: $footerHeight
 }
 
 .section-1 {
