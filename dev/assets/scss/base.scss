@@ -92,6 +92,7 @@ header {
                         opacity: .84;
                         text-decoration: none;
                         border: 0;
+                        transition: opacity .2s ease-in-out;
 
                         &:hover {
                             opacity: 1;

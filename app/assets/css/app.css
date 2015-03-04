@@ -4776,6 +4776,7 @@ header > div nav ul li a {
   opacity: .84;
   text-decoration: none;
   border: 0;
+  transition: opacity .2s ease-in-out;
 }
 header > div nav ul li a:hover {
   opacity: 1;
