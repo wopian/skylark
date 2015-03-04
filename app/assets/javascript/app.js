@@ -2048,7 +2048,7 @@ Holder.js - client side image placeholders
 $(function(){
 
 
-  $('img.lazy').each(function(){
+  $('img').each(function(){
 
     var img = $(this);
 

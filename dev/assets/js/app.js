@@ -10,7 +10,7 @@
 $(function(){
 
 
-  $('img.lazy').each(function(){
+  $('img').each(function(){
 
     var img = $(this);
 
