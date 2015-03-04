@@ -2045,20 +2045,7 @@ Holder.js - client side image placeholders
 });
 */
 
-$(function(){
-
-
-  $('img').each(function(){
-
-    var img = $(this);
-
-     img.error(function(){
-      img.attr({"data-src": "holder.js/490x710/auto/text:Missing Cover"});
-        Holder.run({});
-      });
-
-  })
-});
+Holder.run({});
 
 $(function() {
     $("img.lazy").lazyload({
