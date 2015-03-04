@@ -198,13 +198,6 @@ popular {
         position: relative;
 
         detail {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-content: center;
-            align-items: center;
-
             position: absolute;
             top: 0;
             left: 0;
@@ -221,9 +214,21 @@ popular {
                 background: rgba(0,150,136,.8);
                 //background: rgba(0,0,0,.7);
             }
+
+            show {
+                font-size: 1.5em;
+                margin-top: 1em;
+            }
+
+            season {
+                display: absolute;
+                bottom: 1em;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
         }
-        poster {
-        }
+
         poster, img {
             width: 100%;
             height: auto;

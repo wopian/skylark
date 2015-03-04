@@ -68,7 +68,7 @@
                     <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
                 </poster>
                 <detail>
-                    <title>Tamako Market</title>
+                    <show>Tamako Market</show>
                     <rating>PG13</rating>
                     <type>TV</type>
                     <episodes>12</episodes> <!-- " Episodes" in :after -->
@@ -82,11 +82,11 @@
                     <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
                 </poster>
                 <detail>
-                    <title>Tamako Market</title>
-                    <rating>PG13</rating>
+                    <show>Parasyte -the maxim-</show>
+                    <rating>R17+</rating>
                     <type>TV</type>
-                    <episodes>12</episodes> <!-- " Episodes" in :after -->
-                    <season>Winter 2013</season>
+                    <episodes>24</episodes> <!-- " Episodes" in :after -->
+                    <season>Fall 2014</season>
                 </detail>
             </card>
         </popular>
