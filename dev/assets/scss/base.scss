@@ -56,6 +56,11 @@ header {
             text-decoration: none;
             border: 0;
             padding: .5em 0;
+
+            &:after {
+                content: "#{$version}";
+                font-size: .5em;
+            }
         }
 
         nav {
@@ -110,15 +115,6 @@ cta {
     color: #fff;
     position: fixed;
     top: 61px;
-}
-
-footer {
-    content: #{$version};
-    position: relative;
-    margin-top: -#{$footerHeight};
-    height: $footerHeight;
-    clear: both;
-    width: 100%;
 }
 
 section {

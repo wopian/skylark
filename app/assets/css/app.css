@@ -4745,6 +4745,10 @@ header > div > a {
   border: 0;
   padding: .5em 0;
 }
+header > div > a:after {
+  content: "0.0.1";
+  font-size: .5em;
+}
 header > div nav {
   order: 1;
   flex: 0 1 auto;
@@ -4787,15 +4791,6 @@ cta {
   color: #fff;
   position: fixed;
   top: 61px;
-}
-
-footer {
-  content: 0.0.1;
-  position: relative;
-  margin-top: -60px;
-  height: 60px;
-  clear: both;
-  width: 100%;
 }
 
 section {
