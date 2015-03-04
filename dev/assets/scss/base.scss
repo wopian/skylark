@@ -1,4 +1,10 @@
-$version:"0.0.1";
+$rnd: random(5);
+$species: Tori, Kakin, Washi, Kamo, Hato, Shirotori, Toriniku, Oumu, Shichimenchiyou, Fukurou, Suzume, Gachiyou, Kounotori, Ondori, Kitsutsuki, Dachiyou, Hato, Kanaria, Kiji, Mendori, Watarigarasu, Hibari, Yamauzura, Uzura, Hagetaka, Tsubame, Kuroutadori, Hayabusa, Taka, Kasasagi, Perikan, Misago, Menfukurou, Inuwashi, Hakutouwashi, Hachidori, Komadori, Akaonosuri, Tsuru;
+$nth: nth($species, $rnd);
+
+
+$version: "0.0.1";
+$release: "#{$nth}";
 /*Copyright © James Harris 2015.
 Version #{$version}.
 
@@ -58,8 +64,10 @@ header {
             padding: .5em 0;
 
             &:after {
-                content: "#{$version}";
+                content: "Version #{$version} - #{$release}.";
                 font-size: .5em;
+                line-height: 0px;
+                padding-left: 1em;
             }
         }
 
