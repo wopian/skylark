@@ -64,7 +64,7 @@
 
             <card>
                 <poster>
-                    <img class="lazy" data-original="http://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743" data-src="holder.js/490x710/auto/#fff:#bbb:Tomako Market">
+                    <img class="lazy" data-original="http://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">
                     <!--<img src="http://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
                 </poster>
                 <detail>
