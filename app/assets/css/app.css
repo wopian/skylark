@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Yamauzura).
+     Version 0.0.1 (Dachiyou).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Yamauzura).
+     バージョン0.0.1 (Dachiyou).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Yamauzura)";
+  content: "v0.0.1 (Dachiyou)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4887,6 +4887,8 @@ popular card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 popular card:nth-child(4n + 1) {
   margin-left: 0;
@@ -4916,10 +4918,18 @@ popular card detail {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
 }
 popular card poster, popular card img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 /*
