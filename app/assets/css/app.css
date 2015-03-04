@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Toriniku).
+     Version 0.0.1 (Yamauzura).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Toriniku).
+     バージョン0.0.1 (Yamauzura).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Toriniku)";
+  content: "v0.0.1 (Yamauzura)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4870,6 +4870,56 @@ tracking card p {
 tracking card small {
   font-size: .5em;
   font-weight: 400;
+}
+
+popular {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+popular card {
+  width: 23.72881%;
+  float: left;
+  font-size: 1em;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+}
+popular card:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+popular card:nth-child(4n + 2) {
+  margin-left: 25.42373%;
+  margin-right: -100%;
+  clear: none;
+}
+popular card:nth-child(4n + 3) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+popular card:nth-child(4n + 4) {
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  clear: none;
+}
+popular card details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+popular card poster, popular card img {
+  width: 100%;
+  height: auto;
 }
 
 /*

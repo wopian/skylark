@@ -33,9 +33,9 @@ $release_jp: "#{$nth_jp}";
 $footerHeight: 60px;
 
 // Susy stuff
-$large-breakpoint: container(12);
-$gutter-width: 1em;
-$grid-padding: 1em;
+//$large-breakpoint: container(12);
+//$gutter-width: 1em;
+//$grid-padding: 1em;
 
 #dploy {
     position: fixed;
@@ -178,6 +178,34 @@ tracking {
         small {
             font-size: .5em;
             font-weight: 400;
+        }
+    }
+}
+
+popular {
+    @include full;
+
+    card {
+        @include gallery(3 of 12);
+
+        font-size: 1em;
+        background: #fff;
+        //box-shadow: 0 3px 10px rgba(0,0,0,.23), 0 3px 10px rgba(0,0,0,.16);
+        box-shadow: 0 0 5px rgba(0,0,0,.1), 0 1px 5px rgba(0,0,0,.1);
+        border-radius: 4px;
+        padding: 0;
+
+        details {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+        }
+        poster, img {
+            width: 100%;
+            height: auto;
         }
     }
 }
