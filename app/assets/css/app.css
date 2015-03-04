@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Hato).
+     Version 0.0.1 (Uzura).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Hato).
+     バージョン0.0.1 (Uzura).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Hato)";
+  content: "v0.0.1 (Uzura)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4927,7 +4927,7 @@ popular card detail {
   vertical-align: middle;
   color: transparent;
   background: transparent;
-  transition: all 1.6s cubic-bezier(0.19, 2, 0.22, 2);
+  transition: all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 popular card detail:hover {
   color: #fff;
