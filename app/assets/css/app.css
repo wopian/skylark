@@ -4746,8 +4746,10 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "0.0.1";
+  content: "Version 0.0.1 - Kakin.";
   font-size: .5em;
+  line-height: 0px;
+  padding-left: 1em;
 }
 header > div nav {
   order: 1;
