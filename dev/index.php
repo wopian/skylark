@@ -53,11 +53,10 @@
 
 
         <div class="section-1">
-
-            <div><p>16,167</p><small>users</small></div>
-            <div><p>173,050</p><small>watched episodes</small></div>
-            <div><p>200</p><small>anime</small></div>
-            <div><p>0</p><small>manga</small></div>
+            <card><p>16,167</p><small>users</small></card>
+            <card><p>173,050</p><small>watched episodes</small></card>
+            <card><p>200</p><small>anime</small></card>
+            <card><p>0</p><small>manga</small></card>
 
     </section>
 
