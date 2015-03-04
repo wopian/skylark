@@ -38,6 +38,12 @@
                     <li>
                         <a href="#users">Users</a>
                     </li>
+                    <li>
+                        <a href="#users">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#users">Ranking</a>
+                    </li>
                 </ul>
             </nav>
         </div>

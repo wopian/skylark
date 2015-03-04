@@ -4779,7 +4779,7 @@ section {
   max-width: 970px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: calc(61px * 2);
+  margin-top: calc(61px * 1.5);
 }
 section:after {
   content: " ";
