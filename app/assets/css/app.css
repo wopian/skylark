@@ -4746,8 +4746,8 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "Version 0.0.1 - Kakin.";
-  font-size: .5em;
+  content: "v0.0.1 (Kuroutadori)";
+  font-size: .75em;
   line-height: 0px;
   padding-left: 1em;
 }

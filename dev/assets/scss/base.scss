@@ -1,4 +1,4 @@
-$rnd: random(5);
+$rnd: random(39);
 $species: Tori, Kakin, Washi, Kamo, Hato, Shirotori, Toriniku, Oumu, Shichimenchiyou, Fukurou, Suzume, Gachiyou, Kounotori, Ondori, Kitsutsuki, Dachiyou, Hato, Kanaria, Kiji, Mendori, Watarigarasu, Hibari, Yamauzura, Uzura, Hagetaka, Tsubame, Kuroutadori, Hayabusa, Taka, Kasasagi, Perikan, Misago, Menfukurou, Inuwashi, Hakutouwashi, Hachidori, Komadori, Akaonosuri, Tsuru;
 $nth: nth($species, $rnd);
 
@@ -64,8 +64,8 @@ header {
             padding: .5em 0;
 
             &:after {
-                content: "Version #{$version} - #{$release}.";
-                font-size: .5em;
+                content: "v#{$version} (#{$release})";
+                font-size: .75em;
                 line-height: 0px;
                 padding-left: 1em;
             }
