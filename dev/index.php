@@ -75,6 +75,20 @@
                     <season>Winter 2013</season>
                 </detail>
             </card>
+
+            <card>
+                <poster>
+                    <img class="lazy" data-src="holder.js/490x710/auto/#fff:#333:Tomako+Market">
+                    <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
+                </poster>
+                <detail>
+                    <title>Tamako Market</title>
+                    <rating>PG13</rating>
+                    <type>TV</type>
+                    <episodes>12</episodes> <!-- " Episodes" in :after -->
+                    <season>Winter 2013</season>
+                </detail>
+            </card>
         </popular>
 
     </section>
