@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Kakin).
+     Version 0.0.1 (Kuroutadori).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Kakin).
+     バージョン0.0.1 (Kuroutadori).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4758,7 +4758,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Kakin)";
+  content: "v0.0.1 (Kuroutadori)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4931,7 +4931,8 @@ popular card detail {
 }
 popular card detail:hover {
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 150, 136, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 popular card poster, popular card img {
   width: 100%;
