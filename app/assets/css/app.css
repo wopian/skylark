@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Hakutouwashi).
+     Version 0.0.1 (Kakin).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
 
      著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Hakutouwashi).
+     バージョン0.0.1 (Kakin).
 
      任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
@@ -4757,7 +4757,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Hakutouwashi)";
+  content: "v0.0.1 (Kakin)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4826,40 +4826,42 @@ section:after {
   margin-left: 0;
   margin-right: 0;
 }
-.section-1 div {
+.section-1 card {
   width: 23.72881%;
   float: left;
   display: inline-block;
   text-align: center;
   font-size: 3em;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
 }
-.section-1 div:nth-child(4n + 1) {
+.section-1 card:nth-child(4n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
-.section-1 div:nth-child(4n + 2) {
+.section-1 card:nth-child(4n + 2) {
   margin-left: 25.42373%;
   margin-right: -100%;
   clear: none;
 }
-.section-1 div:nth-child(4n + 3) {
+.section-1 card:nth-child(4n + 3) {
   margin-left: 50.84746%;
   margin-right: -100%;
   clear: none;
 }
-.section-1 div:nth-child(4n + 4) {
+.section-1 card:nth-child(4n + 4) {
   margin-left: 76.27119%;
   margin-right: -100%;
   clear: none;
 }
-.section-1 div p {
+.section-1 card p {
   color: #009688;
 }
-.section-1 div small {
+.section-1 card small {
   font-size: .5em;
   font-weight: 400;
 }
