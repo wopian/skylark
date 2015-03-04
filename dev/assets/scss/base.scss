@@ -214,11 +214,11 @@ popular {
             vertical-align: middle;
             color: transparent;
             background: transparent;
-            transition:all 1.6s cubic-bezier(0.19, 1, 0.22, 1);
+            transition:all .6s cubic-bezier(0.19, 1, 0.22, 1);
 
             &:hover {
                 color: #fff;
-                background: rgba(0,0,0,.6);
+                background: rgba(0,0,0,.4);
             }
         }
         poster {
