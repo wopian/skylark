@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*Copyright ﾂｩ James Harris 2015.
+Version 0.0.1.
+
+Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -4690,13 +4695,6 @@ table {
   height: 25px;
 }
 
-/*div {
-    @include container($container);
-    background: red;
-    @include breakpoint($wide) {
-        background: green;
-    }
-}*/
 #dploy {
   position: fixed;
   bottom: 0;
@@ -4782,11 +4780,30 @@ header > div nav ul li a:hover {
   opacity: 1;
 }
 
+cta {
+  width: 100%;
+  line-height: 40px;
+  background: #009688;
+  color: #fff;
+  position: fixed;
+  top: 61px;
+}
+
+footer {
+  content: 0.0.1;
+  position: relative;
+  margin-top: -60px;
+  height: 60px;
+  clear: both;
+  width: 100%;
+}
+
 section {
   max-width: 970px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: calc(61px * 1.5);
+  margin-top: 91.5px;
+  margin-bottom: 60px;
 }
 section:after {
   content: " ";
