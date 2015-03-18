@@ -59,8 +59,9 @@
             <card><p>0</p><small>manga</small></card>
         </tracking>
 
+        <p class="title">Popular this month...</p>
+
         <popular>
-            <p>Popular this month...</p>
 
             <card>
                 <poster>
