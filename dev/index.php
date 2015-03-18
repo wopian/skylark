@@ -22,7 +22,7 @@
     <meta name="twitter:url" content="//hb.wopian.me" />
 
     <link href="/assets/css/app.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300,700|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
