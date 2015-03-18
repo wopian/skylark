@@ -244,8 +244,8 @@ popular {
     }
 }
 
-popular:hover poster img {
-    -webkit-filter: blur(2px);
+popular:hover > poster img {
+    -webkit-filter: blur(1px);
 }
 
 /*
