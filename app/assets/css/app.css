@@ -1,15 +1,8 @@
-@charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Kiji).
+     Version 0.0.1 (Kitsutsuki).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
-
-
-     著作権©ジェームス·ハリス2015。
-     バージョン0.0.1 (Kiji).
-
-     任意のコンテンツ、商標（複数可）、または他の材料は、それぞれの所有者（複数可）の著作権のままである。決して私が所有またはそのようなアイテムの責任を主張ください。
 
      -
 
@@ -4758,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Kiji)";
+  content: "v0.0.1 (Kitsutsuki)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4878,6 +4871,11 @@ popular {
   float: left;
   margin-left: 0;
   margin-right: 0;
+}
+popular p {
+  font-size: 2em;
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
 }
 popular card {
   width: 23.72881%;

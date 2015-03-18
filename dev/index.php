@@ -22,7 +22,7 @@
     <meta name="twitter:url" content="//hb.wopian.me" />
 
     <link href="/assets/css/app.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -78,6 +78,20 @@
 
             <card>
                 <poster>
+                    <img class="lazy" data-original="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743" data-src="holder.js/490x710/auto/#fff:#333:Tomako+Market">
+                    <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
+                </poster>
+                <detail>
+                    <show>Tamako Market</show>
+                    <rating>PG13</rating>
+                    <type>TV</type>
+                    <episodes>12</episodes> <!-- " Episodes" in :after -->
+                    <season>Winter 2013</season>
+                </detail>
+            </card>
+
+            <card>
+                <poster>
                     <img class="lazy" data-src="holder.js/490x710/auto/#fff:#bbb/text:Tomako Market">
                     <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
                 </poster>
@@ -89,6 +103,21 @@
                     <season>Fall 2014</season>
                 </detail>
             </card>
+
+            <card>
+                <poster>
+                    <img class="lazy" data-original="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743" data-src="holder.js/490x710/auto/#fff:#333:Tomako+Market">
+                    <!--<img src="https://static.hummingbird.me/anime/poster_images/000/007/425/large/ibcBbSO731RyEc.jpg?1416491743">-->
+                </poster>
+                <detail>
+                    <show>Tamako Market</show>
+                    <rating>PG13</rating>
+                    <type>TV</type>
+                    <episodes>12</episodes> <!-- " Episodes" in :after -->
+                    <season>Winter 2013</season>
+                </detail>
+            </card>
+
         </popular>
 
     </section>
