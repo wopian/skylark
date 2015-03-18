@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Hachidori).
+     Version 0.0.1 (Hagetaka).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Hachidori)";
+  content: "v0.0.1 (Hagetaka)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4943,8 +4943,8 @@ popular card poster, popular card img {
   display: block;
 }
 
-popular:hover poster img {
-  -webkit-filter: blur(2px);
+popular:hover > poster img {
+  -webkit-filter: blur(1px);
 }
 
 /*
