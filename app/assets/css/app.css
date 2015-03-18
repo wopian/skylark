@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Hagetaka).
+     Version 0.00.2 (Shichimenchiyou).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Hagetaka)";
+  content: "v0.00.2 (Shichimenchiyou)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4819,6 +4819,7 @@ tracking {
   float: left;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 1.5em;
 }
 tracking card {
   width: 23.72881%;
@@ -4867,18 +4868,20 @@ tracking card small {
 
 .title {
   font-size: 2em;
-  font-family: "Open Sans";
+  font-family: "Nunito";
   font-weight: 300;
+  margin-bottom: .5em;
 }
 
-popular {
+trending {
   clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 1.5em;
 }
-popular card {
+trending card {
   width: 23.72881%;
   float: left;
   font-size: 1em;
@@ -4889,28 +4892,28 @@ popular card {
   overflow: hidden;
   position: relative;
 }
-popular card:nth-child(4n + 1) {
+trending card:nth-child(4n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
-popular card:nth-child(4n + 2) {
+trending card:nth-child(4n + 2) {
   margin-left: 25.42373%;
   margin-right: -100%;
   clear: none;
 }
-popular card:nth-child(4n + 3) {
+trending card:nth-child(4n + 3) {
   margin-left: 50.84746%;
   margin-right: -100%;
   clear: none;
 }
-popular card:nth-child(4n + 4) {
+trending card:nth-child(4n + 4) {
   margin-left: 76.27119%;
   margin-right: -100%;
   clear: none;
 }
-popular card detail {
+trending card detail {
   position: absolute;
   top: 0;
   left: 0;
@@ -4922,22 +4925,22 @@ popular card detail {
   background: transparent;
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
-popular card detail:hover {
+trending card detail:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
 }
-popular card detail show {
+trending card detail show {
   font-size: 1.5em;
   margin-top: 1em;
 }
-popular card detail season {
+trending card detail season {
   display: absolute;
   bottom: 1em;
   left: 0;
   right: 0;
   width: 100%;
 }
-popular card poster, popular card img {
+trending card poster, trending card img {
   width: 100%;
   height: auto;
   display: block;
@@ -4949,7 +4952,7 @@ popular:hover > poster img {
 
 /*
 small {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 */
 .headroom {
