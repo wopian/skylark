@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Fukurou).
+     Version 0.0.1 (Hachidori).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Fukurou)";
+  content: "v0.0.1 (Hachidori)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4924,7 +4924,7 @@ popular card detail {
 }
 popular card detail:hover {
   color: #fff;
-  background: rgba(0, 150, 136, 0.8);
+  background: rgba(0, 0, 0, 0.4);
 }
 popular card detail show {
   font-size: 1.5em;
@@ -4941,6 +4941,10 @@ popular card poster, popular card img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+popular:hover poster img {
+  -webkit-filter: blur(2px);
 }
 
 /*

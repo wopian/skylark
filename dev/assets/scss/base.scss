@@ -217,8 +217,9 @@ popular {
 
             &:hover {
                 color: #fff;
-                background: rgba(0,150,136,.8);
+                //background: rgba(0,150,136,.8);
                 //background: rgba(0,0,0,.7);
+                background: rgba(0,0,0,.4);
             }
 
             show {
@@ -241,6 +242,10 @@ popular {
             display: block;
         }
     }
+}
+
+popular:hover poster img {
+    -webkit-filter: blur(2px);
 }
 
 /*
