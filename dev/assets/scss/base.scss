@@ -152,6 +152,7 @@ section {
 
 tracking {
     @include full;
+    margin-bottom: 1.5em;
 
     card {
         @include gallery(3 of 12);
@@ -186,10 +187,12 @@ tracking {
         font-size: 2em;
         font-family: "Nunito";
         font-weight: 300;
+        margin-bottom: .5em;
     }
 
-popular {
+trending {
     @include full;
+    margin-bottom: 1.5em;
 
     card {
         @include gallery(3 of 12);
