@@ -182,14 +182,14 @@ tracking {
     }
 }
 
-popular {
-    @include full;
-
-    p {
+.title {
         font-size: 2em;
-        font-family: "Open Sans Condensed";
+        font-family: "Open Sans";
         font-weight: 300;
     }
+
+popular {
+    @include full;
 
     card {
         @include gallery(3 of 12);

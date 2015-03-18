@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.1 (Kitsutsuki).
+     Version 0.0.1 (Fukurou).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.0.1 (Kitsutsuki)";
+  content: "v0.0.1 (Fukurou)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4865,17 +4865,18 @@ tracking card small {
   font-weight: 400;
 }
 
+.title {
+  font-size: 2em;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
 popular {
   clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-}
-popular p {
-  font-size: 2em;
-  font-family: "Open Sans Condensed";
-  font-weight: 300;
 }
 popular card {
   width: 23.72881%;
