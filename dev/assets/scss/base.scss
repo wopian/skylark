@@ -6,7 +6,7 @@ $nth: nth($species, $rnd);
 //$nth_jp: nth($species, $rnd);
 
 
-$version: "0.0.1";
+$version: "0.00.2";
 $release: "#{$nth}";
 //$release_jp: "#{$nth_jp}";
 /*!
@@ -184,7 +184,7 @@ tracking {
 
 .title {
         font-size: 2em;
-        font-family: "Open Sans";
+        font-family: "Nunito";
         font-weight: 300;
     }
 
@@ -250,7 +250,7 @@ popular:hover > poster img {
 
 /*
 small {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 */
 
