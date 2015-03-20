@@ -2,27 +2,27 @@
 <html lang="en-us">
 
 <head>
-    <title>Test</title>
-    <meta name="robots" content="NOODP,NOYDIR">
+    <title>Hibari: Hummingbird Tools</title>
     <meta charset="UTF-8">
+    <meta name="robots" content="NOODP,NOYDIR">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
-    <meta name="keywords" content="Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
+    <meta name="description" content="Hibari hosts a variety of tools and statistics for Hummingbird.">
+    <meta name="keywords" content="Hibari,Skylark,Hummingbird,Tool,Tools,Anime,Manga,API,User Stats,Library,User Library,Cover,Cover Images">
     <meta name="author" content="James Harris">
 
     <meta property="og:image" content="//hb.wopian.me/assets/images/avatar_teal.png" />
     <meta property="og:url" content="hb.wopian.me" />
-    <meta property="og:title" content="Hummingbird Tools" />
+    <meta property="og:title" content="Hibari: Hummingbird Tools" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@hb_tools" />
-    <meta name="twitter:title" content="Hummingbird Tools" />
-    <meta name="twitter:description" content="A variety of tools and stats for Hummingbird." />
+    <meta name="twitter:title" content="Hibari: Hummingbird Tools" />
+    <meta name="twitter:description" content="A variety of tools and statistics for Hummingbird." />
     <meta name="twitter:image" content="//hb.wopian.me/assets/images/twitter_teal.png" />
     <meta name="twitter:url" content="//hb.wopian.me" />
 
     <link href="/assets/css/app.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -59,9 +59,9 @@
             <card><p>0</p><small>manga</small></card>
         </tracking>
 
-        <p class="title">Trending this month...</p>
+        <p class="title">Popular this month...</p>
 
-        <trending>
+        <popular>
 
             <card>
                 <poster>
@@ -119,7 +119,7 @@
                 </detail>
             </card>
 
-        </trending>
+        </popular>
 
     </section>
 
