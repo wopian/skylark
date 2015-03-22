@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Inuwashi).
+     Version 0.00.2 (Toriniku).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.00.2 (Inuwashi)";
+  content: "v0.00.2 (Toriniku)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
@@ -4872,7 +4872,7 @@ tracking card small {
   margin-bottom: .5em;
 }
 
-trending {
+popular {
   clear: both;
   width: 100%;
   float: left;
@@ -4880,7 +4880,7 @@ trending {
   margin-right: 0;
   margin-bottom: 1.5em;
 }
-trending card {
+popular card {
   width: 23.72881%;
   float: left;
   font-size: 1em;
@@ -4891,28 +4891,28 @@ trending card {
   overflow: hidden;
   position: relative;
 }
-trending card:nth-child(4n + 1) {
+popular card:nth-child(4n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
-trending card:nth-child(4n + 2) {
+popular card:nth-child(4n + 2) {
   margin-left: 25.42373%;
   margin-right: -100%;
   clear: none;
 }
-trending card:nth-child(4n + 3) {
+popular card:nth-child(4n + 3) {
   margin-left: 50.84746%;
   margin-right: -100%;
   clear: none;
 }
-trending card:nth-child(4n + 4) {
+popular card:nth-child(4n + 4) {
   margin-left: 76.27119%;
   margin-right: -100%;
   clear: none;
 }
-trending card detail {
+popular card detail {
   position: absolute;
   top: 0;
   left: 0;
@@ -4924,22 +4924,22 @@ trending card detail {
   background: transparent;
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
-trending card detail:hover {
+popular card detail:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
 }
-trending card detail show {
+popular card detail show {
   font-size: 1.5em;
   margin-top: 1em;
 }
-trending card detail season {
+popular card detail season {
   display: absolute;
   bottom: 1em;
   left: 0;
   right: 0;
   width: 100%;
 }
-trending card poster, trending card img {
+popular card poster, popular card img {
   width: 100%;
   height: auto;
   display: block;
