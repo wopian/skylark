@@ -53,13 +53,13 @@
 
 
         <tracking>
-            <card><p>16,167</p><small>users</small></card>
-            <card><p>173,050</p><small>watched episodes</small></card>
-            <card><p>200</p><small>anime</small></card>
-            <card><p>0</p><small>manga</small></card>
+            <card><p>16,893</p><small>users</small></card>
+            <card><p>-</p><small>watched episodes</small></card>
+            <card><p>-</p><small>anime</small></card>
+            <card><p>-</p><small>manga</small></card>
         </tracking>
 
-        <p class="title">Popular this month...</p>
+        <p class="title">Popular this month&hellip;</p>
 
         <popular>
 

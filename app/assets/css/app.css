@@ -1,6 +1,6 @@
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Toriniku).
+     Version 0.00.2 (Inuwashi).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -4751,7 +4751,7 @@ header > div > a {
   padding: .5em 0;
 }
 header > div > a:after {
-  content: "v0.00.2 (Toriniku)";
+  content: "v0.00.2 (Inuwashi)";
   font-size: .6em;
   line-height: 0px;
   padding-left: 1em;
