@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Oumu - おうむ).
+     Version 0.00.2 (Hagetaka - はげたか).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -60,6 +60,107 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: #ECEFF1;
+  color: #788288;
+  color: #383643;
+}
+
+body,
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  z-index: 999;
+}
+aside:first-of-type {
+  order: -1;
+}
+
+header,
+footer {
+  padding: .5em;
+  background-color: #383643;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #content {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  aside {
+    flex: 0 0 12rem;
+  }
+
+  .cover {
+    position: relative;
+    margin-left: -12rem;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+header > a {
+  color: #EB4864;
+  font-weight: 600;
+  line-height: 40px;
+  word-spacing: .08em;
+  text-decoration: none;
+  display: inline-block;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+}
+header div {
+  width: auto;
+  display: inline-block;
+  order: 0;
+  flex: 0 1 calc(50%);
+  text-align: right;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+header div:last-of-type {
+  justify-content: flex-start;
+}
+header div:last-of-type a {
+  padding: 0 0 0 28px;
+}
+header div:last-of-type a:first-of-type {
+  padding-left: calc(20px * 2);
+}
+header div a {
+  display: inline;
+  padding: 0 20px 0 0;
+  line-height: 40px;
+  text-decoration: none;
+  color: #FEFEFE;
+  transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+header div a:hover {
+  color: #EB4864;
+}
+header div a:last-of-type {
+  padding-right: calc(20px * 2);
 }
 
 #dploy {
