@@ -1,7 +1,7 @@
 {
-  "name": "love-live-cards",
+  "name": "hibari",
   "version": "0.0.1",
-  "description": "Love Live wiki for cards",
+  "description": "User & anime stats for Hummingbird.me",
   "author": "James Harris",
   "contributors": [
     {
@@ -9,13 +9,13 @@
     }
   ],
   "main": "Gruntfile.js",
-  "homepage": "https://l.wopian.me/",
+  "homepage": "https://hb.wopian.me/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wopian/love-live-cards"
+    "url": "https://github.com/wopian/hibari"
   },
   "bugs": {
-    "url": "https://github.com/wopian/love-live-cards/issues"
+    "url": "https://github.com/wopian/hibari/issues"
   },
   "devDependencies": {
     "glob": "^4.3.1",
