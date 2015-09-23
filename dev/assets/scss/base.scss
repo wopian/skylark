@@ -18,6 +18,9 @@ $release: "#{$nth}";
 */
 
 @import 'reset';
+@import 'colours';
+@import 'shadows';
+@import 'style';
 
 #dploy {
     position: fixed;
