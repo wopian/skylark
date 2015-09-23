@@ -12,10 +12,10 @@
   "homepage": "https://hb.wopian.me/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wopian/hibari"
+    "url": "https://github.com/wopian/skylark"
   },
   "bugs": {
-    "url": "https://github.com/wopian/hibari/issues"
+    "url": "https://github.com/wopian/skylark/issues"
   },
   "devDependencies": {
     "glob": "^4.3.1",

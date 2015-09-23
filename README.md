@@ -1,4 +1,4 @@
-https://wopian-hb.dploy.io/
+https://wopian-hb.deploybot.com/
 
 https://www.npmjs.com/package/grunt-git
 
