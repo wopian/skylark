@@ -30,17 +30,17 @@
 
     <header>
         <div>
-            <a>Explore</a>
-            <a>Trends</a>
-            <a>Covers</a>
+            <a href="#Explore">Explore</a>
+            <a href="#Trends">Trends</a>
+            <a href="#Covers">Covers</a>
         </div>
 
-        <a>Hibari</a>
+        <a href="/">Hibari</a>
 
         <div>
-            <a>Profile</a>
-            <a>Anime</a>
-            <a>Manga</a>
+            <a href="#Profile">Profile</a>
+            <a href="#Anime">Anime</a>
+            <a href="#Manga">Manga</a>
         </div>
     </header>
 
@@ -53,12 +53,12 @@
     </section>
 
     <footer>
-        <p>&copy; James Harris, 2015</p>
-        <p>
+        <div>&copy; James Harris, 2015</div>
+        <div>
             <a>Privacy</a>
             <a>TOS</a>
-        </p>
-        
+        </div>
+
         <a id="deploy" href="http://deploybot.com">
             <img src="https://wopian-hb.deploybot.com/badge/88313865898261/46784.svg" alt="Deployment status from DeployBot">
         </a>

@@ -89,22 +89,64 @@ header {
             justify-content: flex-start;
 
             a {
-                padding: 0 0 0 28px;
+                margin: 0 0 0 28px;
 
-                &:first-of-type { padding-left: calc(20px * 2); }
+                &:first-of-type { margin-left: calc(20px * 2); }
             }
         }
 
         a {
             display: inline;
-            padding: 0 20px 0 0;
+            margin: 0 20px 0 0;
             line-height: 40px;
             text-decoration: none;
             transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
 
             &:hover { color: $accent-colour-2; }
-            &:last-of-type { padding-right: calc(20px * 2);
+            &:last-of-type { margin-right: calc(20px * 2);
             }
         }
+    }
+}
+
+footer {
+    line-height: 40px;
+    padding: 0 12rem;
+    font-size: .9em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+
+    div {
+        order: 0;
+        //flex: 0 1 calc(50% - 75px);
+        flex: 0 1 100%;
+        text-align: left;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-direction: row;
+
+        &:last-of-type {
+            justify-content: flex-end;
+            text-align: right;
+        }
+    }
+
+    div,
+    a {
+        color: $font-colour;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-colour;
+        transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+        &:first-of-type { padding-right: 1rem; }
+        &:hover { color: $accent-colour-2; }
     }
 }
