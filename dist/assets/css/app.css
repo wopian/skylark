@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Taka - たか).
+     Version 0.00.2 (Hato - はと).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -148,14 +148,14 @@ header div:last-of-type {
   justify-content: flex-start;
 }
 header div:last-of-type a {
-  padding: 0 0 0 28px;
+  margin: 0 0 0 28px;
 }
 header div:last-of-type a:first-of-type {
-  padding-left: calc(20px * 2);
+  margin-left: calc(20px * 2);
 }
 header div a {
   display: inline;
-  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
   line-height: 40px;
   text-decoration: none;
   transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -164,7 +164,47 @@ header div a:hover {
   color: #EB4864;
 }
 header div a:last-of-type {
-  padding-right: calc(20px * 2);
+  margin-right: calc(20px * 2);
+}
+
+footer {
+  line-height: 40px;
+  padding: 0 12rem;
+  font-size: .9em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+footer div {
+  order: 0;
+  flex: 0 1 100%;
+  text-align: left;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+footer div:last-of-type {
+  justify-content: flex-end;
+  text-align: right;
+}
+footer div,
+footer a {
+  color: #FEFEFE;
+}
+footer a {
+  text-decoration: none;
+  color: #FEFEFE;
+  transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+footer a:first-of-type {
+  padding-right: 1rem;
+}
+footer a:hover {
+  color: #EB4864;
 }
 
 #deploy {
