@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/assets/css/app.min.css" rel="stylesheet">
+    <link href="//brick.a.ssl.fastly.net/Fira+Sans:300,400" rel="stylesheet">
 
     <!-- Meta Data -->
     <meta name="description" content="Hummingbird Tools hosts a variety of tools and stats for Hummingbird.">
