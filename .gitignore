@@ -2,6 +2,7 @@
 *.wopian
 node_modules/
 .sass-cache/
+.cache
 
 # Windows image file caches
 Thumbs.db
