@@ -27,6 +27,7 @@ header,
 footer {
     padding: .5em;
     background-color: $accent-colour;
+    color: $font-colour;
     text-align: center;
 }
 
@@ -99,7 +100,6 @@ header {
             padding: 0 20px 0 0;
             line-height: 40px;
             text-decoration: none;
-            color: $font-colour;
             transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
 
             &:hover { color: $accent-colour-2; }
