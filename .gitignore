@@ -3,6 +3,7 @@
 node_modules/
 dev_old/
 .sass-cache/
+.sublime-grunt.cache
 .cache
 
 # Windows image file caches
