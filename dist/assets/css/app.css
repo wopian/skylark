@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Mendori - めんどり).
+     Version 0.00.2 (Taka - たか).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -89,6 +89,7 @@ header,
 footer {
   padding: .5em;
   background-color: #383643;
+  color: #FEFEFE;
   text-align: center;
 }
 
@@ -157,7 +158,6 @@ header div a {
   padding: 0 20px 0 0;
   line-height: 40px;
   text-decoration: none;
-  color: #FEFEFE;
   transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 header div a:hover {
