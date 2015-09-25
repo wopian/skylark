@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.0.2 (Kounotori - こうのとり).
+     Version 0.0.2 (Misago - みさご).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 */
@@ -170,7 +170,7 @@ footer > a {
   justify-content: space-between;
   flex-direction: row;
 }
-footer > a {
+footer #deploy {
   justify-content: center;
   align-self: center;
 }
@@ -178,15 +178,15 @@ footer div:last-of-type {
   justify-content: flex-end;
   text-align: right;
 }
-footer a {
+footer a:not(> a) {
   text-decoration: none;
   color: #FEFEFE;
   transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-footer a:first-of-type {
+footer a:not(> a):first-of-type {
   padding-right: 1rem;
 }
-footer a:hover {
+footer a:not(> a):hover {
   color: #EB4864;
 }
 
