@@ -58,6 +58,11 @@
             <a>Privacy</a>
             <a>TOS</a>
         </p>
+        
+        <a id="deploy" href="http://deploybot.com">
+            <img src="https://wopian-hb.deploybot.com/badge/88313865898261/46784.svg" alt="Deployment status from DeployBot">
+        </a>
+
     </footer>
 
 </body>
