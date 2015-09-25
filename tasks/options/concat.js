@@ -4,7 +4,7 @@ module.exports = {
     },
     dist: {
         files: {
-            'app/assets/javascript/app.js' : ['dev/assets/js/jquery.js', 'dev/assets/js/jquery.lazyload.min.js', 'dev/assets/js/holder.js', 'dev/assets/js/app.js', 'dev/assets/js/headroom.min.js', 'dev/assets/js/headroom.options.js']
+            'dist/assets/javascript/app.js' : ['src/assets/js/jquery.js', 'src/assets/js/jquery.lazyload.min.js', 'src/assets/js/holder.js', 'src/assets/js/app.js', 'src/assets/js/headroom.min.js', 'src/assets/js/headroom.options.js']
         }
     }
 }

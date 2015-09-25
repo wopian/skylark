@@ -9,7 +9,7 @@ module.exports = {
             useShortDoctype: true
         },
         files: {
-            'app/index.php': 'dev/index.php'
+            'dist/index.php': 'src/index.php'
         }
     }
 }
