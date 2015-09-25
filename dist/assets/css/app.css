@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Gachiyou - がちよう).
+     Version 0.00.2 (Mendori - めんどり).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -169,8 +169,8 @@ header div a:last-of-type {
 
 #deploy {
   position: fixed;
-  bottom: 0;
-  right: 5px;
+  bottom: 11px;
+  right: 11px;
 }
 
 /*# sourceMappingURL=app.css.map */
