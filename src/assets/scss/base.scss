@@ -21,11 +21,3 @@ $release: "#{$nth}";
 @import 'colours';
 @import 'shadows';
 @import 'style';
-
-#deploy {
-    position: fixed;
-    bottom: 11px;
-    right: 11px;
-}
-
-//font-family: 'Open Sans', sans-serif;
