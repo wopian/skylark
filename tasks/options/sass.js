@@ -5,7 +5,7 @@ module.exports = {
             check: true,
         },
         files: {
-            'app/assets/css/app.css': 'dev/assets/scss/base.scss'
+            'dist/assets/css/app.css': 'src/assets/scss/base.scss'
         }
     }
 }
