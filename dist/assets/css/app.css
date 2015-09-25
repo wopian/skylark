@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Hato - はと).
+     Version 0.00.2 (Fukurou - ふくろう).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -154,6 +154,7 @@ header div:last-of-type a:first-of-type {
   margin-left: calc(20px * 2);
 }
 header div a {
+  color: #FEFEFE;
   display: inline;
   margin: 0 20px 0 0;
   line-height: 40px;
@@ -178,7 +179,12 @@ footer {
   align-content: stretch;
   align-items: flex-start;
 }
-footer div {
+footer div,
+footer a {
+  color: #FEFEFE;
+}
+footer div,
+footer #deploy {
   order: 0;
   flex: 0 1 100%;
   text-align: left;
@@ -191,10 +197,6 @@ footer div:last-of-type {
   justify-content: flex-end;
   text-align: right;
 }
-footer div,
-footer a {
-  color: #FEFEFE;
-}
 footer a {
   text-decoration: none;
   color: #FEFEFE;
@@ -205,6 +207,10 @@ footer a:first-of-type {
 }
 footer a:hover {
   color: #EB4864;
+}
+footer #deploy {
+  justify-content: center;
+  align-self: center;
 }
 
 #deploy {
