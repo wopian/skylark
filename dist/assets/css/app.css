@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Fukurou - ふくろう).
+     Version 0.00.2 (Hagetaka - はげたか).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
 
@@ -211,12 +211,6 @@ footer a:hover {
 footer #deploy {
   justify-content: center;
   align-self: center;
-}
-
-#deploy {
-  position: fixed;
-  bottom: 11px;
-  right: 11px;
 }
 
 /*# sourceMappingURL=app.css.map */
