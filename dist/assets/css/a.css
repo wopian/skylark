@@ -1,12 +1,9 @@
 @charset "UTF-8";
 /*!
      Copyright \00a9 James Harris 2015.
-     Version 0.00.2 (Perikan - ぺりかん).
+     Version 0.0.2 (Kakin - かきん).
 
      Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
-
-     -
-
 */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -164,7 +161,7 @@ footer a {
   color: #FEFEFE;
 }
 footer div,
-footer #deploy {
+footer > a {
   order: 0;
   flex: 0 1 100%;
   text-align: left;
@@ -172,6 +169,10 @@ footer #deploy {
   align-items: stretch;
   justify-content: space-between;
   flex-direction: row;
+}
+footer > a {
+  justify-content: center;
+  align-self: center;
 }
 footer div:last-of-type {
   justify-content: flex-end;
@@ -187,10 +188,6 @@ footer a:first-of-type {
 }
 footer a:hover {
   color: #EB4864;
-}
-footer #deploy {
-  justify-content: center;
-  align-self: center;
 }
 
 /*# sourceMappingURL=a.css.map */
