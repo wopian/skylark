@@ -58,6 +58,8 @@ header {
     justify-content: space-between;
     align-content: stretch;
     align-items: flex-start;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
 
     >a {
         color: $accent-colour-2;
