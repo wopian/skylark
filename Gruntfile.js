@@ -23,13 +23,9 @@ module.exports = function(grunt) {
 
     grunt.initConfig(config);
 
-    grunt.loadNpmTasks('grunt-dev-update');
-
-
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
-    grunt.registerTask('update', ['devUpdate']);
     //grunt.registerTask('build:dev', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
 
 };
