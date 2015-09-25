@@ -48,8 +48,8 @@
         <main>
         </main>
 
-        <aside>Side 1</aside>
-        <aside>Side 2</aside>
+        <aside><!--Side 1--></aside>
+        <aside><!--Side 2--></aside>
     </section>
 
     <footer>

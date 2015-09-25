@@ -4,7 +4,7 @@ module.exports = {
             style: 'expanded'
         },
         files: {
-            'dist/assets/css/app.css': 'src/assets/scss/base.scss'
+            'dist/assets/css/a.css': 'src/assets/scss/main.scss'
         }
     }
 }
