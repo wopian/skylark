@@ -1,6 +1,7 @@
 *.scssc
 *.wopian
 node_modules/
+dev_old/
 .sass-cache/
 .cache
 
