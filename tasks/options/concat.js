@@ -1,7 +1,12 @@
 module.exports = {
+  options: {
+    stripBanners: true,
+  },
   dist: {
-    files: {
+    /*files: {
         'app/assets/javascript/app.js' : ['dev/assets/js/jquery.js', 'dev/assets/js/jquery.lazyload.min.js', 'dev/assets/js/holder.js', 'dev/assets/js/app.js', 'dev/assets/js/headroom.min.js', 'dev/assets/js/headroom.options.js']
-    }
+    }*/
+    src: ['dev/assets/js/jquery.js', 'dev/assets/js/jquery.lazyload.min.js', 'dev/assets/js/holder.js', 'dev/assets/js/app.js', 'dev/assets/js/headroom.min.js', 'dev/assets/js/headroom.options.js'],
+    dest: 'app/assets/javascript/app.js',
   }
 }
