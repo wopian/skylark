@@ -2036,15 +2036,6 @@ Holder.js - client side image placeholders
     }
 }, this);
 
-/*$(function() {
-    $("img.lazy").lazyload({
-        //threshold : 200,
-        skip_invisible : false,
-        effect : "fadeIn"
-    });
-});
-*/
-
 Holder.run({});
 
 $(function() {
