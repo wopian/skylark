@@ -1,5 +1,5 @@
 module.exports = {
-    main {
+    dist {
     files: [{
         src: ['src/.htaccess', 'src/robots.txt'],
         dest: 'dist/'
