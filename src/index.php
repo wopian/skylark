@@ -46,7 +46,7 @@
 
     <section id="content">
         <main>
-            Hello World
+            <br>Hurrah! The staging server now automatically builds source materials and publishes them.
         </main>
 
         <aside><!--Side 1--></aside>
