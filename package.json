@@ -1,12 +1,15 @@
 {
   "name": "hibari",
   "version": "0.0.1",
-  "description": "User & anime stats for Hummingbird.me",
+  "description": "View anime, manga and user stats and much more for Hummingbird.me!",
   "author": "James Harris",
   "license": "Apache-2.0",
+  "private": true,
   "contributors": [
     {
-      "name": "James Harris"
+      "name" : "James Harris",
+      "email" : "wopiancitizen123@gmail.com",
+      "url" : "https://wopian.me"
     }
   ],
   "main": "Gruntfile.js",
