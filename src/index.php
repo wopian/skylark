@@ -5,7 +5,7 @@
     <title>Hibari</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/assets/css/app.min.css" rel="stylesheet">
+    <link href="/assets/css/a.min.css" rel="stylesheet">
     <link href="//brick.a.ssl.fastly.net/Fira+Sans:300,400" rel="stylesheet">
 
     <!-- Meta Data -->
