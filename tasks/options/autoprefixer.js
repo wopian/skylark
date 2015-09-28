@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
     options: {
         browsers: ['last 2 versions']
     },
@@ -8,4 +8,4 @@ module.exports = {
         src: 'src/assets/css/*.css',
         dest: 'dist/assets/css/'
     }
-}
+}*/
