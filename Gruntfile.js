@@ -11,11 +11,9 @@ module.exports = function(grunt) {
         });
 
         return object;
-    }
+    };
 
-    var config = {
-        pkg: grunt.file.readJSON('package.json')
-    }
+    var config = { pkg: grunt.file.readJSON('package.json') };
 
     grunt.loadTasks('tasks');
 
@@ -26,6 +24,5 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
-    //grunt.registerTask('build:dev', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin', 'htmlmin']);
-
+    
 };
