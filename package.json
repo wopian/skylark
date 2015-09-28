@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "User & anime stats for Hummingbird.me",
   "author": "James Harris",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "contributors": [
     {
       "name": "James Harris"
