@@ -22,3 +22,10 @@ aside {
         order: -1;
     }
 }
+
+header,
+footer {
+    padding: .5rem;
+    background-color: $accent-colour;
+    text-align: center;
+}
