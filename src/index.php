@@ -46,6 +46,7 @@
 
     <section id="content">
         <main>
+            Hello World
         </main>
 
         <aside><!--Side 1--></aside>
