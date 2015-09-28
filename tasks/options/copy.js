@@ -1,7 +1,10 @@
 module.exports = {
-    files: [{
-        expand: true,
-        src: ['src/.htaccess', 'src/robots.txt'],
-        dest: 'dist/'
-    }]
+    copy {
+        main {
+            files: [{
+                src: ['src/.htaccess', 'src/robots.txt'],
+                dest: 'dist/'
+            }]
+        }
+    }
 }
