@@ -1,17 +1,1 @@
-@media (min-width: 768px) {
-  .content {
-    flex-direction: row;
-    flex: 1;
-  }
-  main {
-    flex: 1;
-  }
-  aside {
-    /* 12em is the width of the columns */
-    flex: 0 0 12rem;
-  }
-  .cover {
-    position: relative;
-    margin-left: -12rem;
-  }
-}
+
