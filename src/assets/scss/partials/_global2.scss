@@ -1,1 +1,466 @@
+body {
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: $accent-colour;
+  color: $accent-colour;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
 
+body,
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  z-index: 999;
+  &:first-of-type {
+    order: -1;
+  }
+}
+
+header, footer {
+  //flex: none;
+  padding: .5rem;
+  background-color: $accent-colour;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #content {
+    flex-direction: row;
+    flex: 1;
+  }
+  main {
+    flex: 1;
+  }
+  aside {
+    /* 12em is the width of the columns */
+    flex: 0 0 12rem;
+  }
+  .cover {
+    position: relative;
+    margin-left: -12rem;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+
+  >a {
+    color: $fab-color;
+    font-weight: 600;
+    line-height: 40px;
+    word-spacing: .08em;
+    text-decoration: none;
+    display: inline-block;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: middle;
+  }
+
+  div {
+    width: auto;
+    display: inline-block;
+    order: 0;
+    flex: 0 1 calc(50%);
+    text-align: right;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+    &:last-of-type {
+      justify-content: flex-start;
+      a {
+        padding: 0 0 0 20px;
+        &:first-of-type {
+          padding-left: calc(20px * 2);
+        }
+      }
+    }
+  
+    a {
+      display: inline;
+		  padding: 0 20px 0 0;
+		  line-height: 40px;
+      text-decoration: none;
+      color: $font-color;
+      transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+      &:hover {
+				color: $fab-color;
+			}
+      &:last-of-type {
+        padding-right: calc(20px * 2);
+      }
+    }
+  }
+}
+
+footer {
+  line-height: 40px;
+  padding: 0 12rem;
+  font-size: .9em;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  
+  div {
+    order: 0;
+    //flex: 0 1 calc(50% - 75px);
+    flex: 0 1 100%;
+    text-align: left;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    &:last-of-type {
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+  
+  div,
+  a {
+    color: $font-color;
+  }
+  a {
+    text-decoration: none;
+    color: $font-color;
+    transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &:first-of-type {
+      padding-right: 1rem;
+    }
+    &:hover {
+      color: $fab-color;
+    }
+  }
+}
+
+// ---------- // CONTENT
+
+.cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  // 17px = width of scrollbar
+  width: calc(100vw - 17px);
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  
+  .user---avatar {
+    flex: 0 1 140px;
+    align-self: middle;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 120px;
+    //margin: 0 auto;
+    position: relative;
+    top: -4rem;
+    border-radius: 4px;
+  }
+  .user---name {
+    flex: 0 1 calc(50%);
+    order: -1;
+    
+    display: inline-block;
+    margin: 0;
+    padding-top: 1.2rem;
+    font-size: 2.5em;
+  }
+  .user---update {
+    flex: 0 1 calc(50%);
+    
+    text-align: right;
+    padding-top: 1rem;
+    //padding-top: .5rem;
+    //padding-top: 1rem;
+    
+    button {
+      padding: .8rem 1rem;
+      //padding: 1rem 2rem;
+      font-size: .9em;
+      background: $fab-color;
+      color: $font-color;
+      border-radius: 4px;
+      border: 0;
+      @include elevation( 1 );
+    }
+  }
+}
+
+.user---details {
+  p {
+    font-size: 2em;
+  }
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: center;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+      
+      .card {
+        flex-grow: 1;
+        min-width: auto;
+        margin: .5rem;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        @include elevation( 1 );
+        
+        small { 
+          font-size: 1em;
+          padding-bottom: .75rem;
+        }
+        span { 
+          font-size: 1.5em;
+          font-weight: 700;
+          small {
+            font-weight: 300;
+            //font-size: 1rem;
+          }
+        }
+    }
+  }
+  
+  
+  /*p {
+    font-size: 2em;
+    flex: 0 1 calc(50% - 2.5rem);
+    margin-right: 1rem;
+    //padding: 1rem;
+    
+    small {
+      padding-top: .5rem;
+      display: block;
+      font-size: .5em;
+    }
+    &:nth-of-type(even) {
+      text-align: right;
+      margin-right: 0;
+    }
+  }*/
+}
+
+.user---recent {  
+  >p {
+    font-size: 2em;
+    
+    button {
+      float: right;
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      background: $fab-color;
+      color: $font-color;
+      border-radius: 4px;
+      border: 0;
+      @include elevation( 1 );
+    }
+  }
+  
+  .grid {
+    //padding-top: 40px;
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: center;
+    justify-content: flex-start;
+	  align-content: stretch;
+	  align-items: center;
+	  height: 100%;
+	  transition: all 500ms;
+	  transition-delay: 200ms;
+	  background-color: #ECEFF1;
+	
+		&.is-expanded {
+      background-color:	$background-color; }
+
+	  .card {
+      margin: .5rem;
+      
+	    order: 0;
+	    flex: 0 1 auto;
+      flex-grow: 1;
+	    align-self: auto;
+	    width: 215px;
+	    height: 320px;
+	    position: relative;
+	    overflow: hidden;
+	    cursor: default;
+	    box-sizing: border-box;
+	    background-color: #FFF;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+		
+		  &:hover {
+        .fab {
+			    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1), background-color .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+			    transition-delay: 200ms;
+			    transform: scale(30);
+          background-color: $fab-color;
+        }
+        .fab:before {
+			    transform: scale(6);
+          opacity: 0;
+			    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+			    border: 3px solid $fab-color;
+        }
+			  .card__content {
+			    transition: all 400ms;
+			    transition-delay: 400ms;
+			    opacity: 1;	
+        }
+		  }
+	  }
+
+	  .card__header {
+      cursor: pointer;
+	    background-color: $header-color;
+	    height: 100%;
+	    background-image:   url("https://static.hummingbird.me/anime/poster_images/000/008/644/large/i0933FWwzmR0C.jpg?1425582637");
+		  background-size:cover;
+    }
+
+	  .card__content {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    bottom: 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    opacity: 0;
+	    transition: all 200ms;
+	    transition-delay: 0ms;
+	    //pointer-events: none;
+	    color: lighten( $fab-color, 30% );
+      
+      p:not(.r) {
+		    position: absolute;
+		    left: 0;
+		    width: 100%;
+		    text-align: center;
+	    }
+      .e {
+		    position: absolute;
+		    top: 54px;
+		    left: 0;
+		    width: 100%;
+		    text-align: center;
+	    }
+      .t {
+		    position: absolute;
+		    bottom: 90px;
+		    left: 0;
+		    width: 100%;
+		    text-align: center;
+	    }
+	    .r {
+		    position: absolute;
+		    bottom: 34px;
+		    font-size: 3em;
+		    left: 0;
+		    width: 100%;
+		    text-align: center;
+		    margin: 0;
+	    }
+      .w {
+        position: absolute;
+        bottom: 16px;
+        font-size: 1em;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+	    small {
+		    padding-top: 4px;
+		    display: block;
+		    opacity: .4;
+	    }
+	    a, 
+      button {
+        position: absolute;
+        left: 0;
+        margin: 0 10%;
+        top: 97px;
+		    width: 80%;
+		    height: 40px;
+		    border-radius: 4px;
+		    text-align: center;
+		    line-height: 40px;
+		    background: white;
+		    color: orange;
+        text-decoration: none;
+        
+        &:last-of-type {
+          top: 157px;
+        }
+	    }
+    }
+
+    .fab {      
+      display: block;
+      position: absolute;
+	    width: 52px;
+	    height: 52px;
+	    right: 16px;
+      top: 0;
+	    transform: translateY( -125% );
+	    border: none;
+	    border-radius: 50%;
+	    outline: none;
+	    transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	    transition-dealy: 200ms;
+	    background-color: transparent;
+	    //@include elevation( 2 );	
+
+		  &:before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    box-sizing: border-box;
+		    border-radius: 50%;
+		    opacity: 1;
+		    transition: all 0ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+		    border: 2px solid transparent;	
+      }
+    }
+  }
+}
