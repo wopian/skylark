@@ -16,7 +16,7 @@
 
   RewriteRule ^sitemap.xml$ sitemap.php [L]
   
-  RewriteRule ^tos /tos.php [NC,L]
+  RewriteRule ^tos tos.php [NC,L]
   #RewriteRule ^info /assets/modules/info/info.php [NC,L]
   RewriteRule ^status http://uptime.statuscake.com/?TestID=AvWM56tKLB [NC,L]
 
