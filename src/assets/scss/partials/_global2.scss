@@ -5,6 +5,7 @@ body {
   color: $accent-colour;
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
+  text-rendering: optimizeLegibility;
 }
 
 body,
