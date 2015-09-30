@@ -115,20 +115,20 @@ footer {
   align-content: stretch;
   align-items: flex-start;
   
-  div {
+  div,
+  >a {
     order: 0;
-    //flex: 0 1 calc(50% - 75px);
     flex: 0 1 100%;
     text-align: left;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     flex-direction: row;
+  }
     
-    &:last-of-type {
-      justify-content: flex-end;
-      text-align: right;
-    }
+  div:last-of-type {
+    justify-content: flex-end;
+    text-align: right;
   }
   
   div,
@@ -141,16 +141,12 @@ footer {
   	align-self: center;
   }
   
-  a {
+  a:not(>a) {
     text-decoration: none;
     color: $font-colour;
     transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-    &:first-of-type {
-      padding-right: 1rem;
-    }
-    &:hover {
-      color: $accent-colour-2;
-    }
+    &:first-of-type { padding-right: 1rem; }
+    &:hover { color: $accent-colour-2; }
   }
 }
 
