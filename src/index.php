@@ -49,8 +49,8 @@
             <br>Hurrah! The staging server now automatically builds source materials and publishes them.
         </main>
 
-        <aside><!--Side 1--></aside>
-        <aside><!--Side 2--></aside>
+        <aside>Side 1</aside>
+        <aside>Side 2</aside>
     </section>
 
     <footer>
@@ -60,8 +60,8 @@
             <a id="deploy" href="http://deploybot.com">
                 <img src="https://wopian-hb.deploybot.com/badge/88313865898261/46784.svg" alt="Deployment status from DeployBot">
             </a>
-            <a>Privacy</a>
-            <a>TOS</a>
+            <a href="/Privacy">Privacy</a>
+            <a href="/TOS">TOS</a>
         </div>
 
     </footer>
