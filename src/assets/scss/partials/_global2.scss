@@ -115,8 +115,7 @@ footer {
   align-content: stretch;
   align-items: flex-start;
   
-  div,
-  >a {
+  div {
     order: 0;
     flex: 0 1 100%;
     text-align: left;
@@ -124,21 +123,16 @@ footer {
     align-items: stretch;
     justify-content: space-between;
     flex-direction: row;
-  }
     
-  div:last-of-type {
-    justify-content: flex-end;
-    text-align: right;
+    &:last-of-type {
+    	justify-content: flex-end;
+    	text-align: right;
+    }
   }
   
   div,
   a {
     color: $font-colour;
-  }
-  
-  #deploy {
-  	justify-content: center;
-  	align-self: center;
   }
   
   a {
