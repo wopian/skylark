@@ -1,8 +1,8 @@
 body {
   min-height: 100vh;
   overflow-y: scroll;
-  background: $background-colour;
-  color: $accent-colour;
+  background: $background-color;
+  color: $accent-color;
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -23,9 +23,9 @@ aside {
 }
 
 header, footer {
-  //flex: none;
+  //flex: non
   padding: .5rem;
-  background-color: $accent-colour;
+  background-color: $accent-color;
   text-align: center;
 }
 
@@ -56,7 +56,7 @@ header {
   align-items: flex-start;
 
   >a {
-    color: $accent-colour-2;
+    color: $accent-color-2;
     font-weight: 600;
     line-height: 40px;
     word-spacing: .08em;
@@ -93,10 +93,10 @@ header {
 		  padding: 0 20px 0 0;
 		  line-height: 40px;
       text-decoration: none;
-      color: $font-colour;
+      color: $font-color;
       transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
       &:hover {
-				color: $accent-colour-2;
+				color: $accent-color-2;
 			}
       &:last-of-type {
         padding-right: calc(20px * 2);
@@ -134,15 +134,15 @@ footer {
   
   div,
   a {
-    color: $font-colour;
+    color: $font-color;
   }
   
   a {
     text-decoration: none;
-    color: $font-colour;
+    color: $font-color;
     transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
     &:not(:first-of-type) { padding-left: 1rem; }
-    &:hover { color: $accent-colour-2; }
+    &:hover { color: $accent-color-2; }
   }
   
   #deploy {
@@ -206,8 +206,8 @@ footer {
       padding: .8rem 1rem;
       //padding: 1rem 2rem;
       font-size: .9em;
-      background: $accent-colour-2;
-      color: $font-colour;
+      background: $accent-color-2;
+      color: $font-color;
       border-radius: 4px;
       border: 0;
       @include elevation( 1 );
@@ -284,8 +284,8 @@ footer {
       float: right;
       padding: .8rem 1rem;
       font-size: .9rem;
-      background: $accent-colour-2;
-      color: $font-colour;
+      background: $accent-color-2;
+      color: $font-color;
       border-radius: 4px;
       border: 0;
       @include elevation( 1 );
@@ -307,7 +307,7 @@ footer {
 	  background-color: #ECEFF1;
 	
 		&.is-expanded {
-      background-color:	$background-colour; }
+      background-color:	$background-color; }
 
 	  .card {
       margin: .5rem;
@@ -332,13 +332,13 @@ footer {
 			    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1), background-color .4s cubic-bezier(0.215, 0.61, 0.355, 1);
 			    transition-delay: 200ms;
 			    transform: scale(30);
-          background-color: $accent-colour-2;
+          background-color: $accent-color-2;
         }
         .fab:before {
 			    transform: scale(6);
           opacity: 0;
 			    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-			    border: 3px solid $accent-colour-2;
+			    border: 3px solid $accent-color-2;
         }
 			  .card__content {
 			    transition: all 400ms;
@@ -350,7 +350,7 @@ footer {
 
 	  .card__header {
       cursor: pointer;
-	    background-color: $accent-colour;
+	    background-color: $accent-color;
 	    height: 100%;
 	    background-image:   url("https://static.hummingbird.me/anime/poster_images/000/008/644/large/i0933FWwzmR0C.jpg?1425582637");
 		  background-size:cover;
@@ -369,7 +369,7 @@ footer {
 	    transition: all 200ms;
 	    transition-delay: 0ms;
 	    //pointer-events: none;
-	    color: lighten( $accent-colour-2, 30% );
+	    color: lighten( $accent-color-2, 30% );
       
       p:not(.r) {
 		    position: absolute;
