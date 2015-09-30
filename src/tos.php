@@ -1,3 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hibari</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/assets/css/a.min.css" rel="stylesheet">
+  <link href="//brick.a.ssl.fastly.net/Fira+Sans:300,400" rel="stylesheet">
+</head>
+
+<body>
+  
+    <header>
+        <div>
+            <a href="#Explore">Explore</a>
+            <a href="#Trends">Trends</a>
+            <a href="#Covers">Covers</a>
+        </div>
+
+        <a href="/">Hibari</a>
+
+        <div>
+            <a href="#Profile">Profile</a>
+            <a href="#Anime">Anime</a>
+            <a href="#Manga">Manga</a>
+        </div>
+    </header>
+    
+    <section id="content">
+        <main>
+
 <h2 id="ToS">Hibari Terms of Service and Privacy Policy</h2>
 
 <h3>1. Terms</h3>
@@ -64,3 +95,24 @@
   </ul>
 
   <p>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. Hibari may change its Privacy Policy from time to time, and at Hibari's sole discretion.</p>
+
+        </main>
+
+        <!--<aside>Side 1</aside>
+        <aside>Side 2</aside>-->
+    </section>
+
+    <footer>
+        <div>&copy; James Harris, 2015</div>
+
+        <div>
+            <a id="deploy" href="http://deploybot.com">
+                <img src="https://wopian-hb.deploybot.com/badge/88313865898261/46784.svg" alt="Deployment status from DeployBot">
+            </a>
+            <a href="/tos.php#privacy">Privacy</a>
+            <a href="/tos.php#tos">ToS</a>
+        </div>
+
+    </footer>
+
+</body>
