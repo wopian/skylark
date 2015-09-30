@@ -1,11 +1,5 @@
-https://wopian-hb.deploybot.com/
+# Hibari
 
-https://www.npmjs.com/package/grunt-git
-
-####Production
-
-[![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/88313865898261/46786.svg)](http://deploybot.com)
-
-####Staging
-
-[![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/34534835944506/46784.svg)](http://deploybot.com)
+[Production](https://hb.wopian.me) | [Staging](https://staging.wopian.me)
+:---: | :---:
+[![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/88313865898261/46786.svg)](https://wopian-hb.deploybot.com/) | [![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/34534835944506/46784.svg)](https://wopian-hb.deploybot.com/)
