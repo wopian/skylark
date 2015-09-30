@@ -13,7 +13,7 @@
     }
   ],
   "main": "Gruntfile.js",
-  "homepage": "https://hb.wopian.me/",
+  "homepage": "https://hb.wopian.me",
   "repository": {
     "type": "git",
     "url": "https://github.com/wopian/skylark"
