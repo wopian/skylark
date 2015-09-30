@@ -135,6 +135,12 @@ footer {
   a {
     color: $font-color;
   }
+  
+  #deploy {
+  	justify-content: center;
+  	align-self: center;
+  }
+  
   a {
     text-decoration: none;
     color: $font-color;
