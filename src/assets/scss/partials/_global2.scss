@@ -142,6 +142,11 @@ footer {
     &:first-of-type { padding-right: 1rem; }
     &:hover { color: $accent-colour-2; }
   }
+  
+  #deploy {
+  	justify-content: center;
+  	align-self: center;
+  }
 }
 
 // ---------- // CONTENT
