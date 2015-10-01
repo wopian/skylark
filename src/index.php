@@ -2,7 +2,7 @@
 
 <section id="content">
         <main>
-            <? require('assets/php/modules/landing.php'); ?>
+            <? require('./assets/php/modules/landing.php'); ?>
         </main>
 
         <aside>Side 1</aside>
