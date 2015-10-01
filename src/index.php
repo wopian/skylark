@@ -46,7 +46,7 @@
 
     <section id="content">
         <main>
-            <br>Hurrah! The staging server now automatically builds source materials and publishes them.
+            <? require('/assets/php/landing.php'); ?>
         </main>
 
         <aside>Side 1</aside>
