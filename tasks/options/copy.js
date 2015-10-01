@@ -6,6 +6,12 @@ module.exports = {
             cwd: 'src/',
             src: ['.htaccess', 'robots.txt'],
             dest: 'dist/'
+        },
+        {
+            expand: true,
+            cwd: 'src/assets/php/',
+            src: '*.php',
+            dest: 'dist/assets/php'
         }]
     }
 }
