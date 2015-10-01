@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Hibari</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/assets/css/a.min.css" rel="stylesheet">
-  <link href="//brick.a.ssl.fastly.net/Fira+Sans:300,400" rel="stylesheet">
-</head>
-
-<body>
-  
-    <header>
-        <div>
-            <a href="#Explore">Explore</a>
-            <a href="#Trends">Trends</a>
-            <a href="#Covers">Covers</a>
-        </div>
-
-        <a href="/">Hibari</a>
-
-        <div>
-            <a href="#Profile">Profile</a>
-            <a href="#Anime">Anime</a>
-            <a href="#Manga">Manga</a>
-        </div>
-    </header>
-    
+<? require('./assets/php/partials/header.php'); ?>
     <section id="content">
         <main>
 
