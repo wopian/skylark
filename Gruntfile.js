@@ -2,7 +2,7 @@ var timer = require("grunt-timer");
 
 module.exports = function(grunt) {
     
-    timer.init(grunt);
+    timer.init(grunt, { deferLogs: true, friendlyTime: true });
 
     function loadConfig(path) {
         var glob = require('glob');
