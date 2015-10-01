@@ -1,4 +1,4 @@
-<? require('./assets/php/header.php'); ?>
+<? require('./assets/php/partials/header.php'); ?>
 
 <section id="content">
         <main>
