@@ -46,7 +46,7 @@
 
     <section id="content">
         <main>
-            <? require('/assets/php/landing.php'); ?>
+            <?php require('/assets/php/landing.php'); ?>
         </main>
 
         <aside>Side 1</aside>
