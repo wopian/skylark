@@ -1,4 +1,6 @@
-    <section id="content">
+<? require('./assets/php/landing.php'); ?>
+
+<section id="content">
         <main>
             <? require('assets/php/landing.php'); ?>
         </main>
