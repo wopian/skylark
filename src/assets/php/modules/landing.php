@@ -1,2 +1,2 @@
 <? ob_start(); ?>
-<p>Hello world.</p>
+<p>Dank memes r cool!</p>
