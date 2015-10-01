@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - 0.11
 
-before_install: npm install -g grunt-cli
+#before_install: npm install -g grunt
 
-install: npm install
+install: npm install --save-dev
 
-before_script: grunt
+#before_script: grunt
