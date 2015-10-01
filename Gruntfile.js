@@ -1,4 +1,8 @@
+var timer = require("grunt-timer");
+
 module.exports = function(grunt) {
+    
+    timer.init(grunt);
 
     function loadConfig(path) {
         var glob = require('glob');
@@ -23,6 +27,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['timer', /*'concat', 'uglify',*/ 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
+    grunt.registerTask('default', [/*'concat', 'uglify',*/ 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
 
 };
