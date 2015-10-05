@@ -37,14 +37,17 @@ engines:
 
 ratings:
    paths:
-   - src/**
-   - dest/**
+   - "src/**"
+   - "dest/**"
 #   - "**.rb"
 #   - "**.go"
 
 # You can globally exclude files from being analyzed by any engine using the
 # exclude_paths key.
 
-#exclude_paths:
-#- spec/**/*
-#- vendor/**/*
+exclude_paths:
+   - "tasks/**"
+   - "Gruntfile.js"
+   - "LICENSE.md"
+   - "README.md"
+   - "package.json"
