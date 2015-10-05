@@ -27,6 +27,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['instanbul', 'codeclimate-reporter', /*'concat', 'uglify',*/ 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
+    grunt.registerTask('default', [/*'concat', 'uglify',*/ 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin', 'instanbul', 'codeclimate-reporter']);
 
 };
