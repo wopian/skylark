@@ -39,6 +39,7 @@
     "grunt-codeclimate-reporter": "^1.1.2"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "test": "istanbul cover test.js"
   }
 }
