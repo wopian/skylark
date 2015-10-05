@@ -8,7 +8,3 @@ before_install:
   - gem install sass
 
 install: npm install --save-dev
-
-addons:
-    code_climate:
-        repo_token: 05aed1b3de739db215aaed9c2570beec072863dd25d4c1a19972618e6dd888a5
