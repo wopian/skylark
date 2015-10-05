@@ -38,7 +38,7 @@ engines:
 ratings:
    paths:
    - "src/**"
-   - "dest/**"
+#   - "dest/**"
 #   - "**.rb"
 #   - "**.go"
 
