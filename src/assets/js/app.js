@@ -7,13 +7,13 @@
 });
 */
 
-Holder.run({});
+//Holder.run({});
 
 $(function() {
     $("img.lazy").lazyload({
-        event : "sporty",
-        skip_invisible : false,
-        effect : "fadeIn"
+        event: "sporty",
+        skip_invisible: false,
+        effect: "fadeIn"
     });
 });
 
