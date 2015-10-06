@@ -1,1 +1,17 @@
+@charset "UTF-8";
+$rnd: random(39);
+$species: Tori, Kakin, Washi, Kamo, Hato, Shirotori, Toriniku, Oumu, Shichimenchiyou, Fukurou, Suzume, Gachiyou, Kounotori, Ondori, Kitsutsuki, Dachiyou, Hato, Kanaria, Kiji, Mendori, Watarigarasu, Hibari, Yamauzura, Uzura, Hagetaka, Tsubame, Kuroutadori, Hayabusa, Taka, Kasasagi, Perikan, Misago, Menfukurou, Inuwashi, Hakutouwashi, Hachidori, Komadori, Akaonosuri, Tsuru;
+//$species_jp: "とり", "かきん", "わし", "かも", "はと", "しろとり", "とりにく", "おうむ", "しちめんちよう", "ふくろう", "すずめ", "がちよう", "こうのとり", "おんどり", "きつつき", "だちよう", "はと", "かなりあ", "きじ", "めんどり", "わたりがらす", "ひばり", "やまうずら", "うずら", "はげたか", "つばめ", "くろうたどり", "はやぶさ", "たか", "かささぎ", "ぺりかん", "みさご", "めんふくろう", "いぬわし", "はくとうわし", "はちどり", "こまどり", "あかおのすり", "つる";
+//$nth: nth($species, $rnd) + " - " + nth($species_jp, $rnd);
+$nth: nth($species, $rnd)
 
+
+$version: "0.0.2";
+$release: "#{$nth}";
+
+/*!
+     Copyright © &copy; James Harris 2015.
+     Version #{$version} (#{$release}).
+
+     Any content, trademark(s), or other material remains the copyright of its respective owner(s). In no way do I claim ownership or responsibility for such items.
+*/
