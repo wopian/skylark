@@ -48,7 +48,6 @@ ratings:
 exclude_paths:
    - "tasks/**"
    - "src/assets/js/vendor/**"
-   - "src/assets/scss/vendor/**"
    - "Gruntfile.js"
    - "LICENSE.md"
    - "README.md"
