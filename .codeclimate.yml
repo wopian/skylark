@@ -43,8 +43,6 @@ exclude_paths:
    - "tasks/**"
    - "src/assets/images/**"
    - "src/assets/js/vendor/**"
-   - "src/assets/scss/main.scss"
-   - "src/assets/scss/partials/_base.scss"
    - "Gruntfile.js"
    - "LICENSE.md"
    - "README.md"
