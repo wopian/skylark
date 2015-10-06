@@ -47,6 +47,7 @@ ratings:
 
 exclude_paths:
    - "tasks/**"
+   - "src/assets/images/**"
    - "src/assets/js/vendor/**"
    - "Gruntfile.js"
    - "LICENSE.md"
