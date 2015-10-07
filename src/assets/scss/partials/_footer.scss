@@ -1,46 +1,46 @@
 footer {
-    line-height: 40px;
-    font-size: .9em;
-
-    padding: .5rem 12rem;
-    color: $font-colour;
-
+  line-height: 40px;
+  padding: .5rem 12rem;
+  font-size: .9em;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  
+  div {
+    order: 0;
+    flex: 0 1 100%;
+    text-align: left;
     display: flex;
+    align-items: stretch;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
-
-    div,
-    a { color: $font-colour; }
-
-    div,
-    >a {
-        order: 0;
-        flex: 0 1 100%;
-        text-align: left;
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
-        flex-direction: row;
+    
+    &:last-of-type {
+    	justify-content: flex-end;
+    	text-align: right;
     }
-
-    #deploy {
-        justify-content: center;
-        align-self: center;
-    }
-
-    div:last-of-type {
-        justify-content: flex-end;
-        text-align: right;
-    }
-
-    a:not(>a) {
-        text-decoration: none;
-        color: $font-colour;
-        transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-        &:first-of-type { padding-right: 1rem; }
-        &:hover { color: $accent-colour-2; }
-    }
+  }
+  
+  div,
+  a {
+    color: $font-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $font-color;
+    transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &:not(:first-of-type) { padding-left: 1rem; }
+    &:hover { color: $accent-color-2; }
+  }
+  
+   .status {
+  	position: relative;
+  	top: 6px;
+    	height: 0;
+  }
 }
