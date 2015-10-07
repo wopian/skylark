@@ -22,9 +22,9 @@ engines:
   scsslint:
     enabled: true
   phpmd:
-    enabled: true
+    enabled: false
   phpcodesniffer
-    enabled: true
+    enabled: false
 
 # Engines can analyze files and report issues on them, but you can separately
 # decide which files will receive ratings based on those issues. This is
