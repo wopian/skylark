@@ -23,7 +23,7 @@ engines:
     enabled: true
   phpmd:
     enabled: false
-  phpcodesniffer
+  phpcodesniffer:
     enabled: false
 
 # Engines can analyze files and report issues on them, but you can separately
