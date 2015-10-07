@@ -1,7 +1,7 @@
 <? ob_start(); ?>
 <div class="cta"></div>
 
-<h1>Dank Memes</h1>
+<h1>Jake Brough's Dank Memes</h1>
 <p>Lorem ipsum dolor sit amet, vel facilisi vituperata eu. Vis ut maiorum comprehensam, omnis fabellas ea duo, eam delenit mandamus salutandi ex. Et qui paulo verterem, eu pro augue nusquam scripserit, ad modo solet nec. Velit impetus eu eos, quot erant laboramus vix cu. Eam sint modus no, est iriure euismod omnesque ex.</p>
 <br><br>
 <h2>じめじめミーム</h2>
