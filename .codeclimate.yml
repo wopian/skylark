@@ -18,6 +18,12 @@ engines:
 #  eslint:
 #    enabled: true
   csslint:
+    enabled: false
+  scsslint:
+    enabled: true
+  phpmd:
+    enabled: true
+  phpcodesniffer
     enabled: true
 
 # Engines can analyze files and report issues on them, but you can separately
