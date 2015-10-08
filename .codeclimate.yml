@@ -9,8 +9,6 @@ engines:
     checks:
       Comment:
         enabled: false
-      Indentation:
-        width: 4
       SelectorFormat:
         convention: camel_case
       SpaceBeforeBrace:
