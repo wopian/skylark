@@ -40,7 +40,7 @@
     die('Unable to connect to the database [' . $db->connect_error . ']');
   }
 
-  $sql = "INSERT INTO `users` (`username`) VALUES (" . $username . ") ON DUPLICATE KEY UPDATE `name` = " . $username . "";
+  $sql = "INSERT INTO `users` (`username`) VALUES (" . $user . ") ON DUPLICATE KEY UPDATE `name` = " . $user;
 
   if(!$result = $db->query($sql)) {
     die('There was an error running the query [' . $db->error . ']');
