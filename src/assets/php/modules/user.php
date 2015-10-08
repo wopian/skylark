@@ -27,19 +27,18 @@
   $userLocation   = empty($apiData['location']) ? 'Unknown' : $apiData['location'];
 
   #Update MySQLi Database
-  /*
+
   $db = new mysqli('localhost', 'bobstudi_hibari', 'eSU1Cq@R;s^I$R{Bgq', 'bobstudi_hibari');
 
   if ($db->connect_errno > 0) {
     die('Unable to connect to the database [' . $db->connect_error . ']');
   }
 
-  $sql = 'INSERT INTO `users` (`username`) VALUES (' . $username . ') ON DUPLICATE KEY UPDATE `name` = ' . $username'';
+  $sql = "INSERT INTO `users` (`username`) VALUES (" . $username . ") ON DUPLICATE KEY UPDATE `name` = " . $username;
 
   if(!$result = $db->query($sql)) {
     die('There was an error running the query [' . $db->error . ']');
   }
-  */
   #End Update MySQLi Database
 
   function humanSeconds($ss, $recent = false) {
@@ -78,13 +77,13 @@
   <main>
     <?
       print_r($user . $userPlural . ' Details:');
-      echo 'Cover: ' . $userCover;
-      echo 'Avatar: ' . $userAvatar;
-      echo 'Bio: ' . $userBio;
-      echo 'Waifu: ' . $userWaifu;
-      echo 'Location: ' . $userLocation;
-      echo 'Time: ' . $userTime;
-      echo 'Human Time: ' . humanSeconds($userTime);
+      echo '<br><br>Cover: ' . $userCover;
+      echo '<br><br>Avatar: ' . $userAvatar;
+      echo '<br><br>Bio: ' . $userBio;
+      echo '<br><br>Waifu: ' . $userWaifu;
+      echo '<br><br>Location: ' . $userLocation;
+      echo '<br><br>Time: ' . $userTime;
+      echo '<br><br>Human Time: ' . humanSeconds($userTime);
     ?>
   </main>
 
