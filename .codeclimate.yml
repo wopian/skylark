@@ -6,6 +6,9 @@ engines:
 #    enabled: true
   scss-lint:
     enabled: true
+    checks:
+      comment:
+        enabled: false
   phpmd:
     enabled: true
 #  phpcodesniffer:
