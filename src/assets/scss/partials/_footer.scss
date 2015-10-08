@@ -2,14 +2,14 @@ footer {
   line-height: 40px;
   padding: .5rem 12rem;
   font-size: .9em;
-  
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-  
+
   div {
     order: 0;
     flex: 0 1 100%;
@@ -18,18 +18,18 @@ footer {
     align-items: stretch;
     justify-content: space-between;
     flex-direction: row;
-    
+
     &:last-of-type {
-    	justify-content: flex-end;
-    	text-align: right;
+        justify-content: flex-end;
+        text-align: right;
     }
   }
-  
+
   div,
   a {
     color: $font-color;
   }
-  
+
   a {
     text-decoration: none;
     color: $font-color;
@@ -37,10 +37,10 @@ footer {
     &:not(:first-of-type) { padding-left: 1rem; }
     &:hover { color: $accent-color-2; }
   }
-  
+
    .status {
-  	position: relative;
-  	top: 6px;
-    	height: 0;
+      position: relative;
+      top: 6px;
+        height: 0;
   }
 }
