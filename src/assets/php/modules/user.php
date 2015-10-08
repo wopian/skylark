@@ -3,7 +3,7 @@
   $user = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['user']);
 
   #Download Hummingbird user profile
-  $apiURL  = "https://hummingbird.me/api/v1/users/$username";
+  $apiURL  = "https://hummingbird.me/api/v1/users/$user";
   $apiJSON = file_get_contents($apiURL);
   $apiData = json_decode($apiJSON, true);
 
