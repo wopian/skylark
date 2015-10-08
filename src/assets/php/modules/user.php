@@ -27,17 +27,19 @@
   $userLocation   = empty($apiData['location']) ? 'Unknown' : $apiData['location'];
 
   #Update MySQLi Database
+  /*
   $db = new mysqli('localhost', 'bobstudi_hibari', 'eSU1Cq@R;s^I$R{Bgq', 'bobstudi_hibari');
 
   if ($db->connect_errno > 0) {
     die('Unable to connect to the database [' . $db->connect_error . ']');
   }
 
-  $sql = 'INSERT INTO `users` (`username`) VALUES (' . $username . ') ON DUPLICATE KEY UPDATE `name` = ' . $username;
+  $sql = 'INSERT INTO `users` (`username`) VALUES (' . $username . ') ON DUPLICATE KEY UPDATE `name` = ' . $username'';
 
   if(!$result = $db->query($sql)) {
     die('There was an error running the query [' . $db->error . ']');
   }
+  */
   #End Update MySQLi Database
 
   function humanSeconds($ss, $recent = false) {
