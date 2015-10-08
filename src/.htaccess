@@ -19,12 +19,14 @@
   RewriteRule ^tos tos.php [NC,L]
   #RewriteRule ^info /assets/modules/info/info.php [NC,L]
   RewriteRule ^status http://uptime.statuscake.com/?TestID=AvWM56tKLB [NC,L]
+  
+  RewriteRule ^([A-Za-z-0-9_-]+)/?$ /assets/php/modules/user.php?user=$1 [NC,L]
 
-  RewriteRule ^([A-Za-z0-9_-]+)/library/?$ /library.php?user=$1 [NC,L]
-  RewriteRule ^([A-Za-z0-9_-]+)/library/([A-Za-z0-9-]+)/?$ /library.php?user=$1&status=$2 [NC,L]
-  RewriteRule ^([A-Za-z0-9_-]+)/compare/([A-Za-z0-9-]+)/?$ /compare.php?user=$1&user2=$2 [NC,L]
-  # RewriteRule ^([A-Za-z0-9_-]+)/cover/?$ /cover.php [NC,L]
-  RewriteRule ^([A-Za-z0-9_-]+)/?$ /users.php?user=$1 [NC,L]
+  #RewriteRule ^([A-Za-z0-9_-]+)/library/?$ /library.php?user=$1 [NC,L]
+  #RewriteRule ^([A-Za-z0-9_-]+)/library/([A-Za-z0-9-]+)/?$ /library.php?user=$1&status=$2 [NC,L]
+  #RewriteRule ^([A-Za-z0-9_-]+)/compare/([A-Za-z0-9-]+)/?$ /compare.php?user=$1&user2=$2 [NC,L]
+  #RewriteRule ^([A-Za-z0-9_-]+)/cover/?$ /cover.php [NC,L]
+  #RewriteRule ^([A-Za-z0-9_-]+)/?$ /users.php?user=$1 [NC,L]
 
 </IfModule>
 
