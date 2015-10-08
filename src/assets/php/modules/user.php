@@ -9,8 +9,14 @@
 
   #Redirect to index if invalid username
   if (empty($apiData['name'])) {
-    $serverLocation = '//' . $_SERVER['SERVER_NAME'];
-    header("Location: ".$serverLocation);
+    switch ($_SERVER['SERVER_NAME']) {
+      case 'hb.wopian.me':
+        header("Location: https://hb.wopian.me");
+        break;
+      case 'staging.wopian.me':
+        header("Location: https://staging.wopian.me");
+        break;
+    }
   }
 
   #Use correct username capitalisation via API
