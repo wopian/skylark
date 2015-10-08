@@ -1,15 +1,15 @@
-@mixin elevation( $depth ) {
+@mixin elevation($depth) {
 
-	// 0 z-depth
+    // 0 z-depth
 	@if $depth < 1 {
-		box-shadow: none;
-	}
+        box-shadow: none;
+    }
 
 	// 1 z-depth
 	@if $depth == 1 {
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
 	}
-	
+
 	// 2 z-depth
 	@if $depth == 2 {
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
