@@ -1,14 +1,13 @@
 footer {
-  line-height: 40px;
-  padding: .5rem 12rem;
-  font-size: .9em;
-
+  align-content: stretch;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  font-size: .9em;
   justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
+  line-height: 40px;
+  padding: .5rem 12rem;
 
   div {
     order: 0;
