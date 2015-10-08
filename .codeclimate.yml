@@ -16,9 +16,9 @@ engines:
         convention: camel_case
       SpaceBeforeBrace:
         allow_single_line_padding: true
-      TrailingZero
+      TrailingZero:
         enabled: true
-      TransitionAll
+      TransitionAll:
         enabled: true
       UrlFormat:
         enabled: false
