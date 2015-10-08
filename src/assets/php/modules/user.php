@@ -7,10 +7,11 @@
   $apiJSON = file_get_contents($apiURL);
   $apiData = json_decode($apiJSON, true);
 
+  #TODO: Fix redirect
   #Redirect to index if invalid username
-  if (empty($apiData['name'])) {
-    header("Location: //".$_SERVER['SERVER_NAME']);
-  }
+  /*if (empty($apiData['name'])) {
+    header("Location: //$_SERVER['SERVER_NAME']);
+  }*/
 
   #Use correct username capitalisation via API
   $user       = $apiData['name'];
