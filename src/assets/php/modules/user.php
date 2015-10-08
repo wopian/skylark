@@ -1,4 +1,4 @@
-<? require('./assets/php/partials/header.php'); ?>
+<? require('../partials/header.php'); ?>
 
 <section class="content">
   <main>
@@ -14,4 +14,4 @@
   <aside>Side 2</aside>
 </section>
 
-<? require('./assets/php/partials/footer.php'); ?>
+<? require('../partials/footer.php'); ?>
