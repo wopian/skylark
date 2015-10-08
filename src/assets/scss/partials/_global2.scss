@@ -1,112 +1,109 @@
 @media (min-width: 768px) {
   .cover {
-    position: relative;
     margin-left: -12rem;
+    position: relative;
   }
 }
 
 // ---------- // CONTENT
 
 .cover {
+  // 17px = width of scrollbar
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
   width: 100%;
   width: calc(100vw - 17px);
-  height: 400px;
-  // 17px = width of scrollbar
 }
 
 .user {
-  display: flex;
   align-content: stretch;
   align-items: flex-start;
-  justify-content: space-between;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
 
   .user---avatar {
+    //margin: 0 auto;
     align-self: middle;
-    flex: 0 1 140px;
-    position: relative;
-    top: -4rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 4px;
-    width: 120px;
+    flex: 0 1 140px;
     height: 120px;
-
-    //margin: 0 auto;
+    position: relative;
+    top: -4rem;
+    width: 120px;
   }
+
   .user---name {
     display: inline-block;
     flex: 0 1 calc(50%);
     font-size: 2.5em;
-    padding-top: 1.2rem;
     margin: 0;
     order: -1;
+    padding-top: 1.2rem;
 
   }
   .user---update {
+    //padding-top: .5rem;
+    //padding-top: 1rem;
     flex: 0 1 calc(50%);
     padding-top: 1rem;
     text-align: right;
 
-    //padding-top: .5rem;
-    //padding-top: 1rem;
-
     button {
-      font-size: .9em;
-      background: $accent-color-2;
-      color: $font-color;
-      padding: .8rem 1rem;
-      border: 0;
-      border-radius: 4px;
       //padding: 1rem 2rem;
-      @include elevation( 1 );
+      background: $accent-color-2;
+      border-radius: 4px;
+      border: 0;
+      color: $font-color;
+      font-size: .9em;
+      padding: .8rem 1rem;
+      @include elevation(1);
     }
   }
 }
 
 .user---details {
-  p {
-    font-size: 2em;
-  }
+  p { font-size: 2em; }
+
   .grid {
-    display: flex;
+    //justify-content: center;
     align-content: stretch;
     align-items: center;
-    justify-content: flex-start;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //justify-content: center;
+    justify-content: flex-start;
 
     .card {
-      display: flex;
       align-items: center;
+      background-color: #fff;
+      border-radius: 4px;
+      display: flex;
       flex-direction: column;
       flex-grow: 1;
       font-weight: 300;
-      background-color: #fff;
-      padding: 1rem 2rem;
       margin: .5rem;
-      border-radius: 4px;
-      text-align: center;
       min-width: auto;
-      @include elevation( 1 );
+      padding: 1rem 2rem;
+      text-align: center;
+      @include elevation(1);
 
       small {
         font-size: 1em;
         padding-bottom: .75rem;
       }
+
       span {
         font-size: 1.5em;
         font-weight: 700;
-        small {
-          font-weight: 300;
-          //font-size: 1rem;
-        }
+
+        small { font-weight: 300; }
       }
     }
   }
@@ -135,100 +132,102 @@
     font-size: 2em;
 
     button {
-      float: right;
-      padding: .8rem 1rem;
-      font-size: .9rem;
       background: $accent-color-2;
-      color: $font-color;
       border-radius: 4px;
       border: 0;
-      @include elevation( 1 );
+      color: $font-color;
+      float: right;
+      font-size: .9rem;
+      padding: .8rem 1rem;
+      @include elevation(1);
     }
   }
 
   .grid {
-	  display: flex;
 	  align-content: stretch;
 	  align-items: center;
-	  justify-content: center;
-    justify-content: flex-start;
+	  background-color: #ECEFF1;
+	  display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
-	  background-color: #ECEFF1;
 	  height: 100%;
-	  transition: all 500ms;
+	  justify-content: center;
 	  transition-delay: 200ms;
+	  transition: all 500ms;
     //padding-top: 40px;
+    justify-content: flex-start;
 
-		&.is-expanded {
-      background-color:	$background-color; }
+		&.is-expanded { background-color:	$background-color; }
 
 	  .card {
 	    align-self: auto;
-	    flex: 0 1 auto;
-      flex-grow: 1;
-	    box-sizing: border-box;
-	    box-sizing: border-box;
-	    position: relative;
 	    background-color: #FFF;
-	    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-	    cursor: default;
-      margin: .5rem;
 	    border-radius: 4px;
-	    overflow: hidden;
-	    width: 215px;
+	    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	    box-sizing: border-box;
+	    cursor: default;
+	    flex: 0 1 auto;
 	    height: 320px;
 	    order: 0;
-
+	    overflow: hidden;
+	    position: relative;
+	    width: 215px;
+      flex-grow: 1;
+      margin: .5rem;
 
 		  &:hover {
+        transition: all 400ms;
+        transition-delay: 400ms;
+
         .fab {
-			    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1), background-color .4s cubic-bezier(0.215, 0.61, 0.355, 1);
-			    transition-delay: 200ms;
-			    transform: scale(30);
           background-color: $accent-color-2;
+			    transform: scale(30);
+			    transition-delay: 200ms;
+			    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1),
+                      background-color .4s cubic-bezier(0.215, 0.61, 0.355, 1);
         }
+
         .fab:before {
-			    transform: scale(6);
-          opacity: 0;
-			    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 			    border: 3px solid $accent-color-2;
+			    transform: scale(6);
+			    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+          opacity: 0;
         }
+
 			  .card__content {
 			    opacity: 1;
         }
-			    transition: all 400ms;
-			    transition-delay: 400ms;
 		  }
 	  }
 
 	  .card__header {
-	    background-color: $accent-color;
-	    background-image:   url("https://static.hummingbird.me/anime/poster_images/000/008/644/large/i0933FWwzmR0C.jpg?1425582637");
-      cursor: pointer;
-	    height: 100%;
 		  background-size:cover;
+	    background-color: $accent-color;
+	    background-image: url("https://static.hummingbird.me/anime/poster_images/000/008/644/large/i0933FWwzmR0C.jpg?1425582637");
+	    height: 100%;
+      cursor: pointer;
     }
 
 	  .card__content {
-	    display: flex;
 	    align-items: center;
+	    bottom: 0;
+	    color: lighten( $accent-color-2, 30% );
+	    display: flex;
 	    justify-content: center;
 	    position: absolute;
 	    top: 0;
-	    bottom: 0;
-	    color: lighten( $accent-color-2, 30% );
+
       p:not(.r) {
-		    position: absolute;
 		    left: 0;
-		    width: 100%;
+		    position: absolute;
 		    text-align: center;
-	    opacity: 0;
-	    width: 100%;
-	    height: 100%;
-	    transition: all 200ms;
-	    transition-delay: 0ms;
-	    //pointer-events: none;
+		    width: 100%;
+	      //pointer-events: none;
+	      height: 100%;
+	      opacity: 0;
+	      transition-delay: 0ms;
+	      transition: all 200ms;
+	      width: 100%;
 
 	    }
       .e {
