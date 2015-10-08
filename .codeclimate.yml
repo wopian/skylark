@@ -7,7 +7,9 @@ engines:
   scss-lint:
     enabled: true
     checks:
-      comment:
+      Comment:
+        enabled: false
+      UrlFormat:
         enabled: false
   phpmd:
     enabled: true
