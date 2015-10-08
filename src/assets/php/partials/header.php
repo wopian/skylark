@@ -3,8 +3,8 @@
 <html>
 <head>
   <?
-    if (isset($username)) {
-      print('<title>'.$username.' &horbar; Hibari</title>');
+    if (isset($user)) {
+      print('<title>'.$user.' &horbar; Hibari</title>');
     } else {
       print('<title>Hibari</title>');
     }
