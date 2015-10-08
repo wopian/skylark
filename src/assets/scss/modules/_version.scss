@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 $rnd: random(39);
 $species: 'Tori', 'Kakin', 'Washi', 'Kamo', 'Hato', 'Shirotori', 'Toriniku', 'Oumu', 'Shichimenchiyou', 'Fukurou', 'Suzume', 'Gachiyou', 'Kounotori', 'Ondori', 'Kitsutsuki', 'Dachiyou', 'Kanaria', 'Kiji', 'Mendori', 'Watarigarasu', 'Hibari', 'Yamauzura', 'Uzura', 'Hagetaka', 'Tsubame', 'Kuroutadori', 'Hayabusa', 'Taka', 'Kasasagi', 'Perikan', 'Misago', 'Menfukurou', 'Inuwashi', 'Hakutouwashi', 'Hachidori', 'Komadori', 'Akaonosuri', 'Tsuru';
 $nth: nth($species, $rnd);
