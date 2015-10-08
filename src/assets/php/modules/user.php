@@ -3,15 +3,15 @@
   $user = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['user']);
 
   #Download Hummingbird user profile
-  $apiURL  = 'https://hummingbird.me/api/v1/users/$username';
+  $apiURL  = "https://hummingbird.me/api/v1/users/$username";
   $apiJSON = file_get_contents($apiURL);
   $apiData = json_decode($apiJSON, true);
 
-  #TODO: Fix redirect
   #Redirect to index if invalid username
-  /*if (empty($apiData['name'])) {
-    header("Location: //$_SERVER['SERVER_NAME']);
-  }*/
+  if (empty($apiData['name'])) {
+    $serverLocation = '//' . $_SERVER['SERVER_NAME'];
+    header("Location: ".$serverLocation);
+  }
 
   #Use correct username capitalisation via API
   $user       = $apiData['name'];
