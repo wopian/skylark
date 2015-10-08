@@ -17,7 +17,7 @@ body,
 }
 
 #content {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 aside {
@@ -28,15 +28,14 @@ aside {
 }
 
 header, footer {
-  //flex: non
   padding: .5rem;
   background-color: $accent-color;
   text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: 500;
-    padding-top: 2rem;
+  font-weight: 500;
+  padding-top: 2rem;
 }
 
 @media (min-width: 768px) {

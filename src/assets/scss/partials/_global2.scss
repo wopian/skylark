@@ -82,32 +82,32 @@
     align-content: stretch;
     align-items: center;
 
-      .card {
-        flex-grow: 1;
-        min-width: auto;
-        margin: .5rem;
-        text-align: center;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        font-weight: 300;
-        padding: 1rem 2rem;
-        @include elevation( 1 );
+    .card {
+      flex-grow: 1;
+      min-width: auto;
+      margin: .5rem;
+      text-align: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      @include elevation( 1 );
 
+      small {
+        font-size: 1em;
+        padding-bottom: .75rem;
+      }
+      span {
+        font-size: 1.5em;
+        font-weight: 700;
         small {
-          font-size: 1em;
-          padding-bottom: .75rem;
+          font-weight: 300;
+          //font-size: 1rem;
         }
-        span {
-          font-size: 1.5em;
-          font-weight: 700;
-          small {
-            font-weight: 300;
-            //font-size: 1rem;
-          }
-        }
+      }
     }
   }
 

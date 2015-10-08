@@ -20,8 +20,8 @@ footer {
     flex-direction: row;
 
     &:last-of-type {
-        justify-content: flex-end;
-        text-align: right;
+      justify-content: flex-end;
+      text-align: right;
     }
   }
 
@@ -38,9 +38,9 @@ footer {
     &:hover { color: $accent-color-2; }
   }
 
-   .status {
-      position: relative;
-      top: 6px;
-        height: 0;
+  .status {
+    position: relative;
+    top: 6px;
+    height: 0;
   }
 }
