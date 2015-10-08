@@ -13,7 +13,7 @@
   }
 
   #Use correct username capitalisation via API
-  $user       = $apiData['name']);
+  $user       = $apiData['name'];
   $userPlural = (substr($user, -1) == 's') ? '\'' : '\'s';
 
   #Extract key information
