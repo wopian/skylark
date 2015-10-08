@@ -1,7 +1,7 @@
 var timer = require("grunt-timer");
 
 module.exports = function(grunt) {
-    
+
     timer.init(grunt, { deferLogs: true, friendlyTime: true });
 
     function loadConfig(path) {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
     grunt.loadTasks('tasks');
 
-    grunt.util._.extend(config, loadConfig('./tasks/options/'));
+    grunt.util._.extend(config, loadConfig('./tasks/'));
 
     grunt.initConfig(config);
 
