@@ -2,8 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <!--<title>Wopian &horbar; Hibari</title>-->
-        <title>Hibari</title>
+        <?
+                switch (isset($_GET['page'])) {
+                        case 'user':
+                                $page = 'user';
+                                $username = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['user']);
+                                $usernamePlural = (substr($username, -1) == 's') ? '\'' : '\'s';
+                                print('<title>'.$username.' &horbar; Hibari</title>');
+                                break;
+                        default:
+                                print('<title>Hibari</title>');
+                                break;
+                }
+        ?>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/assets/css/a.min.css" rel="stylesheet">
