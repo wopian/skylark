@@ -1,6 +1,6 @@
 <? require('./assets/php/partials/header.php'); ?>
 
-<section id="content">
+<section class="content">
         <main>
                 <? require('./assets/php/modules/landing.php'); ?>
         </main>
