@@ -8,7 +8,6 @@ engines:
     enabled: true
     checks:
       Comment:
-        enabled: true
         allowed: '^[/* ]*Copyright'
       Indentation:
         width: 4
