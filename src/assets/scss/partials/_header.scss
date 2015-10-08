@@ -7,7 +7,7 @@ header {
   align-items: flex-start;
 
   >a {
-    color: $accent-color-2;
+    color: $accent-secondary;
     font-weight: 600;
     line-height: 40px;
     word-spacing: .08em;
@@ -28,7 +28,7 @@ header {
     align-items: stretch;
     justify-content: flex-end;
     flex-direction: row;
-    
+
     &:last-of-type {
       justify-content: flex-start;
       a {
@@ -38,16 +38,16 @@ header {
         }
       }
     }
-  
+
     a {
       display: inline;
 		  padding: 0 20px 0 0;
 		  line-height: 40px;
       text-decoration: none;
-      color: $font-color;
+      color: $white;
       transition: all 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
       &:hover {
-				color: $accent-color-2;
+				color: $accent-secondary;
 			}
       &:last-of-type {
         padding-right: calc(20px * 2);

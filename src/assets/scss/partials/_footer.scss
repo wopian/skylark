@@ -26,15 +26,15 @@ footer {
 
   div,
   a {
-    color: $font-color;
+    color: $white;
   }
 
   a {
-    color: $font-color;
+    color: $white;
     text-decoration: none;
     transition: all 400ms cubic-bezier(.19, 1, .22, 1);
     &:not(:first-of-type) { padding-left: 1rem; }
-    &:hover { color: $accent-color-2; }
+    &:hover { color: $accent-secondary; }
   }
 
   .status {

@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  width: 100%;
   width: calc(100vw - 17px);
 }
 
@@ -48,6 +47,7 @@
     padding-top: 1.2rem;
 
   }
+
   .user---update {
     //padding-top: .5rem;
     //padding-top: 1rem;
@@ -56,14 +56,14 @@
     text-align: right;
 
     button {
+      @include elevation(1);
       //padding: 1rem 2rem;
-      background: $accent-color-2;
-      border-radius: 4px;
+      background: $accent-secondary;
       border: 0;
-      color: $font-color;
+      border-radius: 4px;
+      color: $white;
       font-size: .9em;
       padding: .8rem 1rem;
-      @include elevation(1);
     }
   }
 }
@@ -132,10 +132,10 @@
     font-size: 2em;
 
     button {
-      background: $accent-color-2;
+      background: $accent-secondary;
       border-radius: 4px;
       border: 0;
-      color: $font-color;
+      color: $white;
       float: right;
       font-size: .9rem;
       padding: .8rem 1rem;
@@ -146,7 +146,6 @@
   .grid {
 	  align-content: stretch;
 	  align-items: center;
-	  background-color: #ECEFF1;
 	  display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
@@ -157,14 +156,13 @@
     //padding-top: 40px;
     justify-content: flex-start;
 
-		&.is-expanded { background-color:	$background-color; }
+		&.is-expanded { background-color:	$background; }
 
 	  .card {
 	    align-self: auto;
-	    background-color: #FFF;
+	    background-color: $white;
 	    border-radius: 4px;
-	    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-	    box-sizing: border-box;
+	    @include elevation(1);
 	    cursor: default;
 	    flex: 0 1 auto;
 	    height: 320px;
@@ -180,7 +178,7 @@
         transition-delay: 400ms;
 
         .fab {
-          background-color: $accent-color-2;
+          background-color: $accent-secondary;
 			    transform: scale(30);
 			    transition-delay: 200ms;
 			    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1),
@@ -188,7 +186,7 @@
         }
 
         .fab:before {
-			    border: 3px solid $accent-color-2;
+			    border: 3px solid $accent-secondary;
 			    transform: scale(6);
 			    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
           opacity: 0;
@@ -202,7 +200,7 @@
 
 	  .card__header {
 		  background-size:cover;
-	    background-color: $accent-color;
+	    background-color: $accent-primary;
 	    background-image: url("https://static.hummingbird.me/anime/poster_images/000/008/644/large/i0933FWwzmR0C.jpg?1425582637");
 	    height: 100%;
       cursor: pointer;
@@ -211,7 +209,7 @@
 	  .card__content {
 	    align-items: center;
 	    bottom: 0;
-	    color: lighten( $accent-color-2, 30% );
+	    color: lighten( $accent-secondary, 30% );
 	    display: flex;
 	    justify-content: center;
 	    position: absolute;
@@ -278,9 +276,10 @@
 		    border-radius: 4px;
 		    text-align: center;
 		    line-height: 40px;
-		    background: white;
-		    color: orange;
+		    background: $white;;
+		    color: $accent-secondary;
         text-decoration: none;
+        font-weight: 500;
         &:last-of-type {
           top: 157px;
         }
@@ -306,7 +305,6 @@
 
 		  &:before {
 		    content: "";
-		    box-sizing: border-box;
 		    position: absolute;
 		    top: 0;
 		    left: 0;
