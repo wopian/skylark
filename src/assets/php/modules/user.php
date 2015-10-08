@@ -9,7 +9,7 @@
 
   #Redirect to index if invalid username
   if (empty($apiData['name'])) {
-    header("Location: //$_SERVER['SERVER_NAME']")
+    header("Location: //".$_SERVER['SERVER_NAME']);
   }
 
   #Use correct username capitalisation via API
@@ -34,7 +34,7 @@
 
   $sql = 'INSERT INTO `users` (`username`) VALUES (' . $username . ') ON DUPLICATE KEY UPDATE `name` = ' . $username;
 
-  if(!result = $db->query($sql)) {
+  if(!$result = $db->query($sql)) {
     die('There was an error running the query [' . $db->error . ']');
   }
   #End Update MySQLi Database
