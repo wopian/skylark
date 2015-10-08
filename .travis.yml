@@ -9,10 +9,10 @@ node_js:
   - 0.11
 
 before_install:
-  - npm install -g grunt-cli
-  - gem install sass
+  - travis_retrynpm install -g grunt-cli
+  - travis_retry gem install sass
 
-install: npm install --save-dev
+install: travis_retry npm install --save-dev
 
 addons:
   code_climate:
