@@ -8,7 +8,7 @@ engines:
     enabled: true
     checks:
       Comment:
-        allowed: '^[/* ]*!Copyright'
+        enabled: false
       Indentation:
         width: 4
       SelectorFormat:
