@@ -66,7 +66,7 @@
     }
 
     if ($recent === false) {
-      return '$y $M $d $h $and $m';
+      return "$y $M $d $h $and $m";
     } else {
       if ($y != '')                                                     { return "$y"; }
       elseif ($y == '' && $M != '')                                     { return "$M"; }
