@@ -14,7 +14,7 @@
   RewriteCond  %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
 
-  RewriteRule ^sitemap.xml$ sitemap.php [L]
+  #RewriteRule ^sitemap.xml$ sitemap.php [L]
   
   RewriteRule ^tos tos.php [NC,L]
   #RewriteRule ^info /assets/modules/info/info.php [NC,L]
