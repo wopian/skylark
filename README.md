@@ -6,6 +6,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.0-eb4864.svg?style=flat-square)]()
 [![Version](https://img.shields.io/badge/status-in--dev-eb4864.svg?style=flat-square)]()
+[![Version](https://img.shields.io/badge/grunt-eb4864.svg?style=flat-square)]()
 
 [Production](https://hb.wopian.me) | [Staging](https://staging.wopian.me)
 :---: | :---:
