@@ -6,7 +6,6 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.0-eb4864.svg?style=flat-square)]()
 [![Status](https://img.shields.io/badge/status-in--dev-eb4864.svg?style=flat-square)]()
-[![Grunt](https://img.shields.io/badge/grunt-0.4.5-eb4864.svg?style=flat-square)]()
 [![License](https://img.shields.io/badge/licence-Apache--2.0-eb4864.svg?style=flat-square)]()
 [![Browser Support](https://img.shields.io/badge/browser%20support-last%202%20versions-eb4864.svg?style=flat-square)]()
 
