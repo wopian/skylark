@@ -1,6 +1,6 @@
 # Hibari
 
-![](https://img.shields.io/travis/wopian/skylark.svg?token=yBoQEdu6zS8uoXWWoq3Q)
+![](https://img.shields.io/travis/wopian/skylark.svg?key=yBoQEdu6zS8uoXWWoq3Q)
 ![](https://img.shields.io/codeclimate/github/5612799869568064350010e4/skylark.svg)
 
 
