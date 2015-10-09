@@ -4,6 +4,7 @@
 [![Code Climate](https://codeclimate.com/repos/5612799869568064350010e4/badges/3596865e43975423fa9a/gpa.svg)](https://codeclimate.com/repos/5612799869568064350010e4/feed)
 
 [Production](https://hb.wopian.me): [![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/88313865898261/46786.svg)](https://wopian-hb.deploybot.com/)
+
 [Staging](https://staging.wopian.me): [![Deployment status from DeployBot](https://wopian-hb.deploybot.com/badge/34534835944506/46784.svg)](https://wopian-hb.deploybot.com/)
 
 [![Version](https://img.shields.io/badge/version-0.5.5-brightgreen.svg?style=flat-square)]()
