@@ -25,6 +25,10 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', [/*'concat', 'uglify',*/ 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
+  grunt.registerTask('default', [/*'concat', 'uglify',*/ 'phplint', 'sass', 'snazzy', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
 
 };
+
+// Package.json
+// "grunt-contrib-uglify": "^0.9.2",
+// "grunt-contrib-concat": "^0.5.1",
