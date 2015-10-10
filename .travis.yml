@@ -6,10 +6,16 @@ language: node_js
 #    - tasks
 
 node_js:
-  - "iojs"
-  - 0.12
+  - iojs
 
-sudo: true
+sudo: false
+
+addons:
+  apt:
+    sources:
+      - ppa:ondrej/php5
+    packages:
+      - php5 php5-cli
 
 before_install:
   - travis_retry npm install -g grunt-cli
