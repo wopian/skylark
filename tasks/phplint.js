@@ -1,3 +1,6 @@
 module.exports = {
-  files: 'src/**/*.php'
+  options: {
+    phpCmd: 'src/',
+    spawnLimit: 10
+  }
 }
