@@ -54,8 +54,6 @@
     $M = (floor($ss / 2592000) > 0)           ? floor($ss / 2592000)           . ' months'  : '';
     $y = (floor($ss / 31557600) > 0)          ? floor($ss / 31557600)          . ' years'   : '';
 
-
-
     if (strlen($m) > 1 && (strlen($h) > 1 || strlen($d) > 1 || strlen($M) > 1)) {
       $and = 'and';
     } else {
