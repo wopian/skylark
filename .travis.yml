@@ -1,9 +1,9 @@
 language: node_js
 
-#cache:
-#  directories:
-#    - node_modules
-#    - tasks
+cache:
+  directories:
+    - node_modules
+    - tasks
 
 node_js:
   - iojs
