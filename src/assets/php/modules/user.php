@@ -77,9 +77,7 @@
   }
 
   require('../partials/header.php');
-
-  $hello = 10394
-  $bye = "error";
+  
 ?>
 
 <section class="content">
