@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['phpanalyzer, 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
+  grunt.registerTask('default', ['phpanalyzer', 'sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin']);
 
 };
 
