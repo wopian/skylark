@@ -1,10 +1,9 @@
-$shadow1 = rgba(0, 0, 0, .19);
-$shadow2 = rgba(0, 0, 0, .37);
-$shadow3 = rgba(0, 0, 0, .2);
-$shadow4 = rgba(0, 0, 0, .3);
-$shadow5 = rgba(0, 0, 0, .19);
-$shadow6 = rgba(0, 0, 0, .17);
-$shadow7 = rgba(0, 0, 0, .15);
+$shadow1 = rgba(0, 0, 0, .15);
+$shadow2 = rgba(0, 0, 0, .17);
+$shadow3 = rgba(0, 0, 0, .19);
+$shadow4 = rgba(0, 0, 0, .2);
+$shadow5 = rgba(0, 0, 0, .3);
+$shadow6 = rgba(0, 0, 0, .37);
 
 @mixin elevation($depth) {
 
@@ -15,30 +14,30 @@ $shadow7 = rgba(0, 0, 0, .15);
 
   // 1 z-depth
   @if $depth == 1 {
-    box-shadow: 0 1px 4px 0 $shadow1;
+    box-shadow: 0 1px 4px 0 $shadow3;
   }
 
   @if $depth == 2 {
-    box-shadow: 0 1px 4px 0 $shadow2;
+    box-shadow: 0 1px 4px 0 $shadow6;
   }
 
   @if $depth == 3 {
-    box-shadow: 0 2px 2px 0 $shadow3,
-                0 6px 10px 0 $shadow4;
+    box-shadow: 0 2px 2px 0 $shadow4,
+                0 6px 10px 0 $shadow5;
   }
 
   @if $depth == 4 {
-    box-shadow: 0 11px 7px 0 $shadow5,
-                0 13px 25px 0 $shadow4;
+    box-shadow: 0 11px 7px 0 $shadow3,
+                0 13px 25px 0 $shadow5;
   }
 
   @if $depth == 5 {
-    box-shadow: 0 14px 12px 0 $shadow6,
-                0 20px 40px 0 $shadow4;
+    box-shadow: 0 14px 12px 0 $shadow2,
+                0 20px 40px 0 $shadow5;
   }
 
   @if $depth == 6 {
-    box-shadow: 0 17px 17px 0 $shadow7,
-                0 27px 55px 0 $shadow4;
+    box-shadow: 0 17px 17px 0 $shadow1,
+                0 27px 55px 0 $shadow5;
   }
 }
