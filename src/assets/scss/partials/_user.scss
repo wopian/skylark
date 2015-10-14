@@ -1,3 +1,5 @@
+// COVER
+
 .cover {
   // 17px = width of scrollbar
   background-position: center;
@@ -12,4 +14,59 @@
     margin-left: -12rem;
     position: relative;
   }
+}
+
+// USER INFO
+
+.user {
+  align-content: stretch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  //margin: 0 auto;
+  align-self: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  flex: 0 1 140px;
+  height: 120px;
+  position: relative;
+  top: -4rem;
+  width: 120px;
+}
+
+.user-name {
+  display: inline-block;
+  flex: 0 1 calc(50%);
+  font-size: 2.5em;
+  margin: 0;
+  order: -1;
+  padding-top: 1.2rem;
+}
+
+.user-update {
+  @include elevation(1);
+  //padding-top: .5rem;
+  //padding-top: 1rem;
+  flex: 0 1 calc(50%);
+  padding-top: 1rem;
+  text-align: right;
+  //padding: 1rem 2rem;
+  background: $accent-secondary;
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  font-size: .9em;
+  padding: .8rem 1rem;
+}
+
+.user-details {
+  p { font-size: 2em; }
+}
 }
