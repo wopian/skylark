@@ -86,7 +86,9 @@
     <div class="user">
       <div class="user-avatar" style="background-image: url('<?= $userAvatar ?>')"></div>
       <p class="user-name"><?= $user ?></p>
-      <button class="user-update" href="#">Update Profile</button>
+      <div class="user-update">
+        <button href="#">Update Profile</button>
+      </div>
     </div>
     <p class="bio"><?= $userBio ?></p>
     <div class="user-details">
