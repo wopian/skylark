@@ -83,6 +83,15 @@
 <section class="content">
   <main>
     <div class="cover" style="background-image: url('<?= $userCover ?>')"></div>
+    <div class="user">
+      <div class="user-avatar" style="background-image: url('<?= $userAvatar ?>')"></div>
+      <p class="user-name"><?= $user ?></p>
+      <button class="user-update" href="#">Update Profile</button>
+    </div>
+    <p class="bio"><?= $userBio ?></p>
+    <div class="user-details">
+      <p>General Info</p>
+    </div>
     
     <?
       print_r($user . $userPlural . ' Details:');
