@@ -90,7 +90,7 @@
         <button href="#">Update Profile</button>
       </div>
     </div>
-    <p class="bio"><?= $userBio ?></p>
+    <p class="user-bio"><?= $userBio ?></p>
     <div class="user-details">
       <p>General Info</p>
     </div>
