@@ -1,9 +1,9 @@
-$shadow1 = rgba(0, 0, 0, .15);
-$shadow2 = rgba(0, 0, 0, .17);
-$shadow3 = rgba(0, 0, 0, .19);
-$shadow4 = rgba(0, 0, 0, .2);
-$shadow5 = rgba(0, 0, 0, .3);
-$shadow6 = rgba(0, 0, 0, .37);
+$shadow1: rgba(0, 0, 0, .15);
+$shadow2: rgba(0, 0, 0, .17);
+$shadow3: rgba(0, 0, 0, .19);
+$shadow4: rgba(0, 0, 0, .2);
+$shadow5: rgba(0, 0, 0, .3);
+$shadow6: rgba(0, 0, 0, .37);
 
 @mixin elevation($depth) {
 
