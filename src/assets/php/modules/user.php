@@ -97,9 +97,9 @@
     
     <?
       print_r($user . $userPlural . ' Details:');
-      echo '<br><br>Cover: ' . $userCover;
-      echo '<br><br>Avatar: ' . $userAvatar;
-      echo '<br><br>Bio: ' . $userBio;
+      //echo '<br><br>Cover: ' . $userCover;
+      //echo '<br><br>Avatar: ' . $userAvatar;
+      //echo '<br><br>Bio: ' . $userBio;
       echo '<br><br>Waifu: ' . $userWaifu;
       echo '<br><br>Location: ' . $userLocation;
       echo '<br><br>Time: ' . $userTime;
