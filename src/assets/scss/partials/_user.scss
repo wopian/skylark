@@ -1,1 +1,15 @@
+.cover {
+  // 17px = width of scrollbar
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: calc(100vw - 17px);
+}
 
+@media (min-width: 768px) {
+  .cover {
+    margin-left: -12rem;
+    position: relative;
+  }
+}
