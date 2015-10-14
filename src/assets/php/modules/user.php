@@ -82,7 +82,7 @@
 
 <section class="content">
   <main>
-    <div class="cover" style="background-image: url('<? $userCover ?>')"></div>
+    <div class="cover" style="background-image: url('<?= $userCover ?>')"></div>
     
     <?
       print_r($user . $userPlural . ' Details:');
