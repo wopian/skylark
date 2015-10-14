@@ -4,7 +4,7 @@
 <head>
   <?
     if (isset($user)) {
-      print('<title>'.$user.'&horbar;Hibari</title>');
+      print('<title>'.$user.' &horbar; Hibari</title>');
     } else {
       print('<title>Hibari</title>');
     }
