@@ -3,10 +3,13 @@
 <html>
 <head>
   <?
-    if (isset($user)) {
-      print('<title>'.$user.' &horbar; Hibari</title>');
-    } else {
-      print('<title>Hibari</title>');
+    switch (isset($user)) {
+      case true:
+        print('<title>'.$user.' &horbar; Hibari</title>');
+        break;
+      default: {
+        print('<title>Hibari</title>');
+        break;
     }
   ?>
 
