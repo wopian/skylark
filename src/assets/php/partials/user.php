@@ -52,6 +52,10 @@
     //Function reports one less day than HB report, so add 1 day (1440 minutes)
     $offset  = new DateTime('@' . ($minutes + 1440) * 60);
     $diff    = $zero->diff($offset);
+    $diff    = $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
+    $plural  = explode(", ", diff);
+    return $plural;
+    return "<br><br>";
     return $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
   }
 ?>
