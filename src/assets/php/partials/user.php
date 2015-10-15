@@ -29,7 +29,7 @@
   $userBio        = $apiData['bio'];
   $userWaifu      = $apiData['waifu'];
   $userWaifuCheck = $apiData['waifu_or_husbando'];
-  $userTime       = $apiData['life_spent_on_anime']*60;
+  $userTime       = $apiData['life_spent_on_anime'];
   $userLocation   = empty($apiData['location']) ? 'Unknown' : $apiData['location'];
 
   #Update MySQLi Database
@@ -47,10 +47,10 @@
   }
   #End Update MySQLi Database
 
-  function humanSeconds($seconds) {
+  function humanSeconds($minutes) {
     $zero    = new DateTime('@0');
     //Function reports one less day than HB report, so add 1 day (86400 seconds)
-    $offset  = new DateTime('@' . $seconds + 86400);
+    $offset  = new DateTime('@' . $minutes * 60);
     $diff    = $zero->diff($offset);
     return $diff->format('%m Months, %d Days, %h Hours, %i Minutes');
   }
