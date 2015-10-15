@@ -49,7 +49,8 @@
 
   function humanSeconds($seconds) {
     $zero    = new DateTime('@0');
-    $offset  = new DateTime('@' . $seconds);
+    //Function reports one less day than HB report, so add 1 day (86400 seconds)
+    $offset  = new DateTime('@' . $seconds + 86400);
     $diff    = $zero->diff($offset);
     return $diff->format('%m Months, %d Days, %h Hours, %i Minutes');
   }
