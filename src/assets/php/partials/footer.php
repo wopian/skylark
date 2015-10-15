@@ -1,4 +1,9 @@
 <? ob_start(); ?>
+		</main>
+
+        	<aside></aside>
+        	<aside></aside>
+	</section>
 	<footer>
 		<div>&copy; James Harris, 2015</div>
 		<a class="status" href="http://deploybot.com">
