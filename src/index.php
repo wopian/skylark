@@ -8,15 +8,15 @@
     }
     
     function getIndex() {
-        getHeader()
+        getHeader();
         require('./assets/php/modules/index.php');
-        getFooter()
+        getFooter();
     }
     
     function getUser() {
-        getHeader()
+        getHeader();
         require('./assets/php/modules/user.php');
-        getFooter()
+        getFooter();
     }
 ?>
 
