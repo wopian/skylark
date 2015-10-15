@@ -14,6 +14,7 @@
     }
     
     function getUser() {
+        require('./assets/php/partials/user.php');
         getHeader();
         require('./assets/php/modules/user.php');
         getFooter();
