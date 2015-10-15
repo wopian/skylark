@@ -18,9 +18,7 @@
         require('./assets/php/modules/user.php');
         getFooter();
     }
-?>
 
-<?
     if (isset($_GET['page'])) {
         $page = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['page']);
         switch ($page) {
