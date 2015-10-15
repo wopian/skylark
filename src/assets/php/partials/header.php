@@ -4,7 +4,7 @@
 <head>
   <?
     switch (isset($user)) {
-      case true:
+      case 'true':
         print('<title>'.$user.' &horbar; Hibari</title>');
         break;
       default: {
