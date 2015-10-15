@@ -47,9 +47,9 @@
   }
   #End Update MySQLi Database
 
-  function humanSeconds($minutes) {
+  function humanSeconds($seconds) {
     $zero    = new DateTime('@0');
-    $offset  = new DateTime('@' . $minutes * 60);
+    $offset  = new DateTime('@' . $seconds);
     $diff    = $zero->diff($offset);
     return $diff->format('%m Months, %d Days, %h Hours, %i Minutes');
   }
