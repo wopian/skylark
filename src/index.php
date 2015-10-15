@@ -10,3 +10,17 @@
 </section>
 
 <? require('./assets/php/partials/footer.php'); ?>
+
+<? /*
+    if (isset($_GET['page'])) {
+        $page = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['page']);
+        switch ($page) {
+            case 'user':
+                pageUser();
+                break;
+            case 'index':
+                pageIndex();
+                break;
+        }
+    } */
+?>
