@@ -53,7 +53,7 @@
     $offset  = new DateTime('@' . ($minutes + 1440) * 60);
     $diff    = $zero->diff($offset);
     $diff    = $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
-    $plural  = explode(", ", diff);
+    $plural  = explode(", ", $diff);
     print_r($plural);
     return $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
   }
