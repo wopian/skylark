@@ -27,9 +27,8 @@
             case 'user':
                 getUser();
                 break;
-            case 'index':
-                getIndex();
-                break;
         }
+    } else {
+        getIndex();
     }
 ?>
