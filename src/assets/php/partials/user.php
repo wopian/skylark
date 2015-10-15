@@ -47,7 +47,13 @@
   }
   #End Update MySQLi Database
 
-  function humanSeconds($ss, $recent = false) {
+  function humanSeconds($minutes) {
+    $zero    = new DateTime('@0');
+    $offset  = new DateTime('@' . $minutes * 60);
+    $diff    = $zero->diff($offset);
+    return $diff->format('%m Months, %d Days, %h Hours, %i Minutes');
+  }
+  /*function humanSeconds($ss, $recent = false) {
     $m = (floor(($ss % 3600) / 60) > 0)       ? floor(($ss % 3600) / 60)       . ' minutes' : '';
     $h = (floor(($ss % 86400) / 3600) > 0)    ? floor(($ss % 86400) / 3600)    . ' hours'   : '';
     $d = (floor(($ss % 2592000) / 86400) > 0) ? floor(($ss % 2592000) / 86400) . ' days'    : '';
@@ -74,5 +80,5 @@
       elseif ($y == '' && $M == '' && $d == '' && $h != '')             { return "$h"; }
       elseif ($y == '' && $M == '' && $d == '' && $h == '' && $m != '') { return "$m"; }
     }
-  }
+  }*/
 ?>
