@@ -53,3 +53,6 @@
       <a href="#Manga">Manga</a>
     </div>
   </header>
+  
+  <section class="content">
+    <main>
