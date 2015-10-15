@@ -54,8 +54,7 @@
     $diff    = $zero->diff($offset);
     $diff    = $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
     $plural  = explode(", ", diff);
-    return $plural;
-    return "<br><br>";
+    print_r($plural);
     return $diff->format('%Y years, %m months, %d days, %h hours, %i minutes of anime');
   }
 ?>
