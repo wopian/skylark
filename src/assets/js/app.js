@@ -6,7 +6,7 @@
     });
 });*/
 
-//Holder.run({});
+Holder.run({});
 
 $(function() {
     $("img.lazy").lazyload({
