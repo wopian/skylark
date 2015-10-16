@@ -9,7 +9,7 @@
 Holder.run({});
 
 $(function() {
-    $("img.lazy").lazyload({
+    $(".lazy").lazyload({
         event: "sporty",
         skip_invisible: false,
         effect: "fadeIn"
