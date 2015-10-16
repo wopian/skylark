@@ -15,8 +15,7 @@
     
     function getUser() {
         require_once('./assets/php/partials/user.php');
-        //getHeader();
-        require_once('./assets/php/partials/header.php');
+        getHeader();
         require_once('./assets/php/modules/user.php');
         getFooter();
     }
