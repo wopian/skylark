@@ -3,14 +3,10 @@
 <html>
 <head>
   <?
-    if (isset($page) {
-        switch ($page) {
-            case 'user':
-              print('<title>'.$user.' &horbar; Hibari</title>');
-              break;
-        }
+    if ($page === 'user') {
+      echo '<title>' . $user . ' &horbar; Hibari</title>';
     } else {
-      print('<title>Hibari</title>');
+      echo '<title>Hibari</title>';
     }
   ?>
 
