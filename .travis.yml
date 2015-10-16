@@ -26,7 +26,9 @@ before_install:
 
 install: travis_retry npm install --save-dev
 
-script: phplint 'src/**/*php'
+before_script: phplint 'src/**/*php'
+
+script: grunt
 
 addons:
   code_climate:
