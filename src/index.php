@@ -1,23 +1,23 @@
 <? 
     function getHeader() {
-        require('./assets/php/partials/header.php');
+        require_once('./assets/php/partials/header.php');
     }
     
     function getFooter() {
-        require('./assets/php/partials/footer.php');
+        require_once('./assets/php/partials/footer.php');
     }
     
     function getIndex() {
         getHeader();
-        require('./assets/php/modules/index.php');
+        require_once('./assets/php/modules/index.php');
         getFooter();
     }
     
     function getUser() {
-        require('./assets/php/partials/user.php');
+        require_once('./assets/php/partials/user.php');
         //getHeader();
-        require('./assets/php/partials/header.php');
-        require('./assets/php/modules/user.php');
+        require_once('./assets/php/partials/header.php');
+        require_once('./assets/php/modules/user.php');
         getFooter();
     }
 
