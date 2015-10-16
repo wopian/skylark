@@ -16,6 +16,6 @@ $(function() {
     });
 });
 
-/*$(window).bind("load", function() {
+$(window).bind("load", function() {
     var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
-});*/
+});
