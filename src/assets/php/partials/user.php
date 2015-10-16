@@ -50,7 +50,7 @@
   function humanSeconds($minutes) {
     $zero    = new DateTime('@0');
     //Function reports one less day than HB report, so add 1 day if time watched > 1 day (1440 minutes)
-    $offset  = new DateTime('@' . ($minutes + ($minutes > 1440 ? 1440 : 0) * 60);
+    $offset  = new DateTime('@' . ($minutes + ($minutes > 1440 ? 1440 : 0)) * 60);
     $diff    = $zero->diff($offset);
     # a = total days
     # d = monthly total days
