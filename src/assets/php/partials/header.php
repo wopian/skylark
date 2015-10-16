@@ -7,6 +7,7 @@
         switch ($page) {
             case 'user':
               print('<title>'.$user.' &horbar; Hibari</title>');
+              break;
         }
     } else {
       print('<title>Hibari</title>');
