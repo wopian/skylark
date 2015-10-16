@@ -3,7 +3,7 @@
 <html>
 <head>
   <?
-    if ($page === 'user') {
+    if (preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['page']) === 'user') {
       echo '<title>' . $user . ' &horbar; Hibari</title>';
     } else {
       echo '<title>Hibari</title>';
