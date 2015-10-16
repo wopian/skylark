@@ -20,8 +20,10 @@
   }
 
   #Use correct username capitalisation via API
-  global $user       = $apiData['name'];
-  global $userPlural = (substr($user, -1) == 's') ? '\'' : '\'s';
+  $user       = $apiData['name'];
+  $userPlural = (substr($user, -1) == 's') ? '\'' : '\'s';
+  
+  global $user, $userPlural;
 
   #Extract key information
   $userCover      = $apiData['cover_image'];
