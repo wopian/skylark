@@ -26,6 +26,8 @@ before_install:
 
 install: travis_retry npm install --save-dev
 
+script: phplint 'src/**/*php'
+
 addons:
   code_climate:
     repo_token: 05aed1b3de739db215aaed9c2570beec072863dd25d4c1a19972618e6dd888a5
