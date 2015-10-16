@@ -21,7 +21,8 @@
     }
 
     if (isset($_GET['page'])) {
-        global $page = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['page']);
+        $page = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['page']);
+        global $page;
         switch ($page) {
             case 'user':
                 getUser();
