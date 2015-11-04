@@ -28,8 +28,3 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'htmlmin', 'copy', 'imagemin', 'jshint', 'concat', 'uglify']);
 
 };
-
-// Package.json
-// "grunt-contrib-uglify": "^0.9.2",
-// "grunt-contrib-concat": "^0.5.1",
-// "grunt-contrib-jshint": "^0.11.3",
