@@ -10,6 +10,7 @@
                 require_once('./assets/php/partials/footer.php');
                 break;
         }
+
     } else {
         require_once('./assets/php/partials/header.php');
         require_once('./assets/php/modules/index.php');
