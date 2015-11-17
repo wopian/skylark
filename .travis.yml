@@ -30,6 +30,7 @@ addons:
     
 notifications:
   pushover:
+    on_sucess: always
     api_key: aPXbgLUnjBa797Q6Y142biLSdfmNKd
     users:
       - uq1zhMY8auEscjN54mo6W3jhjmVZrP
