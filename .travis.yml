@@ -28,9 +28,3 @@ addons:
   code_climate:
     repo_token: 05aed1b3de739db215aaed9c2570beec072863dd25d4c1a19972618e6dd888a5
     
-notifications:
-  pushover:
-    on_sucess: always
-    api_key: aPXbgLUnjBa797Q6Y142biLSdfmNKd
-    users:
-      - uq1zhMY8auEscjN54mo6W3jhjmVZrP
