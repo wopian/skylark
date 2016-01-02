@@ -8,8 +8,8 @@ module.exports = {
             dest: 'dist/'
         },
         {
-            expand: true, 
-            cwd: 'src/assets/php/', 
+            expand: true,
+            cwd: 'src/assets/php/',
             src: ['**'], 
             dest: 'dist/assets/php/'
         }]
