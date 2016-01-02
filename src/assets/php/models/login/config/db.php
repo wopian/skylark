@@ -13,4 +13,4 @@
 define("DB_HOST", "localhost");
 define("DB_NAME", "bobstudi_hibari");
 define("DB_USER", "bobstudi_hb_auth");
-define("DB_PASS", "OnhT.(S.cu7@");
+define("DB_PASS", "1UhEoD8z;gTK");
