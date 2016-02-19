@@ -5,6 +5,7 @@ dev_old/
 .sass-cache/
 .sublime-grunt.cache
 .cache
+.vs-code/
 
 # Windows image file caches
 Thumbs.db
