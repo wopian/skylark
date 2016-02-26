@@ -18,27 +18,25 @@
       <table class="striped highlight responsive-table">
         <thead>
           <tr>
-              <th data-field="id">Name</th>
-              <th data-field="name">Item Name</th>
-              <th data-field="price">Item Price</th>
+              <th data-field="title">Title</th>
+              <th data-field="episodes">Episodes</th>
+              <th data-field="original">Original (GB)</th>
+              <th data-field="re-encode">Re-encode (GB)</th>
+              <th data-field="original-episode">O.Episode (MB)</th>
+              <th data-field="re-encode-episode">R.Episode (MB)</th>
+              <th data-field="compression">Compression</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
+            <td>.hack Roots</td>
+            <td>26</td>
+            <td>5</td>
+            <td>1.5</td>
+            <td>196.92</td>
+            <td>59.08</td>
+            <td>30.00%</td>
           </tr>
         </tbody>
       </table>
