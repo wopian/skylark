@@ -1,7 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-_temp/assets/js/vendor/**/*     linguist-vendored
-_temp/assets/scss/vendor/**/*   linguist-vendored
-src/assets/sass/components/**/* linguist-vendored
-src/assets/js/vendor/*          linguist-vendored
+_temp/assets/js/vendor/**/*      linguist-vendored
+_temp/assets/scss/vendor/**/*    linguist-vendored
+original/assets/css/material*.*  linguist-vendored
+original/assets/css/ripples*.*   linguist-vendored
+original/assets/css/snackbar.css linguist-vendored
+original/assets/js/*             linguist-vendored
+src/assets/sass/components/**/*  linguist-vendored
+src/assets/js/vendor/*           linguist-vendored
